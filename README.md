@@ -1,7 +1,7 @@
 SiOJets_New
 ===========
 
-The NewData directory has 6 .tgz files whose details are as follows 
+The NewJetData directory has 6 .tgz files whose details are as follows 
 
 Run			Reso		Eta	Beta 	Therm
 1.adiab1010_fits.tgz 	200x1000	10	10	Adibatic
