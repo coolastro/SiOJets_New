@@ -31,7 +31,8 @@ def writer (data, name, opath):
 
                                                        
 if __name__ == '__main__':
-    fitsf=raw_input("name of fits file to convert: ")
+ fitsf=raw_input("name of fits file to convert: ")
+ while fitsf:
     data=P.getdata(fitsf)
     opath=raw_input("name of output header file: ")
     if not(opath): opath=fitsf.split('.')[0]+'.h'
@@ -39,3 +40,4 @@ if __name__ == '__main__':
     name=raw_input("name of array in header file: ")
     if not(name): name=opath.split('.')[0]
     writer(data, name, opath)
+    fitsf=raw_input("name of fits file to convert: ")
