@@ -17,17 +17,15 @@
 #include "temp.h"
 #include "vz.h"
 #include "vr.h"
-#include "fH2.h"
-#include "fHII.h"
-#include "fHI.h"
+#include "fneut.h"
 
-#define length_scale (33.42293086*AU)
-#define centre_z (250)
+#define length_scale (16.71146539*AU)
+#define centre_z (600)
 #define unit_temp (1)
 #define unit_density (1e6)
 #define unit_velocity (1e3)
-#define arr_size_R (100)
-#define arr_size_Z (500)
+#define arr_size_R (200)
+#define arr_size_Z (1000)
 
 
 /******************************************************************************/
@@ -52,53 +50,53 @@ input(inputPars *par, image *img){
  * Definitions for image #0. Add blocks for additional images.
  */
 
-  img[0].nchan =160;
+  img[0].nchan =80;
   //  img[0].freq                   = 43.587806e9*(1+3.3e5/CLIGHT*cos(PI/2))+4.587806e8/6/3;
   //  img[0].bandwidth              = 4.587806e8/3.0; // 30km/s across whole bandwidth
   img[0].trans = 0;
-  img[0].velres= 750;
+  img[0].velres= 500;
   img[0].pxls			= 256;	      // Pixels per dimension
-  img[0].imgres			= 1.75;		  // Resolution in arc seconds
-  img[0].theta			= PI/3;		  // 0: face-on, pi/2: edge-on
+  img[0].imgres			= 2.5;		  // Resolution in arc seconds
+  img[0].theta			= PI/2;		  // 0: face-on, pi/2: edge-on
   img[0].distance		= length_scale/AU*PC;	  //1" == 1 length scale
   img[0].source_vel		= 0;          // source velocity in m/s
   img[0].unit			= 0;		  // 0:Kelvin 1:Jansky/pixel 2:SI 3:Lsun/pixel 4:tau
   img[0].filename		= "image_J1-0_60deg_molcool.fits";	// Output filename
 
-  img[1].nchan =160;
+  img[1].nchan =80;
   //  img[0].freq                   = 43.587806e9*(1+3.3e5/CLIGHT*cos(PI/2))+4.587806e8/6/3;
   //  img[0].bandwidth              = 4.587806e8/3.0; // 30km/s across whole bandwidth
   img[1].trans = 1;
-  img[1].velres= 750;
+  img[1].velres= 500;
   img[1].pxls			= 256;	      // Pixels per dimension
-  img[1].imgres			= 2;		  // Resolution in arc seconds
-  img[1].theta			= PI/3;		  // 0: face-on, pi/2: edge-on
+  img[1].imgres			= 2.5;		  // Resolution in arc seconds
+  img[1].theta			= PI/2;		  // 0: face-on, pi/2: edge-on
   img[1].distance		= length_scale/AU*PC;	  //1" == 1 length scale
   img[1].source_vel		= 0;          // source velocity in m/s
   img[1].unit			= 0;		  // 0:Kelvin 1:Jansky/pixel 2:SI 3:Lsun/pixel 4:tau
    img[1].filename		= "image_J2-1_60deg_molcool.fits";	// Output filename
 
-  img[2].nchan =160;
+  img[2].nchan =80;
   //  img[0].freq                   = 43.587806e9*(1+3.3e5/CLIGHT*cos(PI/2))+4.587806e8/6/3;
   //  img[0].bandwidth              = 4.587806e8/3.0; // 30km/s across whole bandwidth
   img[2].trans = 2;
-  img[2].velres= 750;
+  img[2].velres= 500;
   img[2].pxls			= 256;	      // Pixels per dimension
-  img[2].imgres			= 1.75;		  // Resolution in arc seconds
-  img[2].theta			= PI/3;		  // 0: face-on, pi/2: edge-on
+  img[2].imgres			= 2.5;		  // Resolution in arc seconds
+  img[2].theta			= PI/2;		  // 0: face-on, pi/2: edge-on
   img[2].distance		= length_scale/AU*PC;	  //1" == 1 length scale
   img[2].source_vel		= 0;          // source velocity in m/s
   img[2].unit			= 0;		  // 0:Kelvin 1:Jansky/pixel 2:SI 3:Lsun/pixel 4:tau
   img[2].filename		= "image_J3-2_60deg_molcool.fits";	// Output filename
 
-  img[3].nchan =160;
+  img[3].nchan =120;
   //  img[0].freq                   = 43.587806e9*(1+3.3e5/CLIGHT*cos(PI/2))+4.587806e8/6/3;
   //  img[0].bandwidth              = 4.587806e8/3.0; // 30km/s across whole bandwidth
   img[3].trans = 4;
-  img[3].velres= 750;
+  img[3].velres= 500;
   img[3].pxls			= 256;	      // Pixels per dimension
-  img[3].imgres			= 1.75;		  // Resolution in arc seconds
-  img[3].theta			= PI/3;		  // 0: face-on, pi/2: edge-on
+  img[3].imgres			= 2.5;		  // Resolution in arc seconds
+  img[3].theta			= PI/2;		  // 0: face-on, pi/2: edge-on
   img[3].distance		= length_scale/AU*PC;	  //1" == 1 length scale
   img[3].source_vel		= 0;          // source velocity in m/s
   img[3].unit			= 0;		  // 0:Kelvin 1:Jansky/pixel 2:SI 3:Lsun/pixel 4:tau
@@ -113,16 +111,16 @@ density(double x, double y, double z, double *density){
   R=r/length_scale+0.51; 
   Z=z/length_scale+centre_z+0.51;
 
-  if (R>arr_size_R-1) R=arr_size_R-1;
+  if (R>(arr_size_R-1)) R=arr_size_R-1;
   else if (R<0) R=0;
-  if (Z>arr_size_Z-1) Z=arr_size_Z-1; //boundary checking
+  if (Z>(arr_size_Z-1)) Z=arr_size_Z-1; //boundary checking
   else if (Z<0) Z=0;
 
-  if ((R>199) || (Z>999) || (R<0) || (Z<0)) {density[0]=rho[199][999]*unit_density;}
-  else {density[0]=rho[R][Z]*unit_density*(1-fHII[R][Z]);}
-  if (Z<0 && R<199) {
+  if ((R>(arr_size_R-1)) || (Z>(arr_size_Z-1)) || (R<0) || (Z<0)) {density[0]=rho[arr_size_R-1][arr_size_Z-1]*unit_density;}
+  else {density[0]=rho[R][Z]*unit_density*fneut[R][Z];}
+  if (Z<0 && R<arr_size_R-1) {
     Z=0;
-    density[0]=rho[R][Z]*unit_density*(1-fHII[R][Z]);
+    density[0]=rho[R][Z]*unit_density*fneut[R][Z];
   }
   //  fprintf(stderr, "%.3e %.3e %d %d %.3e \n",r,z,R,Z, rho[R][Z]);
   
@@ -137,21 +135,21 @@ temperature(double x, double y, double z, double *temperature){
   R=r/length_scale+0.51; 
   Z=z/length_scale+centre_z+0.51;
 
-  if (R>arr_size_R-1) R=arr_size_R-1;
+  if (R>(arr_size_R-1)) R=(arr_size_R-1);
   else if (R<0) R=0;
-  if (Z>arr_size_Z-1) Z=arr_size_Z-1; //boundary checking
+  if (Z>(arr_size_Z-1)) Z=(arr_size_Z-1); //boundary checking
   else if (Z<0) Z=0;
 
   
 
-  //  if (R>199) R=199;
+  //  if (R>(arr_size_R-1)) R=(arr_size_R-1);
   //  else if (R<0) R=0;
-  //  if (Z>999) Z=999; //boundary checking
+  //  if (Z>(arr_size_Z-1)) Z=(arr_size_Z-1); //boundary checking
   //  else if (Z<0) Z=0;
-  if ((R>199) || (Z>999) || (R<0) || (Z<0)) temperature[0]=temp[199][999]*unit_temp;  
+  if ((R>((arr_size_R-1))) || (Z>((arr_size_Z-1))) || (R<0) || (Z<0)) temperature[0]=temp[(arr_size_R-1)][(arr_size_Z-1)]*unit_temp;  
   else temperature[0]=temp[R][Z]*unit_temp;  
 
-  if (Z<0 && R<199) {
+  if (Z<0 && R<((arr_size_R-1))) {
     Z=0;
     temperature[0]=temp[R][Z]*unit_temp;   
   }
@@ -173,9 +171,9 @@ abundance(double x, double y, double z, double *abundance){
   int R=r/length_scale+0.51; 
   int Z=z/length_scale+centre_z+0.51;
 
-  if (R>arr_size_R-1) R=arr_size_R-1;
+  if (R>(arr_size_R-1)) R=(arr_size_R-1);
   else if (R<0) R=0;
-  if (Z>arr_size_Z-1) Z=arr_size_Z-1; //boundary checking
+  if (Z>(arr_size_Z-1)) Z=(arr_size_Z-1); //boundary checking
   else if (Z<0) Z=0;
 
   velocity(x,y,z,v);
@@ -187,7 +185,7 @@ abundance(double x, double y, double z, double *abundance){
     for(i=0;i<6;i++){
       power+=polyconsts[i]*pow(vtot, 5-i);
     }
-    abundance[0]=pow(10,power)*(1-fHII[R][Z]);
+    abundance[0]=pow(10,power)*fneut[R][Z];
   }
   temperature(x,y,z,&vtot);
   if (vtot>92000) {abundance[0]=1e-30;}
@@ -215,9 +213,9 @@ velocity(double x, double y, double z, double *vel){
   R=r/length_scale+0.51; 
   Z=z/length_scale+centre_z+0.51;
 
-  if (R>arr_size_R-1) R=arr_size_R-1;
+  if (R>(arr_size_R-1)) R=(arr_size_R-1);
   else if (R<0) R=0;
-  if (Z>arr_size_Z-1) Z=arr_size_Z-1; //boundary checking
+  if (Z>(arr_size_Z-1)) Z=(arr_size_Z-1); //boundary checking
   else if (Z<0) Z=0;
 
   double Vr=vr[R][Z];
