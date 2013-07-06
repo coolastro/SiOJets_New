@@ -232,7 +232,7 @@
 \let\apjsupp=\apjs
 \let\applopt=\ao
 
-\newcommand{\figpath}{FIGS/}
+\newcommand{\figpath}{PFIGS/}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \begin{document}
@@ -354,15 +354,31 @@ In addition to the above set of equations the code obeys the condition of diverg
 magnetic fields, $\nabla \cdot \vec{B} = 0$, which is numerically achieved by construction 
 since using the Powell's eight wave formulation.
 \subsection{Initial Condition}
+Physical motivation of initial condition.\\
 Describe initial condition - Geometry, domian size, boundary
 conditions\\
-Physical motivation of initial condition.\\
+
 \section{Chemistry and Cooling}
 \label{sec:chem}
-Atomic Cooling\\
-Molecular cooling fixed abundance -- Tabulated Cooling\\
-Molecular cooling with chemistry. \\
-Mention briefly Adiabatic and Powerlaw cooling.
+\subsection{Power law cooling}
+\subsection{Atomic Cooling}
+\subsection{Tabulated Cooling}
+
+
+\subsection{Molecular Cooling}
+The evolution of molecular, atomic and ionized hydrogen is govenerd by
+equations listed in Table~\ref{tab:chemeq}. In this cooling mode,
+these equations are evolved at each times using temperature dependent
+rates mentioned in the table along with their source. The code tracks
+the formation and destruction of three quantities viz, X(HI), X($H_{2}$)
+and X(HII) with a constraint that sum of all three should be unity.
+Further, these abundances are used to update the cooling
+function $\Lambda(n,T,{\bf{X}})$ to consistently derive the
+temperature for next advection step.
+ 
+For all the models presented in this paper, we have 
+
+
 
 \begin{table*}
 \begin{minipage}{\textwidth}
@@ -370,6 +386,7 @@ Mention briefly Adiabatic and Powerlaw cooling.
   in Kelvin, $T_{\rm eV}$ is the tempeature in electron-volts, $T_{5}$
   = $T/1\times10^{5}$  and 
 $T_{2}$  = T/100}
+\label{tab:chemeq}
 \begin{tabular}{l l l l}
 \hline
 No. & Reaction & Rate Coeff ($\rm {cm}^{3} s^{-1}$) &
@@ -432,6 +449,36 @@ where v is in kilometres per second. In addition to this if the temperature at t
 
 
 \section{Results}
+\begin{figure*}
+ \includegraphics[width=2.\columnwidth]{\figpath/jetplt1_1010.png}
+ \caption{Jet Volume Density for different cooling modes with
+   $\eta$ = 10 and $\beta$ = 10.}
+\label{grid}
+\end{figure*}
+\begin{table*}
+\centering
+\caption{Summary from parameter runs}
+\begin{tabular}{l | l | l | l | l | l }
+\hline
+Run & Cooling Mode & $\eta$ & $\beta$ & Peak Intensity [K] & FWHM at Bow
+Shock \\
+\hline\hline
+adi1010 & Nil (Adiabatic) & 10 & 10 &&\\
+pow1010 & Power law & 10 & 10 &&\\
+atm1010 & Atomic & 10 & 10 &&\\
+atm101 & Atomic & 10 & 1 &&\\
+atm210 & Atomic & 2 & 10 &&\\
+tab1010 & Tabulated & 10 & 10 &&\\
+tab210 & Tabulated & 2 & 10&&\\
+mol1010 & Molecular & 10 & 10&&\\
+mol510 & Molecular & 5 & 10&&\\
+\hline
+\end{tabular}
+\label{tab:result1}
+\end{table*}
+
+
+
 Table 1 -- Parameter runs with changing $\beta$ (magnetic fields) and
 $\eta$ (density contrast) for cooling \\
 Results should have Peak Intensity after convolution., FWHM at tip of
