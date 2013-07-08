@@ -335,14 +335,14 @@ of state with the adiabatic index $\gamma$,
 P = (\gamma - 1) \rho \epsilon.
 \end{equation}
 
-The evolution of chemical abundances for each spiecies is solved via,
+The evolution of chemical abundances for each species is solved via,
 %
 \begin{equation}\label{chemevol}
 \frac{\partial \rho{\bf{X}}_{i}}{\partial t} + \nabla \cdot (\rho
 {\bf{X}}_{i} \vec{v})  = \rho {\bf{S}}_{i},
 \end{equation}
 where ${\bf{S}}_{i}$ represents the net creation or destruction of a
-given spiecies through chemical reactions (see Sect.~\ref{sec:chem}).
+given species through chemical reactions (see Sect.~\ref{sec:chem}).
 
 The evolution of the magnetic field is governed by induction equation,
 %
@@ -354,9 +354,69 @@ In addition to the above set of equations the code obeys the condition of diverg
 magnetic fields, $\nabla \cdot \vec{B} = 0$, which is numerically achieved by construction 
 since using the Powell's eight wave formulation.
 \subsection{Initial Condition}
-Physical motivation of initial condition.\\
-Describe initial condition - Geometry, domian size, boundary
-conditions\\
+We model the propagation of jet as it interacts with the molecular
+cloud core much further from the central object, i.e., $>$ 1000\,AU. 
+Further away from the central source, the downward pull of gravity plays a
+negligible role and the dynamics of jet is primarily governed by magnetic fields.
+The total magnetic field in jet is dominated by the toroidal
+component. This is because the poloidal field decays as $z^{-2}$ as
+compared to $z^{-1}$ for toroidal field to maintain the force balance ($z$ is the vertical distance from source). 
+The hoop stress due to pinch force from toroidal magnetic fields maintains the
+a highly collimated beam like structure for the jet.
+%
+
+The ambient medium with which the jet interacts primarily
+represents the molecular cloud core. The numerical domain is axi-symmetric
+and in (r,z,$\phi$) cylindrical co-ordinates. Its extent in radial
+direction is 20 $R_{\rm j}$ and 100
+$R_{\rm j}$ along the vertical axis, $R_{\rm j}$ being the radius of
+the jet. The domain is resolved by an uniform grid with 200 cells in
+radial and 1000 cells in vertical direction. For simplicity, we choose this medium
+to be unmagnetized and non-turbulent. The density in the ambient
+medium varies with vertical height $z$ as, $\rho_{\rm amb}\sim (\rho_0/z^{2})$
+consistent with observations \citep{Caselli:2011p13935}. The value of
+$\rho_0$ depends upon the density contrast, $\eta$, between the jet and
+the ambient medium. The number density in the jet is kept fixed such
+that the density in ambient medium lies within a range of $10^{4}-10^{5}
+\rm cm^{-3}$. The pressure in the ambient molecular medium is
+set so to maintain a constant temperature of 50\,K. 
+%
+
+The jet enters into the medium through a nozzle of radius $R_{\rm jet}$
+from the lower boundary (z = 0). The jet density is fixed to
+be $10^{5} \rm cm^{-3}$ and it has a radius of $2.5\times10^{15} \rm cm \sim
+167\,AU$. The jet is injected into the domain with a typical 
+velocity of $v_{\rm jet,0}$ = 100 km/s as is the case for most low mass stellar jets
+specially the low velocity component. The constant jet velocity is
+superimposed with periodic pulsation of the form,
+\begin{equation}
+v_{\rm jet} = v_{\rm jet,0}(1.0 + A\,sin(t/T_{\rm p}))
+\end{equation}
+where the amplitude A is 0.25 and time period $T_{\rm p} = 10$
+years. The pressure at the surface of the jet is $10^{-10} \rm
+dyne\,\,cm^{-2}$ corresponding to a temperature of $T_{\rm jet} \sim
+4\times10^{3}\,K$. Inside the jet beam, a radial variation of thermal
+and magnetic pressure is adopted to maintain a magneto-static
+equilibrium. We adopt the
+same radial profiles used by \cite{Stone:2000p2650} for all our runs. 
+Based on these profiles, the toroidal magnetic field is assumed to be
+zero at the axis and achieves a maximum at some radius, $r_{\rm m}$
+inside the jet. The maximum value, $B_{\phi,\rm m}$, depends on the
+plasma $\beta$ which is a parameter used for our study along with the
+density contrast $\eta$.
+%
+
+In order to consistently model the SiO emission arising from shocks as
+this jet interacts with the medium, we evolve the dynamics along with
+chemistry and cooling prescribtions. They are described in details in
+the next section.
+
+
+
+
+
+
+ 
 
 \section{Chemistry and Cooling}
 \label{sec:chem}
@@ -366,30 +426,37 @@ conditions\\
 
 
 \subsection{Molecular Cooling}
-The evolution of molecular, atomic and ionized hydrogen is govenerd by
+\label{ssec:molcool}
+The evolution of molecular, atomic and ionized hydrogen is governed by
 equations listed in Table~\ref{tab:chemeq}. In this cooling mode,
 these equations are evolved at each times using temperature dependent
 rates mentioned in the table along with their source. The code tracks
-the formation and destruction of three quantities viz, X(HI), X($H_{2}$)
+the formation and destruction of three quantities viz., X(HI), X($H_{2}$)
 and X(HII) with a constraint that sum of all three should be unity.
 Further, these abundances are used to update the cooling
 function $\Lambda(n,T,{\bf{X}})$ to consistently derive the
 temperature for next advection step.
- 
-For all the models presented in this paper, we have 
 
 
+\begin{figure*}
+ \includegraphics[width=1\columnwidth]{\figpath/H2ReactionRates.png}
+ \includegraphics[width=1\columnwidth]{\figpath/H2CoolingFuncs.png}
+ \caption{Variation of $H_2$ chemistry reaction rates, $k_{i}$ and cooling
+   function $\Lambda(n,T,{\bf{X}})$ with temperature for the initial
+   state (see Sect.~\ref{ssec:molcool})}
+\label{fig:tempvar}
+\end{figure*}
 
 \begin{table*}
 \begin{minipage}{\textwidth}
 \caption{Summary of the chemistry reaction set. T is the temperature
-  in Kelvin, $T_{\rm eV}$ is the tempeature in electron-volts, $T_{5}$
+  in Kelvin, $T_{\rm eV}$ is the temperature in electron-volts, $T_{5}$
   = $T/1\times10^{5}$  and 
 $T_{2}$  = T/100}
 \label{tab:chemeq}
 \begin{tabular}{l l l l}
 \hline
-No. & Reaction & Rate Coeff ($\rm {cm}^{3} s^{-1}$) &
+No. & Reaction & Rate Coefficient ($\rm {cm}^{3} s^{-1}$) &
 Reference~\footnote{REFERENCES -- (1) \cite{Cen:1992p13616} [Eq. 26a];
   (2) \cite{Woodall:2007p13623} [UMIST Database] (3)
   \cite{Galli:1998p13066} [Eq. H17]; (4) \cite{Abel:1997p12836}
@@ -412,20 +479,20 @@ T_{\rm eV}^{2.012}(\rm{exp}(4.463/T_{\rm eV})^{-1}((1. + 0.2472 T_{\rm eV})^{3.5
 \end{table*}
 
 \section{Radiative Transfer}
-Radiative transfer modelling used for post processing.
+Radiative transfer modeling used for post processing.
 
 \subsection{The radiative transfer code} \label{subsec:radiative_transfer_code}
-The radiative transfer program used is LIME (LIne Modelling Engine; \citealt{Brinch:2010p13078}), which  calculates line intensities based on a weighted sample of randomly chosen points in a continuous 3D model. The method of selecting these points is given in section \ref{subsec:gridding}. At each of these points, the density of the main collision partner (equivalent amount of H$_2$, given by n(H$_2$)+ 0.5 n(H)), gas and dust temperatures, velocity, molecular abundances and unresolved turbulent velocity are specified. These points are then smoothed by Lloyd's algorithm \citep{Lloyd1982} in order to minimise the variation in distance between points whilst keeping the same underlying distribution. These points are then connected by Delaunay triangulation and it is between the points connected by this method that photon are allowed to propagate (fig.~\ref{grid}). The level populations of the selected molecules are calculated at each of these points from collisional and radiative (de)excitation and the local radiation field is calculated. This is repeated 20 times with the populations of each level converging towards a single value. This number of iterations is sufficient for the signal to noise ratio of the level populations (as defined in \citealt{Brinch:2010p13078}) to exceed 1000 for 99\% of the points, ensuring that the simulation has converged on a stable level population. After 20 iterations the model is ray-traced in order to produce synthetic brightness maps. The average of ten separate runs was taken to minimise the artefacts in the output images, resulting from the grid construction (Fig.~\ref{points}).
+The radiative transfer program used is LIME (LIne Modeling Engine; \citealt{Brinch:2010p13078}), which  calculates line intensities based on a weighted sample of randomly chosen points in a continuous 3D model. The method of selecting these points is given in section \ref{subsec:gridding}. At each of these points, the density of the main collision partner (equivalent amount of H$_2$, given by n(H$_2$)+ 0.5 n(H)), gas and dust temperatures, velocity, molecular abundances and unresolved turbulent velocity are specified. These points are then smoothed by Lloyd's algorithm \citep{Lloyd1982} in order to minimise the variation in distance between points whilst keeping the same underlying distribution. These points are then connected by Delaunay triangulation and it is between the points connected by this method that photon are allowed to propagate (fig.~\ref{grid}). The level populations of the selected molecules are calculated at each of these points from collisional and radiative (de)excitation and the local radiation field is calculated. This is repeated 20 times with the populations of each level converging towards a single value. This number of iterations is sufficient for the signal to noise ratio of the level populations (as defined in \citealt{Brinch:2010p13078}) to exceed 1000 for 99\% of the points, ensuring that the simulation has converged on a stable level population. After 20 iterations the model is ray-traced in order to produce synthetic brightness maps. The average of ten separate runs was taken to minimise the artefacts in the output images, resulting from the grid construction (Fig.~\ref{points}).
 
 
 \begin{figure}
  \includegraphics[width=84mm]{\figpath/eta2Beta10.png}
- \caption{A plot of the points selected by the gridding process and the paths down which photons can propagate for points in the r,z plane. The points are colour coded by the density distribution (in m$^{-3}$, as used in LIME) and are more concentrated in the high density knots.}
+ \caption{A plot of the points selected by the gridding process and the paths down which photons can propagate for points in the r,z plane. The points are color coded by the density distribution (in m$^{-3}$, as used in LIME) and are more concentrated in the high density knots.}
 \label{grid}
 \end{figure}
 
 \subsection{Grid construction} \label{subsec:gridding}
-In order to construct the grid, candidate points are randomly selected from the volume to be simulated. These candidates then have their equivalent H$_2$ number density, and the number density of SiO, compared against those of a reference point in order to decide if the candidate point is to be used in the grid or not. Candidate grid points are selected at random in a cylindrical coordinates that is linearly spaced in z and $\theta$ and logarithmically spaced in r. For each point to be selected, a random number $\alpha$ is drawn from the semi-open set [0,$\,$1) as a threshold. After selection of random coordinates, the H$_2$ density and SiO density at the candidate point (n and m, respectively) are compared against the densities of a reference point in the unpeturbed ambient medium multipled by $\frac{4\eta}{5}$ (n$_0$ and m$_0$). If $\alpha<\left( \frac{n}{n_0} \right)^{0.3}$ or $\alpha< \left( \frac{m}{m_0} \right)^{0.3}$ then the point is selected for use. Otherwise another r, $\theta$, z co-ordinate is selected and it becomes the candidate point. In addition to this method of selection, 5\% of the points are linearly distributed in x, y and z with no bias with regards to density or abundance. This provides a minimum level of sampling for the large low density regions in the outer parts of the simulated volume. See fig. \ref{points} for an example of the points distribution in r, z. The function comparing the candidate point to the reference point and the candidate point distribution were selected empirically to sample all scales while ensuring that the majority of points are located in the inner disc where the density is higher.  \smallskip
+In order to construct the grid, candidate points are randomly selected from the volume to be simulated. These candidates then have their equivalent H$_2$ number density, and the number density of SiO, compared against those of a reference point in order to decide if the candidate point is to be used in the grid or not. Candidate grid points are selected at random in a cylindrical coordinates that is linearly spaced in z and $\theta$ and logarithmically spaced in r. For each point to be selected, a random number $\alpha$ is drawn from the semi-open set [0,$\,$1) as a threshold. After selection of random coordinates, the H$_2$ density and SiO density at the candidate point (n and m, respectively) are compared against the densities of a reference point in the un-perturbed ambient medium multiplied by $\frac{4\eta}{5}$ (n$_0$ and m$_0$). If $\alpha<\left( \frac{n}{n_0} \right)^{0.3}$ or $\alpha< \left( \frac{m}{m_0} \right)^{0.3}$ then the point is selected for use. Otherwise another r, $\theta$, z co-ordinate is selected and it becomes the candidate point. In addition to this method of selection, 5\% of the points are linearly distributed in x, y and z with no bias with regards to density or abundance. This provides a minimum level of sampling for the large low density regions in the outer parts of the simulated volume. See fig. \ref{points} for an example of the points distribution in r, z. The function comparing the candidate point to the reference point and the candidate point distribution were selected empirically to sample all scales while ensuring that the majority of points are located in the inner disc where the density is higher.  \smallskip
 
 \begin{figure}
  \includegraphics[width=63mm]{\figpath/eta2Beta10_histo.png}
@@ -443,7 +510,7 @@ where v is in kilometres per second. In addition to this if the temperature at t
 
 \begin{figure}
  \includegraphics[width=84mm]{\figpath/abun.png}
- \caption{The polynomial used to calculate an abundace of SiO as a function of local velocity.}
+ \caption{The polynomial used to calculate an abundance of SiO as a function of local velocity.}
  \label{abun}
 \end{figure}
 
