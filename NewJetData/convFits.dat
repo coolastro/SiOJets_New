@@ -1,18 +1,23 @@
 Density-cm-3_55.fits
-rho
+rho.h
 rho
 Temperature-K_55.fits
-temp
+temp.h
 temp
 Vjet-kmps_55.fits
-vz
+vz.h
 vz
 Vrad-kmps_55.fits
+vr.h
 vr
-vr
-NeutFrac_55.fits
-fneut
-fneut
-
+fHI_55.fits
+fHI.h
+fHI
+fHII_55.fits
+fHII.h
+fHII
+fH2_55.fits
+fH2.h
+fH2
 
 

@@ -1,9 +1,17 @@
-This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009) (format=pdflatex 2009.11.7)  5 JUL 2013 12:49
+This is pdfTeXk, Version 3.141592-1.40.3 (Web2C 7.5.6) (format=pdflatex 2011.10.18)  8 JUL 2013 13:17
 entering extended mode
- Source specials enabled.
  %&-line parsing enabled.
-**\input ms_final_bv.tex
-(./ms_final_bv.tex (./mn2e.cls
+**ms_final_bv.tex
+(./ms_final_bv.tex
+LaTeX2e <2005/12/01>
+Babel <v3.8h> and hyphenation patterns for english, usenglishmax, dumylang, noh
+yphenation, arabic, basque, bulgarian, coptic, welsh, czech, slovak, german, ng
+erman, danish, esperanto, spanish, catalan, galician, estonian, farsi, finnish,
+ french, greek, monogreek, ancientgreek, croatian, hungarian, interlingua, ibyc
+us, indonesian, icelandic, italian, latin, mongolian, dutch, norsk, polish, por
+tuguese, pinyin, romanian, russian, slovenian, uppersorbian, serbian, swedish, 
+turkish, ukenglish, ukrainian, loaded.
+(./mn2e.cls
 Document Class: mn2e 2001/02/06 v2.2 LaTeX2e MN document class
 Document Style `MN' v2.2, released 2001 February 20
 \math@groups=\toks14
@@ -27,68 +35,68 @@ LaTeX Font Info:    Overwriting symbol font `UPM' in version `bold'
 \@footindent=\skip44
 \@leftskip=\skip45
 \c@dummy=\count85
-(/usr/local/texlive/2009/texmf-dist/tex/latex/natbib/natbib.sty
-Package: natbib 2009/07/16 8.31 (PWD, AO)
+(/usr/share/texmf/tex/latex/natbib/natbib.sty
+Package: natbib 2007/02/05 8.0 (PWD)
 \bibhang=\skip46
 \bibsep=\skip47
-LaTeX Info: Redefining \cite on input line 694.
+LaTeX Info: Redefining \cite on input line 602.
 \c@NAT@ctr=\count86
 )
 \c@table=\count87
 \c@figure=\count88
 \mathindent=\dimen103
 )
-(/usr/local/texlive/2009/texmf-dist/tex/latex/graphics/color.sty
+(/usr/share/texmf/tex/latex/graphics/color.sty
 Package: color 2005/11/14 v1.0j Standard LaTeX Color (DPC)
 
-(/usr/local/texlive/2009/texmf-dist/tex/latex/latexconfig/color.cfg
+(/usr/share/texmf/tex/latex/config/color.cfg
 File: color.cfg 2007/01/18 v1.5 color configuration of teTeX/TeXLive
 )
 Package color Info: Driver file: pdftex.def on input line 130.
 
-(/usr/local/texlive/2009/texmf-dist/tex/latex/pdftex-def/pdftex.def
-File: pdftex.def 2009/08/25 v0.04m Graphics/color for pdfTeX
+(/usr/share/texmf/tex/latex/pdftex-def/pdftex.def
+File: pdftex.def 2007/01/08 v0.04d Graphics/color for pdfTeX
 \Gread@gobject=\count89
 ))
-(/usr/local/texlive/2009/texmf-dist/tex/latex/graphics/graphicx.sty
+(/usr/share/texmf/tex/latex/graphics/graphicx.sty
 Package: graphicx 1999/02/16 v1.0f Enhanced LaTeX Graphics (DPC,SPQR)
 
-(/usr/local/texlive/2009/texmf-dist/tex/latex/graphics/keyval.sty
+(/usr/share/texmf/tex/latex/graphics/keyval.sty
 Package: keyval 1999/03/16 v1.13 key=value parser (DPC)
 \KV@toks@=\toks15
 )
-(/usr/local/texlive/2009/texmf-dist/tex/latex/graphics/graphics.sty
-Package: graphics 2009/02/05 v1.0o Standard LaTeX Graphics (DPC,SPQR)
+(/usr/share/texmf/tex/latex/graphics/graphics.sty
+Package: graphics 2006/02/20 v1.0o Standard LaTeX Graphics (DPC,SPQR)
 
-(/usr/local/texlive/2009/texmf-dist/tex/latex/graphics/trig.sty
+(/usr/share/texmf/tex/latex/graphics/trig.sty
 Package: trig 1999/03/16 v1.09 sin cos tan (DPC)
 )
-(/usr/local/texlive/2009/texmf-dist/tex/latex/latexconfig/graphics.cfg
-File: graphics.cfg 2009/08/28 v1.8 graphics configuration of TeX Live
+(/usr/share/texmf/tex/latex/config/graphics.cfg
+File: graphics.cfg 2007/01/18 v1.5 graphics configuration of teTeX/TeXLive
 )
-Package graphics Info: Driver file: pdftex.def on input line 91.
+Package graphics Info: Driver file: pdftex.def on input line 90.
 )
 \Gin@req@height=\dimen104
 \Gin@req@width=\dimen105
 )
-(/usr/local/texlive/2009/texmf-dist/tex/latex/amsmath/amsmath.sty
+(/usr/share/texmf/tex/latex/amsmath/amsmath.sty
 Package: amsmath 2000/07/18 v2.13 AMS math features
 \@mathmargin=\skip48
 
 For additional information on amsmath, use the `?' option.
-(/usr/local/texlive/2009/texmf-dist/tex/latex/amsmath/amstext.sty
+(/usr/share/texmf/tex/latex/amsmath/amstext.sty
 Package: amstext 2000/06/29 v2.01
 
-(/usr/local/texlive/2009/texmf-dist/tex/latex/amsmath/amsgen.sty
+(/usr/share/texmf/tex/latex/amsmath/amsgen.sty
 File: amsgen.sty 1999/11/30 v2.0
 \@emptytoks=\toks16
 \ex@=\dimen106
 ))
-(/usr/local/texlive/2009/texmf-dist/tex/latex/amsmath/amsbsy.sty
+(/usr/share/texmf/tex/latex/amsmath/amsbsy.sty
 Package: amsbsy 1999/11/29 v1.2d
 \pmbraise@=\dimen107
 )
-(/usr/local/texlive/2009/texmf-dist/tex/latex/amsmath/amsopn.sty
+(/usr/share/texmf/tex/latex/amsmath/amsopn.sty
 Package: amsopn 1999/12/14 v2.01 operator names
 )
 \inf@bad=\count90
@@ -129,141 +137,75 @@ LaTeX Font Info:    Redeclaring font encoding OMS on input line 568.
 LaTeX Info: Redefining \[ on input line 2666.
 LaTeX Info: Redefining \] on input line 2667.
 )
-(/usr/local/texlive/2009/texmf-dist/tex/latex/amsfonts/amssymb.sty
-Package: amssymb 2009/06/22 v3.00
+(/usr/share/texmf/tex/latex/amsfonts/amssymb.sty
+Package: amssymb 2002/01/22 v2.2d
 
-(/usr/local/texlive/2009/texmf-dist/tex/latex/amsfonts/amsfonts.sty
-Package: amsfonts 2009/06/22 v3.00 Basic AMSFonts support
-LaTeX Font Info:    Redeclaring symbol font `AMSa' on input line 49.
+(/usr/share/texmf/tex/latex/amsfonts/amsfonts.sty
+Package: amsfonts 2001/10/25 v2.2f
+LaTeX Font Info:    Redeclaring symbol font `AMSa' on input line 85.
 LaTeX Font Info:    Overwriting symbol font `AMSa' in version `normal'
-(Font)                  U/msa/m/n --> U/msa/m/n on input line 49.
+(Font)                  U/msa/m/n --> U/msa/m/n on input line 85.
 LaTeX Font Info:    Overwriting symbol font `AMSa' in version `bold'
-(Font)                  U/msa/m/n --> U/msa/m/n on input line 49.
+(Font)                  U/msa/m/n --> U/msa/m/n on input line 85.
 \symAMSb=\mathgroup7
 LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
-(Font)                  U/euf/m/n --> U/euf/b/n on input line 96.
+(Font)                  U/euf/m/n --> U/euf/b/n on input line 132.
 )
-LaTeX Font Info:    Redeclaring math symbol \leqslant on input line 96.
-LaTeX Font Info:    Redeclaring math symbol \geqslant on input line 103.
+LaTeX Font Info:    Redeclaring math symbol \leqslant on input line 117.
+LaTeX Font Info:    Redeclaring math symbol \geqslant on input line 124.
 )
-(/usr/local/texlive/2009/texmf-dist/tex/latex/hyperref/hyperref.sty
-Package: hyperref 2009/10/09 v6.79a Hypertext links for LaTeX
-
-(/usr/local/texlive/2009/texmf-dist/tex/generic/oberdiek/ifpdf.sty
-Package: ifpdf 2009/04/10 v2.0 Provides the ifpdf switch (HO)
-Package ifpdf Info: pdfTeX in pdf mode detected.
-)
-(/usr/local/texlive/2009/texmf-dist/tex/generic/oberdiek/ifvtex.sty
-Package: ifvtex 2008/11/04 v1.4 Switches for detecting VTeX and its modes (HO)
-Package ifvtex Info: VTeX not detected.
-)
-(/usr/local/texlive/2009/texmf-dist/tex/generic/ifxetex/ifxetex.sty
-Package: ifxetex 2009/01/23 v0.5 Provides ifxetex conditional
-)
-(/usr/local/texlive/2009/texmf-dist/tex/latex/oberdiek/hycolor.sty
-Package: hycolor 2009/10/02 v1.5 Code for color options of hyperref/bookmark (H
-O)
-
-(/usr/local/texlive/2009/texmf-dist/tex/latex/oberdiek/xcolor-patch.sty
-Package: xcolor-patch 2009/10/02 xcolor patch
-))
+(/usr/share/texmf/tex/latex/hyperref/hyperref.sty
+Package: hyperref 2007/02/07 v6.75r Hypertext links for LaTeX
 \@linkdim=\dimen115
 \Hy@linkcounter=\count102
 \Hy@pagecounter=\count103
 
-(/usr/local/texlive/2009/texmf-dist/tex/latex/hyperref/pd1enc.def
-File: pd1enc.def 2009/10/09 v6.79a Hyperref: PDFDocEncoding definition (HO)
+(/usr/share/texmf/tex/latex/hyperref/pd1enc.def
+File: pd1enc.def 2007/02/07 v6.75r Hyperref: PDFDocEncoding definition (HO)
 )
-(/usr/local/texlive/2009/texmf-dist/tex/generic/oberdiek/etexcmds.sty
-Package: etexcmds 2007/12/12 v1.2 Prefix for e-TeX command names (HO)
-
-(/usr/local/texlive/2009/texmf-dist/tex/generic/oberdiek/infwarerr.sty
-Package: infwarerr 2007/09/09 v1.2 Providing info/warning/message (HO)
-)
-Package etexcmds Info: Could not find \expanded.
-(etexcmds)             That can mean that you are not using pdfTeX 1.50 or
-(etexcmds)             that some package has redefined \expanded.
-(etexcmds)             In the latter case, load this package earlier.
-)
-
-Package hyperref Warning: Height of page (\paperheight) is invalid (0.0pt),
-(hyperref)                using 11in.
-
-(/usr/local/texlive/2009/texmf-dist/tex/latex/latexconfig/hyperref.cfg
+(/usr/share/texmf/tex/latex/config/hyperref.cfg
 File: hyperref.cfg 2002/06/06 v1.2 hyperref configuration of TeXLive
 )
-(/usr/local/texlive/2009/texmf-dist/tex/latex/oberdiek/kvoptions.sty
-Package: kvoptions 2009/08/13 v3.4 Keyval support for LaTeX options (HO)
-
-(/usr/local/texlive/2009/texmf-dist/tex/generic/oberdiek/kvsetkeys.sty
-Package: kvsetkeys 2009/07/30 v1.5 Key value parser with default handler suppor
-t (HO)
-))
-Package hyperref Info: Option `colorlinks' set `true' on input line 2864.
-Package hyperref Info: Hyper figures OFF on input line 2975.
-Package hyperref Info: Link nesting OFF on input line 2980.
-Package hyperref Info: Hyper index ON on input line 2983.
-Package hyperref Info: Plain pages OFF on input line 2990.
-Package hyperref Info: Backreferencing OFF on input line 2995.
+(/usr/share/texmf/tex/latex/oberdiek/kvoptions.sty
+Package: kvoptions 2006/08/22 v2.4 Connects package keyval with LaTeX options (
+HO)
+)
+Package hyperref Info: Option `colorlinks' set `true' on input line 2238.
+Package hyperref Info: Hyper figures OFF on input line 2288.
+Package hyperref Info: Link nesting OFF on input line 2293.
+Package hyperref Info: Hyper index ON on input line 2296.
+Package hyperref Info: Plain pages OFF on input line 2303.
+Package hyperref Info: Backreferencing OFF on input line 2308.
 
 Implicit mode ON; LaTeX internals redefined
-Package hyperref Info: Bookmarks ON on input line 3191.
-(/usr/local/texlive/2009/texmf-dist/tex/latex/ltxmisc/url.sty
+Package hyperref Info: Bookmarks ON on input line 2444.
+(/usr/share/texmf/tex/latex/ltxmisc/url.sty
 \Urlmuskip=\muskip11
-Package: url 2006/04/12  ver 3.3  Verb mode for urls, etc.
+Package: url 2005/06/27  ver 3.2  Verb mode for urls, etc.
 )
-LaTeX Info: Redefining \url on input line 3428.
-
-(/usr/local/texlive/2009/texmf-dist/tex/generic/oberdiek/bitset.sty
-Package: bitset 2007/09/28 v1.0 Data type bit set (HO)
-
-(/usr/local/texlive/2009/texmf-dist/tex/generic/oberdiek/intcalc.sty
-Package: intcalc 2007/09/27 v1.1 Expandable integer calculations (HO)
-)
-(/usr/local/texlive/2009/texmf-dist/tex/generic/oberdiek/bigintcalc.sty
-Package: bigintcalc 2007/11/11 v1.1 Expandable big integer calculations (HO)
-
-(/usr/local/texlive/2009/texmf-dist/tex/generic/oberdiek/pdftexcmds.sty
-Package: pdftexcmds 2009/09/23 v0.6 LuaTeX support for pdfTeX utility functions
- (HO)
-
-(/usr/local/texlive/2009/texmf-dist/tex/generic/oberdiek/ifluatex.sty
-Package: ifluatex 2009/04/17 v1.2 Provides the ifluatex switch (HO)
-Package ifluatex Info: LuaTeX not detected.
-)
-(/usr/local/texlive/2009/texmf-dist/tex/generic/oberdiek/ltxcmds.sty
-Package: ltxcmds 2009/08/05 v1.0 Some LaTeX kernel commands for general use (HO
-)
-)
-Package pdftexcmds Info: LuaTeX not detected.
-Package pdftexcmds Info: \pdf@primitive is available.
-Package pdftexcmds Info: \pdf@ifprimitive is available.
-)))
+LaTeX Info: Redefining \url on input line 2599.
 \Fld@menulength=\count104
 \Field@Width=\dimen116
 \Fld@charsize=\dimen117
-\Field@toks=\toks21
-Package hyperref Info: Hyper figures OFF on input line 4377.
-Package hyperref Info: Link nesting OFF on input line 4382.
-Package hyperref Info: Hyper index ON on input line 4385.
-Package hyperref Info: backreferencing OFF on input line 4392.
-Package hyperref Info: Link coloring ON on input line 4395.
-Package hyperref Info: Link coloring with OCG OFF on input line 4402.
-Package hyperref Info: PDF/A mode OFF on input line 4407.
-
-(/usr/local/texlive/2009/texmf-dist/tex/generic/oberdiek/atbegshi.sty
-Package: atbegshi 2008/07/31 v1.9 At begin shipout hook (HO)
-)
+\Choice@toks=\toks21
+\Field@toks=\toks22
+Package hyperref Info: Hyper figures OFF on input line 3102.
+Package hyperref Info: Link nesting OFF on input line 3107.
+Package hyperref Info: Hyper index ON on input line 3110.
+Package hyperref Info: backreferencing OFF on input line 3117.
+Package hyperref Info: Link coloring ON on input line 3120.
 \Hy@abspage=\count105
 \c@Item=\count106
 \c@Hfootnote=\count107
 )
 *hyperref using default driver hpdftex*
-(/usr/local/texlive/2009/texmf-dist/tex/latex/hyperref/hpdftex.def
-File: hpdftex.def 2009/10/09 v6.79a Hyperref driver for pdfTeX
+(/usr/share/texmf/tex/latex/hyperref/hpdftex.def
+File: hpdftex.def 2007/02/07 v6.75r Hyperref driver for pdfTeX
 \Fld@listcount=\count108
-)
-(./ms_final_bv.aux
+) (./ms_final_bv.aux
+
+LaTeX Warning: Label `grid' multiply defined.
+
 
 LaTeX Warning: Label `grid' multiply defined.
 
@@ -284,50 +226,35 @@ LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 238.
 LaTeX Font Info:    ... okay on input line 238.
 LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 238.
 LaTeX Font Info:    ... okay on input line 238.
- (/usr/local/texlive/2009/texmf-dist/tex/context/base/supp-pdf.mkii
-[Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count109
-\scratchdimen=\dimen118
-\scratchbox=\box28
-\nofMPsegments=\count110
-\nofMParguments=\count111
-\everyMPshowfont=\toks22
-\MPscratchCnt=\count112
-\MPscratchDim=\dimen119
-\MPnumerator=\count113
-\everyMPtoPDFconversion=\toks23
-)
 Package hyperref Info: Link coloring ON on input line 238.
- (/usr/local/texlive/2009/texmf-dist/tex/latex/hyperref/nameref.sty
-Package: nameref 2007/05/29 v2.31 Cross-referencing by name of section
+ (/usr/share/texmf/tex/latex/hyperref/nameref.sty
+Package: nameref 2006/12/27 v2.28 Cross-referencing by name of section
 
-(/usr/local/texlive/2009/texmf-dist/tex/latex/oberdiek/refcount.sty
-Package: refcount 2008/08/11 v3.1 Data extraction from references (HO)
+(/usr/share/texmf/tex/latex/oberdiek/refcount.sty
+Package: refcount 2006/02/20 v3.0 Data extraction from references (HO)
 )
-\c@section@level=\count114
+\c@section@level=\count109
 )
 LaTeX Info: Redefining \ref on input line 238.
 LaTeX Info: Redefining \pageref on input line 238.
-
-(./ms_final_bv.out) (./ms_final_bv.out)
+ (./ms_final_bv.out)
+(./ms_final_bv.out)
 \@outlinefile=\write3
 \openout3 = `ms_final_bv.out'.
 
-\AtBeginShipoutBox=\box29
 LaTeX Font Info:    Try loading font information for U+eur on input line 253.
-
-(/usr/local/texlive/2009/texmf-dist/tex/latex/amsfonts/ueur.fd
-File: ueur.fd 2009/06/22 v3.00 Euler Roman
+ (/usr/share/texmf/tex/latex/amsfonts/ueur.fd
+File: ueur.fd 2002/01/19 v2.2g AMS font definitions
 )
 LaTeX Font Info:    Try loading font information for U+msa on input line 253.
 
-(/usr/local/texlive/2009/texmf-dist/tex/latex/amsfonts/umsa.fd
-File: umsa.fd 2009/06/22 v3.00 AMS symbols A
+(/usr/share/texmf/tex/latex/amsfonts/umsa.fd
+File: umsa.fd 2002/01/19 v2.2g AMS font definitions
 )
 LaTeX Font Info:    Try loading font information for U+msb on input line 253.
 
-(/usr/local/texlive/2009/texmf-dist/tex/latex/amsfonts/umsb.fd
-File: umsb.fd 2009/06/22 v3.00 AMS symbols B
+(/usr/share/texmf/tex/latex/amsfonts/umsb.fd
+File: umsb.fd 2002/01/19 v2.2g AMS font definitions
 )
 Underfull \hbox (badness 10000) in paragraph at lines 256--266
 
@@ -338,117 +265,105 @@ Underfull \hbox (badness 10000) in paragraph at lines 357--360
 
  []
 
-
-Package hyperref Warning: Empty destination name,
-(hyperref)                using `UNDEFINED' on input line 378.
-
 LaTeX Font Info:    Try loading font information for OMS+cmr on input line 378.
 
-(/usr/local/texlive/2009/texmf-dist/tex/latex/base/omscmr.fd
+(/usr/share/texmf/tex/latex/base/omscmr.fd
 File: omscmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <8> not available
 (Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 378.
- [1{/usr/local/texlive/2009/texmf-var/fonts/map/pdftex/updmap/pdftex.map}
+ [1{/usr/share/texmf/fonts/map/pdftex/updmap/pdftex.map}
 
 
-]
-<PFIGS//eta2Beta10.png, id=130, 1915.155pt x 811.03pt>
+] <PFIGS//eta2Beta10.png, id=134, 1915.155pt x 811.03pt>
 File: PFIGS//eta2Beta10.png Graphic file (type png)
 
 <use PFIGS//eta2Beta10.png>
-<PFIGS//eta2Beta10_histo.png, id=132, 234.8775pt x 706.8006pt>
+<PFIGS//eta2Beta10_histo.png, id=136, 234.8775pt x 706.8006pt>
 File: PFIGS//eta2Beta10_histo.png Graphic file (type png)
 
 <use PFIGS//eta2Beta10_histo.png>
-<PFIGS//abun.png, id=134, 867.24pt x 867.24pt>
+<PFIGS//abun.png, id=137, 867.24pt x 867.24pt>
 File: PFIGS//abun.png Graphic file (type png)
  <use PFIGS//abun.png>
-<PFIGS//jetplt1_1010.png, id=135, 1325.4318pt x 414.8298pt>
+<PFIGS//jetplt1_1010.png, id=138, 1325.4318pt x 414.8298pt>
 File: PFIGS//jetplt1_1010.png Graphic file (type png)
 
 <use PFIGS//jetplt1_1010.png>
-Underfull \hbox (badness 1320) in paragraph at lines 482--495
+<PFIGS//J2-1_mom0maps_cooling.png, id=139, 751.608pt x 546.3612pt>
+File: PFIGS//J2-1_mom0maps_cooling.png Graphic file (type png)
+
+<use PFIGS//J2-1_mom0maps_cooling.png>
+<PFIGS//tabulated_mom0maps_Trans.png, id=140, 1406.3742pt x 454.5783pt>
+File: PFIGS//tabulated_mom0maps_Trans.png Graphic file (type png)
+
+<use PFIGS//tabulated_mom0maps_Trans.png>
+<PFIGS//tab_trans_spectra.png, id=141, 896.8707pt x 768.9528pt>
+File: PFIGS//tab_trans_spectra.png Graphic file (type png)
+
+<use PFIGS//tab_trans_spectra.png>
+Underfull \hbox (badness 1320) in paragraph at lines 505--518
 \OT1/cmr/m/n/9 Results should have Peak In-ten-sity af-ter con-vo-lu-tion.,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 498--503
+Underfull \hbox (badness 10000) in paragraph at lines 521--526
 
  []
-
-
-Package hyperref Warning: Empty destination name,
-(hyperref)                using `UNDEFINED' on input line 503.
 
 [2 <./PFIGS//eta2Beta10.png (PNG copy)>]
-Underfull \hbox (badness 10000) in paragraph at lines 505--508
+Underfull \hbox (badness 10000) in paragraph at lines 528--531
 
  []
 
-(./ms_final_bv.bbl)
-
-Package hyperref Warning: Empty destination name,
-(hyperref)                using `UNDEFINED' on input line 520.
-
-[3 <./PFIGS//jetplt1_1010.png>]
+(./ms_final_bv.bbl) [3 <./PFIGS//jetplt1_1010.png>]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-
-
-Package hyperref Warning: Empty destination name,
-(hyperref)                using `UNDEFINED' on input line 520.
-
-[4]
+ [4 <./PFIGS//tabulated_mom0maps_Trans.png>]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
+ [5 <./PFIGS//eta2Beta10_histo.png> <./PFIGS//abun.png> <./PFIGS//J2-1_mom0maps
+_cooling.png>]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [6
 
 
-Package hyperref Warning: Empty destination name,
-(hyperref)                using `UNDEFINED' on input line 520.
-
-[5 <./PFIGS//eta2Beta10_histo.png> <./PFIGS//abun.png>] (./ms_final_bv.aux)
+ <./PFIGS//tab_trans_spectra.png (PNG copy)>] (./ms_final_bv.aux)
 
 LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 5857 strings out of 493848
- 80312 string characters out of 3149207
- 175815 words of memory out of 3000000
- 8982 multiletter control sequences out of 15000+200000
- 19818 words of font info for 72 fonts, out of 3000000 for 9000
- 714 hyphenation exceptions out of 8191
- 38i,19n,36p,1716b,437s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 4126 strings out of 256216
+ 52343 string characters out of 1917071
+ 124751 words of memory out of 1500000
+ 7292 multiletter control sequences out of 10000+200000
+ 19836 words of font info for 72 fonts, out of 1200000 for 2000
+ 645 hyphenation exceptions out of 8191
+ 31i,19n,36p,1708b,428s stack positions out of 5000i,500n,6000p,200000b,15000s
 pdfTeX warning (dest): name{UNDEFINED} has been referenced but does not exist
 , replaced by a fixed one
 
-</usr/local/texlive/2009/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb><
-/usr/local/texlive/2009/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></
-usr/local/texlive/2009/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx8.pfb></us
-r/local/texlive/2009/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx9.pfb></usr/
-local/texlive/2009/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmex9.pfb></u
-sr/local/texlive/2009/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></us
-r/local/texlive/2009/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/
-local/texlive/2009/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/lo
-cal/texlive/2009/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi9.pfb></usr/loca
-l/texlive/2009/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/
-texlive/2009/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/te
-xlive/2009/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/local/texli
-ve/2009/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/local/texlive/
-2009/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/200
-9/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/local/texlive/2009/t
-exmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/local/texlive/2009/tex
-mf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2009/texmf
--dist/fonts/type1/public/amsfonts/cm/cmsy9.pfb></usr/local/texlive/2009/texmf-d
-ist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/local/texlive/2009/texmf-di
-st/fonts/type1/public/amsfonts/cm/cmti8.pfb>
-Output written on ms_final_bv.pdf (5 pages, 1139137 bytes).
+</usr/share/texmf/fonts/type1/bluesky/cm/cmbx10.pfb></usr/share/texmf/fonts/typ
+e1/bluesky/cm/cmbx12.pfb></usr/share/texmf/fonts/type1/bluesky/cm/cmbx8.pfb></u
+sr/share/texmf/fonts/type1/bluesky/cm/cmbx9.pfb></usr/share/texmf/fonts/type1/b
+luesky/cm/cmmi10.pfb></usr/share/texmf/fonts/type1/bluesky/cm/cmmi6.pfb></usr/s
+hare/texmf/fonts/type1/bluesky/cm/cmmi8.pfb></usr/share/texmf/fonts/type1/blues
+ky/cm/cmmi9.pfb></usr/share/texmf/fonts/type1/bluesky/cm/cmr10.pfb></usr/share/
+texmf/fonts/type1/bluesky/cm/cmr12.pfb></usr/share/texmf/fonts/type1/bluesky/cm
+/cmr5.pfb></usr/share/texmf/fonts/type1/bluesky/cm/cmr6.pfb></usr/share/texmf/f
+onts/type1/bluesky/cm/cmr8.pfb></usr/share/texmf/fonts/type1/bluesky/cm/cmr9.pf
+b></usr/share/texmf/fonts/type1/bluesky/cm/cmsy6.pfb></usr/share/texmf/fonts/ty
+pe1/bluesky/cm/cmsy8.pfb></usr/share/texmf/fonts/type1/bluesky/cm/cmsy9.pfb></u
+sr/share/texmf/fonts/type1/bluesky/cm/cmti12.pfb></usr/share/texmf/fonts/type1/
+bluesky/cm/cmti8.pfb></usr/share/texmf/fonts/type1/public/cmex/fmex9.pfb>
+Output written on ms_final_bv.pdf (6 pages, 1285871 bytes).
 PDF statistics:
- 255 PDF objects out of 1000 (max. 8388607)
- 47 named destinations out of 1000 (max. 500000)
- 157 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 273 PDF objects out of 1000 (max. 8388607)
+ 51 named destinations out of 1000 (max. 131072)
+ 188 words of extra memory for PDF output out of 10000 (max. 10000000)
 
