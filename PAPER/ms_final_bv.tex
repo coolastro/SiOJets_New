@@ -426,6 +426,7 @@ the next section.
 
 
 \subsection{Molecular Cooling}
+\label{ssec:molcool}
 The evolution of molecular, atomic and ionized hydrogen is governed by
 equations listed in Table~\ref{tab:chemeq}. In this cooling mode,
 these equations are evolved at each times using temperature dependent
@@ -435,10 +436,16 @@ and X(HII) with a constraint that sum of all three should be unity.
 Further, these abundances are used to update the cooling
 function $\Lambda(n,T,{\bf{X}})$ to consistently derive the
 temperature for next advection step.
- 
-For all the models presented in this paper, we have 
 
 
+\begin{figure*}
+ \includegraphics[width=1\columnwidth]{\figpath/H2ReactionRates.png}
+ \includegraphics[width=1\columnwidth]{\figpath/H2CoolingFuncs.png}
+ \caption{Variation of $H_2$ chemistry reaction rates, $k_{i}$ and cooling
+   function $\Lambda(n,T,{\bf{X}})$ with temperature for the initial
+   state (see Sect.~\ref{ssec:molcool})}
+\label{fig:tempvar}
+\end{figure*}
 
 \begin{table*}
 \begin{minipage}{\textwidth}
