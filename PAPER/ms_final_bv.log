@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009) (format=pdflatex 2009.11.7)  5 JUL 2013 12:49
+This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009) (format=pdflatex 2009.11.7)  8 JUL 2013 10:58
 entering extended mode
  Source specials enabled.
  %&-line parsing enabled.
@@ -334,72 +334,72 @@ Underfull \hbox (badness 10000) in paragraph at lines 256--266
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 357--360
-
- []
-
-
 Package hyperref Warning: Empty destination name,
-(hyperref)                using `UNDEFINED' on input line 378.
+(hyperref)                using `UNDEFINED' on input line 384.
 
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 378.
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 384.
 
 (/usr/local/texlive/2009/texmf-dist/tex/latex/base/omscmr.fd
 File: omscmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <8> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 378.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 384.
  [1{/usr/local/texlive/2009/texmf-var/fonts/map/pdftex/updmap/pdftex.map}
 
 
 ]
-<PFIGS//eta2Beta10.png, id=130, 1915.155pt x 811.03pt>
+Underfull \hbox (badness 1953) in paragraph at lines 394--408
+\OT1/cmr/m/n/9 10$ years. The pres-sure at the sur-face of the jet is
+ []
+
+<PFIGS//eta2Beta10.png, id=134, 1915.155pt x 811.03pt>
 File: PFIGS//eta2Beta10.png Graphic file (type png)
 
 <use PFIGS//eta2Beta10.png>
-<PFIGS//eta2Beta10_histo.png, id=132, 234.8775pt x 706.8006pt>
+
+Package hyperref Warning: Empty destination name,
+(hyperref)                using `UNDEFINED' on input line 489.
+
+[2 <./PFIGS//eta2Beta10.png (PNG copy)>]
+<PFIGS//eta2Beta10_histo.png, id=152, 234.8775pt x 706.8006pt>
 File: PFIGS//eta2Beta10_histo.png Graphic file (type png)
 
 <use PFIGS//eta2Beta10_histo.png>
-<PFIGS//abun.png, id=134, 867.24pt x 867.24pt>
+<PFIGS//abun.png, id=154, 867.24pt x 867.24pt>
 File: PFIGS//abun.png Graphic file (type png)
  <use PFIGS//abun.png>
-<PFIGS//jetplt1_1010.png, id=135, 1325.4318pt x 414.8298pt>
+<PFIGS//jetplt1_1010.png, id=155, 1325.4318pt x 414.8298pt>
 File: PFIGS//jetplt1_1010.png Graphic file (type png)
 
 <use PFIGS//jetplt1_1010.png>
-Underfull \hbox (badness 1320) in paragraph at lines 482--495
+Underfull \hbox (badness 1320) in paragraph at lines 542--555
 \OT1/cmr/m/n/9 Results should have Peak In-ten-sity af-ter con-vo-lu-tion.,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 498--503
+Underfull \hbox (badness 10000) in paragraph at lines 558--563
 
  []
 
 
-Package hyperref Warning: Empty destination name,
-(hyperref)                using `UNDEFINED' on input line 503.
-
-[2 <./PFIGS//eta2Beta10.png (PNG copy)>]
-Underfull \hbox (badness 10000) in paragraph at lines 505--508
+Underfull \hbox (badness 10000) in paragraph at lines 565--568
 
  []
 
 (./ms_final_bv.bbl)
 
 Package hyperref Warning: Empty destination name,
-(hyperref)                using `UNDEFINED' on input line 520.
+(hyperref)                using `UNDEFINED' on input line 580.
 
-[3 <./PFIGS//jetplt1_1010.png>]
+[3]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 
 Package hyperref Warning: Empty destination name,
-(hyperref)                using `UNDEFINED' on input line 520.
+(hyperref)                using `UNDEFINED' on input line 580.
 
-[4]
+[4 <./PFIGS//jetplt1_1010.png>]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
@@ -408,7 +408,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 Package hyperref Warning: Empty destination name,
-(hyperref)                using `UNDEFINED' on input line 520.
+(hyperref)                using `UNDEFINED' on input line 580.
 
 [5 <./PFIGS//eta2Beta10_histo.png> <./PFIGS//abun.png>] (./ms_final_bv.aux)
 
@@ -416,13 +416,13 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 5857 strings out of 493848
- 80312 string characters out of 3149207
- 175815 words of memory out of 3000000
- 8982 multiletter control sequences out of 15000+200000
+ 5866 strings out of 493848
+ 80514 string characters out of 3149207
+ 174910 words of memory out of 3000000
+ 8988 multiletter control sequences out of 15000+200000
  19818 words of font info for 72 fonts, out of 3000000 for 9000
  714 hyphenation exceptions out of 8191
- 38i,19n,36p,1716b,437s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 38i,19n,36p,1719b,437s stack positions out of 5000i,500n,10000p,200000b,50000s
 pdfTeX warning (dest): name{UNDEFINED} has been referenced but does not exist
 , replaced by a fixed one
 
@@ -446,9 +446,9 @@ mf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2009/texmf
 -dist/fonts/type1/public/amsfonts/cm/cmsy9.pfb></usr/local/texlive/2009/texmf-d
 ist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/local/texlive/2009/texmf-di
 st/fonts/type1/public/amsfonts/cm/cmti8.pfb>
-Output written on ms_final_bv.pdf (5 pages, 1139137 bytes).
+Output written on ms_final_bv.pdf (5 pages, 1147736 bytes).
 PDF statistics:
- 255 PDF objects out of 1000 (max. 8388607)
- 47 named destinations out of 1000 (max. 500000)
+ 263 PDF objects out of 1000 (max. 8388607)
+ 50 named destinations out of 1000 (max. 500000)
  157 words of extra memory for PDF output out of 10000 (max. 10000000)
 
