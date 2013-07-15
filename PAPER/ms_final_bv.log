@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009) (format=pdflatex 2009.11.7)  8 JUL 2013 13:58
+This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009) (format=pdflatex 2009.11.7)  15 JUL 2013 10:32
 entering extended mode
  Source specials enabled.
  %&-line parsing enabled.
@@ -340,131 +340,147 @@ Underfull \hbox (badness 10000) in paragraph at lines 256--266
  []
 
 
-Package hyperref Warning: Empty destination name,
-(hyperref)                using `UNDEFINED' on input line 384.
+Underfull \hbox (badness 10000) in paragraph at lines 279--281
 
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 384.
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 282--284
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 285--287
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 288--291
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 292--295
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 296--297
+
+ []
+
+
+Package hyperref Warning: Empty destination name,
+(hyperref)                using `UNDEFINED' on input line 374.
+
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 374.
 
 (/usr/local/texlive/2009/texmf-dist/tex/latex/base/omscmr.fd
 File: omscmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <8> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 384.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 374.
  [1{/usr/local/texlive/2009/texmf-var/fonts/map/pdftex/updmap/pdftex.map}
 
 
 ]
-Underfull \hbox (badness 1953) in paragraph at lines 394--408
-\OT1/cmr/m/n/9 10$ years. The pres-sure at the sur-face of the jet is
+Underfull \hbox (badness 1953) in paragraph at lines 412--426
+\OT1/cmr/m/n/9 70$ years. The pres-sure at the sur-face of the jet is
  []
 
-<PFIGS//H2ReactionRates.png, id=118, 735.7086pt x 714.0276pt>
+<PFIGS//H2ReactionRates.png, id=117, 735.7086pt x 714.0276pt>
 File: PFIGS//H2ReactionRates.png Graphic file (type png)
 
 <use PFIGS//H2ReactionRates.png>
-<PFIGS//H2CoolingFuncs.png, id=120, 664.1613pt x 656.2116pt>
+<PFIGS//H2CoolingFuncs.png, id=119, 664.1613pt x 656.2116pt>
 File: PFIGS//H2CoolingFuncs.png Graphic file (type png)
 
 <use PFIGS//H2CoolingFuncs.png>
-<PFIGS//eta2Beta10.png, id=143, 1915.155pt x 811.03pt>
+<PFIGS//eta2Beta10.png, id=142, 1915.155pt x 811.03pt>
 File: PFIGS//eta2Beta10.png Graphic file (type png)
 
 <use PFIGS//eta2Beta10.png>
 
 Package hyperref Warning: Empty destination name,
-(hyperref)                using `UNDEFINED' on input line 496.
+(hyperref)                using `UNDEFINED' on input line 514.
 
-[2 <./PFIGS//eta2Beta10.png (PNG copy)>]
-<PFIGS//eta2Beta10_histo.png, id=161, 234.8775pt x 706.8006pt>
+[2] <PFIGS//eta2Beta10_histo.png, id=160, 234.8775pt x 706.8006pt>
 File: PFIGS//eta2Beta10_histo.png Graphic file (type png)
 
 <use PFIGS//eta2Beta10_histo.png>
-<PFIGS//abun.png, id=162, 867.24pt x 867.24pt>
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+
+Package hyperref Warning: Empty destination name,
+(hyperref)                using `UNDEFINED' on input line 524.
+
+[3 <./PFIGS//H2ReactionRates.png> <./PFIGS//H2CoolingFuncs.png> <./PFIGS//eta2B
+eta10.png (PNG copy)>] <PFIGS//abun.png, id=180, 867.24pt x 867.24pt>
 File: PFIGS//abun.png Graphic file (type png)
- <use PFIGS//abun.png>
-<PFIGS//jetplt1_1010.png, id=163, 1325.4318pt x 414.8298pt>
+
+<use PFIGS//abun.png>
+<PFIGS//jetplt1_1010.png, id=181, 1325.4318pt x 414.8298pt>
 File: PFIGS//jetplt1_1010.png Graphic file (type png)
 
 <use PFIGS//jetplt1_1010.png>
-<PFIGS//molcjet_510.png, id=164, 1333.3815pt x 414.8298pt>
+<PFIGS//molcjet_510.png, id=182, 1333.3815pt x 414.8298pt>
 File: PFIGS//molcjet_510.png Graphic file (type png)
 
 <use PFIGS//molcjet_510.png>
-<PFIGS//J2-1_mom0maps_cooling.png, id=165, 751.608pt x 546.3612pt>
+<PFIGS//J2-1_mom0maps_cooling.png, id=183, 751.608pt x 546.3612pt>
 File: PFIGS//J2-1_mom0maps_cooling.png Graphic file (type png)
 
 <use PFIGS//J2-1_mom0maps_cooling.png>
-<PFIGS//tabulated_mom0maps_Trans.png, id=166, 1406.3742pt x 454.5783pt>
+<PFIGS//tabulated_mom0maps_Trans.png, id=184, 1406.3742pt x 454.5783pt>
 File: PFIGS//tabulated_mom0maps_Trans.png Graphic file (type png)
 
 <use PFIGS//tabulated_mom0maps_Trans.png>
-<PFIGS//tab_trans_spectra.png, id=167, 896.8707pt x 768.9528pt>
+<PFIGS//tab_trans_spectra.png, id=185, 896.8707pt x 768.9528pt>
 File: PFIGS//tab_trans_spectra.png Graphic file (type png)
 
 <use PFIGS//tab_trans_spectra.png>
-Underfull \hbox (badness 1320) in paragraph at lines 581--594
+Underfull \hbox (badness 1320) in paragraph at lines 599--612
 \OT1/cmr/m/n/9 Results should have Peak In-ten-sity af-ter con-vo-lu-tion.,
  []
 
 
 Package hyperref Warning: Empty destination name,
-(hyperref)                using `UNDEFINED' on input line 594.
+(hyperref)                using `UNDEFINED' on input line 612.
 
-[3 <./PFIGS//H2ReactionRates.png> <./PFIGS//H2CoolingFuncs.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 597--602
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 604--607
-
- []
-
-(./ms_final_bv.bbl)
-
-Package hyperref Warning: Empty destination name,
-(hyperref)                using `UNDEFINED' on input line 619.
-
-[4 <./PFIGS//jetplt1_1010.png> <./PFIGS//molcjet_510.png>]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
-
-Package hyperref Warning: Empty destination name,
-(hyperref)                using `UNDEFINED' on input line 619.
-
-[5 <./PFIGS//tabulated_mom0maps_Trans.png>]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
-
-Package hyperref Warning: Empty destination name,
-(hyperref)                using `UNDEFINED' on input line 619.
-
-[6 <./PFIGS//eta2Beta10_histo.png> <./PFIGS//abun.png> <./PFIGS//J2-1_mom0maps_
+[4 <./PFIGS//eta2Beta10_histo.png> <./PFIGS//abun.png> <./PFIGS//J2-1_mom0maps_
 cooling.png>]
-Underfull \vbox (badness 10000) has occurred while \output is active []
+Underfull \hbox (badness 10000) in paragraph at lines 615--620
+
+ []
 
 
+Underfull \hbox (badness 10000) in paragraph at lines 622--625
+
+ []
+
+(./ms_final_bv.bbl
 
 Package hyperref Warning: Empty destination name,
-(hyperref)                using `UNDEFINED' on input line 619.
+(hyperref)                using `UNDEFINED' on input line 6.
 
-[7
+[5 <./PFIGS//jetplt1_1010.png> <./PFIGS//molcjet_510.png> <./PFIGS//tab_trans_s
+pectra.png (PNG copy)>])
 
+Package hyperref Warning: Empty destination name,
+(hyperref)                using `UNDEFINED' on input line 637.
 
- <./PFIGS//tab_trans_spectra.png (PNG copy)>] (./ms_final_bv.aux)
+[6
+
+ <./PFIGS//tabulated_mom0maps_Trans.png>] (./ms_final_bv.aux)
 
 LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 5909 strings out of 493848
- 81553 string characters out of 3149207
- 173495 words of memory out of 3000000
+ 5908 strings out of 493848
+ 81547 string characters out of 3149207
+ 176495 words of memory out of 3000000
  9017 multiletter control sequences out of 15000+200000
  19818 words of font info for 72 fonts, out of 3000000 for 9000
  714 hyphenation exceptions out of 8191
@@ -492,9 +508,9 @@ mf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2009/texmf
 -dist/fonts/type1/public/amsfonts/cm/cmsy9.pfb></usr/local/texlive/2009/texmf-d
 ist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/local/texlive/2009/texmf-di
 st/fonts/type1/public/amsfonts/cm/cmti8.pfb>
-Output written on ms_final_bv.pdf (7 pages, 1713609 bytes).
+Output written on ms_final_bv.pdf (6 pages, 1712827 bytes).
 PDF statistics:
- 300 PDF objects out of 1000 (max. 8388607)
- 58 named destinations out of 1000 (max. 500000)
+ 292 PDF objects out of 1000 (max. 8388607)
+ 57 named destinations out of 1000 (max. 500000)
  195 words of extra memory for PDF output out of 10000 (max. 10000000)
 
