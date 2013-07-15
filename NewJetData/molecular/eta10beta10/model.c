@@ -119,11 +119,11 @@ input(inputPars *par, image *img){
   /* img[4].unit			= 0;		  // 0:Kelvin 1:Jansky/pixel 2:SI 3:Lsun/pixel 4:tau */
   /* img[4].filename		= "image_J8-7_90deg_molcool.fits";	// Output filename */
 
-  img[0].nchan =120;
+  img[0].nchan =160;
   //  img[0].freq                   = 43.587806e9*(1+3.3e5/CLIGHT*cos(PI/2))+4.587806e8/6/3;
   //  img[0].bandwidth              = 4.587806e8/3.0; // 30km/s across whole bandwidth
   img[0].trans = 4;
-  img[0].velres= 500;
+  img[0].velres= 750;
   img[0].pxls			= 256;	      // Pixels per dimension
   img[0].imgres			= 2.5;		  // Resolution in arc seconds
   img[0].theta			= PI/3;		  // 0: face-on, pi/2: edge-on
@@ -131,6 +131,20 @@ input(inputPars *par, image *img){
   img[0].source_vel		= 0;          // source velocity in m/s
   img[0].unit			= 0;		  // 0:Kelvin 1:Jansky/pixel 2:SI 3:Lsun/pixel 4:tau
   img[0].filename		= "image_J5-4_60deg_molcool.fits";	// Output filename
+
+
+  img[1].nchan =160;
+  //  img[0].freq                   = 43.587806e9*(1+3.3e5/CLIGHT*cos(PI/2))+4.587806e8/6/3;
+  //  img[0].bandwidth              = 4.587806e8/3.0; // 30km/s across whole bandwidth
+  img[1].trans = 1;
+  img[1].velres= 750;
+  img[1].pxls			= 256;	      // Pixels per dimension
+  img[1].imgres			= 2.5;		  // Resolution in arc seconds
+  img[1].theta			= PI/3;		  // 0: face-on, pi/2: edge-on
+  img[1].distance		= length_scale/AU*PC;	  //1" == 1 length scale
+  img[1].source_vel		= 0;          // source velocity in m/s
+  img[1].unit			= 0;		  // 0:Kelvin 1:Jansky/pixel 2:SI 3:Lsun/pixel 4:tau
+  img[1].filename		= "image_J2-1_60deg_molcool.fits";	// Output filename
 }
 /******************************************************************************/
 
