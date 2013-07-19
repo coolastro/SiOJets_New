@@ -22,7 +22,7 @@
 /* #include "fHI.h" */
 
 #define length_scale (16.71146539*AU)
-#define centre_z (750)
+#define centre_z (800)
 #define unit_temp (1)
 #define unit_density (1e6)
 #define unit_velocity (1e3)
