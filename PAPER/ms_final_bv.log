@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009) (format=pdflatex 2009.11.7)  18 JUL 2013 17:24
+This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009) (format=pdflatex 2009.11.7)  19 JUL 2013 10:04
 entering extended mode
  Source specials enabled.
  %&-line parsing enabled.
@@ -273,6 +273,9 @@ LaTeX Warning: Label `grid' multiply defined.
 
 LaTeX Warning: Label `grid' multiply defined.
 
+
+LaTeX Warning: Label `grid' multiply defined.
+
 )
 \openout1 = `ms_final_bv.aux'.
 
@@ -388,15 +391,15 @@ Underfull \hbox (badness 1953) in paragraph at lines 412--426
 \OT1/cmr/m/n/9 70$ years. The pres-sure at the sur-face of the jet is
  []
 
-<PFIGS//H2ReactionRates.png, id=117, 735.7086pt x 714.0276pt>
+<PFIGS//H2ReactionRates.png, id=113, 735.7086pt x 714.0276pt>
 File: PFIGS//H2ReactionRates.png Graphic file (type png)
 
 <use PFIGS//H2ReactionRates.png>
-<PFIGS//H2CoolingFuncs.png, id=119, 664.1613pt x 656.2116pt>
+<PFIGS//H2CoolingFuncs.png, id=115, 664.1613pt x 656.2116pt>
 File: PFIGS//H2CoolingFuncs.png Graphic file (type png)
 
 <use PFIGS//H2CoolingFuncs.png>
-<PFIGS//eta2Beta10.png, id=142, 1915.155pt x 811.03pt>
+<PFIGS//eta2Beta10.png, id=138, 1915.155pt x 811.03pt>
 File: PFIGS//eta2Beta10.png Graphic file (type png)
 
 <use PFIGS//eta2Beta10.png>
@@ -404,7 +407,7 @@ File: PFIGS//eta2Beta10.png Graphic file (type png)
 Package hyperref Warning: Empty destination name,
 (hyperref)                using `UNDEFINED' on input line 514.
 
-[2] <PFIGS//eta2Beta10_histo.png, id=160, 234.8775pt x 706.8006pt>
+[2] <PFIGS//eta2Beta10_histo.png, id=156, 234.8775pt x 706.8006pt>
 File: PFIGS//eta2Beta10_histo.png Graphic file (type png)
 
 <use PFIGS//eta2Beta10_histo.png>
@@ -416,31 +419,31 @@ Package hyperref Warning: Empty destination name,
 (hyperref)                using `UNDEFINED' on input line 524.
 
 [3 <./PFIGS//H2ReactionRates.png> <./PFIGS//H2CoolingFuncs.png> <./PFIGS//eta2B
-eta10.png (PNG copy)>] <PFIGS//abun.png, id=180, 867.24pt x 867.24pt>
+eta10.png (PNG copy)>] <PFIGS//abun.png, id=176, 867.24pt x 867.24pt>
 File: PFIGS//abun.png Graphic file (type png)
 
 <use PFIGS//abun.png>
-<PFIGS//jetplt1_1010.png, id=181, 1325.4318pt x 414.8298pt>
+<PFIGS//jetplt1_1010.png, id=177, 1325.4318pt x 414.8298pt>
 File: PFIGS//jetplt1_1010.png Graphic file (type png)
 
 <use PFIGS//jetplt1_1010.png>
-<PFIGS//molcjet_510.png, id=182, 1333.3815pt x 414.8298pt>
+<PFIGS//molcjet_510.png, id=178, 1333.3815pt x 414.8298pt>
 File: PFIGS//molcjet_510.png Graphic file (type png)
 
 <use PFIGS//molcjet_510.png>
-<PFIGS//linejets.png, id=183, 1427.3325pt x 368.37625pt>
+<PFIGS//linejets.png, id=179, 1427.3325pt x 368.37625pt>
 File: PFIGS//linejets.png Graphic file (type png)
 
 <use PFIGS//linejets.png>
-<PFIGS//J2-1_mom0maps_cooling.png, id=184, 751.608pt x 546.3612pt>
+<PFIGS//J2-1_mom0maps_cooling.png, id=180, 751.608pt x 546.3612pt>
 File: PFIGS//J2-1_mom0maps_cooling.png Graphic file (type png)
 
 <use PFIGS//J2-1_mom0maps_cooling.png>
-<PFIGS//tabulated_mom0maps_Trans.png, id=185, 1406.3742pt x 454.5783pt>
+<PFIGS//tabulated_mom0maps_Trans.png, id=181, 1406.3742pt x 454.5783pt>
 File: PFIGS//tabulated_mom0maps_Trans.png Graphic file (type png)
 
 <use PFIGS//tabulated_mom0maps_Trans.png>
-<PFIGS//tab_trans_spectra.png, id=186, 896.8707pt x 768.9528pt>
+<PFIGS//tab_trans_spectra.png, id=182, 896.8707pt x 768.9528pt>
 File: PFIGS//tab_trans_spectra.png Graphic file (type png)
 
 <use PFIGS//tab_trans_spectra.png>
@@ -463,23 +466,19 @@ Package hyperref Warning: Empty destination name,
 
 [5 <./PFIGS//jetplt1_1010.png> <./PFIGS//molcjet_510.png> <./PFIGS//linejets.pn
 g>]
-Underfull \hbox (badness 10000) in paragraph at lines 623--628
+Underfull \hbox (badness 10000) in paragraph at lines 642--643
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 630--633
+Underfull \hbox (badness 10000) in paragraph at lines 645--648
 
  []
-
-
-Underfull \vbox (badness 1189) has occurred while \output is active []
-
 
 (./ms_final_bv.bbl)
 
 Package hyperref Warning: Empty destination name,
-(hyperref)                using `UNDEFINED' on input line 645.
+(hyperref)                using `UNDEFINED' on input line 660.
 
 [6 <./PFIGS//tabulated_mom0maps_Trans.png> <./PFIGS//tab_trans_spectra.png (PNG
  copy)>] (./ms_final_bv.aux)
@@ -488,18 +487,15 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 5914 strings out of 493848
- 81663 string characters out of 3149207
- 176495 words of memory out of 3000000
- 9021 multiletter control sequences out of 15000+200000
+ 5912 strings out of 493848
+ 81643 string characters out of 3149207
+ 176497 words of memory out of 3000000
+ 9020 multiletter control sequences out of 15000+200000
  19818 words of font info for 72 fonts, out of 3000000 for 9000
  714 hyphenation exceptions out of 8191
  38i,19n,36p,1719b,437s stack positions out of 5000i,500n,10000p,200000b,50000s
 pdfTeX warning (dest): name{UNDEFINED} has been referenced but does not exist
 , replaced by a fixed one
-
-pdfTeX warning (dest): name{section.9} has been referenced but does not exist, 
-replaced by a fixed one
 
 </usr/local/texlive/2009/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb><
 /usr/local/texlive/2009/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></
@@ -521,9 +517,9 @@ mf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2009/texmf
 -dist/fonts/type1/public/amsfonts/cm/cmsy9.pfb></usr/local/texlive/2009/texmf-d
 ist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/local/texlive/2009/texmf-di
 st/fonts/type1/public/amsfonts/cm/cmti8.pfb>
-Output written on ms_final_bv.pdf (6 pages, 1778380 bytes).
+Output written on ms_final_bv.pdf (6 pages, 1778439 bytes).
 PDF statistics:
- 295 PDF objects out of 1000 (max. 8388607)
- 58 named destinations out of 1000 (max. 500000)
- 200 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 291 PDF objects out of 1000 (max. 8388607)
+ 57 named destinations out of 1000 (max. 500000)
+ 192 words of extra memory for PDF output out of 10000 (max. 10000000)
 
