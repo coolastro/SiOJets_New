@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009) (format=pdflatex 2009.11.7)  15 JUL 2013 10:32
+This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009) (format=pdflatex 2009.11.7)  18 JUL 2013 17:24
 entering extended mode
  Source specials enabled.
  %&-line parsing enabled.
@@ -428,65 +428,78 @@ File: PFIGS//jetplt1_1010.png Graphic file (type png)
 File: PFIGS//molcjet_510.png Graphic file (type png)
 
 <use PFIGS//molcjet_510.png>
-<PFIGS//J2-1_mom0maps_cooling.png, id=183, 751.608pt x 546.3612pt>
+<PFIGS//linejets.png, id=183, 1427.3325pt x 368.37625pt>
+File: PFIGS//linejets.png Graphic file (type png)
+
+<use PFIGS//linejets.png>
+<PFIGS//J2-1_mom0maps_cooling.png, id=184, 751.608pt x 546.3612pt>
 File: PFIGS//J2-1_mom0maps_cooling.png Graphic file (type png)
 
 <use PFIGS//J2-1_mom0maps_cooling.png>
-<PFIGS//tabulated_mom0maps_Trans.png, id=184, 1406.3742pt x 454.5783pt>
+<PFIGS//tabulated_mom0maps_Trans.png, id=185, 1406.3742pt x 454.5783pt>
 File: PFIGS//tabulated_mom0maps_Trans.png Graphic file (type png)
 
 <use PFIGS//tabulated_mom0maps_Trans.png>
-<PFIGS//tab_trans_spectra.png, id=185, 896.8707pt x 768.9528pt>
+<PFIGS//tab_trans_spectra.png, id=186, 896.8707pt x 768.9528pt>
 File: PFIGS//tab_trans_spectra.png Graphic file (type png)
 
 <use PFIGS//tab_trans_spectra.png>
-Underfull \hbox (badness 1320) in paragraph at lines 599--612
+Underfull \hbox (badness 1320) in paragraph at lines 607--620
 \OT1/cmr/m/n/9 Results should have Peak In-ten-sity af-ter con-vo-lu-tion.,
  []
 
 
 Package hyperref Warning: Empty destination name,
-(hyperref)                using `UNDEFINED' on input line 612.
+(hyperref)                using `UNDEFINED' on input line 620.
 
 [4 <./PFIGS//eta2Beta10_histo.png> <./PFIGS//abun.png> <./PFIGS//J2-1_mom0maps_
 cooling.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 615--620
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+
+Package hyperref Warning: Empty destination name,
+(hyperref)                using `UNDEFINED' on input line 620.
+
+[5 <./PFIGS//jetplt1_1010.png> <./PFIGS//molcjet_510.png> <./PFIGS//linejets.pn
+g>]
+Underfull \hbox (badness 10000) in paragraph at lines 623--628
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 622--625
+Underfull \hbox (badness 10000) in paragraph at lines 630--633
 
  []
 
-(./ms_final_bv.bbl
+
+Underfull \vbox (badness 1189) has occurred while \output is active []
+
+
+(./ms_final_bv.bbl)
 
 Package hyperref Warning: Empty destination name,
-(hyperref)                using `UNDEFINED' on input line 6.
+(hyperref)                using `UNDEFINED' on input line 645.
 
-[5 <./PFIGS//jetplt1_1010.png> <./PFIGS//molcjet_510.png> <./PFIGS//tab_trans_s
-pectra.png (PNG copy)>])
-
-Package hyperref Warning: Empty destination name,
-(hyperref)                using `UNDEFINED' on input line 637.
-
-[6
-
- <./PFIGS//tabulated_mom0maps_Trans.png>] (./ms_final_bv.aux)
+[6 <./PFIGS//tabulated_mom0maps_Trans.png> <./PFIGS//tab_trans_spectra.png (PNG
+ copy)>] (./ms_final_bv.aux)
 
 LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 5908 strings out of 493848
- 81547 string characters out of 3149207
+ 5914 strings out of 493848
+ 81663 string characters out of 3149207
  176495 words of memory out of 3000000
- 9017 multiletter control sequences out of 15000+200000
+ 9021 multiletter control sequences out of 15000+200000
  19818 words of font info for 72 fonts, out of 3000000 for 9000
  714 hyphenation exceptions out of 8191
  38i,19n,36p,1719b,437s stack positions out of 5000i,500n,10000p,200000b,50000s
 pdfTeX warning (dest): name{UNDEFINED} has been referenced but does not exist
 , replaced by a fixed one
+
+pdfTeX warning (dest): name{section.9} has been referenced but does not exist, 
+replaced by a fixed one
 
 </usr/local/texlive/2009/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb><
 /usr/local/texlive/2009/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></
@@ -508,9 +521,9 @@ mf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2009/texmf
 -dist/fonts/type1/public/amsfonts/cm/cmsy9.pfb></usr/local/texlive/2009/texmf-d
 ist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/local/texlive/2009/texmf-di
 st/fonts/type1/public/amsfonts/cm/cmti8.pfb>
-Output written on ms_final_bv.pdf (6 pages, 1712827 bytes).
+Output written on ms_final_bv.pdf (6 pages, 1778380 bytes).
 PDF statistics:
- 292 PDF objects out of 1000 (max. 8388607)
- 57 named destinations out of 1000 (max. 500000)
- 195 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 295 PDF objects out of 1000 (max. 8388607)
+ 58 named destinations out of 1000 (max. 500000)
+ 200 words of extra memory for PDF output out of 10000 (max. 10000000)
 
