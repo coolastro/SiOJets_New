@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009) (format=pdflatex 2009.11.7)  19 JUL 2013 10:04
+This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009) (format=pdflatex 2009.11.7)  27 JUL 2013 16:10
 entering extended mode
  Source specials enabled.
  %&-line parsing enabled.
@@ -276,23 +276,29 @@ LaTeX Warning: Label `grid' multiply defined.
 
 LaTeX Warning: Label `grid' multiply defined.
 
+
+LaTeX Warning: Label `grid' multiply defined.
+
+
+LaTeX Warning: Label `grid' multiply defined.
+
 )
 \openout1 = `ms_final_bv.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 238.
-LaTeX Font Info:    ... okay on input line 238.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 238.
-LaTeX Font Info:    ... okay on input line 238.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 238.
-LaTeX Font Info:    ... okay on input line 238.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 238.
-LaTeX Font Info:    ... okay on input line 238.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 238.
-LaTeX Font Info:    ... okay on input line 238.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 238.
-LaTeX Font Info:    ... okay on input line 238.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 238.
-LaTeX Font Info:    ... okay on input line 238.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 239.
+LaTeX Font Info:    ... okay on input line 239.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 239.
+LaTeX Font Info:    ... okay on input line 239.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 239.
+LaTeX Font Info:    ... okay on input line 239.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 239.
+LaTeX Font Info:    ... okay on input line 239.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 239.
+LaTeX Font Info:    ... okay on input line 239.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 239.
+LaTeX Font Info:    ... okay on input line 239.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 239.
+LaTeX Font Info:    ... okay on input line 239.
  (/usr/local/texlive/2009/texmf-dist/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count109
@@ -306,7 +312,7 @@ LaTeX Font Info:    ... okay on input line 238.
 \MPnumerator=\count113
 \everyMPtoPDFconversion=\toks23
 )
-Package hyperref Info: Link coloring ON on input line 238.
+Package hyperref Info: Link coloring ON on input line 239.
  (/usr/local/texlive/2009/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2007/05/29 v2.31 Cross-referencing by name of section
 
@@ -315,185 +321,242 @@ Package: refcount 2008/08/11 v3.1 Data extraction from references (HO)
 )
 \c@section@level=\count114
 )
-LaTeX Info: Redefining \ref on input line 238.
-LaTeX Info: Redefining \pageref on input line 238.
+LaTeX Info: Redefining \ref on input line 239.
+LaTeX Info: Redefining \pageref on input line 239.
 
 (./ms_final_bv.out) (./ms_final_bv.out)
 \@outlinefile=\write3
 \openout3 = `ms_final_bv.out'.
 
 \AtBeginShipoutBox=\box29
-LaTeX Font Info:    Try loading font information for U+eur on input line 253.
+LaTeX Font Info:    Try loading font information for U+eur on input line 254.
 
 (/usr/local/texlive/2009/texmf-dist/tex/latex/amsfonts/ueur.fd
 File: ueur.fd 2009/06/22 v3.00 Euler Roman
 )
-LaTeX Font Info:    Try loading font information for U+msa on input line 253.
+LaTeX Font Info:    Try loading font information for U+msa on input line 254.
 
 (/usr/local/texlive/2009/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2009/06/22 v3.00 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 253.
+LaTeX Font Info:    Try loading font information for U+msb on input line 254.
 
 (/usr/local/texlive/2009/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2009/06/22 v3.00 AMS symbols B
 )
-Underfull \hbox (badness 10000) in paragraph at lines 256--266
+Underfull \hbox (badness 10000) in paragraph at lines 257--267
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 279--281
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 282--284
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 285--287
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 288--291
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 292--295
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 296--297
-
- []
-
-
-Package hyperref Warning: Empty destination name,
-(hyperref)                using `UNDEFINED' on input line 374.
-
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 374.
-
-(/usr/local/texlive/2009/texmf-dist/tex/latex/base/omscmr.fd
-File: omscmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
-)
-LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <8> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 374.
- [1{/usr/local/texlive/2009/texmf-var/fonts/map/pdftex/updmap/pdftex.map}
-
-
-]
-Underfull \hbox (badness 1953) in paragraph at lines 412--426
-\OT1/cmr/m/n/9 70$ years. The pres-sure at the sur-face of the jet is
- []
-
-<PFIGS//H2ReactionRates.png, id=113, 735.7086pt x 714.0276pt>
-File: PFIGS//H2ReactionRates.png Graphic file (type png)
-
-<use PFIGS//H2ReactionRates.png>
-<PFIGS//H2CoolingFuncs.png, id=115, 664.1613pt x 656.2116pt>
-File: PFIGS//H2CoolingFuncs.png Graphic file (type png)
-
-<use PFIGS//H2CoolingFuncs.png>
-<PFIGS//eta2Beta10.png, id=138, 1915.155pt x 811.03pt>
-File: PFIGS//eta2Beta10.png Graphic file (type png)
-
-<use PFIGS//eta2Beta10.png>
-
-Package hyperref Warning: Empty destination name,
-(hyperref)                using `UNDEFINED' on input line 514.
-
-[2] <PFIGS//eta2Beta10_histo.png, id=156, 234.8775pt x 706.8006pt>
-File: PFIGS//eta2Beta10_histo.png Graphic file (type png)
-
-<use PFIGS//eta2Beta10_histo.png>
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 
 Package hyperref Warning: Empty destination name,
-(hyperref)                using `UNDEFINED' on input line 524.
+(hyperref)                using `UNDEFINED' on input line 351.
 
-[3 <./PFIGS//H2ReactionRates.png> <./PFIGS//H2CoolingFuncs.png> <./PFIGS//eta2B
-eta10.png (PNG copy)>] <PFIGS//abun.png, id=176, 867.24pt x 867.24pt>
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 351.
+
+(/usr/local/texlive/2009/texmf-dist/tex/latex/base/omscmr.fd
+File: omscmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
+)
+LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <8> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 351.
+ [1{/usr/local/texlive/2009/texmf-var/fonts/map/pdftex/updmap/pdftex.map}
+
+
+]
+Underfull \hbox (badness 1953) in paragraph at lines 490--504
+\OT1/cmr/m/n/9 70$ years. The pres-sure at the sur-face of the jet is
+ []
+
+
+Package hyperref Warning: Empty destination name,
+(hyperref)                using `UNDEFINED' on input line 504.
+
+[2] <PFIGS//H2ReactionRates.png, id=231, 735.7086pt x 714.0276pt>
+File: PFIGS//H2ReactionRates.png Graphic file (type png)
+
+<use PFIGS//H2ReactionRates.png>
+<PFIGS//H2CoolingFuncs.png, id=233, 664.1613pt x 656.2116pt>
+File: PFIGS//H2CoolingFuncs.png Graphic file (type png)
+
+<use PFIGS//H2CoolingFuncs.png>
+<PFIGS//eta2Beta10.png, id=256, 1915.155pt x 811.03pt>
+File: PFIGS//eta2Beta10.png Graphic file (type png)
+
+<use PFIGS//eta2Beta10.png>
+<PFIGS//eta2Beta10_histo.png, id=258, 234.8775pt x 706.8006pt>
+File: PFIGS//eta2Beta10_histo.png Graphic file (type png)
+
+<use PFIGS//eta2Beta10_histo.png>
+
+Package hyperref Warning: Empty destination name,
+(hyperref)                using `UNDEFINED' on input line 604.
+
+[3 <./PFIGS//eta2Beta10.png (PNG copy)>]
+<PFIGS//abun.png, id=273, 867.24pt x 867.24pt>
 File: PFIGS//abun.png Graphic file (type png)
-
-<use PFIGS//abun.png>
-<PFIGS//jetplt1_1010.png, id=177, 1325.4318pt x 414.8298pt>
+ <use PFIGS//abun.png>
+<PFIGS//jetplt1_1010.png, id=274, 1309.5324pt x 403.2666pt>
 File: PFIGS//jetplt1_1010.png Graphic file (type png)
 
 <use PFIGS//jetplt1_1010.png>
-<PFIGS//molcjet_510.png, id=178, 1333.3815pt x 414.8298pt>
-File: PFIGS//molcjet_510.png Graphic file (type png)
-
-<use PFIGS//molcjet_510.png>
-<PFIGS//linejets.png, id=179, 1427.3325pt x 368.37625pt>
-File: PFIGS//linejets.png Graphic file (type png)
-
-<use PFIGS//linejets.png>
-<PFIGS//J2-1_mom0maps_cooling.png, id=180, 751.608pt x 546.3612pt>
+<PFIGS//J2-1_mom0maps_cooling.png, id=275, 751.608pt x 546.3612pt>
 File: PFIGS//J2-1_mom0maps_cooling.png Graphic file (type png)
 
 <use PFIGS//J2-1_mom0maps_cooling.png>
-<PFIGS//tabulated_mom0maps_Trans.png, id=181, 1406.3742pt x 454.5783pt>
-File: PFIGS//tabulated_mom0maps_Trans.png Graphic file (type png)
 
-<use PFIGS//tabulated_mom0maps_Trans.png>
-<PFIGS//tab_trans_spectra.png, id=182, 896.8707pt x 768.9528pt>
-File: PFIGS//tab_trans_spectra.png Graphic file (type png)
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 656.
 
-<use PFIGS//tab_trans_spectra.png>
-Underfull \hbox (badness 1320) in paragraph at lines 607--620
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `subscript' on input line 656.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 656.
+
+<PFIGS//molcjet_310.png, id=276, 1318.2048pt x 404.712pt>
+File: PFIGS//molcjet_310.png Graphic file (type png)
+
+<use PFIGS//molcjet_310.png>
+<PFIGS//molcjet_310_molform.png, id=277, 998.0487pt x 694.5147pt>
+File: PFIGS//molcjet_310_molform.png Graphic file (type png)
+
+<use PFIGS//molcjet_310_molform.png>
+Underfull \vbox (badness 6110) has occurred while \output is active []
+
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 677.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\eta' on input line 677.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 677.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 677.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\beta' on input line 677.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 677.
+
+<PFIGS//jetplt2_diffetabeta.png, id=278, 1265.4477pt x 404.712pt>
+File: PFIGS//jetplt2_diffetabeta.png Graphic file (type png)
+
+<use PFIGS//jetplt2_diffetabeta.png>
+<PFIGS//contourmapsSiOTopHat.png, id=279, 645.41125pt x 707.64375pt>
+File: PFIGS//contourmapsSiOTopHat.png Graphic file (type png)
+
+<use PFIGS//contourmapsSiOTopHat.png>
+Underfull \hbox (badness 1320) in paragraph at lines 706--719
 \OT1/cmr/m/n/9 Results should have Peak In-ten-sity af-ter con-vo-lu-tion.,
  []
 
 
 Package hyperref Warning: Empty destination name,
-(hyperref)                using `UNDEFINED' on input line 620.
+(hyperref)                using `UNDEFINED' on input line 719.
 
-[4 <./PFIGS//eta2Beta10_histo.png> <./PFIGS//abun.png> <./PFIGS//J2-1_mom0maps_
+[4 <./PFIGS//H2ReactionRates.png> <./PFIGS//H2CoolingFuncs.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 729--731
+
+ []
+
+<PFIGS//linejets.png, id=297, 1427.3325pt x 368.37625pt>
+File: PFIGS//linejets.png Graphic file (type png)
+
+<use PFIGS//linejets.png>
+Underfull \hbox (badness 10000) in paragraph at lines 750--752
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 753--754
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 755--756
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 758--761
+
+ []
+
+(./ms_final_bv.bbl
+
+Package hyperref Warning: Empty destination name,
+(hyperref)                using `UNDEFINED' on input line 8.
+
+[5 <./PFIGS//jetplt1_1010.png>]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+
+Package hyperref Warning: Empty destination name,
+(hyperref)                using `UNDEFINED' on input line 57.
+
+[6 <./PFIGS//molcjet_310.png> <./PFIGS//molcjet_310_molform.png>]
+Underfull \vbox (badness 1142) has occurred while \output is active []
+
+)
+
+Package hyperref Warning: Empty destination name,
+(hyperref)                using `UNDEFINED' on input line 773.
+
+[7 <./PFIGS//jetplt2_diffetabeta.png> <./PFIGS//linejets.png>]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+
+Package hyperref Warning: Empty destination name,
+(hyperref)                using `UNDEFINED' on input line 773.
+
+[8 <./PFIGS//eta2Beta10_histo.png> <./PFIGS//abun.png> <./PFIGS//J2-1_mom0maps_
 cooling.png>]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 
 Package hyperref Warning: Empty destination name,
-(hyperref)                using `UNDEFINED' on input line 620.
+(hyperref)                using `UNDEFINED' on input line 773.
 
-[5 <./PFIGS//jetplt1_1010.png> <./PFIGS//molcjet_510.png> <./PFIGS//linejets.pn
-g>]
-Underfull \hbox (badness 10000) in paragraph at lines 642--643
+[9
 
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 645--648
-
- []
-
-(./ms_final_bv.bbl)
-
-Package hyperref Warning: Empty destination name,
-(hyperref)                using `UNDEFINED' on input line 660.
-
-[6 <./PFIGS//tabulated_mom0maps_Trans.png> <./PFIGS//tab_trans_spectra.png (PNG
- copy)>] (./ms_final_bv.aux)
+ <./PFIGS//contourmapsSiOTopHat.png>] (./ms_final_bv.aux)
 
 LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 5912 strings out of 493848
- 81643 string characters out of 3149207
- 176497 words of memory out of 3000000
- 9020 multiletter control sequences out of 15000+200000
- 19818 words of font info for 72 fonts, out of 3000000 for 9000
+ 6041 strings out of 493848
+ 84474 string characters out of 3149207
+ 175158 words of memory out of 3000000
+ 9111 multiletter control sequences out of 15000+200000
+ 20163 words of font info for 73 fonts, out of 3000000 for 9000
  714 hyphenation exceptions out of 8191
- 38i,19n,36p,1719b,437s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 38i,19n,39p,1719b,437s stack positions out of 5000i,500n,10000p,200000b,50000s
 pdfTeX warning (dest): name{UNDEFINED} has been referenced but does not exist
 , replaced by a fixed one
 
@@ -516,10 +579,11 @@ exmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/local/texlive/2009/tex
 mf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2009/texmf
 -dist/fonts/type1/public/amsfonts/cm/cmsy9.pfb></usr/local/texlive/2009/texmf-d
 ist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/local/texlive/2009/texmf-di
-st/fonts/type1/public/amsfonts/cm/cmti8.pfb>
-Output written on ms_final_bv.pdf (6 pages, 1778439 bytes).
+st/fonts/type1/public/amsfonts/cm/cmti8.pfb></usr/local/texlive/2009/texmf-dist
+/fonts/type1/public/amsfonts/cm/cmti9.pfb>
+Output written on ms_final_bv.pdf (9 pages, 1985404 bytes).
 PDF statistics:
- 291 PDF objects out of 1000 (max. 8388607)
- 57 named destinations out of 1000 (max. 500000)
- 192 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 433 PDF objects out of 1000 (max. 8388607)
+ 93 named destinations out of 1000 (max. 500000)
+ 245 words of extra memory for PDF output out of 10000 (max. 10000000)
 

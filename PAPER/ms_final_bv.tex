@@ -113,6 +113,7 @@
 \newcommand{\deltai}{{\delta}_{\rm i}}
 
 \newcommand{\rhoi}{{\rho}_{\rm i}}
+\newcommand{\refer}{{\color{orange}REFERENCE}}
 
 % Bibliography and bibfile
 \def\aj{AJ}%
@@ -275,25 +276,102 @@ $^{1}$School of Physics and Astronomy, University of Leeds, Leeds LS2
 
 %===============================================================
 
-\section{Introduction} 
-Interaction of jet with ambient medium , Class 0 sources, momentum and
-energy injection, High mass and low mass outflows \\
+\section{Introduction}
+Jets are one of the first manifestations of star
+formation in dense molecular cores. They are ubiquitous in both
+massive and low star forming regions. These supersonic flows
+perpendicular to the underlying accertion disk plays a vital role in
+removing excess angular momentum and thereby aiding in the accretion. 
+For low mass stars, they are believed to be launched by magneto-centrifugally forces and
+further collimated by magnetic hoop stress
+\citep[][]{Blandford:1982p892, Konigl:2000p607}. However, in case of
+high mass stars, radiative forces also contribute to flow dynamics
+during the later evolutionary stages \cite{Vaidya:2011p8992}. 
+Typically, these jets are few parsec size long and can be divided into
+three length-scale domains viz. source and disk scales (1-10$^{2}\,$AU),
+envelope scales ($10^{2} - 10^{5}$\,AU) and parent cloud scales
+($10^{5} - 10^{6}$\,AU) \refer. Among them, the envelope scales are
+the ones where rich chemical evolution occurs as the jet interacts
+with the molecular medium. In this region, the jet propagates into a
+relatively static medium inducing shocks that are interesting from the
+physical and chemical point of view. In addition to shocks, molecular
+material from the surrounding is entrained and accelerated to high
+velocities giving rise to molecular outflows.
+%
 
-Observations of Outflows in CO and SiO in mm, H2 in IR, Optical jets
-HH objects, syncrotron emission \\
+Bipolar molecular outflows from low and high mass stars
+have been studied in details over the past 
+decade \citep[see reviews by][]{Bachiller:1996p4692,Arce:2007p798,
+Tafalla:2011p14051}. Advancement in millimeter interferometers have
+allowed to observe these outflows with high spatial resolution of
+few arc seconds. A large number of studies related to young
+outflows are done using standard outflow and shock tracer
+like CO and SiO respectively. In addition to these molecular tracers,
+shocks from these outflows are detected in molecular hydrogen using
+infra-red telescopes. Based on these observational studies, various
+empirical properties for these outflows have been discovered. For
+example, the CO outflows from single dish studies are seen to be
+highly collimated for both low and high mass stars
+\citep[for e.g.,][]{Gueth:1999p4683, Beuther:2002p3574} they are
+referred to as {\em{molecular jets}}. These outflows also exhibit a
+mass-velocity relation with a power law form $ dM(v)/dv \propto
+v^{-\gamma}$, where values of $\gamma$ range from 1 to 3 \cite{Downes:2003p9946}. Episodic
+knots belived to be caused by variable accretion events are a common property
+of young molecular outflows (for e.g. in L1577:
+\citealt{Gueth:1998p14058}, in HH300: \citealt{Arce:2001p14064}). These knots show their signatures
+as {\em{wedges}} in the position-velocity (PV) diagrams \cite{Arce:2001p14065}. Also, most
+commonly observed in these outflows are signatures of rotation and
+precision (for e.g., in DG Tau: \citealt{Bacciotti:2002p2084}).
+%
 
-Molecules from jet driven or wind driven, Interesting features like
-EHV, low velocity component etc, list interesting outflows from Class 0 \\
+Even with myriad of empirical evidences, the exact nature of SiO and
+CO outflow is not clear. For a complete understanding it is imperative
+to compliment these observations with theoretical models. Many models
+based on hydro-simulations and steady state shock calculations
+were proposed to explain the observational signatures of molecular
+outflows. Among them the two main models are that of wide-angled wind
+driven \cite{Shu:1991p14071} and jet driven outflow
+\cite{Canto:1991p14123}. 
+The most popular among them is the jet driven model as wind
+driven molecular outflows not only fail to match observed PV digarams \cite{Cabrit:1992p14098}
+but also tend to sweep large quantitity of material at the extermities
+of the lobes \cite{Masson:1992p14101}. While the jet driven models could sucessfully
+derive the global outflow shapes and mass velocity relations of CO
+outflows \citep{Raga:1993p9948, Masson:1993p9661} . There have also been some attempts to combine these two
+models into one \cite{Shang:2006p14268} to explain the global observational features. 
+However, most of these dynamical models do not
+account for shock chemsitry. Instead, shock chemistry is studied
+independently without dynamics using plane parallel shock
+models \citep{Schilke:1997p14140,Flower:2003p11236} . The magneto-hydrodynamic (MHD) calculations by \cite{Glassgold:1991p13703} suggested that molecules
+like SiO and CO could as form within the jet. Similar conclusions of
+molecules surving in steady state disk winds have also been shown
+\cite{Panoglou:2012p10039}. Very limited simulations have modelled the outflow
+dynamics including molecular chemistry but in absence of
+magnetic fields \citep{Raga:1995p12965, Smith:2003p9985}. 
 
-Attempts of simulations either only dynamics with analytic approaches
-to compare observational features, or only chemistry to estimate
-abundances. The reality lies in the middle!\\
+%
+In the present work, our goal is to take a step further in modelling of
+jet driven molecular outflows. The present model aims to consistently derive observed emission
+properties of molecular outflows, specifically various SiO line
+tranistions, by combining axisymmetric MHD simulations of
+radiative jet propogation. In particular, we evolve the jet dynamical
+quantities in conjunction with different non-equilibrium cooling
+prescriptions of varying complexities. The most complex is that of
+molecular cooling along with H$_{2}$ chemistry. This prescription
+allows us to track the formation and destruction of 
+HI, HII and H2 along with the flow dynamics. 
+The final state of the jet obtained for each cooling model is then
+post-processed using a non-LTE radiative line transfer code
+to obtain emission maps, spectra and PV digram. These emission maps
+are further processed using ALMA-CASA pipeline to obtain synthetic
+images of molecular outflows.
+%
 
-Combine dynamics of MHD jet with molecular chemistry and comparing
-with observations via post-processing simulations with line radiative
-transfer codes. \\
-
-Paper Layout \\
+In the next three section we describe our numerical setup, cooling
+presecriptions and radiative transfer line code respectively. In
+Sect. 5, we will present results from the parameter survey and the
+discussions along with predicted ALMA maps will be presented in
+Section 6 and 7, followed by conclusions.
 
 \section{Numerical Setup}
 \subsection{Numerical code and Equations}
@@ -532,31 +610,7 @@ where v is in kilometres per second. In addition to this if the temperature at t
  \label{abun}
 \end{figure}
 
-
-\section{Results}
-\begin{figure*}
- \includegraphics[width=2.\columnwidth]{\figpath/jetplt1_1010.png}
- \caption{Jet Volume Density for different cooling modes with
-   $\eta$ = 10 and $\beta$ = 10.}
-\label{grid}
-\end{figure*}
-
-
-
-\begin{figure*}
- \includegraphics[width=2.\columnwidth]{\figpath/molcjet_510.png}
- \caption{Fraction of hydrogen species in the run with molecular
-   cooling having $\eta$ = 5 and $\beta$ = 10.}
-\label{grid}
-\end{figure*}
-
-\begin{figure*}
- \includegraphics[width=2.\columnwidth]{\figpath/linejets.png}
- \caption{SiO emission from different line transitions for the run with molecular
-   cooling having $\eta$ = 3 and $\beta$ = 10. }
-\label{grid}
-\end{figure*}
-
+\section{Parameter Survey}
 \begin{table*}
 \centering
 \caption{Summary from parameter runs}
@@ -581,26 +635,71 @@ mol510 & Molecular & 5 & 10&&\\
 
 \end{table*}
 
-
-\begin{figure}
- \includegraphics[width=84mm]{\figpath/J2-1_mom0maps_cooling.png}
- \caption{A plot of the integrated SiO J2-1 emission from 5 models, each using a different method to calculate cooling and all with $\eta$=10 $\beta$=10.}
-\label{cooling2-1}
-\end{figure}
-
+\section{Results}
+\subsection{Comparison of cooling prescription}
+figure nos. 2 -- Similuated images, emission maps for eta = 10.
 \begin{figure*}
- \includegraphics[width=168mm]{\figpath/tabulated_mom0maps_Trans.png}
- \caption{The integrated intensity of 4 SiO transitions in the tabulated cooling model in the $\eta$=2 $\beta$=10 model.}
-\label{tabulatedTrans}
+ \includegraphics[width=2.\columnwidth]{\figpath/jetplt1_1010.png}
+ \caption{Jet Volume Density for different cooling modes with
+   $\eta$ = 10 and $\beta$ = 10.}
+\label{grid}
 \end{figure*}
 
 \begin{figure}
- \includegraphics[width=84mm]{\figpath/tab_trans_spectra.png}
- \caption{The Integrated emission and spectra at he bow shock for 2 transitions of the tabulated cooling model for $\eta$=2 $\beta$=10 (spectra taken from y=50, x=128).}
-\label{grid}
+ \includegraphics[width=84mm]{\figpath/J2-1_mom0maps_cooling.png}
+ \caption{A plot of the integrated SiO J2-1 emission from 5 models, 
+each using a different method to calculate cooling and all with $\eta$=10 $\beta$=10.}
+\label{cooling2-1}
 \end{figure}
 
 
+\subsection{Molecular cooling and H$_2$ Chemistry}
+figure nos. 2 --> Explain molecular cooling in more details. With the
+mechanism of formation and destruction of HI, H2 and HII using
+figures. 
+\begin{figure*}
+ \includegraphics[width=2.\columnwidth]{\figpath/molcjet_310.png}
+ \caption{Fraction of hydrogen species in the run with molecular
+   cooling having $\eta$ = 3 and $\beta$ = 10.}
+\label{grid}
+\end{figure*}
+
+
+\begin{figure*}
+ \includegraphics[width=2.\columnwidth]{\figpath/molcjet_310_molform.png}
+ \caption{Dependence of hydrogen fractions on the temperature at two
+   points in the flow, viz. the interface of the knot with molecular
+   medium and at the bow shock}
+\label{grid}
+\end{figure*}
+
+
+\subsection{Effects of changing $\eta$ and $\beta$}
+figure nos. 2 -- Simulated images describing lengths, collimation and
+emission for lower eta more stronger. 
+\begin{figure*}
+ \includegraphics[width=2.\columnwidth]{\figpath/jetplt2_diffetabeta.png}
+ \caption{Jet Volume Density for atomic cooling with $\eta$ = 10 but $\beta$ = 1 and
+   10 and that with tabulated cooling with $\beta$ = 10 but $\eta$ = 2
+   and 10.}
+\label{grid}
+\end{figure*}
+
+
+\subsection{SiO Abundance profile}
+figure nos. 2 -- Comparison of three profiles for SiO Abundance,
+Contour maps for two transitions for top hat profile.
+
+\begin{figure}
+ \includegraphics[width=1.\columnwidth]{\figpath/contourmapsSiOTopHat.png}
+ \caption{Contours of SiO 2-$>$1 and 8-$>$7 emission obtained using the
+   SiO Top Hat profile.}
+\label{grid}
+\end{figure}
+
+\subsection{Spectra and PV diagrams}
+figure nos. 1 -- one transition 3 different angles, Comparison of
+spectra and line ratios  
 
 
 
@@ -626,9 +725,13 @@ Lower $\eta$ gives better emission.
 Importance of cooling prescriptions\\
 Bulk of emission comes from cooling instabilities.
 
+
+Effects of varing abundance profile ... Crucial ingredient in
+modeling molecular bullets \\
+
 Spectra and PV Digrams\\
 Line - withs $\sim$ 15-25 km\,s$^{-1}$. Wedge shaped PV diagrams
-a signature feature of jet driven molecular outflows. 
+a signature feature of jet driven molecular outflows. Counterparts in observations.
 
 Comparison with Observed results \\
 Different line transition trace different components of SiO
@@ -637,7 +740,17 @@ interacts with molecular medium. The clumpy nature in its emission is
 from the turbulent nature of its interaction. The higher transitions
 trace a much more collimated region along with the terminal shock. 
 As seen by Chandler \& Richer 2001 and Hirano 2006.
+\begin{figure*}
+ \includegraphics[width=2.\columnwidth]{\figpath/linejets.png}
+ \caption{SiO emission from different line transitions for the run with molecular
+   cooling having $\eta$ = 3 and $\beta$ = 10. }
+\label{grid}
+\end{figure*}
 
+Advantage of non-LTE modeling over LVG Cabrit 2007, Lee 2008. 
+Line ratios $\sim$ 1 can be explained well. \\
+
+EHV component ?? \\
 
 Limitations\\
 
