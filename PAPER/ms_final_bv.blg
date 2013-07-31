@@ -2,44 +2,44 @@ This is BibTeX, Version 0.99c (TeX Live 2009)
 The top-level auxiliary file: ms_final_bv.aux
 The style file: mn2e.bst
 Database file #1: bibfile.bib
-You've used 36 entries,
+You've used 39 entries,
             2601 wiz_defined-function locations,
-            779 strings with 9375 characters,
-and the built_in function-call counts, 15250 in all, are:
-= -- 1527
-> -- 1000
+            798 strings with 10091 characters,
+and the built_in function-call counts, 16993 in all, are:
+= -- 1684
+> -- 1169
 < -- 27
-+ -- 335
-- -- 334
-* -- 1437
-:= -- 2784
++ -- 395
+- -- 394
+* -- 1621
+:= -- 3109
 add.period$ -- 0
-call.type$ -- 36
-change.case$ -- 256
-chr.to.int$ -- 35
-cite$ -- 36
-duplicate$ -- 434
-empty$ -- 639
-format.name$ -- 404
-if$ -- 2826
+call.type$ -- 39
+change.case$ -- 288
+chr.to.int$ -- 38
+cite$ -- 39
+duplicate$ -- 467
+empty$ -- 687
+format.name$ -- 467
+if$ -- 3134
 int.to.chr$ -- 2
 int.to.str$ -- 0
-missing$ -- 36
-newline$ -- 113
-num.names$ -- 148
-pop$ -- 174
+missing$ -- 39
+newline$ -- 122
+num.names$ -- 160
+pop$ -- 200
 preamble$ -- 1
-purify$ -- 290
+purify$ -- 325
 quote$ -- 0
-skip$ -- 531
+skip$ -- 581
 stack$ -- 0
-substring$ -- 822
-swap$ -- 68
+substring$ -- 890
+swap$ -- 71
 text.length$ -- 6
-text.prefix$ -- 110
+text.prefix$ -- 130
 top$ -- 0
-type$ -- 324
+type$ -- 351
 warning$ -- 0
-while$ -- 149
+while$ -- 161
 width$ -- 0
-write$ -- 366
+write$ -- 396

@@ -628,12 +628,10 @@ atm210 & Atomic & 2 & 10 &&\\
 tab1010 & Tabulated & 10 & 10 &&\\
 tab210 & Tabulated & 2 & 10&&\\
 mol1010 & Molecular & 10 & 10&&\\
-mol510 & Molecular & 5 & 10&&\\
+mol510 & Molecular & 3 & 10&&\\
 \hline
 \end{tabular}
 \label{tab:result1}
-
-
 \end{table*}
 
 \section{Results}
@@ -654,7 +652,28 @@ each using a different method to calculate cooling and all with $\eta$=10 $\beta
 \end{figure}
 
 
+\subsection{Effects of changing $\eta$ and $\beta$}
+figure nos. 2 -- Simulated images describing lengths, collimation and
+emission for lower eta more stronger. 
+\begin{figure*}
+ \includegraphics[width=2.\columnwidth]{\figpath/jetplt2_diffetabeta.png}
+ \caption{Jet Volume Density for atomic cooling with $\eta$ = 10 but $\beta$ = 1 and
+   10 and that with tabulated cooling with $\beta$ = 10 but $\eta$ = 2
+   and 10.}
+\label{grid}
+\end{figure*}
+
 \subsection{Molecular cooling and H$_2$ Chemistry}
+In case of molecular outflows, the most appropiate form of cooling
+prescribtion among the ones described in sect.~\ref{sec:chem} is
+that which involves the evolution of H$_2$ chemistry along with
+contributions to cooling from fixed fractions of other molecules like
+CO, OH etc. Figure~\ref{fig:Hfracsim} shows the density of
+various hydrogen species in the outflow. Also shown in the figure is
+the temperature and mean molecular weight $\mu$. As the jet propgates
+into the medium 
+
+
 figure nos. 2 --> Explain molecular cooling in more details. With the
 mechanism of formation and destruction of HI, H2 and HII using
 figures. 
@@ -662,7 +681,7 @@ figures.
  \includegraphics[width=2.\columnwidth]{\figpath/molcjet_310.png}
  \caption{Fraction of hydrogen species in the run with molecular
    cooling having $\eta$ = 3 and $\beta$ = 10.}
-\label{grid}
+\label{fig:Hfracsim}
 \end{figure*}
 
 
@@ -675,21 +694,20 @@ figures.
 \end{figure*}
 
 
-\subsection{Effects of changing $\eta$ and $\beta$}
-figure nos. 2 -- Simulated images describing lengths, collimation and
-emission for lower eta more stronger. 
-\begin{figure*}
- \includegraphics[width=2.\columnwidth]{\figpath/jetplt2_diffetabeta.png}
- \caption{Jet Volume Density for atomic cooling with $\eta$ = 10 but $\beta$ = 1 and
-   10 and that with tabulated cooling with $\beta$ = 10 but $\eta$ = 2
-   and 10.}
-\label{grid}
-\end{figure*}
+
 
 
 \subsection{SiO Abundance profile}
 figure nos. 2 -- Comparison of three profiles for SiO Abundance,
 Contour maps for two transitions for top hat profile.
+\begin{figure}
+ \includegraphics[width=1.\columnwidth]{\figpath/EM_diffabun.png}
+ \caption{Variation of 2-$>$1 SiO emission for runs with molecular
+   cooling having $\eta$ = 3 and $\beta$ = 10 and different abundance profiles.}
+\label{grid}
+\end{figure}
+
+
 
 \begin{figure}
  \includegraphics[width=1.\columnwidth]{\figpath/contourmapsSiOTopHat.png}
@@ -703,20 +721,13 @@ figure nos. 1 -- one transition 3 different angles, Comparison of
 spectra and line ratios  
 
 
+\begin{figure}
+ \includegraphics[width=1.\columnwidth]{\figpath/PV_diffabun.png}
+ \caption{Variation of position-velocity diagram for 2-$>$1 SiO emission for runs with molecular
+   cooling having $\eta$ = 3 and $\beta$ = 10 and different abundance profiles.}
+\label{grid}
+\end{figure}
 
-Table 1 -- Parameter runs with changing $\beta$ (magnetic fields) and
-$\eta$ (density contrast) for cooling \\
-Results should have Peak Intensity after convolution., FWHM at tip of
-bow shock.\\
-Our reference run -- $\beta$ = 10.0, $\eta$ = 2.0, with cooling and
-velocity dependent SiO Abundance. \\
-Figure 3 -- Output from MHD simulations (Reference run).\\
-Figure 4 -- Output from Rad Transfer (Reference run). Integrated
-Intensity Maps for different transitions for three different cooling prescribtions. (TODO : TOM)\\
-Figure 5 -- Spectra for the reference runs all transitions. (TODO :
-TOM)\\
-Figure 6 -- PV diagrams (TODO : TOM) for one transition in two directions.
-Figure 7 -- Angle of Inclination dependence 
  
 
 \section{Discussion}
@@ -729,19 +740,7 @@ Bulk of emission comes from cooling instabilities.
 
 Effects of varing abundance profile ... Crucial ingredient in
 modeling molecular bullets \\
-\begin{figure}
- \includegraphics[width=1.\columnwidth]{\figpath/EM_diffabun.png}
- \caption{Variation of 2-$>$1 SiO emission for runs with molecular
-   cooling having $\eta$ = 3 and $\beta$ = 10 and different abundance profiles.}
-\label{grid}
-\end{figure}
 
-\begin{figure}
- \includegraphics[width=1.\columnwidth]{\figpath/PV_diffabun.png}
- \caption{Variation of position-velocity diagram for 2-$>$1 SiO emission for runs with molecular
-   cooling having $\eta$ = 3 and $\beta$ = 10 and different abundance profiles.}
-\label{grid}
-\end{figure}
 
 Spectra and PV Digrams\\
 Line - withs $\sim$ 15-25 km\,s$^{-1}$. Wedge shaped PV diagrams
@@ -762,8 +761,9 @@ As seen by Chandler \& Richer 2001 and Hirano 2006.
 \label{grid}
 \end{figure*}
 
-Advantage of non-LTE modeling over LVG Cabrit 2007, Lee 2008. 
-Line ratios $\sim$ 1 can be explained well. \\
+Advantage of non-LTE modeling over LVG \cite{Cabrit:2007p13804}, \cite{Lee:2008p13697}. 
+Line ratios $\sim$ 1 can be explained well for low mass stars and 
+\cite{Leurini:2013p13165} for high mass stars. \\
 \begin{figure}
  \includegraphics[width=1.\columnwidth]{\figpath/LineRatio_TH_60_Y205.png}
  \caption{{\em{Top}} Line profiles in SiO J = 2-1, 5-4 and 8-7 at one

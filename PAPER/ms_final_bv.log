@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009) (format=pdflatex 2009.11.7)  29 JUL 2013 11:53
+This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009) (format=pdflatex 2009.11.7)  30 JUL 2013 10:46
 entering extended mode
  Source specials enabled.
  %&-line parsing enabled.
@@ -419,104 +419,121 @@ File: PFIGS//J2-1_mom0maps_cooling.png Graphic file (type png)
 <use PFIGS//J2-1_mom0maps_cooling.png>
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 657.
+(hyperref)                removing `math shift' on input line 655.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `subscript' on input line 657.
+(hyperref)                removing `\eta' on input line 655.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 657.
-
-<PFIGS//molcjet_310.png, id=276, 1318.2048pt x 404.712pt>
-File: PFIGS//molcjet_310.png Graphic file (type png)
-
-<use PFIGS//molcjet_310.png>
-<PFIGS//molcjet_310_molform.png, id=277, 998.0487pt x 694.5147pt>
-File: PFIGS//molcjet_310_molform.png Graphic file (type png)
-
-<use PFIGS//molcjet_310_molform.png>
-Underfull \vbox (badness 6110) has occurred while \output is active []
-
+(hyperref)                removing `math shift' on input line 655.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 678.
+(hyperref)                removing `math shift' on input line 655.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\eta' on input line 678.
+(hyperref)                removing `\beta' on input line 655.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 678.
+(hyperref)                removing `math shift' on input line 655.
 
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 678.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\beta' on input line 678.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 678.
-
-<PFIGS//jetplt2_diffetabeta.png, id=278, 1265.4477pt x 404.712pt>
+<PFIGS//jetplt2_diffetabeta.png, id=276, 1265.4477pt x 404.712pt>
 File: PFIGS//jetplt2_diffetabeta.png Graphic file (type png)
 
 <use PFIGS//jetplt2_diffetabeta.png>
-<PFIGS//contourmapsSiOTopHat.png, id=279, 645.41125pt x 707.64375pt>
-File: PFIGS//contourmapsSiOTopHat.png Graphic file (type png)
 
-<use PFIGS//contourmapsSiOTopHat.png>
-Underfull \hbox (badness 1320) in paragraph at lines 707--720
-\OT1/cmr/m/n/9 Results should have Peak In-ten-sity af-ter con-vo-lu-tion.,
- []
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 666.
 
 
-Package hyperref Warning: Empty destination name,
-(hyperref)                using `UNDEFINED' on input line 720.
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `subscript' on input line 666.
 
-[4 <./PFIGS//H2ReactionRates.png> <./PFIGS//H2CoolingFuncs.png>]
-<PFIGS//EM_diffabun.png, id=297, 1013.7875pt x 414.54875pt>
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 666.
+
+<PFIGS//molcjet_310.png, id=277, 1318.2048pt x 404.712pt>
+File: PFIGS//molcjet_310.png Graphic file (type png)
+
+<use PFIGS//molcjet_310.png>
+<PFIGS//molcjet_310_molform.png, id=278, 998.0487pt x 694.5147pt>
+File: PFIGS//molcjet_310_molform.png Graphic file (type png)
+
+<use PFIGS//molcjet_310_molform.png>
+<PFIGS//EM_diffabun.png, id=279, 1013.7875pt x 414.54875pt>
 File: PFIGS//EM_diffabun.png Graphic file (type png)
 
 <use PFIGS//EM_diffabun.png>
-<PFIGS//PV_diffabun.png, id=298, 867.24pt x 414.54875pt>
+<PFIGS//contourmapsSiOTopHat.png, id=280, 645.41125pt x 707.64375pt>
+File: PFIGS//contourmapsSiOTopHat.png Graphic file (type png)
+
+<use PFIGS//contourmapsSiOTopHat.png>
+<PFIGS//PV_diffabun.png, id=281, 867.24pt x 414.54875pt>
 File: PFIGS//PV_diffabun.png Graphic file (type png)
 
 <use PFIGS//PV_diffabun.png>
+Underfull \vbox (badness 1755) has occurred while \output is active []
+
+
+
+Package hyperref Warning: Empty destination name,
+(hyperref)                using `UNDEFINED' on input line 727.
+
+[4 <./PFIGS//H2ReactionRates.png> <./PFIGS//H2CoolingFuncs.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 731--733
+
+ []
+
 <PFIGS//linejets_thnolog.png, id=299, 1547.7825pt x 415.5525pt>
 File: PFIGS//linejets_thnolog.png Graphic file (type png)
 
 <use PFIGS//linejets_thnolog.png>
-<PFIGS//LineRatio_TH_60_Y205.png, id=300, 765.86125pt x 521.95pt>
+<PFIGS//LineRatio_TH_60_Y205.png, id=306, 765.86125pt x 521.95pt>
 File: PFIGS//LineRatio_TH_60_Y205.png Graphic file (type png)
 
 <use PFIGS//LineRatio_TH_60_Y205.png>
-Underfull \hbox (badness 10000) in paragraph at lines 778--779
+Underfull \hbox (badness 10000) in paragraph at lines 768--769
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 780--781
+Underfull \hbox (badness 10000) in paragraph at lines 770--771
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 783--786
+Underfull \hbox (badness 10000) in paragraph at lines 773--776
 
  []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
 
 (./ms_final_bv.bbl
 
 Package hyperref Warning: Empty destination name,
-(hyperref)                using `UNDEFINED' on input line 8.
+(hyperref)                using `UNDEFINED' on input line 52.
 
-[5 <./PFIGS//jetplt1_1010.png>]
+[5 <./PFIGS//jetplt1_1010.png>])
+
+Package hyperref Warning: Empty destination name,
+(hyperref)                using `UNDEFINED' on input line 788.
+
+[6 <./PFIGS//jetplt2_diffetabeta.png> <./PFIGS//molcjet_310.png>]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+
+Package hyperref Warning: Empty destination name,
+(hyperref)                using `UNDEFINED' on input line 788.
+
+[7 <./PFIGS//molcjet_310_molform.png> <./PFIGS//linejets_thnolog.png>]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
@@ -525,26 +542,10 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 Package hyperref Warning: Empty destination name,
-(hyperref)                using `UNDEFINED' on input line 57.
-
-[6 <./PFIGS//molcjet_310.png> <./PFIGS//molcjet_310_molform.png>])
-
-Package hyperref Warning: Empty destination name,
-(hyperref)                using `UNDEFINED' on input line 798.
-
-[7 <./PFIGS//jetplt2_diffetabeta.png> <./PFIGS//linejets_thnolog.png>]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
-
-Package hyperref Warning: Empty destination name,
-(hyperref)                using `UNDEFINED' on input line 798.
+(hyperref)                using `UNDEFINED' on input line 788.
 
 [8 <./PFIGS//eta2Beta10_histo.png> <./PFIGS//diffabun.png> <./PFIGS//J2-1_mom0m
-aps_cooling.png>]
+aps_cooling.png> <./PFIGS//EM_diffabun.png>]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
@@ -553,19 +554,19 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 Package hyperref Warning: Empty destination name,
-(hyperref)                using `UNDEFINED' on input line 798.
+(hyperref)                using `UNDEFINED' on input line 788.
 
-[9 <./PFIGS//contourmapsSiOTopHat.png> <./PFIGS//EM_diffabun.png> <./PFIGS//PV_
-diffabun.png> <./PFIGS//LineRatio_TH_60_Y205.png>] (./ms_final_bv.aux)
+[9 <./PFIGS//contourmapsSiOTopHat.png> <./PFIGS//PV_diffabun.png> <./PFIGS//Lin
+eRatio_TH_60_Y205.png>] (./ms_final_bv.aux)
 
 LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 6059 strings out of 493848
- 84972 string characters out of 3149207
- 175437 words of memory out of 3000000
- 9123 multiletter control sequences out of 15000+200000
+ 6072 strings out of 493848
+ 85263 string characters out of 3149207
+ 175739 words of memory out of 3000000
+ 9133 multiletter control sequences out of 15000+200000
  20163 words of font info for 73 fonts, out of 3000000 for 9000
  714 hyphenation exceptions out of 8191
  38i,19n,39p,1719b,437s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -593,9 +594,9 @@ mf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2009/texmf
 ist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/local/texlive/2009/texmf-di
 st/fonts/type1/public/amsfonts/cm/cmti8.pfb></usr/local/texlive/2009/texmf-dist
 /fonts/type1/public/amsfonts/cm/cmti9.pfb>
-Output written on ms_final_bv.pdf (9 pages, 2108848 bytes).
+Output written on ms_final_bv.pdf (9 pages, 2110367 bytes).
 PDF statistics:
- 442 PDF objects out of 1000 (max. 8388607)
- 96 named destinations out of 1000 (max. 500000)
+ 452 PDF objects out of 1000 (max. 8388607)
+ 99 named destinations out of 1000 (max. 500000)
  260 words of extra memory for PDF output out of 10000 (max. 10000000)
 
