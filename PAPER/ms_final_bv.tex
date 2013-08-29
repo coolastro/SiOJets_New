@@ -619,7 +619,7 @@ The radiative transfer program used is LIME (LIne Modeling Engine; \citealt{Brin
 
 
 \begin{figure}
- \includegraphics[width=84mm]{\figpath/eta2Beta10.png}
+ \includegraphics[width=84mm]{\figpath/grid.png}
  \caption{A plot of the points selected by the gridding process and the paths down which photons can propagate for points in the r,z plane. The points are color coded by the density distribution (in m$^{-3}$, as used in LIME) and are more concentrated in the high density knots.}
 \label{grid} % This plots has to be changed. 
 \end{figure}
@@ -1141,26 +1141,15 @@ distribution.
 \end{figure*}
    
  
- 
-
-
- 
- 
- 
-
-
-
-
-
- 
 \section{ALMA view}
 ALMA view of the reference run and stress of applying our synthetic techniques
 to study the molecular outflows in more details.\\
-Figure 6. for ALMA --
+
+In order to see the interior structure of the molecular outflow, high resolution interferometric observations are needed. To demonstrate how jets similar to those we have modeled would look through such observations we have performed synthetic Atacama Large Millimetre Array (ALMA) observations using the Common Astronomy Software Applications package (CASA). The output from the radiative transfer were scalled to 300pc and used as the sky models for observations of the J=2-1, J=5-4 and J=8-7 lines at freqencies of 86.85, 217.10 and 347.33$\,$GHz, which fall in ALMA bands 3, 6 and 7. The observations were simulated using cycle 1 ALMA for 30 minutes total integration time, in the configurations c32-6, c32-4 and c32-3 for the three lines, giving beam sizes of 0.72'', 0.47'' and 0.58'' and sensitivities of 0.05, 0.07 and 0.09$\,$mJy/beam for the three lines (as calculated by the ALMA online sensitivity calculator) with velocity resolutions of $sim$1$\,$km/s.
 
 \begin{figure*}
  \includegraphics[width=2.\columnwidth]{\figpath/ALMAmaps2.png}
- \caption{Channel maps from ALMA 5-4 with 45 deg. at channels 10,20,30,40.}
+ \caption{{\bf Left:} The intensity map in the channel of the peak of the J5-4 emission. The heat map shows the 5-4 line intensity, the blue contours show the J=8-7 line intensity and the green contours show the J=2-1 line intensity (both in steps of 10mJy/beam) (this is arbitrary, could we do integrated intensity here instead?). {\bf Right:} The PV diagram taken along the axis of the jet, showing a 'zig-zag' pattern between the knots of the jet and broad emission at the bow shock.}
 \label{fig:almafig}
 \end{figure*} 
 
