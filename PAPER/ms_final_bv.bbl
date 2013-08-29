@@ -26,6 +26,21 @@
 96p4692}
 {Bachiller} R.,  1996, \araa, 34, 111
 
+\bibitem[\protect\citeauthoryear{{Bachiller}, {Guilloteau}, {Gueth}, {Tafalla},
+  {Dutrey}, {Codella} \& {Castets}}{{Bachiller}
+  et~al.}{1998}]{Bachiller:1998p14725}
+{Bachiller} R.,  {Guilloteau} S.,  {Gueth} F.,  {Tafalla} M.,  {Dutrey} A.,
+  {Codella} C.,    {Castets} A.,  1998, \aap, 339, L49
+
+\bibitem[\protect\citeauthoryear{{Bachiller}, {Martin-Pintado} \&
+  {Fuente}}{{Bachiller} et~al.}{1991}]{Bachiller:1991p14732}
+{Bachiller} R.,  {Martin-Pintado} J.,    {Fuente} A.,  1991, \aap, 243, L21
+
+\bibitem[\protect\citeauthoryear{{Bachiller}, {Martin-Pintado}, {Tafalla},
+  {Cernicharo} \& {Lazareff}}{{Bachiller} et~al.}{1990}]{Bachiller:1990p11196}
+{Bachiller} R.,  {Martin-Pintado} J.,  {Tafalla} M.,  {Cernicharo} J.,
+  {Lazareff} B.,  1990, \aap, 231, 174
+
 \bibitem[\protect\citeauthoryear{{Beuther}, {Schilke}, {Gueth}, {McCaughrean},
   {Andersen}, {Sridharan} \& {Menten}}{{Beuther}
   et~al.}{2002}]{Beuther:2002p3574}
@@ -67,6 +82,10 @@ pp 19--32
 \bibitem[\protect\citeauthoryear{{Chandler} \& {Richer}}{{Chandler} \&
   {Richer}}{2001}]{Chandler:2001p14376}
 {Chandler} C.~J.,  {Richer} J.~S.,  2001, \apj, 555, 139
+
+\bibitem[\protect\citeauthoryear{{Codella}, {Bachiller} \&
+  {Reipurth}}{{Codella} et~al.}{1999}]{Codella:1999p12584}
+{Codella} C.,  {Bachiller} R.,    {Reipurth} B.,  1999, \aap, 343, 585
 
 \bibitem[\protect\citeauthoryear{{Downes} \& {Cabrit}}{{Downes} \&
   {Cabrit}}{2003}]{Downes:2003p9946}
@@ -154,11 +173,27 @@ Lloyd S.,  1982, Information Theory, IEEE Transactions on, 28, 129
   {Dalgarno}}{1989b}]{Neufeld:1989p14322}
 {Neufeld} D.~A.,  {Dalgarno} A.,  1989b, \apj, 344, 251
 
+\bibitem[\protect\citeauthoryear{{Nisini}, {Codella}, {Giannini} \&
+  {Richer}}{{Nisini} et~al.}{2002}]{Nisini:2002p14418}
+{Nisini} B.,  {Codella} C.,  {Giannini} T.,    {Richer} J.~S.,  2002, \aap,
+  395, L25
+
+\bibitem[\protect\citeauthoryear{{Nisini}, {Codella}, {Giannini}, {Santiago
+  Garcia}, {Richer}, {Bachiller} \& {Tafalla}}{{Nisini}
+  et~al.}{2007}]{Nisini:2007p13128}
+{Nisini} B.,  {Codella} C.,  {Giannini} T.,  {Santiago Garcia} J.,  {Richer}
+  J.~S.,  {Bachiller} R.,    {Tafalla} M.,  2007, \aap, 462, 163
+
 \bibitem[\protect\citeauthoryear{{Panoglou}, {Cabrit}, {Pineau Des For{\^e}ts},
   {Garcia}, {Ferreira} \& {Casse}}{{Panoglou}
   et~al.}{2012}]{Panoglou:2012p10039}
 {Panoglou} D.,  {Cabrit} S.,  {Pineau Des For{\^e}ts} G.,  {Garcia} P.~J.~V.,
   {Ferreira} J.,    {Casse} F.,  2012, \aap, 538, A2
+
+\bibitem[\protect\citeauthoryear{{Powell}, {Roe}, {Linde}, {Gombosi} \& {de
+  Zeeuw}}{{Powell} et~al.}{1999}]{Powell:1999p14822}
+{Powell} K.~G.,  {Roe} P.~L.,  {Linde} T.~J.,  {Gombosi} T.~I.,    {de Zeeuw}
+  D.~L.,  1999, Journal of Computational Physics, 154, 284
 
 \bibitem[\protect\citeauthoryear{{Raga} \& {Cabrit}}{{Raga} \&
   {Cabrit}}{1993}]{Raga:1993p9948}
@@ -168,6 +203,12 @@ Lloyd S.,  1982, Information Theory, IEEE Transactions on, 28, 129
   et~al.}{1995}]{Raga:1995p12965}
 {Raga} A.~C.,  {Taylor} S.~D.,  {Cabrit} S.,    {Biro} S.,  1995, \aap, 296,
   833
+
+\bibitem[\protect\citeauthoryear{{Santiago-Garc{\'{\i}}a}, {Tafalla},
+  {Johnstone} \& {Bachiller}}{{Santiago-Garc{\'{\i}}a}
+  et~al.}{2009}]{SantiagoGarcia:2009p13972}
+{Santiago-Garc{\'{\i}}a} J.,  {Tafalla} M.,  {Johnstone} D.,    {Bachiller} R.,
+   2009, \aap, 495, 169
 
 \bibitem[\protect\citeauthoryear{{Schilke}, {Walmsley}, {Pineau des Forets} \&
   {Flower}}{{Schilke} et~al.}{1997}]{Schilke:1997p14140}
@@ -198,6 +239,11 @@ Lloyd S.,  1982, Information Theory, IEEE Transactions on, 28, 129
   eds, IAU Symposium Vol.~280 of IAU Symposium, {Molecules in Bipolar
   Outflows}.
 pp 88--102
+
+\bibitem[\protect\citeauthoryear{{Tafalla}, {Santiago-Garc{\'{\i}}a}, {Hacar}
+  \& {Bachiller}}{{Tafalla} et~al.}{2010}]{Tafalla:2010p14759}
+{Tafalla} M.,  {Santiago-Garc{\'{\i}}a} J.,  {Hacar} A.,    {Bachiller} R.,
+  2010, \aap, 522, A91
 
 \bibitem[\protect\citeauthoryear{{Vaidya}, {Fendt}, {Beuther} \&
   {Porth}}{{Vaidya} et~al.}{2011}]{Vaidya:2011p8992}
