@@ -858,6 +858,7 @@ function of height from the base of the jet.
 
 
 \subsection{Comparison of cooling prescription}
+\label{ssec:coolres}
 Importance of cooling prescriptions\\
 Bulk of emission comes from cooling instabilities.
 figure nos. 2 -- Simulated images, emission maps for eta = 10.
@@ -1006,13 +1007,12 @@ the spectra.
 %
 
 \begin{figure}
- \includegraphics[width=1.\columnwidth]{\figpath/imshkvh_21_90_empvspec.png}
- \caption{Emission map ({\it top left}), PV diagram ({\it top right}
+ \includegraphics[width=1.\columnwidth]{\figpath/refrun_21_90_emspecpv.png}
+ \caption{Integrated Emission map ({\it top left}), PV diagram ({\it top right}
    and spectra ({\it bottom} for the
-   2-$>$1 SiO transition for the run with molecular cooling with
-   $\eta$ = 3 and fractional abundance of functional form is used
- along with $\delta < $ 1. The jet is assumed to be in the plane of
- sky implying an angle of inclination of $90^{\circ}$. The horizontal
+   2-$>$1 SiO transition for the reference run. 
+   The jet is assumed to be in the plane of sky implying an angle of
+   inclination of $90^{\circ}$. The horizontal
  {\it white dashed} line marks the cuts where the spectra is taken
  while the vertical {\it magenta dashed} line represents the cut for
  the PV digram.} 
@@ -1045,14 +1045,14 @@ pattern at each of the knots and region close to the bow shock.
 
 
 \begin{figure}
- \includegraphics[width=1.\columnwidth]{\figpath/imshkvh_21_60_empvspec.png}
+ \includegraphics[width=1.\columnwidth]{\figpath/refrun_21_60_emspecpv.png}
  \caption{Same as figure~\ref{empvspec90} but with angle of
    inclination of $60^{\circ}$.} 
 \label{empvspec60}
 \end{figure}
 
 \begin{figure}
- \includegraphics[width=1.\columnwidth]{\figpath/imshkvh_21_45_empvspec.png}
+ \includegraphics[width=1.\columnwidth]{\figpath/refrun_21_45_emspecpv.png}
  \caption{Same as figure~\ref{empvspec90} but with angle of
    inclination of $45^{\circ}$.} 
 \label{empvspec45}
@@ -1248,13 +1248,17 @@ interface between the jet and ambient medium, along with emission from
 the dense knots formed at the base of the flow. While, emission coming
 due to high energy transitions, J=5-$>$4 and 8-$>$7, 
 is more concentrated in the inner jet regions and arise mainly from
-the shocks due to internal knots. These high level transitions
-also show an evidence of sub-structure close to the primary bow shock.
-Such a trend in emission with excitation energies coming from different SiO line transitions
+the shocks due to internal knots. Such a trend in emission with excitation energies coming from different SiO line transitions
 have been observed in many young outflows (for e.g., {\it{L1448}}
 bullets \citep{Nisini:2007p13128}, {\it{HH211}}
 \citep{Chandler:2001p14376, Nisini:2002p14418,
-  Hirano:2006p14411}). 
+  Hirano:2006p14411}). Further, the evolved post-shock gas near the
+primary bow shock also show bright emission for these high J transitions. 
+This gas is linked to the Rayleigh-Taylor instability associated with cooling flows (see
+section~\ref{ssec:coolres}). The sub-structure seen close to the
+primary bow shock with high resolution does give a sense of clumpiness
+in the flow backing the suggestions to explain clumpy SiO emission by
+\citealt{Chandler:2001p14376}.
 %
 
 \begin{figure*}
@@ -1315,11 +1319,15 @@ in case of HH212. Values $\approx$ 1 for both ratios were
 only achieved in optically thick LTE regime
 \citep{Cabrit:2007p13804, Lee:2008p13697}. 
 Similar values are also obtained for molecular outflows from massive
-young stellar object IRAS 17233–3606\cite{Leurini:2013p13165}.
+young stellar object IRAS 17233-3606 \cite{Leurini:2013p13165}.
 These line ratios from the present
 non-LTE radiative transfer model are shown in the bottom left panel of
 fig.~\ref{fig:lineratio}. Their values lie very close to unity as
-indicated from observations. In summary, the
+indicated from observations. Further, we have estimated the optical
+depth in regions emitting SiO and find them to be optically thick with
+an optical depth $\tau \sim 10$. Thus, assuming optically thin SiO emission
+from molecular outflows especially from shocked dense knots would
+only provide upper limits. In summary, the
 shape, ratio and peak intensity of the spectra obtained from our model
 fit very well to observed values implying
 that SiO emission from our model is tracing the regions with right physical
@@ -1339,18 +1347,61 @@ Variation of integrated intensity with upper line transition J$_{\rm
 \end{figure*}
 
 
-\subsection{Caveats and Steps Ahead}
-Better handle on Molecular fraction in jets.\\
-Zero order approximation of SiO fractional abundance profile.\\ 
-Since SiO in gas phase for 0 years with our abundance. While SiO takes
-10$^{4}$ years. History of SiO in gas phase and proper chemistry to get
-abundance. 
+\subsection{Slow Component and Grain Chemistry}
+%
+We have presented a formidable model to explain the EHV component seen
+in SiO emission from several young outflows. The reference model
+consistently solves for the H$_{2}$ chemistry in presence of
+appropriate cooling. The steady state temperature, density and velocities obtained from dynamical
+simulation is post-processed to obtain SiO maps, spectra and PV
+diagrams. One essential ingredient required for the radiative transfer modeling
+is the SiO fractional abundance and its dependence on shock velocity. 
+Though 1D models that study the formation of SiO in gas phase from grain-grain and grain-mantle
+collisions exsist, their focus is mainly on weaker shocks
+\cite{Schilke:1997p14140, Caselli:1997p14853, Gusdorf:2008p13800}. 
+The pulsating jet propogation model presented here have shock speeds
+reaching upto 100 km\,s$^{-1}$. For simplicity we have used two basic
+prescription of SiO abundance profile as a function of shock
+velocity. Though the shape of the profile is uncertain the upper and
+lower limits used are backed by observational evidences. Ideally for a consistent
+depedence of SiO abundance on shock velocity, one would have to also
+solve for silicon and SiO chemistry in a manner similar to that of
+H$_{2}$. Further by evolving the dynamical simulations with complex
+grain chemistry for more than 10$^{4}$ years (time to destroy SiO in
+gas phase \cite{Codella:1999p12584}),  one can trace the history of 
+SiO in molecular outflows. However, such a numerically expensive model 
+with complex chemistry is beyond the scope of this paper.  
+%
 
-Wider CO and H2O WISH survey component.\\
+The model presented in this paper target the very early phase of molecular
+outflows i.e., dynamical time scale of 1000 years.
+As discussed in sections above, the unqiue combination of pulsating
+jet with chemistry and cooling followed by non-LTE radiative transfer
+calculations has shown success in fiting the line shapes, integrated intensity and line ratios of SiO
+transitions arising from EHV gas. However, the synthetic spectra show
+no signatures of slow SiO component that accompanies EHV emission seen
+in many outflows. The physical mechanism for the origin of slow SiO component is still a matter
+of debate. One of the suggestion is it arises due to slowing down of
+shocked gas as they age. The time scale estimated for the shocked gas
+to slow down is of the same order of magnitude as the SiO destruction
+time scale i.e., 10$^{4}$ years \cite{Codella:1999p12584}. In this
+case, we will not be able to see the effect as the dynamical runs do
+not evolve beyond 10$^{3}$ years. However, we do see initial 
+hints of slowing down of more evolved gas in terms of the velocity
+shift of about 5-7 km\,s$^{-1}$ in peak emission between that
+coming from the freshly formed internal knots close to the base of the
+flow as compared to emission coming from more evolved gas near the
+primary bow shock. To ascertain this fact in more details, one would
+need to track the primary bow shock for 10$^{4}$ years
+using a larger simulation box and possibly with adaptive gridding 
+which will be considered for future simulations. Such a long term
+evolution will also help to provide a numerical model for the formation of HH objects
+which are belived to be slowed down and more evolved form of these
+young molecular bullets as suggested by \cite{Norman:1979p14858,
+  Hartigan:1987p11178}.
+%
 
-
-
-
+Alternative to this evolutinary 
 
 
 
