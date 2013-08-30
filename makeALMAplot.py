@@ -34,9 +34,9 @@ def Velarr(ang,V0, A):
     return arr1
 
 def fig11():
-    hdulist1 = fits.open('/Users/bhargavvaidya/pyCODES/run4ALMA/imageShock_J2-1_45deg_molcool_dirty.fits.gz')
-    hdulist2 = fits.open('/Users/bhargavvaidya/pyCODES/run4ALMA/imageShock_J5-4_45deg_molcool_dirty.fits.gz')
-    hdulist3 = fits.open('/Users/bhargavvaidya/pyCODES/run4ALMA/imageShock_J8-7_45deg_molcool_dirty.fits.gz')
+    hdulist1 = pf.open('/home/pytd/documents/SiOJets_New/imagedless1Shock_J2-1_45deg_molcool_dirty.fits')
+    hdulist2 = pf.open('/home/pytd/documents/SiOJets_New/imagedless1Shock_J8-7_45deg_molcool_dirty.fits')
+    hdulist3 = pf.open('/home/pytd/documents/SiOJets_New/imagedless1Shock_J5-4_45deg_molcool_dirty.fits')
     
     
     A = hdulist1[0].header
@@ -48,17 +48,17 @@ def fig11():
     VELarr2 = Velarr(pi/4.,100.0, A)
     print VELarr2[0]
 
-    #clevs1 = [0.002, 0.004, 0.008, 0.012, 0.024]
-    clevs2 = [0.001, 0.01, 0.02, 0.04,0.08,0.12] 
+    clevs1 = [0.01,0.03, 0.05]
+    clevs2 = [0.01, 0.1, 0.2, 0.4,0.8,1.2] 
     # Get ALMA images
     f1 = plt.figure(figsize=[11,8])
     plt.subplots_adjust(wspace=0.05)
     ax1 = f1.add_subplot(121)
     
-    im1 = imshow(hdulist2[0].data[54,:,:],origin='image',vmin = 0.0001, vmax = 0.05,cmap=cm.gist_heat)
-    #plt.colorbar(im1,ticks=clevs2)
-    im2 = contour(hdulist3[0].data[54,:,:],levels=clevs2,colors='b',linewidths=1.0)
-    im3 = contour(hdulist1[0].data[54,:,:],levels=clevs2,colors='g',linewidths=1.0)
+    im1 = imshow(hdulist2[0].data[:,:,:].sum(0),origin='image',vmin = 0.001, vmax = 0.35,cmap=cm.gist_heat)
+    plt.colorbar(im1,ticks=clevs2)
+    im2 = contour(hdulist3[0].data[:,:,:].sum(0),levels=clevs2,colors='b',linewidths=1.0)
+    im3 = contour(hdulist1[0].data[:,:,:].sum(0),levels=clevs2,colors='g',linewidths=1.0)
     
     axis([100.0,250.0,0.0,320.0])
     ax1.xaxis.set_major_locator(MaxNLocator(4))
@@ -75,10 +75,10 @@ def fig11():
     
     ax2 = f1.add_subplot(122)
     
-    im1b = imshow(hdulist2[0].data[:,:,175].T,origin='image',vmin = 0.0001, vmax = 0.05,cmap=cm.gist_heat)
-    plt.colorbar(im1b,ticks=clevs2)
-    im2b = contour(hdulist3[0].data[:,:,175].T,levels=clevs2,colors='b',linewidths=1.0)
-    im3b = contour(hdulist1[0].data[:,:,175].T,levels=clevs2,colors='g',linewidths=1.0)
+    im1b = imshow(hdulist2[0].data[:,:,175].T,origin='image',vmin = 0.001, vmax = 0.05,cmap=cm.gist_heat)
+    plt.colorbar(im1b,ticks=clevs1)
+    im2b = contour(hdulist3[0].data[:,:,175].T,levels=clevs1,colors='b',linewidths=1.0)
+    im3b = contour(hdulist1[0].data[:,:,175].T,levels=clevs1,colors='g',linewidths=1.0)
     
     axis([0.0,150.0,0.0,320.0])
     ax2.xaxis.set_major_locator(MaxNLocator(4))
@@ -94,5 +94,5 @@ def fig11():
     
     plt.show()
 
-if __name__=="__main__"
+if __name__=="__main__":
     fig11()
