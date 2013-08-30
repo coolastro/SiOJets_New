@@ -1,4 +1,4 @@
-This is pdfTeXk, Version 3.141592-1.40.3 (Web2C 7.5.6) (format=pdflatex 2011.10.18)  29 AUG 2013 14:32
+This is pdfTeXk, Version 3.141592-1.40.3 (Web2C 7.5.6) (format=pdflatex 2011.10.18)  30 AUG 2013 14:09
 entering extended mode
  %&-line parsing enabled.
 **ms_final_bv.tex
@@ -366,17 +366,20 @@ Underfull \hbox (badness 10000) in paragraph at lines 1145--1147
 
  []
 
-<PFIGS//ALMAmaps2.png, id=417, 662.475pt x 533.995pt>
-File: PFIGS//ALMAmaps2.png Graphic file (type png)
-
-<use PFIGS//ALMAmaps2.png> [10 <./PFIGS//imshkvh_21_60_empvspec.png> <./PFIGS//
-imshkvh_21_45_empvspec.png>]
+<PFIGS//ALMAmaps3.png, id=417, 794.97pt x 578.16pt>
+File: PFIGS//ALMAmaps3.png Graphic file (type png)
+ <use PFIGS//ALMAmaps3.png>
+[10 <./PFIGS//imshkvh_21_60_empvspec.png> <./PFIGS//imshkvh_21_45_empvspec.png>
+]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [11 <./PFIGS//EM_gaussandth.png> <./PFIGS//PV_gaussandth.png>]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [12 <./PFIGS//ALMAmaps2.png>]
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [12 <./PFIGS//ALMAmaps3.png>]
 <PFIGS//imshkvhcontomaps.png, id=500, 1133.23375pt x 560.0925pt>
 File: PFIGS//imshkvhcontomaps.png Graphic file (type png)
 
@@ -385,13 +388,13 @@ Missing character: There is no â in font cmr9!
 Missing character: There is no € in font cmr9!
 Missing character: There is no “ in font cmr9!
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
 <PFIGS//LineRatio_THDeq1.png, id=521, 762.85pt x 632.3625pt>
 File: PFIGS//LineRatio_THDeq1.png Graphic file (type png)
 
 <use PFIGS//LineRatio_THDeq1.png>
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
 Underfull \hbox (badness 10000) in paragraph at lines 1338--1339
 
  []
@@ -407,11 +410,11 @@ LaTeX Warning: There were multiply-defined labels.
 Here is how much of TeX's memory you used:
  4333 strings out of 256216
  56392 string characters out of 1917071
- 131804 words of memory out of 1500000
+ 131933 words of memory out of 1500000
  7411 multiletter control sequences out of 10000+200000
  20181 words of font info for 73 fonts, out of 1200000 for 2000
  645 hyphenation exceptions out of 8191
- 31i,19n,39p,1709b,441s stack positions out of 5000i,500n,6000p,200000b,15000s
+ 31i,19n,39p,1709b,445s stack positions out of 5000i,500n,6000p,200000b,15000s
 pdfTeX warning (dest): name{UNDEFINED} has been referenced but does not exist
 , replaced by a fixed one
 
@@ -431,7 +434,7 @@ uesky/cm/cmti12.pfb></usr/share/texmf/fonts/type1/bluesky/cm/cmti8.pfb></usr/sh
 are/texmf/fonts/type1/bluesky/cm/cmti9.pfb></usr/share/texmf/fonts/type1/public
 /cmex/fmex8.pfb></usr/share/texmf/fonts/type1/public/cmex/fmex9.pfb></usr/share
 /texmf/fonts/type1/bluesky/ams/msam10.pfb>
-Output written on ms_final_bv.pdf (15 pages, 3137299 bytes).
+Output written on ms_final_bv.pdf (15 pages, 3314779 bytes).
 PDF statistics:
  653 PDF objects out of 1000 (max. 8388607)
  129 named destinations out of 1000 (max. 131072)
