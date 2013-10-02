@@ -552,22 +552,50 @@ the next section.
 
 \section{Chemistry and Cooling}
 \label{sec:chem}
-\subsection{Power law cooling}
-\subsection{Atomic Cooling}
-\subsection{Tabulated Cooling}
-
-
 \subsection{Molecular Cooling}
 \label{ssec:molcool}
-The evolution of molecular, atomic and ionized hydrogen is governed by
-equations listed in Table~\ref{tab:chemeq}. In this cooling mode,
-these equations are evolved at each times using temperature dependent
-rates mentioned in the table along with their source. The code tracks
-the formation and destruction of three quantities viz., X(HI), X($H_{2}$)
-and X(HII) with a constraint that sum of all three should be unity.
-Further, these abundances are used to update the cooling
-function $\Lambda(n,T,{\bf{X}})$ to consistently derive the
-temperature for next advection step.
+Typically, early collimated outflows have cooling times shorter than
+the dynamical times implying that the radiative cooling plays a vital
+role in dynamics. In pursuit to study such it is necessary to evolve
+the dynamics in conjunction with full molecular chemistry and
+associated radiative processes. However, evolving a full complex
+network of chemical equations along with dynamics is a very
+computationally intensive task. As a result, we have focused only in
+evolving the chemical equations pertaining to atomic and molecular
+hydrogen. This prescription of molecular cooling has been added to the PLUTO
+code to study the chemical evolution of molecular outflows during the
+very early phases of star formation. In particular, the total hydrogen
+number density n$_{\rm H}$ comprises of contribution from atomic and
+molecular hydrogen i.e., n$_{\rm H}$ = n$_{HI}$ + n$_{H2}$. Whereas
+the contribution to electrons comes from the ionized hydrogen, n$_{\rm HII}$ and
+from negligible but fixed fraction of metals ($Z \sim 10^{-4}$).
+The chemical evolution of molecular, atomic and ionized hydrogen is governed by
+equations listed in Table~\ref{tab:chemeq}. 
+%
+
+Numerically, the
+non-homogenous parts of the equations~\ref{encons1} and \ref{chemevol} 
+are are solved separately from the advection step
+using operator splitting. Further, the rate equations are evolved at each advection time
+step using sub-stepping and adaptive Runge-Kutta methods.
+In doing so, the code tracks the formation and destruction of
+fractions of three species viz., X(HI), X($H_{2}$)
+and X(HII) based on the temperature dependent reaction rates specified
+in the table along with their references and shown in the left panel
+of figure~\ref{ssec:molcool}. The figure clearly shows that below
+1000\,K the formation of molecular hydrogen dominates over other
+chemical processes, whereas for hotter gas there exists a competition
+of different chemical processes elucidating the complex chemical interplay.
+The fractions of various hydrogen species are then used to update the cooling
+function $\Lambda(\rho,T,{\bf{X}})$ to consistently derive the
+temperature for next advection step. For low temperatures, we also
+take into account contribution to cooling rates from molecules like
+CO whose abundances with respect to $n_{\rm H2}$ are fixed to
+10$^{-5}$. Whereas, for each of the other molecules like OH, H$_{2}$O and atomic OI,
+the abundance is fixed to $5.\times10^{-6}$. The contribution from
+these molecules is only important when temperature is $<$ 100\,K as seen
+in the right panel of figure~\ref{ssec:molcool}. 
+
 
 
 \begin{figure*}
@@ -610,6 +638,54 @@ T_{\rm eV}^{2.012}(\rm{exp}(4.463/T_{\rm eV})^{-1}((1. + 0.2472 T_{\rm eV})^{3.5
 \end{minipage}
 \end{table*}
 
+\subsection{Additional Cooling Prescriptions}
+%
+For comparison we have also ran simulations of axisymmetric MHD jets
+with optically thin cooling prescriptions already existing in the public
+release of the PLUTO-4 code. They are power-law cooling, 
+simplified non-equilibrium (or atomic) cooling and tabulated
+cooling. Further we compare these radiative runs with an adiabatic jet 
+to cover a wide spectrum of jet thermodynamics. 
+%
+
+In case of power law cooling, the radiative losses denoted by
+$\Lambda(\rho,T,\bf{X})$ are proportional to
+$\rho^{2}T^{\alpha}$, with $\alpha$ = 0.5 representing bremsstrahlung
+cooling. The loss term is independent of the fraction of various
+species $\bf{X}$, therefore the fluid density $\rho$ is assumed to be
+all hydrogen for further processing of emission maps. Similarly, 
+for tabulated cooling prescription, the radiative losses are estimated
+based on fixed fraction of various species. However, the contribution
+for each specie is a complex function of density and temperature. The
+variation of cooling function $\Lambda$ with temperature is shown in
+the right panel of figure~\ref{fig:tempvar}. 
+The formulations which depend on the fractions of each specie and gas
+temperature of these variations are mainly adopted from the appendix of \cite{Smith:2003p9985}. 
+The fractions of all hydrogen species are kept fixed to their initial values, while that
+of CO, OH, H$_{2}$O and OI are same as that used for molecular cooling
+described above. The total cooling curve shown as the black solid line
+in the figure~\ref{fig:tempvar} is used for the case of tabulated
+cooling. For the atomic cooling, we distinguish between neutral
+and ionized gas by defining $f_{\rm n} = n_{\rm HI}/n_{\rm H}$ and
+evolve it using,
+\begin{equation}
+\frac{\partial f_{\rm n}}{\partial t} + {\bf{v}}\cdot\nabla f_{\rm n} =
+n_{\rm e} [-(c_{\rm r} + c_{\rm i})f_{\rm n} + c_{\rm r}]
+\end{equation}
+where, $n_{\rm e}$ is the number of electrons that come from ionized
+hydrogen and a very small fixed fraction of metals, c$_{\rm r}$ and c$_{\rm i}$ are the recombination and
+ionization rate coefficients that depend on the temperature T. In
+addition to losses by collisional ionization and radiative
+recombination, additional contribution to radiative losses come from various atomic line emissions from
+C,N,O,Mg,Si,Fe etc.
+%
+
+While these additional cooling prescriptions may not be a complete description of
+the chemical and radiative processes in early outflows, they are ideal
+to compare the results obtained from the more consistent newly added molecular
+cooling. Such a comparison is presented in section~\ref{ssec:coolres}.
+
+
 \section{Radiative Transfer}
 \label{sec:radtrans}
 Radiative transfer modeling used for post processing.
@@ -619,7 +695,7 @@ The radiative transfer program used is LIME (LIne Modeling Engine; \citealt{Brin
 
 
 \begin{figure}
-% \includegraphics[width=84mm]{\figpath/grid.png}
+ \includegraphics[width=84mm]{\figpath/grid.png}
  \caption{A plot of the points selected by the gridding process and the paths down which photons can propagate for points in the r,z plane. The points are color coded by the density distribution (in m$^{-3}$, as used in LIME) and are more concentrated in the high density knots.}
 \label{grid} % This plots has to be changed. 
 \end{figure}
@@ -806,7 +882,7 @@ mol310 & Molecular & 3 & 3.3 & 14.0 & 0.66 & 12.0\\
   corresponding spectral width.}
 \begin{tabular}{l | l | l | l | l}
 \hline
-Profile & $\delta$ = v$_{\rm jet}$/v$_{\rm s}$ & $\int T_{\rm MB}dV$
+Profile & $\delta$ = v$_{\rm s}$/v$_{\rm jet}$ & $\int T_{\rm MB}dV$
 [K-km\,s$^{-1}$] & $\Delta$v [km s$^{-1}$]\\ 
 \hline\hline
 Top Hat & 1.0 & 3.3 & 14.0 \\
@@ -859,21 +935,74 @@ function of height from the base of the jet.
 
 \subsection{Comparison of cooling prescription}
 \label{ssec:coolres}
-Importance of cooling prescriptions\\
+We have done a comparison study of jet dynamics with various cooling
+prescriptions, which are described in
+Sect.~\ref{sec:chem}. Figure~\ref{fig:coolcmpdyn} shows the density of the MHD
+jet at time $\sim$ 1000 years for these different cooling
+prescriptions. For this study, we have chosen a density contrast at the base of
+$\eta$ = 10 between the jet and ambient medium.
+It is clear from the figure, that the cooling plays a
+significant role in determining the thickness of the jet. The jets
+with no or very little cooling seems to be more thicker as compared to
+jets having dominant cooling. For example, the adiabatic jet
+has a widest bow shock at its apex and has the most prominent cocoon
+around it. While the jet with atomic cooling has a rather conical
+jet head with significantly less cocoon surrounding it. The cocoon is
+almost absent from the narrow jet with tabulated cooling. Instead, the jet
+seems to form a very high density shell due to cooling of the
+processed ambient gas. Further, the jet with tabulated cooling is more
+narrower as compared to the jet with molecular cooling. This clearly
+shows the feedback of chemistry on the cooling function. The cooling
+terms for both these jets are the same to begin with, however,
+for the molecular jet the cooling terms evolve with jet dynamics as the fraction of
+various hydrogen species change while the terms remain fixed to values
+shown in the right panel of fig~\ref{fig:tempvar} for the jet with tabulated
+cooling. Additionally, the material at primary bow shock for jet
+with tabulated and molecular cooling condenses forming dense knots. 
+Such a condensation is caused due to thermal instability and is 
+a typical feature of axi-symmetric radiative jets 
+\citep[see, for e.g,][]{Blondin:1990p2130,Cerqueira:1999p15052}.
+%
+
+The dynamical states for each of this cooling prescription are then 
+post-processed to obtain integrated J = 2-$>$1 SiO emission
+maps shown in figure~\ref{fig:coolcmpsio}. The differences in dynamical
+features are also reflected in the corresponding SiO emission
+maps. These maps are obtained assuming an angle of inclination of
+90$^\circ$ using the top hat abundance
+profile with $\delta = 1$ and they are further convolved with a beam
+having a FWHM of 2.5\arcsec. The
+emission features in jet with atomic and power-law cooling prescription do not have
+such a well defined lobe structure. For example, the emission from the jet with atomic
+cooling is mainly coming from regions close to R,Z = $\pm$
+10,80. In fact the emission from this region seems to be stronger than
+that coming from the conical jet head. In case of the jet with
+power-law cooling the emission seems to be mostly coming from the
+internal knots. The thin density layer formed at the interface of jet
+and the ambient medium do not show indication of any emission. 
+The emission coming from jets with
+tabulated and molecular cooling show a distinctive outflow lobe which
+is typically observed in case of young molecular outflows.
+SiO emission coming from internal knots in these jets also show a
+distinctive turbulent pattern consistent with observations.
+ 
+
+
+
 Bulk of emission comes from cooling instabilities.
 figure nos. 2 -- Simulated images, emission maps for eta = 10.
 \begin{figure*}
  \includegraphics[width=2.\columnwidth]{\figpath/jetplt1_1010.png}
  \caption{Jet Volume Density for different cooling modes with
    $\eta$ = 10 and $\beta$ = 10.}
-\label{grid}
+\label{fig:coolcmpdyn}
 \end{figure*}
 
 \begin{figure*}
  \includegraphics[width=2.\columnwidth]{\figpath/diffcool_EMgaussprof.png}
  \caption{A plot of the integrated SiO J2-1 emission from 5 models, 
 each using a different method to calculate cooling and all with $\eta$=10 $\beta$=10.}
-\label{cooling2-1} 
+\label{fig:coolcmpsio} 
 \end{figure*}
 
 
@@ -1145,11 +1274,11 @@ distribution.
 ALMA view of the reference run and stress of applying our synthetic techniques
 to study the molecular outflows in more details.\\
 
-In order to see the interior structure of the molecular outflow, high resolution interferometric observations are needed. To demonstrate how jets similar to those we have modeled would look through such observations we have performed synthetic Atacama Large Millimetre Array (ALMA) observations using the Common Astronomy Software Applications package (CASA). The output from the radiative transfer were scalled to 300pc and used as the sky models for observations of the J=2-1, J=5-4 and J=8-7 lines at freqencies of 86.85, 217.10 and 347.33$\,$GHz, which fall in ALMA bands 3, 6 and 7. The observations were simulated using cycle 1 ALMA for 30 minutes total integration time, in the configurations c32-6, c32-4 and c32-3 for the three lines, giving beam sizes of 0.72'', 0.47'' and 0.58'' and sensitivities of 0.05, 0.07 and 0.09$\,$mJy/beam for the three lines (as calculated by the ALMA online sensitivity calculator) with velocity resolutions of $\sim$1$\,$km/s.
+In order to see the interior structure of the molecular outflow, high resolution interferometric observations are needed. To demonstrate how jets similar to those we have modeled would look through such observations we have performed synthetic Atacama Large Millimeter Array (ALMA) observations using the Common Astronomy Software Applications package (CASA). The output from the radiative transfer were scaled to 300pc and used as the sky models for observations of the J=2-1, J=5-4 and J=8-7 lines at frequencies of 86.85, 217.10 and 347.33$\,$GHz, which fall in ALMA bands 3, 6 and 7. The observations were simulated using cycle 1 ALMA for 30 minutes total integration time, in the configurations c32-6, c32-4 and c32-3 for the three lines, giving beam sizes of 0.72'', 0.47'' and 0.58'' and sensitivities of 0.05, 0.07 and 0.09$\,$mJy/beam for the three lines (as calculated by the ALMA online sensitivity calculator) with velocity resolutions of $\sim$1$\,$km/s.
 
 \begin{figure*}
  \includegraphics[width=2.\columnwidth]{\figpath/ALMAmaps3.png}
- \caption{{\bf Left:} The integrated intensity map of the three SiO lines simulatedn. The heat map shows the 5-4 line intensity (in units of Jy$\,$kms$^{-1}$/beam), the blue contours show the J=8-7 line intensity and the green contours show the J=2-1 line intensity. {\bf Right:} The PV diagram taken along the axis of the jet (in units of Jy/beam), showing the higher J transitions highlighting the knots of the jet and broad emission at the bow shock. In both pannels the ticks on the colourbar represent the contour levels, the levels not shown on the integrated intensity colourbar are double the previous level.}
+ \caption{{\bf Left:} The integrated intensity map of the three SiO lines simulated. The heat map shows the 5-4 line intensity (in units of Jy$\,$kms$^{-1}$/beam), the blue contours show the J=8-7 line intensity and the green contours show the J=2-1 line intensity. {\bf Right:} The PV diagram taken along the axis of the jet (in units of Jy/beam), showing the higher J transitions highlighting the knots of the jet and broad emission at the bow shock. In both panels the ticks on the color bar represent the contour levels, the levels not shown on the integrated intensity color bar are double the previous level.}
 \label{fig:almafig}
 \end{figure*} 
 
@@ -1346,14 +1475,14 @@ simulation is post-processed to obtain SiO maps, spectra and PV
 diagrams. One essential ingredient required for the radiative transfer modeling
 is the SiO fractional abundance and its dependence on shock velocity. 
 Though 1D models that study the formation of SiO in gas phase from grain-grain and grain-mantle
-collisions exsist, their focus is mainly on weaker shocks
+collisions exists, their focus is mainly on weaker shocks
 \cite{Schilke:1997p14140, Caselli:1997p14853, Gusdorf:2008p13800}. 
-The pulsating jet propogation model presented here have shock speeds
-reaching upto 100 km\,s$^{-1}$. For simplicity we have used two basic
+The pulsating jet propagation model presented here have shock speeds
+reaching up to 100 km\,s$^{-1}$. For simplicity we have used two basic
 prescription of SiO abundance profile as a function of shock
 velocity. Though the shape of the profile is uncertain the upper and
 lower limits used are backed by observational evidences. Ideally for a consistent
-depedence of SiO abundance on shock velocity, one would have to also
+dependence of SiO abundance on shock velocity, one would have to also
 solve for silicon and SiO chemistry in a manner similar to that of
 H$_{2}$. Further by evolving the dynamical simulations with complex
 grain chemistry for more than 10$^{4}$ years (time to destroy SiO in
@@ -1364,9 +1493,9 @@ with complex chemistry is beyond the scope of this paper.
 
 The model presented in this paper target the very early phase of molecular
 outflows i.e., dynamical time scale of 1000 years.
-As discussed in sections above, the unqiue combination of pulsating
+As discussed in sections above, the unique combination of pulsating
 jet with chemistry and cooling followed by non-LTE radiative transfer
-calculations has shown success in fiting the line shapes, integrated intensity and line ratios of SiO
+calculations has shown success in fitting the line shapes, integrated intensity and line ratios of SiO
 transitions arising from EHV gas. However, the synthetic spectra show
 no signatures of slow SiO component that accompanies EHV emission seen
 in many outflows. The physical mechanism for the origin of slow SiO component is still a matter
@@ -1377,7 +1506,7 @@ time scale i.e., 10$^{4}$ years \cite{Codella:1999p12584}. In this
 case, we will not be able to see the effect as the dynamical runs do
 not evolve beyond 10$^{3}$ years. However, we do see initial 
 hints of slowing down of more evolved gas in terms of the velocity
-shift of about 5-7 km\,s$^{-1}$ in peak emission between that
+shift of about 7-10 km\,s$^{-1}$ in peak emission between that
 coming from the freshly formed internal knots close to the base of the
 flow as compared to emission coming from more evolved gas near the
 primary bow shock. To ascertain this fact in more details, one would
@@ -1385,12 +1514,13 @@ need to track the primary bow shock for 10$^{4}$ years
 using a larger simulation box and possibly with adaptive gridding 
 which will be considered for future simulations. Such a long term
 evolution will also help to provide a numerical model for the formation of HH objects
-which are belived to be slowed down and more evolved form of these
+which are believed to be slowed down and more evolved form of these
 young molecular bullets as suggested by \cite{Norman:1979p14858,
   Hartigan:1987p11178}.
 %
 
-Alternative to this evolutinary 
+An alternative hypothesis for the origin of the low velocity SiO
+component is that it could be formed by interaction of 
 
 
 
