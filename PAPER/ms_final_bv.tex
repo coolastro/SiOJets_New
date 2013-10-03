@@ -549,7 +549,11 @@ the next section.
 \label{ssec:molcool}
 Typically, early collimated outflows have cooling times shorter than
 the dynamical times implying that the radiative cooling plays a vital
+<<<<<<< HEAD
 role in dynamics. In order to study such outflows it is necessary to evolve
+=======
+role in dynamics. In pursuit to study such it is necessary to evolve
+>>>>>>> 7e57e86186c90dc5d958ff3e98c120c27e6e3bab
 the dynamics in conjunction with full molecular chemistry and
 associated radiative processes. However, evolving a full complex
 network of chemical equations along with dynamics is a very
@@ -583,9 +587,15 @@ The fractions of various hydrogen species are then used to update the cooling
 function $\Lambda(\rho,T,{\bf{X}})$ to consistently derive the
 temperature for next advection step. For low temperatures, we also
 take into account contribution to cooling rates from molecules like
+<<<<<<< HEAD
 CO, whose abundance with respect to $n_{\rm H2}$ is fixed to
 10$^{-5}$. For each of the other molecules contributing to the cooling function (like OH, H$_{2}$O and atomic OI)
 the abundance is fixed to $5\times10^{-6}$. The contribution from
+=======
+CO whose abundances with respect to $n_{\rm H2}$ are fixed to
+10$^{-5}$. Whereas, for each of the other molecules like OH, H$_{2}$O and atomic OI,
+the abundance is fixed to $5.\times10^{-6}$. The contribution from
+>>>>>>> 7e57e86186c90dc5d958ff3e98c120c27e6e3bab
 these molecules is only important when temperature is $<$ 100\,K as seen
 in the right panel of figure~\ref{ssec:molcool}. 
 
@@ -632,8 +642,13 @@ T_{\rm eV}^{2.012}(\rm{exp}(4.463/T_{\rm eV})^{-1}((1. + 0.2472 T_{\rm eV})^{3.5
 \end{table*}
 
 \subsection{Additional Cooling Prescriptions}
+<<<<<<< HEAD
 % 
 For comparison, we also ran simulations of axisymmetric MHD jets
+=======
+%
+For comparison we have also ran simulations of axisymmetric MHD jets
+>>>>>>> 7e57e86186c90dc5d958ff3e98c120c27e6e3bab
 with optically thin cooling prescriptions already existing in the public
 release of the PLUTO-4 code. They are power-law cooling, 
 simplified non-equilibrium (or atomic) cooling and tabulated
@@ -642,6 +657,7 @@ to cover a wide spectrum of jet thermodynamics.
 %
 
 In case of power law cooling, the radiative losses denoted by
+<<<<<<< HEAD
 $\Lambda(\rho,T,{\bf X})$ are proportional to
 $\rho^{2}T^{\alpha}$, with $\alpha$ = 0.5 representing bremsstrahlung
 cooling. The loss term is independent of the fraction of various
@@ -653,6 +669,19 @@ for each species is a complex function of density and temperature. The
 variation of cooling function $\Lambda$ with temperature is shown in
 the right panel of figure~\ref{fig:tempvar}. 
 The formulations which depend on the fractions of each species and gas
+=======
+$\Lambda(\rho,T,\bf{X})$ are proportional to
+$\rho^{2}T^{\alpha}$, with $\alpha$ = 0.5 representing bremsstrahlung
+cooling. The loss term is independent of the fraction of various
+species $\bf{X}$, therefore the fluid density $\rho$ is assumed to be
+all hydrogen for further processing of emission maps. Similarly, 
+for tabulated cooling prescription, the radiative losses are estimated
+based on fixed fraction of various species. However, the contribution
+for each specie is a complex function of density and temperature. The
+variation of cooling function $\Lambda$ with temperature is shown in
+the right panel of figure~\ref{fig:tempvar}. 
+The formulations which depend on the fractions of each specie and gas
+>>>>>>> 7e57e86186c90dc5d958ff3e98c120c27e6e3bab
 temperature of these variations are mainly adopted from the appendix of \cite{Smith:2003p9985}. 
 The fractions of all hydrogen species are kept fixed to their initial values, while that
 of CO, OH, H$_{2}$O and OI are same as that used for molecular cooling
@@ -666,9 +695,17 @@ evolve it using,
 n_{\rm e} [-(c_{\rm r} + c_{\rm i})f_{\rm n} + c_{\rm r}]
 \end{equation}
 where, $n_{\rm e}$ is the number of electrons that come from ionized
+<<<<<<< HEAD
 hydrogen and a very small fixed fraction of metals, c$_{\rm r}$ and c$_{\rm i}$ are the recombination and ionization rate coefficients that depend on the temperature T. In
 addition to losses by collisional ionization and radiative
 recombination, additional contribution to radiative losses come from various atomic line emissions from C,N,O,Mg,Si,Fe etc.
+=======
+hydrogen and a very small fixed fraction of metals, c$_{\rm r}$ and c$_{\rm i}$ are the recombination and
+ionization rate coefficients that depend on the temperature T. In
+addition to losses by collisional ionization and radiative
+recombination, additional contribution to radiative losses come from various atomic line emissions from
+C,N,O,Mg,Si,Fe etc.
+>>>>>>> 7e57e86186c90dc5d958ff3e98c120c27e6e3bab
 %
 
 While these additional cooling prescriptions may not be a complete description of
@@ -933,19 +970,34 @@ jet at time $\sim$ 1000 years for these different cooling
 prescriptions. For this study, we have chosen a density contrast at the base of
 $\eta$ = 10 between the jet and ambient medium.
 It is clear from the figure, that the cooling plays a
+<<<<<<< HEAD
 significant role in determining the structure of the jet. The jets
 with no or very little cooling are much wider compared to
+=======
+significant role in determining the thickness of the jet. The jets
+with no or very little cooling seems to be more thicker as compared to
+>>>>>>> 7e57e86186c90dc5d958ff3e98c120c27e6e3bab
 jets having dominant cooling. For example, the adiabatic jet
 has a widest bow shock at its apex and has the most prominent cocoon
 around it. While the jet with atomic cooling has a rather conical
 jet head with significantly less cocoon surrounding it. The cocoon is
 almost absent from the narrow jet with tabulated cooling. Instead, the jet
 seems to form a very high density shell due to cooling of the
+<<<<<<< HEAD
 processed ambient gas. Further, the jet with tabulated cooling is narrower than the jet with molecular cooling. This clearly
 shows the feedback of chemistry on the cooling function. The cooling
 terms for both these jets are the same to begin with, however,
 for the molecular jet the cooling terms evolve with jet dynamics as the fraction of
 various hydrogen species change over time. Whilest the terms remain fixed to initial values, shown in the right panel of fig~\ref{fig:tempvar}, for the jet with tabulated
+=======
+processed ambient gas. Further, the jet with tabulated cooling is more
+narrower as compared to the jet with molecular cooling. This clearly
+shows the feedback of chemistry on the cooling function. The cooling
+terms for both these jets are the same to begin with, however,
+for the molecular jet the cooling terms evolve with jet dynamics as the fraction of
+various hydrogen species change while the terms remain fixed to values
+shown in the right panel of fig~\ref{fig:tempvar} for the jet with tabulated
+>>>>>>> 7e57e86186c90dc5d958ff3e98c120c27e6e3bab
 cooling. Additionally, the material at primary bow shock for jet
 with tabulated and molecular cooling condenses forming dense knots. 
 Such a condensation is caused due to thermal instability and is 
@@ -959,7 +1011,12 @@ maps shown in figure~\ref{fig:coolcmpsio}. The differences in dynamical
 features are also reflected in the corresponding SiO emission
 maps. These maps are obtained assuming an angle of inclination of
 90$^\circ$ using the top hat abundance
+<<<<<<< HEAD
 profile with $\delta = 1$. They are then placed at a distance of 100$\,$pc and convolved with a beam with FWHM of 2.5\arcsec in order to create the maps shown. The 
+=======
+profile with $\delta = 1$ and they are further convolved with a beam
+having a FWHM of 2.5\arcsec. The
+>>>>>>> 7e57e86186c90dc5d958ff3e98c120c27e6e3bab
 emission features in jet with atomic and power-law cooling prescription do not have
 such a well defined lobe structure. For example, the emission from the jet with atomic
 cooling is mainly coming from regions close to R,Z = $\pm$
@@ -978,7 +1035,11 @@ condensation formed at the primary bow shock due to thermal
 instability. 
 %
 
+<<<<<<< HEAD
 In summary, different cooling prescriptions strongly influence the
+=======
+In summary, different cooling prescriptions does influence the
+>>>>>>> 7e57e86186c90dc5d958ff3e98c120c27e6e3bab
 dynamics of MHD jet propagation in particular the thickness and
 structure of the primary bow shock. These dynamical differences are
 also reflected in SiO emission maps and spectra. Emission maps

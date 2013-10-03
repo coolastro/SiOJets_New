@@ -1,0 +1,438 @@
+This is pdfTeXk, Version 3.141592-1.40.3 (Web2C 7.5.6) (format=pdflatex 2011.10.18)  3 OCT 2013 16:47
+entering extended mode
+ %&-line parsing enabled.
+**ms_final_bv.tex
+(./ms_final_bv.tex
+LaTeX2e <2005/12/01>
+Babel <v3.8h> and hyphenation patterns for english, usenglishmax, dumylang, noh
+yphenation, arabic, basque, bulgarian, coptic, welsh, czech, slovak, german, ng
+erman, danish, esperanto, spanish, catalan, galician, estonian, farsi, finnish,
+ french, greek, monogreek, ancientgreek, croatian, hungarian, interlingua, ibyc
+us, indonesian, icelandic, italian, latin, mongolian, dutch, norsk, polish, por
+tuguese, pinyin, romanian, russian, slovenian, uppersorbian, serbian, swedish, 
+turkish, ukenglish, ukrainian, loaded.
+(./mn2e.cls
+Document Class: mn2e 2001/02/06 v2.2 LaTeX2e MN document class
+Document Style `MN' v2.2, released 2001 February 20
+\math@groups=\toks14
+LaTeX Font Info:    Overwriting symbol font `symbols' in version `bold'
+(Font)                  OMS/cmsy/b/n --> OMS/cmsy/b/n on input line 223.
+\symbmisymbols=\mathgroup4
+\symUPM=\mathgroup5
+LaTeX Font Info:    Overwriting symbol font `UPM' in version `bold'
+(Font)                  U/eur/m/n --> U/eur/b/n on input line 260.
+\symAMSa=\mathgroup6
+\SFB@measure=\dimen102
+\realparindent=\skip41
+\c@part=\count79
+\c@section=\count80
+\c@subsection=\count81
+\c@subsubsection=\count82
+\c@paragraph=\count83
+\c@subparagraph=\count84
+\@indentskip=\skip42
+\smallindent=\skip43
+\@footindent=\skip44
+\@leftskip=\skip45
+\c@dummy=\count85
+(/usr/share/texmf/tex/latex/natbib/natbib.sty
+Package: natbib 2007/02/05 8.0 (PWD)
+\bibhang=\skip46
+\bibsep=\skip47
+LaTeX Info: Redefining \cite on input line 602.
+\c@NAT@ctr=\count86
+)
+\c@table=\count87
+\c@figure=\count88
+\mathindent=\dimen103
+)
+(/usr/share/texmf/tex/latex/graphics/color.sty
+Package: color 2005/11/14 v1.0j Standard LaTeX Color (DPC)
+
+(/usr/share/texmf/tex/latex/config/color.cfg
+File: color.cfg 2007/01/18 v1.5 color configuration of teTeX/TeXLive
+)
+Package color Info: Driver file: pdftex.def on input line 130.
+
+(/usr/share/texmf/tex/latex/pdftex-def/pdftex.def
+File: pdftex.def 2007/01/08 v0.04d Graphics/color for pdfTeX
+\Gread@gobject=\count89
+))
+(/usr/share/texmf/tex/latex/graphics/graphicx.sty
+Package: graphicx 1999/02/16 v1.0f Enhanced LaTeX Graphics (DPC,SPQR)
+
+(/usr/share/texmf/tex/latex/graphics/keyval.sty
+Package: keyval 1999/03/16 v1.13 key=value parser (DPC)
+\KV@toks@=\toks15
+)
+(/usr/share/texmf/tex/latex/graphics/graphics.sty
+Package: graphics 2006/02/20 v1.0o Standard LaTeX Graphics (DPC,SPQR)
+
+(/usr/share/texmf/tex/latex/graphics/trig.sty
+Package: trig 1999/03/16 v1.09 sin cos tan (DPC)
+)
+(/usr/share/texmf/tex/latex/config/graphics.cfg
+File: graphics.cfg 2007/01/18 v1.5 graphics configuration of teTeX/TeXLive
+)
+Package graphics Info: Driver file: pdftex.def on input line 90.
+)
+\Gin@req@height=\dimen104
+\Gin@req@width=\dimen105
+)
+(/usr/share/texmf/tex/latex/amsmath/amsmath.sty
+Package: amsmath 2000/07/18 v2.13 AMS math features
+\@mathmargin=\skip48
+
+For additional information on amsmath, use the `?' option.
+(/usr/share/texmf/tex/latex/amsmath/amstext.sty
+Package: amstext 2000/06/29 v2.01
+
+(/usr/share/texmf/tex/latex/amsmath/amsgen.sty
+File: amsgen.sty 1999/11/30 v2.0
+\@emptytoks=\toks16
+\ex@=\dimen106
+))
+(/usr/share/texmf/tex/latex/amsmath/amsbsy.sty
+Package: amsbsy 1999/11/29 v1.2d
+\pmbraise@=\dimen107
+)
+(/usr/share/texmf/tex/latex/amsmath/amsopn.sty
+Package: amsopn 1999/12/14 v2.01 operator names
+)
+\inf@bad=\count90
+LaTeX Info: Redefining \frac on input line 211.
+\uproot@=\count91
+\leftroot@=\count92
+LaTeX Info: Redefining \overline on input line 307.
+\classnum@=\count93
+\DOTSCASE@=\count94
+LaTeX Info: Redefining \ldots on input line 379.
+LaTeX Info: Redefining \dots on input line 382.
+LaTeX Info: Redefining \cdots on input line 467.
+\Mathstrutbox@=\box26
+\strutbox@=\box27
+\big@size=\dimen108
+LaTeX Font Info:    Redeclaring font encoding OML on input line 567.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 568.
+\macc@depth=\count95
+\c@MaxMatrixCols=\count96
+\dotsspace@=\muskip10
+\c@parentequation=\count97
+\dspbrk@lvl=\count98
+\tag@help=\toks17
+\row@=\count99
+\column@=\count100
+\maxfields@=\count101
+\andhelp@=\toks18
+\eqnshift@=\dimen109
+\alignsep@=\dimen110
+\tagshift@=\dimen111
+\tagwidth@=\dimen112
+\totwidth@=\dimen113
+\lineht@=\dimen114
+\@envbody=\toks19
+\multlinegap=\skip49
+\multlinetaggap=\skip50
+\mathdisplay@stack=\toks20
+LaTeX Info: Redefining \[ on input line 2666.
+LaTeX Info: Redefining \] on input line 2667.
+)
+(/usr/share/texmf/tex/latex/amsfonts/amssymb.sty
+Package: amssymb 2002/01/22 v2.2d
+
+(/usr/share/texmf/tex/latex/amsfonts/amsfonts.sty
+Package: amsfonts 2001/10/25 v2.2f
+LaTeX Font Info:    Redeclaring symbol font `AMSa' on input line 85.
+LaTeX Font Info:    Overwriting symbol font `AMSa' in version `normal'
+(Font)                  U/msa/m/n --> U/msa/m/n on input line 85.
+LaTeX Font Info:    Overwriting symbol font `AMSa' in version `bold'
+(Font)                  U/msa/m/n --> U/msa/m/n on input line 85.
+\symAMSb=\mathgroup7
+LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
+(Font)                  U/euf/m/n --> U/euf/b/n on input line 132.
+)
+LaTeX Font Info:    Redeclaring math symbol \leqslant on input line 117.
+LaTeX Font Info:    Redeclaring math symbol \geqslant on input line 124.
+)
+(/usr/share/texmf/tex/latex/hyperref/hyperref.sty
+Package: hyperref 2007/02/07 v6.75r Hypertext links for LaTeX
+\@linkdim=\dimen115
+\Hy@linkcounter=\count102
+\Hy@pagecounter=\count103
+
+(/usr/share/texmf/tex/latex/hyperref/pd1enc.def
+File: pd1enc.def 2007/02/07 v6.75r Hyperref: PDFDocEncoding definition (HO)
+)
+(/usr/share/texmf/tex/latex/config/hyperref.cfg
+File: hyperref.cfg 2002/06/06 v1.2 hyperref configuration of TeXLive
+)
+(/usr/share/texmf/tex/latex/oberdiek/kvoptions.sty
+Package: kvoptions 2006/08/22 v2.4 Connects package keyval with LaTeX options (
+HO)
+)
+Package hyperref Info: Option `colorlinks' set `true' on input line 2238.
+Package hyperref Info: Hyper figures OFF on input line 2288.
+Package hyperref Info: Link nesting OFF on input line 2293.
+Package hyperref Info: Hyper index ON on input line 2296.
+Package hyperref Info: Plain pages OFF on input line 2303.
+Package hyperref Info: Backreferencing OFF on input line 2308.
+
+Implicit mode ON; LaTeX internals redefined
+Package hyperref Info: Bookmarks ON on input line 2444.
+(/usr/share/texmf/tex/latex/ltxmisc/url.sty
+\Urlmuskip=\muskip11
+Package: url 2005/06/27  ver 3.2  Verb mode for urls, etc.
+)
+LaTeX Info: Redefining \url on input line 2599.
+\Fld@menulength=\count104
+\Field@Width=\dimen116
+\Fld@charsize=\dimen117
+\Choice@toks=\toks21
+\Field@toks=\toks22
+Package hyperref Info: Hyper figures OFF on input line 3102.
+Package hyperref Info: Link nesting OFF on input line 3107.
+Package hyperref Info: Hyper index ON on input line 3110.
+Package hyperref Info: backreferencing OFF on input line 3117.
+Package hyperref Info: Link coloring ON on input line 3120.
+\Hy@abspage=\count105
+\c@Item=\count106
+\c@Hfootnote=\count107
+)
+*hyperref using default driver hpdftex*
+(/usr/share/texmf/tex/latex/hyperref/hpdftex.def
+File: hpdftex.def 2007/02/07 v6.75r Hyperref driver for pdfTeX
+\Fld@listcount=\count108
+) (./ms_final_bv.aux)
+\openout1 = `ms_final_bv.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 239.
+LaTeX Font Info:    ... okay on input line 239.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 239.
+LaTeX Font Info:    ... okay on input line 239.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 239.
+LaTeX Font Info:    ... okay on input line 239.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 239.
+LaTeX Font Info:    ... okay on input line 239.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 239.
+LaTeX Font Info:    ... okay on input line 239.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 239.
+LaTeX Font Info:    ... okay on input line 239.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 239.
+LaTeX Font Info:    ... okay on input line 239.
+Package hyperref Info: Link coloring ON on input line 239.
+
+(/usr/share/texmf/tex/latex/hyperref/nameref.sty
+Package: nameref 2006/12/27 v2.28 Cross-referencing by name of section
+
+(/usr/share/texmf/tex/latex/oberdiek/refcount.sty
+Package: refcount 2006/02/20 v3.0 Data extraction from references (HO)
+)
+\c@section@level=\count109
+)
+LaTeX Info: Redefining \ref on input line 239.
+LaTeX Info: Redefining \pageref on input line 239.
+ (./ms_final_bv.out)
+(./ms_final_bv.out)
+\@outlinefile=\write3
+\openout3 = `ms_final_bv.out'.
+
+LaTeX Font Info:    Try loading font information for U+eur on input line 254.
+ (/usr/share/texmf/tex/latex/amsfonts/ueur.fd
+File: ueur.fd 2002/01/19 v2.2g AMS font definitions
+)
+LaTeX Font Info:    Try loading font information for U+msa on input line 254.
+
+(/usr/share/texmf/tex/latex/amsfonts/umsa.fd
+File: umsa.fd 2002/01/19 v2.2g AMS font definitions
+)
+LaTeX Font Info:    Try loading font information for U+msb on input line 254.
+
+(/usr/share/texmf/tex/latex/amsfonts/umsb.fd
+File: umsb.fd 2002/01/19 v2.2g AMS font definitions
+)
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 353.
+
+
+(/usr/share/texmf/tex/latex/base/omscmr.fd
+File: omscmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
+)
+LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <8> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 353.
+ [1{/usr/share/texmf/fonts/map/pdftex/updmap/pdftex.map}
+
+
+]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [2]
+Underfull \hbox (badness 1953) in paragraph at lines 521--535
+\OT1/cmr/m/n/9 70$ years. The pres-sure at the sur-face of the jet is
+ []
+
+<PFIGS//H2ReactionRates.png, id=249, 735.7086pt x 714.0276pt>
+File: PFIGS//H2ReactionRates.png Graphic file (type png)
+
+<use PFIGS//H2ReactionRates.png>
+<PFIGS//H2CoolingFuncs.png, id=250, 664.1613pt x 656.2116pt>
+File: PFIGS//H2CoolingFuncs.png Graphic file (type png)
+
+<use PFIGS//H2CoolingFuncs.png> [3]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [4 <./PFIGS//H2ReactionRates.png> <./PFIGS//H2CoolingFuncs.png>]
+<PFIGS//grid.png, id=308, 507.8975pt x 985.6825pt>
+File: PFIGS//grid.png Graphic file (type png)
+ <use PFIGS//grid.png>
+[5 <./PFIGS//grid.png (PNG copy)>]
+<PFIGS//diffabunprof1.png, id=330, 776.9025pt x 753.81625pt>
+File: PFIGS//diffabunprof1.png Graphic file (type png)
+
+<use PFIGS//diffabunprof1.png> [6 <./PFIGS//diffabunprof1.png>]
+Underfull \vbox (badness 4181) has occurred while \output is active []
+
+ [7]
+Underfull \hbox (badness 1275) in paragraph at lines 1038--1049
+\OT1/cmr/m/n/9 fer-ent cool-ing pre-scrip-tions does in-flu-ence the >>>>>>>
+ []
+
+
+Underfull \hbox (badness 3375) in paragraph at lines 1038--1049
+\OT1/cmr/m/n/9 7e57e86186c90dc5d958ff3e98c120c27e6e3bab dy-nam-ics of
+ []
+
+<PFIGS//jetplt1_1010.png, id=377, 1309.5324pt x 403.2666pt>
+File: PFIGS//jetplt1_1010.png Graphic file (type png)
+
+<use PFIGS//jetplt1_1010.png>
+<PFIGS//diffcool_EMgaussprof.png, id=378, 1365.1pt x 414.54875pt>
+File: PFIGS//diffcool_EMgaussprof.png Graphic file (type png)
+
+<use PFIGS//diffcool_EMgaussprof.png>
+
+Package hyperref Warning: Token not allowed in a PDFDocEncoded string,
+(hyperref)                removing `math shift' on input line 1079.
+
+
+Package hyperref Warning: Token not allowed in a PDFDocEncoded string,
+(hyperref)                removing `subscript' on input line 1079.
+
+
+Package hyperref Warning: Token not allowed in a PDFDocEncoded string,
+(hyperref)                removing `math shift' on input line 1079.
+
+<PFIGS//molcjet_310.png, id=382, 1318.2048pt x 404.712pt>
+File: PFIGS//molcjet_310.png Graphic file (type png)
+
+<use PFIGS//molcjet_310.png>
+<PFIGS//molcjet_310_molform.png, id=383, 998.0487pt x 694.5147pt>
+File: PFIGS//molcjet_310_molform.png Graphic file (type png)
+
+<use PFIGS//molcjet_310_molform.png>
+Underfull \hbox (badness 1024) in paragraph at lines 1116--1135
+[]\OT1/cmr/m/n/9 The dis-tri-bu-tion of frac-tions of dif-fer-ent hy-dro-gen
+ []
+
+
+Underfull \vbox (badness 7704) has occurred while \output is active []
+
+ [8]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+<PFIGS//refrun_21_90_emspecpv.png, id=398, 849.1725pt x 1064.97874pt>
+File: PFIGS//refrun_21_90_emspecpv.png Graphic file (type png)
+
+<use PFIGS//refrun_21_90_emspecpv.png>
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [9 <./PFIGS//jetplt1_1010.png> <./PFIGS//diffcool_EMgaussprof.png>]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+<PFIGS//refrun_21_60_emspecpv.png, id=411, 849.1725pt x 1065.9825pt>
+File: PFIGS//refrun_21_60_emspecpv.png Graphic file (type png)
+
+<use PFIGS//refrun_21_60_emspecpv.png>
+<PFIGS//refrun_21_45_emspecpv.png, id=413, 849.1725pt x 1065.9825pt>
+File: PFIGS//refrun_21_45_emspecpv.png Graphic file (type png)
+
+<use PFIGS//refrun_21_45_emspecpv.png>
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [10 <./PFIGS//molcjet_310.png> <./PFIGS//molcjet_310_molform.png>]
+<PFIGS//EM_gaussandth.png, id=429, 1074.0125pt x 414.54875pt>
+File: PFIGS//EM_gaussandth.png Graphic file (type png)
+
+<use PFIGS//EM_gaussandth.png>
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [11 <./PFIGS//refrun_21_90_emspecpv.png> <./PFIGS//refrun_21_60_emspecpv.png> 
+<./PFIGS//refrun_21_45_emspecpv.png>]
+<PFIGS//PV_gaussandth.png, id=444, 1137.24875pt x 414.54875pt>
+File: PFIGS//PV_gaussandth.png Graphic file (type png)
+
+<use PFIGS//PV_gaussandth.png>
+Underfull \hbox (badness 10000) in paragraph at lines 1329--1331
+
+ []
+
+<PFIGS//ALMAmaps3.png, id=445, 794.97pt x 578.16pt>
+File: PFIGS//ALMAmaps3.png Graphic file (type png)
+ <use PFIGS//ALMAmaps3.png>
+[12 <./PFIGS//EM_gaussandth.png>]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [13 <./PFIGS//PV_gaussandth.png> <./PFIGS//ALMAmaps3.png>]
+<PFIGS//imshkvhcontomaps.png, id=517, 1133.23375pt x 560.0925pt>
+File: PFIGS//imshkvhcontomaps.png Graphic file (type png)
+
+<use PFIGS//imshkvhcontomaps.png>
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [14]
+<PFIGS//LineRatio_THDeq1.png, id=557, 762.85pt x 632.3625pt>
+File: PFIGS//LineRatio_THDeq1.png Graphic file (type png)
+
+<use PFIGS//LineRatio_THDeq1.png> (./ms_final_bv.bbl
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [15 <./PFIGS//imshkvhcontomaps.png>]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [16 <./PFIGS//LineRatio_THDeq1.png>]) [17] (./ms_final_bv.aux) ) 
+Here is how much of TeX's memory you used:
+ 4346 strings out of 256216
+ 56636 string characters out of 1917071
+ 133141 words of memory out of 1500000
+ 7417 multiletter control sequences out of 10000+200000
+ 20181 words of font info for 73 fonts, out of 1200000 for 2000
+ 645 hyphenation exceptions out of 8191
+ 31i,19n,39p,1825b,439s stack positions out of 5000i,500n,6000p,200000b,15000s
+pdfTeX warning
+ (dest): name{UNDEFINED} has been referenced but does not exist, replaced by a 
+fixed one
+
+</usr/share/texmf/fonts/type1/bluesky/cm/cmbx10.pfb></usr/share/texmf/fonts/typ
+e1/bluesky/cm/cmbx12.pfb></usr/share/texmf/fonts/type1/bluesky/cm/cmbx8.pfb></u
+sr/share/texmf/fonts/type1/bluesky/cm/cmbx9.pfb></usr/share/texmf/fonts/type1/b
+luesky/cm/cmmi10.pfb></usr/share/texmf/fonts/type1/bluesky/cm/cmmi6.pfb></usr/s
+hare/texmf/fonts/type1/bluesky/cm/cmmi8.pfb></usr/share/texmf/fonts/type1/blues
+ky/cm/cmmi9.pfb></usr/share/texmf/fonts/type1/bluesky/cm/cmr10.pfb></usr/share/
+texmf/fonts/type1/bluesky/cm/cmr12.pfb></usr/share/texmf/fonts/type1/bluesky/cm
+/cmr5.pfb></usr/share/texmf/fonts/type1/bluesky/cm/cmr6.pfb></usr/share/texmf/f
+onts/type1/bluesky/cm/cmr7.pfb></usr/share/texmf/fonts/type1/bluesky/cm/cmr8.pf
+b></usr/share/texmf/fonts/type1/bluesky/cm/cmr9.pfb></usr/share/texmf/fonts/typ
+e1/bluesky/cm/cmsy6.pfb></usr/share/texmf/fonts/type1/bluesky/cm/cmsy8.pfb></us
+r/share/texmf/fonts/type1/bluesky/cm/cmsy9.pfb></usr/share/texmf/fonts/type1/bl
+uesky/cm/cmti12.pfb></usr/share/texmf/fonts/type1/bluesky/cm/cmti8.pfb></usr/sh
+are/texmf/fonts/type1/bluesky/cm/cmti9.pfb></usr/share/texmf/fonts/type1/public
+/cmex/fmex8.pfb></usr/share/texmf/fonts/type1/public/cmex/fmex9.pfb></usr/share
+/texmf/fonts/type1/bluesky/ams/msam10.pfb>
+Output written on ms_final_bv.pdf (17 pages, 3373308 bytes).
+PDF statistics:
+ 702 PDF objects out of 1000 (max. 8388607)
+ 136 named destinations out of 1000 (max. 131072)
+ 297 words of extra memory for PDF output out of 10000 (max. 10000000)
+
