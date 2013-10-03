@@ -271,26 +271,29 @@ excitation of these molecules is not yet clear due to lack of models that
 simultaneously study the dynamics along with complex molecular chemistry.}
   % methods heading (mandatory)
    { For such a study, we have performed MHD simulations
-of jet propagation into a molecular cloud using the PLUTO
+of knotty jet propagation into a molecular cloud using the PLUTO
 code. Firstly, we evolve the jet dynamical quantities in conjunction
 with different non-equilibrium cooling prescriptions of varying complexities. 
 The most complex is that of molecular cooling along with
 H$_2$ chemistry. This prescription allows us to track the formation
 and destruction of HI, HII and H$_2$ along with the flow dynamics. 
 The final state of the jet obtained for each cooling model is then
-post-processed using a non-LTE radiative line transfer code, LIME,  to
+post-processed using a radiative line transfer code to
 obtain SiO emission maps, spectra and PV digrams.}
   % results heading (mandatory)
-   {We find that the strength of SiO
-emission depends strongly on the cooling prescription and SiO fractional
-abundance profile. We find that the bulk of SiO emission comes from
-the interface between
-the jet and the ambient molecular medium mainly excited to due to
-shocks. Further, we see that some SiO can be produced within the jet
-especially close to the bow shock due to instabilities associated with
-cooling. We have used these emission maps to give predictions for ALMA
-and single dish observations . Also, our model can very well reproduce the observed 
-spectra, line ratios and PV diagrams of young outflows from Class 0 sources.}
+   {Our model can sucessfully explain the signatures of extremely high
+     velocity (EHV) emission of SiO seen in early outflows. In particular,
+     the line intensities, spectra and PV diagrams obtained from our
+     model are very similar to that observed in case of outflows with
+     EHV emission. In addition, the ALMA predictions for such
+     early molecular outflows shows bright emission coming from young
+     internal knots and primary bow shock due to thermal
+     instability. Our multi-line modeling of SiO support
+     the observational feature for example seen in Herbig-Haro (HH211)
+     that higher line transitions trace
+     regions close to the axis of the jet. The dependence of emission on
+     different cooling prescription and abundance profiles is clearly
+     outlined from our parameter study.}
   % conclusions heading (optional), leave it empty if necessary 
 \end{abstract}
 
@@ -1530,14 +1533,89 @@ young molecular bullets as suggested by \cite{Norman:1979p14858,
 %
 
 An alternative hypothesis for the origin of the low velocity SiO
-component is that it could be formed by interaction of 
+component is that it could be formed by interaction of wider slow
+shocks with the ambient medium. Generally it is assumed that the silicon material comes from dust
+grain cores and that it is necessary to fully destroy the dust grains
+to obtain some SiO in gas phase. However, some silicon material may be
+mixed with the ices on the dust grain surfaces. In such a scenario, 
+shocks with speeds of 20-30 km s$^{-1}$ might inject a significant
+amount of silicon into the gas phase from the mantles, without 
+completely destroying the grains. Testing such a scenario is beyond
+the scope of the present model. One would not only need proper
+treatment of dust physics but also two fluid model to study the impact
+of slow shocks in two dimensions. These models are indeed very
+important to study wide and slow emission from molecules like CO 
+as seen in some young outflows like L1157 \cite{GomezRuiz:2013p14549}
+and H$_{2}$O as seen from recent results of the Herschel-WISH survey
+\cite{Tafalla:2013p12586}.
 
-
-
-
+ 
 \section{Conclusion}
-We are the best in modeling SiO outflows.
+We have performed MHD simulations
+of interaction of knotty and radiative jet propagating 
+with a typical speed of 100 km s$^{-1}$ into a cold, non-magentized ambient
+molecular medium with some gradient in density. At large distance from
+the central source, the magnetic field in the jet is mainly due to
+toroidal component. The jet dynamical quantities are evolved in conjunction
+with different optically thin, non-equilibrium cooling prescriptions of varying complexities. 
+The most complex is that of molecular cooling along with
+H$_2$ chemistry. This prescription allows us to track the formation
+and destruction of HI, HII and H$_2$ along with the flow dynamics. 
+The final state of the jet obtained for each cooling model is then
+post-processed using a radiative line transfer code to
+obtain SiO emission maps, spectra and PV digrams. The main results
+obtained from our study are as follows :
+\begin{itemize}
+\item Different cooling prescriptions used for our model show a
+  significant influence in determing the thickness of the jet. An
+  efficient mode of cooling does reduce the size of coccon and results
+  in a more narrow jet. In addition, the primary bow shock structure
+  differs with various cooling modes. Also, one sees development of
+  thermal instability at the jet head which also show a significant emission in SiO
+  along with young internal knots that are formed close to the base of
+  the jet.
+\item Emission maps obtained from our reference run with molecular
+  cooling show a distinctive outflow lobe like structure. The
+  physical regions responsible of SiO emission in such early outflows
+  typically have molecular hydrogen densities n$\sim$ 10$^{6}$
+  cm$^{-3}$ and temperatures $>$ 500\,K which is consistent with
+  properties deduced from LVG modeling of real observational data of
+  young outflows.   
+\item Our multi-line study of SiO clearly shows how different
+  line transitions are sensitive to different regions in the jets. For
+  example, the SiO J = 1-$>$ 0 transition is mostly excited due to
+  inteaction of jet with ambient medium and could possibly be
+  turblent, while SiO J = 8-$>$ 7 trace the inner most jet regions as
+  they are excited only in the internal knots. This finding very well
+  supports the multi-line observational surveys done for young
+  molecular outflows, particularly, HH 211.
+\item Single-dish synthetic spectra obtained from our model typically
+  have intensity of 0.3\,K and peak around 50\,km\,s$^{-1}$ and have a
+  typical line width of 20\,km\,s$^{-1}$. Such modeled spectra are in
+  excellent agreement with charactertistic features of EHV emission of
+  SiO seen in young molecular outflows . In addition, the line ratios 
+  T(8-7)/T(5-4) and T(5-4)/T(2-1), predicted from our models have values close to
+  unity consistent with that obtained from observations. Further,
+  indications of formation of slow component due to slowing of the
+  older knots is clearly seen as a shift in spectra by
+  8-10\,km\,$s^{-1}$ in first 10$^{3}$ years of evolution.
+\item The predicted PV diagrams from our models show a distinctive
+  knot like features that are generally observed in outflows with EHV
+  emission.
+\item Emission from internal knots do depend on the chosen profile of
+  the abundance. On one extreme where all the internal knots 
+  is the top-hat profile with $\delta$ < 1, whereas, no emission in
+  seen in knots when a gaussian profile with $\delta$ = 1 is used. For
+  the remaining two possiblities, we observe that emission mainly
+  comes from knots close to the base of the flow and the condensation
+  formed at the primary shock due to thermal instability.
+\item Predicted ALMA maps also show characteristic features that are
+  consistent with young molecular outflows with EHV emission. 
+\end{itemize}
 
+In summary, this work for the first time provides a formidable model
+that explains the origin of EHV emission seen in SiO from 
+the inner regions of young molecular outflows.
 
 
 %\section*{Acknowledgments}
