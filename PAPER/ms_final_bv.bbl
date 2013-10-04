@@ -120,6 +120,11 @@ pp 19--32
   et~al.}{1991}]{Glassgold:1991p13703}
 {Glassgold} A.~E.,  {Mamon} G.~A.,    {Huggins} P.~J.,  1991, \apj, 373, 254
 
+\bibitem[\protect\citeauthoryear{{Goddi}, {Greenhill}, {Chandler}, {Humphreys},
+  {Matthews} \& {Gray}}{{Goddi} et~al.}{2009}]{Goddi:2009p8571}
+{Goddi} C.,  {Greenhill} L.~J.,  {Chandler} C.~J.,  {Humphreys} E.~M.~L.,
+  {Matthews} L.~D.,    {Gray} M.~D.,  2009, \apj, 698, 1165
+
 \bibitem[\protect\citeauthoryear{{G{\'o}mez-Ruiz}, {Hirano}, {Leurini} \&
   {Liu}}{{G{\'o}mez-Ruiz} et~al.}{2013}]{GomezRuiz:2013p14549}
 {G{\'o}mez-Ruiz} A.~I.,  {Hirano} N.,  {Leurini} S.,    {Liu} S.-Y.,  2013,
@@ -214,6 +219,11 @@ Lloyd S.,  1982, Information Theory, IEEE Transactions on, 28, 129
   {Silk}}{1979}]{Norman:1979p14858}
 {Norman} C.,  {Silk} J.,  1979, \apj, 228, 197
 
+\bibitem[\protect\citeauthoryear{{Offner}, {Lee}, {Goodman} \& {Arce}}{{Offner}
+  et~al.}{2011}]{Offner:2011p14861}
+{Offner} S.~S.~R.,  {Lee} E.~J.,  {Goodman} A.~A.,    {Arce} H.,  2011, \apj,
+  743, 91
+
 \bibitem[\protect\citeauthoryear{{Panoglou}, {Cabrit}, {Pineau Des For{\^e}ts},
   {Garcia}, {Ferreira} \& {Casse}}{{Panoglou}
   et~al.}{2012}]{Panoglou:2012p10039}
@@ -233,6 +243,11 @@ Lloyd S.,  1982, Information Theory, IEEE Transactions on, 28, 129
   et~al.}{1995}]{Raga:1995p12965}
 {Raga} A.~C.,  {Taylor} S.~D.,  {Cabrit} S.,    {Biro} S.,  1995, \aap, 296,
   833
+
+\bibitem[\protect\citeauthoryear{{Rawlings}, {Redman} \& {Carolan}}{{Rawlings}
+  et~al.}{2013}]{Rawlings:2013p14920}
+{Rawlings} J.~M.~C.,  {Redman} M.~P.,    {Carolan} P.~B.,  2013, \mnras, 435,
+  289
 
 \bibitem[\protect\citeauthoryear{{Santiago-Garc{\'{\i}}a}, {Tafalla},
   {Johnstone} \& {Bachiller}}{{Santiago-Garc{\'{\i}}a}
@@ -285,6 +300,10 @@ pp 88--102
 \bibitem[\protect\citeauthoryear{{Vaidya}, {Fendt}, {Beuther} \&
   {Porth}}{{Vaidya} et~al.}{2011}]{Vaidya:2011p8992}
 {Vaidya} B.,  {Fendt} C.,  {Beuther} H.,    {Porth} O.,  2011, \apj, 742, 56
+
+\bibitem[\protect\citeauthoryear{{Vaidya} \& {Goddi}}{{Vaidya} \&
+  {Goddi}}{2013}]{Vaidya:2013p12777}
+{Vaidya} B.,  {Goddi} C.,  2013, \mnras, 429, L50
 
 \bibitem[\protect\citeauthoryear{{Woodall}, {Ag{\'u}ndez}, {Markwick-Kemper} \&
   {Millar}}{{Woodall} et~al.}{2007}]{Woodall:2007p13623}
