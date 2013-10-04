@@ -267,7 +267,7 @@ molecules along its path.}
 velocity molecular outflows are extensively studied for both low mass
 and high mass stars. They are usually observed using standard sub-mm outflow and shocks
 tracers like CO and SiO respectively. However, the exact nature of
-excitation of these molecules is not yet clear due to lack of models that
+the excitation of these molecules is not yet clear due to lack of models that
 simultaneously study the dynamics along with complex molecular chemistry.}
   % methods heading (mandatory)
    { For such a study, we have performed MHD simulations
@@ -321,7 +321,7 @@ during the later evolutionary stages \cite{Vaidya:2011p8992}.
 Typically, these jets are few parsec in size long and can be divided into
 three length-scale domains viz. source and disk scales (1-10$^{2}\,$AU),
 envelope scales ($10^{2} - 10^{5}$\,AU) and parent cloud scales
-($10^{5} - 10^{6}$\,AU) \refer. Amongst these, it is at the envelope scale where rich chemical evolution occurs as the jet interacts
+($10^{5} - 10^{6}$\,AU) \refer. Of these, it is at the envelope scale where rich chemical evolution occurs as the jet interacts
 with the molecular medium. In this region, the jet propagates into a
 relatively static medium inducing shocks that are interesting from both a
 physical and chemical point of view. In addition to shocks, molecular
@@ -332,13 +332,13 @@ velocities giving rise to molecular outflows.
 Bipolar molecular outflows from low and high mass stars
 have been studied in detail over the past 
 decade \citep[see reviews by][]{Bachiller:1996p4692,Arce:2007p798,
-Tafalla:2011p14051}. Advances in millimetre interferometery 
+Tafalla:2011p14051}. Advances in millimeter interferometer 
 allow observations of these outflows with spatial resolution of
-few arc seconds. A large number of studies related to young
+few arc seconds. A large number of studies observing young
 outflows are done using standard outflow and shock tracers,
 e.g. CO and SiO respectively. In addition to these molecular tracers,
 shocks from these outflows are detected in molecular hydrogen using
-infra-red telescopes. Also, energertic outflows like that of
+infra-red telescopes. Also, energetic outflows like that of
 Orion source I show evidence of SiO masers very close to the launching
 region of a MHD disk wind \citep{Goddi:2009p8571, Vaidya:2013p12777}. 
 Based on these observational studies, various
@@ -357,7 +357,7 @@ commonly observed in these outflows are signatures of rotation and
 precision (for e.g., in DG Tau: \citealt{Bacciotti:2002p2084}).
 %
 
-Even with a myriad of such empirical evidences, the exact nature of
+Even with a myriad of such empirical evidence, the exact nature of
 these SiO and CO outflows is not clear. For a complete understanding it is imperative
 to compliment these observations with theoretical models. Many models
 based on hydro-simulations and steady state shock calculations
@@ -410,9 +410,10 @@ package (CASA) to obtain synthetic ALMA images of the resultant molecular outflo
 
 In the next three sections we describe our numerical setup, cooling
 prescriptions and radiative transfer code respectively. In
-Sect. 5, we will present results from the parameter survey and the
+sections~\ref{sec:parasurvey} and \ref{sec:results}, we will present results from the parameter survey and the
 discussions along with predicted ALMA maps will be presented in
-Section 6 and 7, followed by conclusions.
+sections~\ref{sec:ALMAview} and \ref{sec:discussion}, followed by
+conclusions in section~\ref{sec:conclusion}
 
 \section{Numerical Setup}
 \subsection{Numerical code and Equations}
@@ -495,7 +496,7 @@ using the Powell's eight wave formulation \citep{Powell:1999p14822}.
 We model the propagation of jet as it interacts with the molecular
 cloud core at distances great enough so the the central object no longer has significant impact on the evolution of the outflow, i.e. $\gtrsim$ 1000\,AU. 
 At these distances from the central source, the downward pull of gravity plays a
-negligible role and the dynamics of jet is primarily governed by magnetic fields.
+negligible role and the dynamics of the jet is primarily governed by magnetic fields.
 The total magnetic field in the jet is dominated by the toroidal
 component. This is because the poloidal field decays as $z^{-2}$ as
 compared to $z^{-1}$ for toroidal field to maintain the force balance ($z$ is the vertical distance from source). 
@@ -509,10 +510,10 @@ and in (r,z,$\phi$) cylindrical co-ordinates. Its extent 20 $R_{\rm j}$ in the r
 direction and 100
 $R_{\rm j}$ along the vertical axis ($R_{\rm j}$ being the radius of
 the jet). The domain of interest is about 3000\,AU away from the
-central source extends up to 0.1\,pc. Numerically, it is resolved by an uniform grid with a domain of 200$\times$1000 cells in the radial and vertical directions. For simplicity, we choose this medium
+central source and extends up to 0.1\,pc. Numerically, it is resolved by an uniform grid with a domain of 200$\times$1000 cells in the radial and vertical directions. For simplicity, we choose this medium
 to be unmagnetized and non-turbulent. The density in the ambient
 medium varies with vertical height $z$ as, $\rho_{\rm amb}\sim (\rho_0/z^{2})$
-consistent with observations \citep{Caselli:2011p13935}. The value of
+which is consistent with observations \citep{Caselli:2011p13935}. The value of
 $\rho_0$ depends upon the density contrast, $\eta$, between the jet and
 the ambient medium. The number density in the jet is kept fixed such
 that the density in the ambient medium lies within a range of $10^{4}-10^{5}
@@ -559,7 +560,7 @@ the next section.
 \subsection{Molecular Cooling}
 \label{ssec:molcool}
 Typically, early collimated outflows have cooling times shorter than
-the dynamical times implying that the radiative cooling plays a vital
+the dynamical times, implying that the radiative cooling plays a vital
 role in dynamics. In order to study such outflows it is necessary to evolve
 the dynamics in conjunction with full molecular chemistry and
 associated radiative processes. However, evolving a full complex
@@ -794,6 +795,7 @@ Sec~\ref{ssec:sioabunem}.
 
 
 \section{Parameter Survey}
+\label{sec:parasurvey}
 The results and analysis for the present work are divided in two parts,
 viz., the dynamical numerical simulations and the post-processing with
 radiative transfer code. For each part we have used certain parameters
@@ -917,7 +919,7 @@ ambient medium with a velocity of v$_{\rm jet,0}$ = 100 km
 s$^{-1}$. The cooling in the jet is
 via molecular cooling prescription, whereby the hydrogen fractions are
 evolved with cooling contributions for abundant molecules like CO, OH
-etc. The steady state density, temperature and velocity obtained from this 
+etc. The final state (at time $\sim$ 1000 yr) density, temperature and velocity obtained from this 
 run is post-processed to obtain the observational features
 corresponding to SiO molecule. 
 For the radiative transfer calculation, the source in the reference
@@ -933,8 +935,7 @@ flow, such that their ratio $\delta$ is given by 1./$(1.0 +
 function of height from the base of the jet, and is inversely proportional to the ambient density at the same height.
 
 \section{Results}
-
-
+\label{sec:results}
 \subsection{Comparison of cooling prescription}
 \label{ssec:coolres}
 We have done a comparison study of jet dynamics with various cooling
@@ -1276,10 +1277,29 @@ distribution.
    
  
 \section{ALMA view}
-ALMA view of the reference run and stress of applying our synthetic techniques
-to study the molecular outflows in more details.\\
+\label{sec:ALMAview}
+%
+In order to see the interior structure of the molecular outflow, high
+resolution interferometric observations are needed. To demonstrate how
+jets similar to those we have modeled would look through such
+observations we have performed synthetic Atacama Large Millimeter
+Array (ALMA) observations using the Common Astronomy Software
+Applications package (CASA). The output from the radiative transfer
+were scaled to 300pc and used as the sky models for observations of
+the J=2-1, J=5-4 and J=8-7 lines at frequencies of 86.85, 217.10 and
+347.33$\,$GHz, which fall in ALMA bands 3, 6 and 7. The observations
+were simulated using cycle 1 ALMA for 30 minutes total integration
+time, in the configurations c32-6, c32-4 and c32-3 for the three
+lines, giving beam sizes of 0.72'', 0.47'' and 0.58'' and
+sensitivities of 0.05, 0.07 and 0.09$\,$mJy/beam for the three lines
+(as calculated by the ALMA online sensitivity calculator) with
+velocity resolutions of $\sim$1$\,$km/s. Figure~\ref{fig:almafig}
+presents the AMLA prediction obtained from our reference run. The
+left panel shows the integrated emission of SiO J = 2-1 line while the right
+shows the PV diagram for the same line and over laid are
+the contours of SiO J = 5-4 and J = 8-7. The contour levels are marked
+on the color bar of each panel. 
 
-In order to see the interior structure of the molecular outflow, high resolution interferometric observations are needed. To demonstrate how jets similar to those we have modeled would look through such observations we have performed synthetic Atacama Large Millimeter Array (ALMA) observations using the Common Astronomy Software Applications package (CASA). The output from the radiative transfer were scaled to 300pc and used as the sky models for observations of the J=2-1, J=5-4 and J=8-7 lines at frequencies of 86.85, 217.10 and 347.33$\,$GHz, which fall in ALMA bands 3, 6 and 7. The observations were simulated using cycle 1 ALMA for 30 minutes total integration time, in the configurations c32-6, c32-4 and c32-3 for the three lines, giving beam sizes of 0.72'', 0.47'' and 0.58'' and sensitivities of 0.05, 0.07 and 0.09$\,$mJy/beam for the three lines (as calculated by the ALMA online sensitivity calculator) with velocity resolutions of $\sim$1$\,$km/s.
 
 \begin{figure*}
  \includegraphics[width=2.\columnwidth]{\figpath/ALMAmaps3.png}
@@ -1287,16 +1307,41 @@ In order to see the interior structure of the molecular outflow, high resolution
 \label{fig:almafig}
 \end{figure*} 
 
+ALMA Cycle 0 observations have recently reported complex kinematic
+features of young bipolar molecular outflows. In particular,
+\cite{Arce:2013p14902} observed morphology, kinematics and entrainment
+mechanism of the HH 46/47 molecular outflow from a low mass nearby
+source (d = 450 pc) using CO(1-0). They find that the red
+lobe of the outflow exhibits a very complex structure with a
+collimated episodic wind whereas the outflow in the blue lobe is consistent with
+wide-angle wind model. Three major clumps in the red lobe along the
+outflow axis show a distinctive signature in emission maps. In
+addition, these clumps appear as {\em{wedges}} in the PV
+diagram. The observed {\em{wedges}} are very similar in structure to that 
+seen in the right panel of figure~\ref{fig:almafig}. A quantitative
+comparison is not possible due to obvious difference of molecular
+lines. Another source which is studied in details with ALMA band 7 is
+one of the most energetic, luminous molecular outflow
+G331.512-0.103 \cite{Merello:2013p15066}. Observations of this outflow
+associated with a high mass star reveal a compact, extremely young
+bipolar outflow and a symmetric outflowing shell. Further, their PV
+diagrams with SiO and H$^{13}$CO$^{+}$ show a characteristic peak at
+-45\,km\,s$^{-1}$ along the primary axis that could associated with a 
+molecular {\em bullet} of high-velocity dense material as predicted from our
+synthetic maps.
+
+ 
 \section{Discussion}
+\label{sec:discussion}
 Here we compare the various results with SiO observation of young low
 mass and high mass outflows.
 
 \subsection{EHV component and Molecular bullets}
 \label{ssec:EHV}
-Multiline mm-wave surveys of SiO emission towards a sample of molecular
+Multiline mm-wavelength surveys of SiO emission towards a sample of molecular
 outflows have shown that these outflows exhibit both low and high
 velocity SiO emission possibly arising from two distinct regimes. The slow
-component in case of a typical outflow L1448 is believed to arise from
+component in the case of a typical outflow, L1448, is believed to arise from
 the shell of accelerated ambient gas with SiO abundance
 lower by two orders of magnitude than regions emitting the high velocity component.
 \cite{Codella:1999p12584}. In addition, an interesting feature of EHV
@@ -1534,7 +1579,7 @@ shocks with speeds of 20-30 km s$^{-1}$ might inject a significant
 amount of silicon into the gas phase from the mantles, without 
 completely destroying the grains. Testing such a scenario is beyond
 the scope of the present model. One would not only need proper
-treatment of dust physics but also two fluid model to study the impact
+treatment of dust physics but also a two fluid model to study the impact
 of slow shocks in two dimensions. These models are indeed very
 important to study wide and slow emission from molecules like CO 
 as seen in some young outflows like L1157 \cite{GomezRuiz:2013p14549}
@@ -1543,10 +1588,11 @@ and H$_{2}$O as seen from recent results of the Herschel-WISH survey
 
  
 \section{Conclusion}
+\label{sec:conclusion}
 We have performed MHD simulations
 of interaction of knotty and radiative jet propagating 
 with a typical speed of 100 km s$^{-1}$ into a cold, non-magnetized ambient
-molecular medium with some gradient in density. At large distance from
+molecular medium a density gradient. At large distance from
 the central source, the magnetic field in the jet is mainly due to
 toroidal component. The jet dynamical quantities are evolved in conjunction
 with different optically thin, non-equilibrium cooling prescriptions of varying complexities. 
@@ -1562,7 +1608,8 @@ obtained from our study are as follows :
   significant influence in determine the thickness of the jet. An
   efficient mode of cooling does reduce the size of cocoon and results
   in a more narrow jet. In addition, the primary bow shock structure
-  differs with various cooling modes. Also, one sees development of
+  differs with various cooling modes. Also, with realistic cooling
+  functions one sees development of
   thermal instability at the jet head which also show a significant emission in SiO
   along with young internal knots that are formed close to the base of
   the jet.
@@ -1596,7 +1643,7 @@ obtained from our study are as follows :
   emission.
 \item Emission from internal knots do depend on the chosen profile of
   the abundance. On one extreme where all the internal knots 
-  is the top-hat profile with $\delta$ < 1, whereas, no emission in
+  is the top-hat profile with $\delta <$ 1, whereas, no emission in
   seen in knots when a gaussian profile with $\delta$ = 1 is used. For
   the remaining two possibilities, we observe that emission mainly
   comes from knots close to the base of the flow and the condensation
