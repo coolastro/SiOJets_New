@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009) (format=pdflatex 2009.11.7)  4 OCT 2013 17:01
+This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009) (format=pdflatex 2009.11.7)  6 OCT 2013 09:31
 entering extended mode
  Source specials enabled.
  %&-line parsing enabled.
@@ -435,7 +435,7 @@ File: PFIGS//molcjet_310.png Graphic file (type png)
 File: PFIGS//molcjet_310_molform.png Graphic file (type png)
 
 <use PFIGS//molcjet_310_molform.png>
-Underfull \hbox (badness 1024) in paragraph at lines 1067--1086
+Underfull \hbox (badness 1024) in paragraph at lines 1068--1087
 [][]\OT1/cmr/m/n/9 The dis-tri-bu-tion of frac-tions of dif-fer-ent hy-dro-gen
  []
 
@@ -449,7 +449,7 @@ File: PFIGS//refrun_21_90_emspecpv.png Graphic file (type png)
 <use PFIGS//refrun_21_90_emspecpv.png>
 
 Package hyperref Warning: Empty destination name,
-(hyperref)                using `UNDEFINED' on input line 1180.
+(hyperref)                using `UNDEFINED' on input line 1181.
 
 [9 <./PFIGS//refrun_21_90_emspecpv.png>]
 Underfull \vbox (badness 10000) has occurred while \output is active []
@@ -468,7 +468,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 Package hyperref Warning: Empty destination name,
-(hyperref)                using `UNDEFINED' on input line 1201.
+(hyperref)                using `UNDEFINED' on input line 1202.
 
 [10 <./PFIGS//molcjet_310.png> <./PFIGS//molcjet_310_molform.png>]
 Underfull \vbox (badness 10000) has occurred while \output is active []
@@ -487,7 +487,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 Package hyperref Warning: Empty destination name,
-(hyperref)                using `UNDEFINED' on input line 1303.
+(hyperref)                using `UNDEFINED' on input line 1304.
 
 [11 <./PFIGS//refrun_21_60_emspecpv.png> <./PFIGS//refrun_21_45_emspecpv.png>]
 Underfull \vbox (badness 10000) has occurred while \output is active []
@@ -501,7 +501,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 Package hyperref Warning: Empty destination name,
-(hyperref)                using `UNDEFINED' on input line 1333.
+(hyperref)                using `UNDEFINED' on input line 1334.
 
 [12 <./PFIGS//EM_gaussandth.png> <./PFIGS//PV_gaussandth.png>]
 Underfull \vbox (badness 10000) has occurred while \output is active []
@@ -509,23 +509,20 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 Package hyperref Warning: Empty destination name,
-(hyperref)                using `UNDEFINED' on input line 1379.
+(hyperref)                using `UNDEFINED' on input line 1380.
 
 [13 <./PFIGS//ALMAmaps3.png>]
 <PFIGS//imshkvhcontomaps.png, id=543, 1133.23375pt x 560.0925pt>
 File: PFIGS//imshkvhcontomaps.png Graphic file (type png)
 
 <use PFIGS//imshkvhcontomaps.png>
-<PFIGS//LineRatio_THDeq1.png, id=564, 762.85pt x 632.3625pt>
+<PFIGS//LineRatio_THDeq1.png, id=565, 762.85pt x 632.3625pt>
 File: PFIGS//LineRatio_THDeq1.png Graphic file (type png)
 
 <use PFIGS//LineRatio_THDeq1.png>
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
 
 Package hyperref Warning: Empty destination name,
-(hyperref)                using `UNDEFINED' on input line 1544.
+(hyperref)                using `UNDEFINED' on input line 1543.
 
 [14]
 Underfull \vbox (badness 10000) has occurred while \output is active []
@@ -536,22 +533,28 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 Package hyperref Warning: Empty destination name,
-(hyperref)                using `UNDEFINED' on input line 1589.
+(hyperref)                using `UNDEFINED' on input line 1606.
 
 [15 <./PFIGS//imshkvhcontomaps.png>]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
 
 Package hyperref Warning: Empty destination name,
-(hyperref)                using `UNDEFINED' on input line 1624.
+(hyperref)                using `UNDEFINED' on input line 1631.
 
 [16 <./PFIGS//LineRatio_THDeq1.png>] (./ms_final_bv.bbl
 
 Package hyperref Warning: Empty destination name,
-(hyperref)                using `UNDEFINED' on input line 205.
+(hyperref)                using `UNDEFINED' on input line 223.
 
 [17])
 
 Package hyperref Warning: Empty destination name,
-(hyperref)                using `UNDEFINED' on input line 1666.
+(hyperref)                using `UNDEFINED' on input line 1665.
 
 [18
 
@@ -559,11 +562,11 @@ Package hyperref Warning: Empty destination name,
 Here is how much of TeX's memory you used:
  6244 strings out of 493848
  89106 string characters out of 3149207
- 190733 words of memory out of 3000000
+ 190188 words of memory out of 3000000
  9258 multiletter control sequences out of 15000+200000
  20163 words of font info for 73 fonts, out of 3000000 for 9000
  714 hyphenation exceptions out of 8191
- 38i,19n,39p,1832b,477s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 38i,19n,39p,1832b,485s stack positions out of 5000i,500n,10000p,200000b,50000s
 pdfTeX warning (dest): name{UNDEFINED} has been referenc
 ed but does not exist, replaced by a fixed one
 
@@ -591,9 +594,9 @@ ist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/local/texlive/2009/texmf-di
 st/fonts/type1/public/amsfonts/cm/cmti8.pfb></usr/local/texlive/2009/texmf-dist
 /fonts/type1/public/amsfonts/cm/cmti9.pfb></usr/local/texlive/2009/texmf-dist/f
 onts/type1/public/amsfonts/symbols/msam10.pfb>
-Output written on ms_final_bv.pdf (18 pages, 2541581 bytes).
+Output written on ms_final_bv.pdf (18 pages, 2541176 bytes).
 PDF statistics:
- 742 PDF objects out of 1000 (max. 8388607)
+ 743 PDF objects out of 1000 (max. 8388607)
  145 named destinations out of 1000 (max. 500000)
  281 words of extra memory for PDF output out of 10000 (max. 10000000)
 
