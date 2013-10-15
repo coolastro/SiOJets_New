@@ -256,21 +256,20 @@ $^{1}$School of Physics and Astronomy, University of Leeds, Leeds LS2
 
 \begin{abstract}
   % context heading (optional)
-  {A bipolar, violent, collimated outflow is one of the first signposts of star
-formation. Such an outflow is believed to be launched magnetically from
-underlying accretion disk. As it propagates through the molecular
+  {A bipolar, collimated outflow is one of the first signposts of star
+formation. As it propagates through the molecular
 cloud, it injects energy and momentum via shocks 
 and fosters chemical evolution by forming, destroying and entraining
 molecules along its path.}  
   % aims heading (mandatory)
    {High 
 velocity molecular outflows are extensively studied for both low mass
-and high mass stars. They are usually observed using standard sub-mm outflow and shocks
-tracers like CO and SiO respectively. However, the exact nature of
+and high mass stars. They are usually observed using standard outflow and shocks
+tracers like CO and SiO. However, the exact nature of
 the excitation of these molecules is not yet clear due to lack of models that
 simultaneously study the dynamics along with complex molecular chemistry.}
   % methods heading (mandatory)
-   { For such a study, we have performed MHD simulations
+   { For such a study, we have performed Magneto-hydrodynamic (MHD) simulations
 of knotty jet propagation into a molecular cloud using the PLUTO
 code. Firstly, we evolve the jet dynamical quantities in conjunction
 with different non-equilibrium cooling prescriptions of varying complexities. 
@@ -279,17 +278,17 @@ H$_2$ chemistry. This prescription allows us to track the formation
 and destruction of HI, HII and H$_2$ along with the flow dynamics. 
 The final state of the jet obtained for each cooling model is then
 post-processed using a radiative line transfer code to
-obtain SiO emission maps, spectra and PV digrams.}
+obtain SiO emission maps, spectra and position-velocity (PV) digrams.}
   % results heading (mandatory)
    {Our model can successfully explain the signatures of extremely high
      velocity (EHV) emission of SiO seen in early outflows. In particular,
      the line intensities, spectra and PV diagrams obtained from our
      model are very similar to that observed in case of outflows with
-     EHV emission. In addition, the ALMA predictions for such
+     EHV emission. In addition, the Atacama Large Millimeter Array (ALMA) predictions for such
      early molecular outflows shows bright emission coming from young
      internal knots and primary bow shock due to thermal
      instability. Our multi-line modeling of SiO support
-     the observational feature for example seen in Herbig-Haro (HH211)
+     the observational feature seen in Herbig-Haro (HH 211)
      that higher line transitions trace
      regions close to the axis of the jet. The dependence of emission on
      different cooling prescription and abundance profiles is clearly
@@ -317,21 +316,21 @@ For low mass stars, they are believed to be launched by magneto-centrifugally fo
 further collimated by magnetic hoop stress
 \citep[][]{Blandford:1982p892, Konigl:2000p607}. However, in case of
 high mass stars, radiative forces also contribute to flow dynamics
-during the later evolutionary stages \cite{Vaidya:2011p8992}. 
+during the later evolutionary stages (\citealt{Vaidya:2011p8992}). 
 Typically, these jets are few parsec in size long and can be divided into
-three length-scale domains viz. source and disk scales (1-10$^{2}\,$AU),
+three length-scale domains, viz. source and disk scales (1-10$^{2}\,$AU),
 envelope scales ($10^{2} - 10^{5}$\,AU) and parent cloud scales
 ($10^{5} - 10^{6}$\,AU) (\refer : Frank et. al, 2013, PPVI). Of these, it is at the envelope scale where rich chemical evolution occurs as the jet interacts
 with the molecular medium. In this region, the jet propagates into a
 relatively static medium inducing shocks that are interesting from both a
-physical and chemical point of view. In addition to shocks, molecular
+physical and chemical point of view. In addition to jets, molecular
 material from the surroundings is entrained and accelerated to high
 velocities giving rise to molecular outflows.
 %
 
 Bipolar molecular outflows from low and high mass stars
 have been studied in detail over the past 
-decade \citep[see reviews by][]{Bachiller:1996p4692,Arce:2007p798,
+decade \citep[see reviews by][]{Bachiller:1996p4692, Beuther:2002p1149, Arce:2007p798,
 Tafalla:2011p14051}. Advances in millimeter interferometer 
 allow observations of these outflows with spatial resolution of
 few arc seconds. A large number of studies observing young
@@ -342,49 +341,51 @@ infra-red telescopes. Also, energetic outflows like that of
 Orion source I show evidence of SiO masers very close to the launching
 region of a MHD disk wind \citep{Goddi:2009p8571, Vaidya:2013p12777}. 
 Based on these observational studies, various
-empirical properties for these outflows have been discovered. For
-example, the CO outflows from single dish studies are seen to be
-highly collimated for both low and high mass stars
-\citep[for e.g.,][]{Gueth:1999p4683, Beuther:2002p3574} they are
-referred to as {\em{molecular jets}}. These outflows also exhibit a
-mass-velocity relation with a power law form $ dM(v)/dv \propto
-v^{-\gamma}$, where values of $\gamma$ range from 1 to 3 \cite{Downes:2003p9946}. Episodic
-knots believed to be caused by variable accretion events are a common property
-of young molecular outflows (for e.g. in L1577:
+empirical properties for these outflows have been discovered. 
+For example, the high resolution interferometric studies with
+CO (1-0) and SiO (2-1) have revealed highly collimated jet-like
+outflows (with opening angles less than a few degrees) they are
+referred to as {\em{molecular jets}}. HH 211 is the best example of
+such a molecular jet (\citealt{Gueth:1999p4683}).
+Episodic knots believed to be caused by variable accretion events are a common property
+of young molecular outflows usually observed with higher line
+transitions of CO and SiO (for e.g. in L1577:
 \citealt{Gueth:1998p14058}, in HH300: \citealt{Arce:2001p14064}). These knots show their signatures
-as {\em{wedges}} in the position-velocity (PV) diagrams \cite{Arce:2001p14065}. Also, most
-commonly observed in these outflows are signatures of rotation and
+as {\em{wedges}} in the PV diagrams \cite{Arce:2001p14065}. Also, 
+observed in these outflows are signatures of rotation and
 precision (for e.g., in DG Tau: \citealt{Bacciotti:2002p2084}).
 %
 
-Even with a myriad of such empirical evidence, the exact nature of
-these SiO and CO outflows is not clear. For a complete understanding it is imperative
-to compliment these observations with theoretical models. Many models
+Even with a myriad of such empirical evidences, the exact nature of
+moleular emission in outflows is not clear. For a complete understanding it is imperative
+to complement these observations with theoretical models. Many models
 based on hydro-simulations and steady state shock calculations
 were proposed to explain the observational signatures of molecular
 outflows. Among them the two main models are that of wide-angled wind
 driven \cite{Shu:1991p14071} and jet driven outflow
 \cite{Canto:1991p14123}. 
 The most popular among them is the jet driven model as wind
-driven molecular outflows not only fail to match observed PV diagrams \cite{Cabrit:1992p14098}
+driven molecular outflows not only fail to match observed PV diagrams (\citealt{Cabrit:1992p14098})
 but also tend to sweep large quantity of material at the extremities
-of the lobes \cite{Masson:1992p14101}. While the jet driven models could successfully
+of the lobes (\citealt{Masson:1992p14101}). The jet driven models could successfully
 derive the global outflow shapes and mass velocity relations of CO
-outflows \citep{Raga:1993p9948, Masson:1993p9661} . There have also been some attempts to combine these two
-models into one \cite{Shang:2006p14268} to explain the global observational features. 
+outflows \citep{Raga:1993p9948,
+  Masson:1993p9661,Downes:2003p9946,Downes:2007p9514}. 
+There have also been some attempts to combine these two
+models into one (\citealt{Shang:2006p14268}) to explain the global observational features. 
 However, most of these dynamical models do not
 account for shock chemistry. Instead, shock chemistry is studied
 independently using steady state non-dissociative C-type and
 dissociative J-type shocks models \citep{Neufeld:1989p11689, Schilke:1997p14140,Flower:2003p11236}. 
-The magneto-hydrodynamic (MHD) calculations by \cite{Glassgold:1991p13703} suggested that molecules
+The MHD calculations by \cite{Glassgold:1991p13703} suggested that molecules
 like SiO and CO could form within the jet. Similar conclusions of
 molecules surviving in steady state disk winds have also been shown
-\cite{Panoglou:2012p10039}. 
+(\citealt{Panoglou:2012p10039}). 
 Very few simulations have modelled the outflow
-dynamics including molecular chemistry but in absence of
+dynamics including molecular chemistry and in absence of
 magnetic fields \citep{Raga:1995p12965, Smith:2003p9985}. 
 Recent models have also incorporated
-infall from envelope \citep{Rawlings:2013p14920} and radiation
+infall from the envelope \citep{Rawlings:2013p14920} and radiation
 transfer \citep{Offner:2011p14861} to explain molecular 
 emission from Class 0 protostellar outflow sources. 
 
@@ -394,7 +395,7 @@ emission from Class 0 protostellar outflow sources.
 In the present work, our goal is to take a step further in the modeling of
 jet driven molecular outflows. The present model aims to consistently derive observed emission properties of molecular outflows, specifically various SiO line
 transitions, by combining axisymmetric MHD simulations of
-radiative jet propagation with time-dependent chemistry and 3D radiative
+radiative jet propagation with time-dependent simple chemistry and 3D radiative
 transfer. In particular, we evolve the jet dynamical
 quantities in conjunction with different non-equilibrium cooling
 prescriptions of varying complexities. The most complex is that of
@@ -402,20 +403,22 @@ molecular cooling along with hydrogen chemistry. This prescription
 allows us to track the formation and destruction of 
 HI, HII and H$_{2}$ along with the flow dynamics. 
 The final state of the jet obtained for each cooling model is then
-post-processed using a non-LTE line radiative transfer code
+given as a input to a non-LTE line radiative transfer code
 to obtain emission maps, spectra and PV digrams. These emission maps
 are further processed using the Common Astronomy Software Applications
 package (CASA) to obtain synthetic ALMA images of the resultant molecular outflows.
 %
 
-In the next three sections we describe our numerical setup, cooling
+In the next three sections~\ref{sec:numsetup}, \ref{sec:chem} and
+\ref{sec:radtrans}, we describe our numerical setup, cooling
 prescriptions and radiative transfer code respectively. In
 sections~\ref{sec:parasurvey} and \ref{sec:results}, we will present results from the parameter survey and the
 discussions along with predicted ALMA maps will be presented in
 sections~\ref{sec:ALMAview} and \ref{sec:discussion}, followed by
-conclusions in section~\ref{sec:conclusion}
+conclusions in section~\ref{sec:conclusion}.
 
 \section{Numerical Setup}
+\label{sec:numsetup}
 \subsection{Numerical code and Equations}
 For our study, we carry out numerical axisymmetric ideal MHD simulations using the PLUTO code \citep{Mignone:2007p644} which is based on a conservative scheme of Godunov type.
 We have modified the original code to incorporate molecular cooling
@@ -482,17 +485,17 @@ The evolution of chemical abundances for each species is solved via,
 where ${\bf{S}}_{i}$ represents the net creation or destruction of a
 given species through chemical reactions (see Sect.~\ref{sec:chem}).
 
-The evolution of the magnetic field is governed by induction equation,
+The evolution of the magnetic field is governed by the induction equation,
 %
 \begin{equation}\label{induction}
 \frac{\partial \vec{B}}{\partial t} = \nabla \times \left(\vec{v}\times \vec{B}\right).
 \end{equation}
 %
-In addition to the above set of equations the code obeys the condition of divergence-free 
+In addition to the above set of equations, the code obeys the condition of divergence-free 
 magnetic fields, $\nabla \cdot \vec{B} = 0$, which is numerically achieved by construction 
 using the Powell's eight wave formulation \citep{Powell:1999p14822}.
 
-\subsection{Initial Condition}
+\subsection{Physical Setup}
 We model the propagation of jet as it interacts with the molecular
 cloud core at distances $\gtrsim$ 1000\,AU. 
 At these distances from the central source, the downward pull of gravity plays a
@@ -694,7 +697,13 @@ cooling. Such a comparison is presented in section~\ref{ssec:coolres}.
 %Radiative transfer modeling used for post processing.
 
 \subsection{The radiative transfer code} \label{subsec:radiative_transfer_code}
-The radiative transfer program used is LIME (LIne Modeling Engine; \citealt{Brinch:2010p13078}), which  calculates line intensities based on a weighted sample of randomly chosen points in a continuous 3D model. The method of selecting these points is given in section \ref{subsec:gridding}. At each of these points, the density of the main collision partner (equivalent amount of H$_2$, given by n(H$_2$)+ 0.5 n(H), assuming that atomic Hydrogen has half the SiO collisional cross section of molecular hydrogen and that ionized Hydrogen does not collide with SiO), gas temperature, velocity, molecular abundances and unresolved turbulent velocity are specified. These points are then smoothed by Lloyd's algorithm \citep{Lloyd1982} in order to minimise the variation in distance between points whilst keeping the same underlying distribution. These points are then connected by Delaunay triangulation and it is between the points connected by this method that photon are allowed to propagate (fig.~\ref{grid}). The level populations of the selected molecules are calculated at each of these points from collisional and radiative (de)excitation and the local radiation field is calculated. This is repeated 20 times with the populations of each level converging towards a single value. This number of iterations is sufficient for the signal to noise ratio of the level populations (as defined in \citealt{Brinch:2010p13078}) to exceed 1000 for 99\% of the points, ensuring that the simulation has converged on a stable level population. After 20 iterations the model is ray-traced in order to produce synthetic brightness maps. The average of ten separate runs was taken to minimise the artefacts in the output images, resulting from the grid construction.% (Fig.~\ref{points}).
+The radiative transfer program used is LIME (LIne Modeling Engine;
+\citealt{Brinch:2010p13078}), which  calculates line intensities based
+on a weighted sample of randomly chosen points in a continuous 3D
+model. The method of selecting these points is given in section
+\ref{subsec:gridding}. At each of these points, the density of the
+main collision partner (equivalent amount of H$_2$, given by n(H$_2$)+
+n(H), assuming that ionized Hydrogen does not collide with SiO), gas temperature, velocity, molecular abundances and unresolved turbulent velocity are specified. These points are then smoothed by Lloyd's algorithm \citep{Lloyd1982} in order to minimise the variation in distance between points whilst keeping the same underlying distribution. These points are then connected by Delaunay triangulation and it is between the points connected by this method that photon are allowed to propagate (fig.~\ref{grid}). The level populations of the selected molecules are calculated at each of these points from collisional and radiative (de)excitation and the local radiation field is calculated. This is repeated 20 times with the populations of each level converging towards a single value. This number of iterations is sufficient for the signal to noise ratio of the level populations (as defined in \citealt{Brinch:2010p13078}) to exceed 1000 for 99\% of the points, ensuring that the simulation has converged on a stable level population. After 20 iterations the model is ray-traced in order to produce synthetic brightness maps. The average of ten separate runs was taken to minimise the artefacts in the output images, resulting from the grid construction.% (Fig.~\ref{points}).
 
 
 \begin{figure}
