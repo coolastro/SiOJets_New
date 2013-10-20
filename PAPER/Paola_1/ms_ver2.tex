@@ -237,7 +237,9 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \begin{document}
-\title{SiO Molecular Jets around young stars - A numerical perspective}
+%\title{SiO Molecular Jets around young stars - A numerical perspective}
+\title[EHV SiO component in Molecular Outflows]{Synthetic Observations of Extremely High Velocity (EHV) SiO component
+  in young molecular outflows}
 \author[B. Vaidya, Tom Douglas, Paola Caselli]{B. Vaidya$^{1}$\thanks{E-mail:
 B.Vaidya@leeds.ac.uk (BV)}, Tom Douglas$^{1}$, Paola Caselli$^{1}$\\
 $^{1}$School of Physics and Astronomy, University of Leeds, Leeds LS2
@@ -284,10 +286,11 @@ obtain SiO emission maps, spectra and position-velocity (PV) digrams.}
      velocity (EHV) emission of SiO seen in early outflows. In particular,
      the line intensities, spectra and PV diagrams obtained from our
      model are very similar to that observed in case of outflows with
-     EHV emission. In addition, the Atacama Large Millimeter Array (ALMA) predictions for such
+     EHV emission. In addition, the Atacama Large Millimeter Array
+     (ALMA) predictions for such
      early molecular outflows shows bright emission coming from young
      internal knots and primary bow shock due to thermal
-     instability. Our multi-line modeling of SiO support
+     instability. Our multi-line modeling of SiO supports
      the observational feature seen in Herbig-Haro (HH 211)
      that higher line transitions trace
      regions close to the axis of the jet. The dependence of emission on
@@ -344,7 +347,7 @@ Based on these observational studies, various
 empirical properties for these outflows have been discovered. 
 For example, the high resolution interferometric studies with
 CO (1-0) and SiO (2-1) have revealed highly collimated jet-like
-outflows (with opening angles less than a few degrees) they are
+outflows (with opening angles less than a few degrees); they are
 referred to as {\em{molecular jets}}. HH 211 is the best example of
 such a molecular jet (\citealt{Gueth:1999p4683}).
 Episodic knots believed to be caused by variable accretion events are a common property
@@ -367,7 +370,7 @@ driven \cite{Shu:1991p14071} and jet driven outflow
 The most popular among them is the jet driven model as wind
 driven molecular outflows not only fail to match observed PV diagrams (\citealt{Cabrit:1992p14098})
 but also tend to sweep large quantity of material at the extremities
-of the lobes (\citealt{Masson:1992p14101}). The jet driven models could successfully
+of the lobes (\citealt{Masson:1992p14101}), while the jet driven models could successfully
 derive the global outflow shapes and mass velocity relations of CO
 outflows \citep{Raga:1993p9948,
   Masson:1993p9661,Downes:2003p9946,Downes:2007p9514}. 
@@ -495,14 +498,15 @@ In addition to the above set of equations, the code obeys the condition of diver
 magnetic fields, $\nabla \cdot \vec{B} = 0$, which is numerically achieved by construction 
 using the Powell's eight wave formulation \citep{Powell:1999p14822}.
 
-\subsection{Physical Setup}
+\subsection{Physical Model}
 We model the propagation of jet as it interacts with the molecular
-cloud core at distances $\gtrsim$ 1000\,AU. 
+cloud core material at distances $\gtrsim$ 1000\,AU. 
 At these distances from the central source, the downward pull of gravity plays a
 negligible role and the dynamics of the jet is primarily governed by magnetic fields.
 The total magnetic field in the jet is dominated by the toroidal
 component. This is because the poloidal field decays as $z^{-2}$ as
-compared to $z^{-1}$ for toroidal field to maintain the force balance ($z$ is the vertical distance from source). 
+compared to $z^{-1}$ for toroidal field to maintain the force balance
+($z$ is the vertical distance from the source). 
 The hoop stress due to pinch force from the toroidal magnetic fields maintains
 a highly collimated beam like structure for the jet.
 %
@@ -516,7 +520,7 @@ the jet). The domain of interest is about 3000\,AU away from the
 central source and extends up to 0.1\,pc. Numerically, it is resolved by an uniform grid with a domain of 200$\times$1000 cells in the radial and vertical directions. For simplicity, we choose this medium
 to be unmagnetized and non-turbulent. The density in the ambient
 medium varies with vertical height $z$ as, $\rho_{\rm amb}\sim (\rho_0/z^{2})$
-which is consistent with observations \citep{Caselli:2011p13935}. The value of
+which is consistent with observations \citep{Keto:2010p15549, Caselli:2011p13935}. The value of
 $\rho_0$ depends upon the density contrast, $\eta$, between the jet and
 the ambient medium. The number density in the jet is kept fixed such
 that the density in the ambient medium lies within a range of $10^{4}-10^{5}
@@ -532,7 +536,7 @@ velocity of $v_{\rm jet,0}$ = 100 km/s as is the case for most low mass stellar 
 especially the low velocity component. The constant jet velocity is
 superimposed with periodic pulsation of the form,
 \begin{equation}
-v_{\rm jet} = v_{\rm jet,0}(1.0 + A\,sin(2.0\pi t/T_{\rm p}))
+v_{\rm jet} = v_{\rm jet,0}(1.0 + A\,sin(2.0\pi t/T_{\rm p})),
 \end{equation}
 where the amplitude A is 0.25 and time period $T_{\rm p} = 70$
 years. The pressure at the surface of the jet is $10^{-10} \rm
@@ -607,8 +611,8 @@ in the right panel of figure~\ref{ssec:molcool}.
 
 
 \begin{figure*}
- \includegraphics[width=1\columnwidth]{\figpath/H2ReactionRates.png}
- \includegraphics[width=1\columnwidth]{\figpath/H2CoolingFuncs.png}
+ \includegraphics[width=1\columnwidth]{\figpath/H2ReactionRates_paper.png}
+ \includegraphics[width=1\columnwidth]{\figpath/H2CoolingFuncs_full.png}
  \caption{Variation of $H_2$ chemistry reaction rates, $k_{i}$ and cooling
    function $\Lambda(n,T,{\bf{X}})$ with temperature for the initial
    state (see Sect.~\ref{ssec:molcool})}
@@ -703,7 +707,7 @@ on a weighted sample of randomly chosen points in a continuous 3D
 model. The method of selecting these points is given in section
 \ref{subsec:gridding}. At each of these points, the density of the
 main collision partner (equivalent amount of H$_2$, given by n(H$_2$)+
-n(H), assuming that ionized Hydrogen does not collide with SiO), gas temperature, velocity, molecular abundances and unresolved turbulent velocity are specified. These points are then smoothed by Lloyd's algorithm \citep{Lloyd1982} in order to minimise the variation in distance between points whilst keeping the same underlying distribution. These points are then connected by Delaunay triangulation and it is between the points connected by this method that photon are allowed to propagate (fig.~\ref{grid}). The level populations of the selected molecules are calculated at each of these points from collisional and radiative (de)excitation and the local radiation field is calculated. This is repeated 20 times with the populations of each level converging towards a single value. This number of iterations is sufficient for the signal to noise ratio of the level populations (as defined in \citealt{Brinch:2010p13078}) to exceed 1000 for 99\% of the points, ensuring that the simulation has converged on a stable level population. After 20 iterations the model is ray-traced in order to produce synthetic brightness maps. The average of ten separate runs was taken to minimise the artefacts in the output images, resulting from the grid construction.% (Fig.~\ref{points}).
+n(HI), assuming that ionized Hydrogen does not collide with SiO), gas temperature, velocity, molecular abundances and unresolved turbulent velocity are specified. These points are then smoothed by Lloyd's algorithm \citep{Lloyd1982} in order to minimise the variation in distance between points whilst keeping the same underlying distribution. These points are then connected by Delaunay triangulation and it is between the points connected by this method that photon are allowed to propagate (fig.~\ref{grid}). The level populations of the selected molecules are calculated at each of these points from collisional and radiative (de)excitation and the local radiation field is calculated. This is repeated 20 times with the populations of each level converging towards a single value. This number of iterations is sufficient for the signal to noise ratio of the level populations (as defined in \citealt{Brinch:2010p13078}) to exceed 1000 for 99\% of the points, ensuring that the simulation has converged on a stable level population. After 20 iterations the model is ray-traced in order to produce synthetic brightness maps. The average of ten separate runs was taken to minimise the artefacts in the output images, resulting from the grid construction.% (Fig.~\ref{points}).
 
 
 \begin{figure}
@@ -765,7 +769,7 @@ the abundance is reduced to 0.
 %
 
 \begin{figure}
- \includegraphics[width=1.\columnwidth]{\figpath/diffabunprof1.png}
+ \includegraphics[width=1.\columnwidth]{\figpath/diffabun_profnew.pdf}%{\figpath/diffabunprof1.png}
  \caption{The different fractional SiO abundances as a function of
    shock velocity, v$_{\rm s}$.}
  \label{abun}
@@ -865,7 +869,9 @@ of shock velocity v$_{\rm s}$ and physical jet velocity v$_{\rm
 
 \begin{table*}
 \centering
-\caption{Summary from parameter runs.}
+\caption{Summary from parameter runs. The parameter $\delta$, is the ratio of
+  shock to jet velocity and it depends on the density contrast $\eta$
+  as shown in eq.~\ref{eq:shockjetvel}}
 \begin{tabular}{c | c | c | c | c | c | c }
 \hline
 Run & Cooling Mode & $\eta$ & \multicolumn{2}{|c|}{Top Hat Profile
@@ -957,11 +963,12 @@ Sect.~\ref{sec:chem}. Figure~\ref{fig:coolcmpdyn} shows the density of the MHD
 jet at time $\sim$ 1000 years for these different cooling
 prescriptions. For this study, we have chosen a density contrast at the base of
 $\eta$ = 10 between the jet and ambient medium.
-It is clear from the figure, that the cooling plays a
+It is clear from the figure~\ref{fig:coolcmpdyn}, that the cooling plays a
 significant role in determining the structure of the jet. The jets
 with no or very little cooling are much wider compared to
 jets having dominant cooling. For example, the adiabatic jet
-has a widest bow shock at its apex and has the most prominent cocoon
+has the widest bow shock at its apex and has the most prominent shell
+of processed material, also known as the cocoon,
 around it. While the jet with atomic cooling has a rather conical
 jet head with significantly less cocoon surrounding it. The cocoon is
 almost absent from the narrow jet with tabulated cooling. Instead, the jet
@@ -971,34 +978,31 @@ shows the feedback of chemistry on the cooling function. The cooling
 terms for both these jets are the same to begin with, however,
 for the molecular jet the cooling terms evolve with jet dynamics as the fraction of
 various hydrogen species change over time. Whilst the terms remain fixed to initial values, shown in the right panel of fig~\ref{fig:tempvar}, for the jet with tabulated
-cooling. Additionally, the material at primary bow shock for jet
+cooling. Additionally, the material at the primary bow shock for the jet
 with tabulated and molecular cooling condenses forming dense knots. 
 Such a condensation is caused due to thermal instability and is 
 a typical feature of axi-symmetric radiative jets 
 \citep[see, for e.g,][]{Blondin:1990p2130,Cerqueira:1999p15052}.
 %
 
-The dynamical states for each of this cooling prescription are then 
-post-processed to obtain integrated J = 2-$>$1 SiO emission
+The dynamical states for each of this cooling prescriptions are then 
+given as inputs the radiative transfer code to obtain integrated J = 2-$>$1 SiO emission
 maps shown in figure~\ref{fig:coolcmpsio}. The differences in dynamical
 features are also reflected in the corresponding SiO emission
 maps. These maps are obtained assuming an angle of inclination of
 90$^\circ$ using the top hat abundance
-profile with $\delta = 1$. They are then placed at a distance of 100$\,$pc and convolved with a beam with FWHM of 2.5\arcsec in order to create the maps shown. The 
-emission features in jet with atomic and power-law cooling prescription do not have
-such a well defined lobe structure. For example, the emission from the jet with atomic
-cooling is mainly coming from regions close to R,Z = $\pm$
-10,80. In fact the emission from this region seems to be stronger than
-that coming from the conical jet head. In case of the jet with
-power-law cooling the emission seems to be mostly coming from the
-internal knots. The thin density layer formed at the interface of jet
-and the ambient medium do not show indication of any emission. 
+profile with $\delta = 1$. They are then placed at a distance of
+100$\,$pc and convolved with a beam with FWHM of 2.0\arcsec in order
+to create the maps shown. 
+The emission from the jet with atomic
+cooling is coming from the conical jet head and younger knots closer
+to base of the flow. Additionally, features in the shell at Z $\sim$
+60, 80 also show evidence of faint emission. In case of the jet with
+power-law cooling the emission mostly arises from the
+internal knots. 
 The emission coming from jets with
-tabulated and molecular cooling show a distinctive outflow lobe which
-is typically observed in case of young molecular outflows.
-SiO emission coming from internal knots in these jets also show a
-distinctive turbulent pattern consistent with
-observations. Additionally, strong emission also comes from the
+tabulated and molecular cooling resembles that observed in young molecular outflows.
+Also in these outflows, strong emission arises from the
 condensation formed at the primary bow shock due to thermal
 instability. 
 %
@@ -1006,23 +1010,23 @@ instability.
 In summary, different cooling prescriptions strongly influence the
 dynamics of MHD jet propagation in particular the thickness and
 structure of the primary bow shock. These dynamical differences are
-also reflected in SiO emission maps and spectra. Emission maps
-obtained from molecular cooling show a distinctive outflow lobe
-structure which is consistent with observations. The properties of 
+also reflected in SiO emission maps. The molecular cooling in our
+model consistently takes into account the feedback of temperature and
+density variation to evolve the chemical species unlike the tabulated cooling
+where the fraction of chemical species remains fixed. Thus, for our reference
+run we will adopt the molecular cooling prescription and compare
+results with observations. The properties of
 molecular cooling flows are described in details in the next section.
 
-
- 
-
 \begin{figure*}
- \includegraphics[width=2.\columnwidth]{\figpath/jetplt1_1010.png}
+ \includegraphics[width=2.\columnwidth]{\figpath/diffcool_sim.pdf}%{\figpath/jetplt1_1010.png}
  \caption{Jet Volume Density for different cooling modes with
    $\eta$ = 10 and $\beta$ = 10.}
 \label{fig:coolcmpdyn}
 \end{figure*}
 
 \begin{figure*}
- \includegraphics[width=2.\columnwidth]{\figpath/diffcool_EMgaussprof.png}
+ \includegraphics[width=2.\columnwidth]{\figpath/diffcool_img.pdf}
  \caption{A plot of the integrated SiO J=2-$>$1 emission from 5 models, 
 each using a different method to calculate cooling and all with $\eta$=10 $\beta$=10.}
 \label{fig:coolcmpsio} 
@@ -1041,41 +1045,26 @@ each using a different method to calculate cooling and all with $\eta$=10 $\beta
 % \end{figure*}
 
 \subsection{Molecular cooling and H$_2$ Chemistry}
-In case of molecular outflows, the most appropriate form of cooling
-prescription among the ones described in sect.~\ref{sec:chem} is
-that which involves the evolution of H$_2$ chemistry along with
+The molecular cooling in our
+model includes the evolution of H$_2$ chemistry along with
 contributions to cooling from fixed fractions of other molecules like
-CO, OH etc. First three panels of figure~\ref{fig:Hfracsim} show the density of
-various hydrogen species in the outflow for the simulation run with
-$\eta$ = 3 and $\beta$ = 10. The jet is largely dominated by atomic
-and molecular hydrogen, however, the fraction of these species have
-considerably changed from their initial values within the
-jet. Ionized hydrogen is mainly formed at the tip
-of the bow as seen by the increase of fHII to 10\% from an initial value of
-1\% within the jet.
-%
- 
-The last two panels of figure~\ref{fig:Hfracsim}
-show the temperature and mean molecular weight $\mu$. The
+CO, OH etc. The jet is largely dominated by atomic
+and molecular hydrogen. Ionized hydrogen is mainly formed at the tip
+of the bow.The
 highest temperature of $\sim$ 50000\,K is attained in our flow at the
 tip of the bow shock. While the temperature on the edges (i.e.,interface between
 jet and the ambient medium) is lower than 5000\,K. Also the relatively
-weaker shocks formed due to knots do not heat up the material beyond
-few 10$^{3}$\, K. The mean molecular weight, $\mu$, gives an indication
-on which species of hydrogen dominates in each region of the flow. In
-particular, a value of $\mu > 2.$ represents regions dominated by
-molecular hydrogen, while regions close to the bow shock have lowest
-values of $\mu$ where ionized hydrogen is present and along the jet the value
-$\mu$ is close to 1.3 suggesting an atomic jet. 
+weaker shocks formed nearby knots do not heat up the material beyond
+10$^{3}$\, K.
 %
 
-\begin{figure*}
- \includegraphics[width=2.\columnwidth]{\figpath/molcjet_310.png}
- \caption{Fraction of hydrogen species, temperature and mean molecular
-    weight in the run with molecular
-    cooling having $\eta$ = 3 and $\beta$ = 10.}
-\label{fig:Hfracsim}
-\end{figure*}
+%\begin{figure*}
+% \includegraphics[width=2.\columnwidth]{\figpath/molcjet_310.png}
+% \caption{Fraction of hydrogen species, temperature and mean molecular
+%    weight in the run with molecular
+%    cooling having $\eta$ = 3 and $\beta$ = 10.}
+%\label{fig:Hfracsim}
+%\end{figure*}
 
 
 The distribution of fractions of different hydrogen species along with
@@ -1085,10 +1074,10 @@ They are : (1) The tip of the jet , (2) The edges of the jet and
 (3) intermediate knots. As the atomic jet propagates from the lower boundary 
 into the cold molecular medium , it forms a strong shock resulting in
 forming a density and temperature discontinuity. Such a jump in
-dynamical quantities play a crucial role in evolution of
+dynamical quantities plays a crucial role in the evolution of
 chemistry. For example, temperatures beyond few 1000\,K produced in the shocks could
 disassociate the molecules and can also lead to ionization if
-temperature reaches above 10$^{4}$\,K.
+the temperature becomes larger than 10$^{4}$\,K.
 %
 \begin{figure*}
  \includegraphics[width=2.\columnwidth]{\figpath/molcjet_310_molform.png}
@@ -1098,41 +1087,39 @@ temperature reaches above 10$^{4}$\,K.
 \label{fig:Hmolform}
 \end{figure*}
 
-For the reference run, the effect of shock in dynamical evolution of
-hydrogen fraction is presented in figure~\ref{fig:Hmolform}. The top
-panel of the figure shows number density of hydrogen in the jet. This
-hydrogen exists in three forms namely, molecular, atomic and
-ionized. The fraction of each of these forms are shown in bottom
-panels of figure~\ref{fig:Hmolform} at two representative regions in
-the jet marked with the arrow. The left bottom panel shows the
+For the reference run, the effect of the shock in the dynamical evolution of
+the hydrogen fraction is presented in figure~\ref{fig:Hmolform}. The top
+panel of the figure shows the hydrogen number density in the jet. 
+The fraction of all hydrogen forms are shown in bottom
+panels of figure~\ref{fig:Hmolform} along two representative regions in
+the jet marked with the arrows. The left bottom panel shows the
 vertical distribution of temperature, molecular and atomic fraction at the
 interface of the knot and the ambient medium. The interaction of the
 knot with the medium raises that temperature to 1200\,K and
-accumulates the matter such the density in that region reaches up to
+accumulates the matter so that the density increases up to
 10$^{6}$ cm$^{-3}$. Behind the shock as the material cools, atoms
 combine together to form molecules as seen in the increase of fH2 from
-0.44 to 0.52. This rise in molecular fraction comes at an expense of
-reduction in atomic fraction from 0.56 to 0.48. Further away from the
-shock, these species tend to reach a quasi equilibrium as their
-fractions reach towards a value of 0.5. The ionized fraction is
+0.44 to 0.52. Further away from the
+shock, atomic and molecular hydrogen tend to reach a quasi equilibrium as their
+fractions reach a value of 0.5. The ionized fraction is
 extremely low in this region due to low temperatures. However at the
 bow-shock, temperatures rise up to 20000\,K. Molecular
 hydrogen species are destroyed, while ionized hydrogen shows an
-increase in its fraction as seen in the bottom right panel of
-figure~\ref{fig:Hmolform}. The peak in ionized fraction of 0.15
+increase in its fraction 
+(figure~\ref{fig:Hmolform}). The peak in ionized fraction of 0.15
 coincides with the peak in temperature profile as expected. The
 molecular fraction shows a considerable dip from 0.3 to 0.03 at 
 this temperature before rising sharply in the ambient molecular
 medium. 
 %
 
-In summary, the axi-symmetric jet flow with periodic knots 
-produce shocks of varied strengths giving rise to density, velocity and
-temperature distribution. Molecular cooling and chemistry also 
-allows us to evolve fractions of different hydrogen species along with the jet
-flow. These jet quantities are then post-processed with a radiative
-transfer code described in section~\ref{sec:radtrans} to obtain emission maps,
-spectra and PV diagrams.
+% In summary, the axi-symmetric jet flow with periodic knots 
+% produce shocks of varied strengths giving rise to density, velocity and
+% temperature distribution. Molecular cooling and chemistry also 
+% allows us to evolve fractions of different hydrogen species along with the jet
+% flow. These jet quantities are then post-processed with a radiative
+% transfer code described in section~\ref{sec:radtrans} to obtain emission maps,
+% spectra and PV diagrams.
 
 
 
@@ -1141,28 +1128,26 @@ spectra and PV diagrams.
 The output obtained from the radiative transfer calculation is a data
 cube with velocity being the third axis. This allows us to obtain
 spectra and position velocity diagrams from these data cubes. 
-Figure~\ref{empvspec90} shows all the possible outputs from the data
-cube for the J = 2-$>$1 transition for the reference run. 
+Figure~\ref{empvspec90} shows outputs from the data
+cube for SiO(2-1) in the reference run. 
 The top left panel in the figure shows the emission map for the jet
 directed downwards. The notable features are the knots close to the
 base of the jet and the emission near the bow shock due to density
 enhancement by cooling instability. The PV diagram shown in the top
-right panel is obtained along the jet as indicated by vertical magenta
-line. The position is shown in terms of pixels, where each pixel has a
-width of about 16\,AU. The channel numbers in the X-axis indicate
+right panel is obtained along the jet as indicated by the vertical magenta
+line in the left panel. The channel numbers in the X-axis indicate
 velocities. The whole velocity range of -20 km s$^{-1}$ to 20 km
 s$^{-1}$ is uniformly divided into 80 channels. High velocity features
 are clearly seen in regions corresponding to the knots in the emission
 maps. These features fade along the jet as the knots also disappear in
-the emission map. The region close to the bow shock as well gives
-indication of high velocity features which are seen as broad wings in
-the spectra. 
+the emission map. The region close to the bow shock also shows high
+velocity features.
 %
 
 \begin{figure}
- \includegraphics[width=1.\columnwidth]{\figpath/refrun_21_90_emspecpv.png}
+ \includegraphics[width=1.\columnwidth]{\figpath/emspecpv_90.pdf}%{\figpath/refrun_21_90_emspecpv.png}
  \caption{Integrated emission map ({\it top left}), PV diagram ({\it top right}
-   and spectra ({\it bottom} for the
+   and spectra ({\it bottom}) for the
    2-$>$1 SiO transition for the reference run. 
    The jet is assumed to be in the plane of sky implying an angle of
    inclination of $90^{\circ}$. The vertical {\it magenta dashed} line represents the cut for the PV digram and where this line is intersected by the horizontal
@@ -1171,75 +1156,68 @@ the spectra.
 \end{figure}
 
 The spectra at three different positions in the flow are shown in the
-bottom panel of figure~\ref{empvspec90}. These three positions are
-basically the two knots close to the base of the flow and region close
-to the bow shocks. They are marked by horizontal white dashed lines in
-the emission maps. The knot closer to the base is the brightest
-showing a peak intensity of 25\,K. As one moves along the jet the
+bottom panel of figure~\ref{empvspec90} (they are marked with blue
+crosses in top left panel). The knot closer to the base is the brightest
+showing a peak intensity of 25\,K. The
 intensity decreases and reaches to about 10\,K close to the bow shock.
-The line widths seen for this reference run with an angle of
-inclination of 90$^{\circ}$ are typically around 5-10 km s$^{-1}$.
+The line widths seen are typically around 5-10 km s$^{-1}$.
 These line widths increase substantially as the angle of inclination
-decreases. Figures~\ref{empvspec60} and \ref{empvspec45} show the
+decreases. Figure \ref{empvspec45} show the
 emission map, PV diagram and spectra for the same reference run but
-with angle of inclination of 60$^{\circ}$ and 45$^{\circ}$
-respectively. The spectra for low inclination angles are much broader
-and have lower peak intensities at the same three positions in the flow (shown by
-three white dashed lines). The line 
+with angle of inclination of 45$^{\circ}$
+respectively. The line 
 widths now are typically of the order of 20 km s$^{-1}$ and the peak
 intensity of the brightest knot is approximately 10\,K. 
-The PV diagrams in these runs are not longer symmetric, unlike the run
-with the jet in plane of the sky. Instead, they show a distinct {\it zig-zag}
+The PV diagrams in these runs are not longer symmetric. Instead, they show a distinct {\it zig-zag}
 pattern at each of the knots and region close to the bow shock.
 
 
-\begin{figure}
- \includegraphics[width=1.\columnwidth]{\figpath/refrun_21_60_emspecpv.png}
- \caption{Same as figure~\ref{empvspec90} but with angle of
-   inclination of $60^{\circ}$.} 
-\label{empvspec60}
-\end{figure}
+% \begin{figure}
+%  \includegraphics[width=1.\columnwidth]{\figpath/refrun_21_60_emspecpv.png}
+%  \caption{Same as figure~\ref{empvspec90} but with angle of
+%    inclination of $60^{\circ}$.} 
+% \label{empvspec60}
+% \end{figure}
 
 \begin{figure}
- \includegraphics[width=1.\columnwidth]{\figpath/refrun_21_45_emspecpv.png}
+ \includegraphics[width=1.\columnwidth]{\figpath/emspecpv_45.pdf}%{\figpath/refrun_21_45_emspecpv.png}
  \caption{Same as figure~\ref{empvspec90} but with angle of
    inclination of $45^{\circ}$.} 
 \label{empvspec45}
 \end{figure}
 
-%
-The predicted emission maps, spectra and PV diagrams are shown above to depend
-on the angle of inclination. In the next section, we focus on the
-dependence of these observational features on the 
-different fractional abundance profiles of SiO.
+% %
+% The predicted emission maps, spectra and PV diagrams are shown above to depend
+% on the angle of inclination. In the next section, we focus on the
+% dependence of these observational features on the 
+% different fractional abundance profiles of SiO.
 
 
 
 \subsection{SiO Abundance profile}
 \label{ssec:sioabunem}
-Input profiles in the radiative transfer code for the
-fractional abundance of SiO are a very modest approximation from 
-observed values (see sec~\ref{ssec:sioabun}). In
+The fractional abundance of SiO has been assumed to vary with shock velocity in
+a simplistic manner(see sec~\ref{ssec:sioabun}). In
 figure~\ref{fig:diffabunem}, we compare the maps for J = 2-$>$1
-emission for two different abundance profiles and ratio of jet to
-shock velocities. There is a striking difference with regards to
-emission from the internal knots in these images. All the internal
-knots show emission in the J=2-$>$1 line whilst using a top hat profile
-and accounting for shock speeds (i.e. $\delta < 1$). However, some of
+emission for two different abundance profiles and two different ratios of shock to
+jet velocities, $\delta$. There is a striking difference with regards to
+emission from the internal knots in these images. Using the top hat profile
+and accounting for shock speeds (i.e. $\delta < 1$) results in
+emission from  all the internal knots in the J=2-$>$1 line. However, some of
 these knots are not observed when using the same top-hat profile but
 assuming the shock velocity to be same as the jet velocity (i.e.,
 $\delta$ = 1). Similar qualitative characteristics are seen in case of a gaussian
 abundance profile. In particular, the case with $\delta$ = 1 only
-produce emission from the knot closest to the bow shock, while the internal
+produces emission from the knot closest to the bow shock, while the internal
 knots do not show any appreciable emission. Further, the emission from
 the knot closer to the bow shock varies considerably with different
 profiles and value of $\delta$. It is the brightest for the case with
 a top-hat profile and $\delta < 1$. The peak emission and line widths at this knot
-are listed in table~\ref{tab:result2}
+are listed in table~\ref{tab:result2}.
 %
 
 \begin{figure*}
- \includegraphics[width=2.\columnwidth]{\figpath/EM_gaussandth.png}
+ \includegraphics[width=2.\columnwidth]{\figpath/diffabun_img.pdf}%{\figpath/EM_gaussandth.png}
  \caption{Variation of 2-$>$1 SiO emission for runs with molecular
    cooling having $\eta$ = 3 and $\beta$ = 10 and different abundance profiles.}
 \label{fig:diffabunem}
@@ -1267,23 +1245,23 @@ fig~\ref{fig:diffabunem}.
 Additionally, the internal knots show their distinct signatures in
 form of {\em Hubble wedges} as seen in the PV diagrams for these
 different profiles (see
-~\ref{ssec:emspecpv}). Figure~\ref{fig:pvdiffabun} shows a zoomed
-version of the bottom four internal knots in form PV diagram for these
-different abundance profile. As expected, the signatures of knotty
-emission is missing for the case with gaussian profile with $\delta$ =
+~\ref{ssec:emspecpv}). Figure~\ref{fig:pvdiffabun} shows a zoomed in
+version of the bottom four internal knots in form of a PV diagram for these
+different abundance profiles. As expected, the signatures of knots 
+is missing for the case with gaussian profile with $\delta$ =
 1. Further, the wedges formed in panels 1 and 2 of the figure in
-general slightly more extended in position space as compared to ones
-formed in panel 4 of the same figure. This is indeed because of the
-discontinuous nature of top-hat abundance profile as the SiO is
+general are slightly more extended as compared to those
+formed in panel 4. This is indeed because of the
+discontinuous nature of the top-hat abundance profile as the SiO is
 enhanced to a maximum abundance for all velocities between 20 and 100
-km\,s$^{-1}$, which is not the case in a more continuos gaussian
+km\,s$^{-1}$, which is not the case in a more continuous gaussian
 distribution.
 
 \begin{figure*}
- \includegraphics[width=2.\columnwidth]{\figpath/PV_gaussandth.png}
- \caption{Contour maps of position-velocity diagram for the internal
-   knots for 2-$>$1 SiO emission for runs with molecular
-   cooling having $\eta$ = 3 and $\beta$ = 10 and different abundance
+ \includegraphics[width=2.\columnwidth]{\figpath/diffabun_PV.pdf}%{\figpath/PV_gaussandth.png}
+ \caption{Position-velocity maps of SiO(2-1) for the internal
+   knots produced in the model with molecular
+   cooling, $\eta$ = 3, $\beta$ = 10 and different abundance
    profiles. The contours mark different levels of emission in Kelvins, viz.,
    0.2,0.6,1.0,1.4,1.8,2.0,3.0,4.0.}
 \label{fig:pvdiffabun}
@@ -1316,9 +1294,9 @@ on the color bar of each panel.
 
 
 \begin{figure*}
- \includegraphics[width=2.\columnwidth]{\figpath/ALMAmaps3.png}
+ \includegraphics[width=2.\columnwidth]{\figpath/almamaps_new.pdf}%{\figpath/ALMAmaps3.png}
  \caption{{\bf Left:} The integrated intensity map of SiO(2-1), (5-4)
-   and (8-7). The heat map shows the 2-1 line intensity (in units of Jy$\,$kms$^{-1}$/beam), the blue contours show the J=8-7 line intensity and the green contours show the J=5-4 line intensity. {\bf Right:} The PV diagram taken along the axis of the jet (in units of Jy/beam), showing the higher J transitions highlighting the knots of the jet and broad emission at the bow shock. In both panels the ticks on the color bar represent the contour levels.}
+   and (8-7). The emission map shows the 5-4 line intensity (in units of Jy$\,$kms$^{-1}$/beam), the blue contours show the J=8-7 line intensity and the green contours show the J=2-1 line intensity. {\bf Right:} The PV diagram taken along the axis of the jet (in units of Jy/beam), showing the higher J transitions highlighting the knots of the jet and broad emission at the bow shock. In both panels the ticks on the color bar represent the contour levels.}
 \label{fig:almafig}
 \end{figure*} 
 
@@ -1390,13 +1368,13 @@ shocked SiO velocity components observed in the L1157 molecular outflow \cite{Gu
 %
  
 Further, we find SiO emission coming from velocities 
-of the order of 40-60 km\,s$^{-1}$ (see figs.~\ref{empvspec60} and
+of the order of 40-60 km\,s$^{-1}$ (see fig
 ~\ref{empvspec45}). Such a velocity range is typically associated with
 EHV gas seen in the majority of the outflows (\citealt{Tafalla:2011p14051}). Additionally,
 the EHV peaks show a distinct sawtooth pattern in the PV diagram
 (\citealt{SantiagoGarcia:2009p13972}). Such a sawtooth pattern is very
 similar to the pattern that we see in PV diagrams from
-our models (see figs.~\ref{empvspec60} and ~\ref{empvspec45}). 
+our models (see figs. \ref{empvspec45} and \ref{fig:almafig}). 
 All of the above striking similarities from observations of EHV gas
 and synthetic spectra and PV diagrams gives a very formidable backing
 to the idea that such an emission could arise due to shock interactions of
@@ -1502,10 +1480,10 @@ that SiO emission from our model is tracing the regions with right physical
 conditions that are required to emit SiO in the gas phase via shocks. 
 
 \begin{figure*}
- \includegraphics[width=2.\columnwidth]{\figpath/LineRatio_THDeq1.png}
- \caption{{\em{Top}} Line profiles in SiO J = 2-1, 5-4 and 8-7 at one
-   the inner knot for the molecular cooling run with $\eta$ = 3 and
-   $\beta$ = 10 for the reference run. The profiles are
+ \includegraphics[width=2.\columnwidth]{\figpath/singledish_new.pdf}%{\figpath/LineRatio_THDeq1.png}
+ \caption{{\em{Top}} Line profiles in SiO (2-1), (5-4) and (8-7) at one
+   the inner knots for the reference molecular cooling run with a top
+   hat abundance profile and $\delta = 1$. The profiles are
    obtained when the angle of inclination is 60$^{\circ}$ with respect
  to line of sight. {\em{Bottom left}} Line intensity ratios SiO(8-7)/(5-4)
 and SiO(5-4)/(2-1), as a function of velocity. {\em{Bottom right}}
