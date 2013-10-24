@@ -1048,30 +1048,37 @@ each using a different method to calculate cooling and all with $\eta$=10 $\beta
 The molecular cooling in our
 model includes the evolution of H$_2$ chemistry along with
 contributions to cooling from fixed fractions of other molecules like
-CO, OH etc. The jet is largely dominated by atomic
-and molecular hydrogen. Ionized hydrogen is mainly formed at the tip
-of the bow.The
-highest temperature of $\sim$ 50000\,K is attained in our flow at the
+CO, OH etc. Figure~\ref{fig:Hfracsim} shows the color composite image
+of various hydrogen fractions, (fHI (red), fH2 (green) and fHII
+(blue)), from the dynamical simulation with
+reference parameters. The jet beam is largely dominated by atomic
+hydrogen, while molecular hydrogen is seen to be formed in internal
+knots and region that is thermally instable. 
+Ionized hydrogen is mainly formed at the tip of the bow. 
+The highest temperature of $\sim$ 50000\,K is attained in our flow at the
 tip of the bow shock. While the temperature on the edges (i.e.,interface between
 jet and the ambient medium) is lower than 5000\,K. Also the relatively
 weaker shocks formed nearby knots do not heat up the material beyond
-10$^{3}$\, K.
+10$^{3}$\, K. 
 %
 
-%\begin{figure*}
-% \includegraphics[width=2.\columnwidth]{\figpath/molcjet_310.png}
-% \caption{Fraction of hydrogen species, temperature and mean molecular
-%    weight in the run with molecular
-%    cooling having $\eta$ = 3 and $\beta$ = 10.}
-%\label{fig:Hfracsim}
-%\end{figure*}
+\begin{figure}
+ \includegraphics[width=1.\columnwidth]{\figpath/hfracs_ref.pdf}
+ \caption{{\it{Left}} Color composite image of various hydrogen
+   fractions, fHI (red), fH$_{2}$ (green) and fHII (blue), for the
+   reference run. For better visualisation, the ionized hydrogen
+   fraction is enhanced by a factor of 100. The temperature of the jet
+ obtained from dynamical simulation is shown on the {\it{right}}.}
+\label{fig:Hfracsim}
+\end{figure}
 
 
 The distribution of fractions of different hydrogen species along with
 temperature suggests that there are essentially three regions where
 chemistry is evolved due to shocks.
 They are : (1) The tip of the jet , (2) The edges of the jet and
-(3) intermediate knots. As the atomic jet propagates from the lower boundary 
+(3) intermediate knots. 
+As the atomic jet propagates from the lower boundary 
 into the cold molecular medium , it forms a strong shock resulting in
 forming a density and temperature discontinuity. Such a jump in
 dynamical quantities plays a crucial role in the evolution of
@@ -1461,11 +1468,14 @@ emission for J$_{\rm up}$ = 3. These curves help tp predict the
 hydrogen number density and temperature in outflows. Physical
 conditions in outflows can also be studied by estimation of line ratios.
 Values $\approx$ 1 for line ratios SiO(8-7)/(5-4) and SiO(5-4)/(2-1) have been
-found in HH212 assuming LTE regime \citep{Cabrit:2007p13804,
+found in HH212 \citep{Cabrit:2007p13804,
   Lee:2008p13697} and also for molecular outflows from massive
 young stellar object IRAS 17233-3606 (\citealt{Leurini:2013p13165}).
-These line ratios from the present
-non-LTE radiative transfer model are shown in the bottom left panel of
+The LVG modelling with optically thin approximation were unable to produce
+these line ratios. 
+In the non-LTE radiative transfer modeling, no assumption of optical
+depths or photon escape probablity are prescribed and line ratios are
+self consistently calculated and are shown in the bottom left panel of
 fig.~\ref{fig:lineratio}. Their values lie very close to unity as
 indicated from observations. 
 %Further, we have estimated the optical
