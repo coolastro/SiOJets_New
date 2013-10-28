@@ -76,7 +76,7 @@
 
 \newcommand{\ti}{t_{\rm i}}
 
-\newcommand{\rj}{R_{\rm jet}}
+\newcommand{\rj}{R$_{\rm jet}$}
 
 \newcommand{\rk}{R_{\kappa}}
 
@@ -360,7 +360,7 @@ precision (for e.g., in DG Tau: \citealt{Bacciotti:2002p2084}).
 %
 
 Even with a myriad of such empirical evidences, the exact nature of
-moleular emission in outflows is not clear. For a complete understanding it is imperative
+molecular emission in outflows is not clear. For a complete understanding it is imperative
 to complement these observations with theoretical models. Many models
 based on hydro-simulations and steady state shock calculations
 were proposed to explain the observational signatures of molecular
@@ -499,72 +499,97 @@ magnetic fields, $\nabla \cdot \vec{B} = 0$, which is numerically achieved by co
 using the Powell's eight wave formulation \citep{Powell:1999p14822}.
 
 \subsection{Physical Model}
-We model the propagation of jet as it interacts with the molecular
-cloud core material at distances $\gtrsim$ 1000\,AU. 
+We model the propagation of an axi-symmetric jet
+in (r,z,$\phi$) cylindrical co-ordinates as it interacts with the
+ambient medium at distances $\gtrsim$ 1000\,AU. 
 At these distances from the central source, the downward pull of gravity plays a
-negligible role and the dynamics of the jet is primarily governed by magnetic fields.
-The total magnetic field in the jet is dominated by the toroidal
-component. This is because the poloidal field decays as $z^{-2}$ as
-compared to $z^{-1}$ for toroidal field to maintain the force balance
-($z$ is the vertical distance from the source). 
-The hoop stress due to pinch force from the toroidal magnetic fields maintains
-a highly collimated beam like structure for the jet.
-%
-
-The ambient medium with which the jet interacts primarily
-represents the molecular cloud core. The numerical domain is axi-symmetric
-and in (r,z,$\phi$) cylindrical co-ordinates. Its extent 20 $R_{\rm j}$ in the radial
-direction and 100
-$R_{\rm j}$ along the vertical axis ($R_{\rm j}$ being the radius of
-the jet). The domain of interest is about 3000\,AU away from the
-central source and extends up to 0.1\,pc. Numerically, it is resolved by an uniform grid with a domain of 200$\times$1000 cells in the radial and vertical directions. For simplicity, we choose this medium
+negligible role on the dynamics of the jet. The ambient medium with which the jet interacts primarily
+represents the molecular cloud core. We study the interaction within a
+radial extent of 20\,\rj\,\, and a vertical extent of 100\,\rj\,\,(\rj\,\, being the radius of
+the jet). Numerically, it is resolved by an uniform grid with a domain
+of 200$\times$1000 cells in the radial and vertical directions. For simplicity, we choose this medium
 to be unmagnetized and non-turbulent. The density in the ambient
 medium varies with vertical height $z$ as, $\rho_{\rm amb}\sim (\rho_0/z^{2})$
-which is consistent with observations \citep{Keto:2010p15549, Caselli:2011p13935}. The value of
+which is consistent with observations \citep{Keto:2010p15549,
+  Caselli:2011p13935}. The value of
 $\rho_0$ depends upon the density contrast, $\eta$, between the jet and
 the ambient medium. The number density in the jet is kept fixed such
 that the density in the ambient medium lies within a range of $10^{4}-10^{5}
 \rm cm^{-3}$. The pressure in the ambient molecular medium is
-set so to maintain a constant temperature of 50\,K. 
+set so to maintain a constant temperature of 50\,K. Note, dense
+molecular cores through which young outflows propagate
+have lower temperatures ranging from 10-20\,K
+(\citealt{Rathborne:2007p15753}). As the jet is hypersonic in both
+cases, runs with lower ambient temperature of 10\,K do not show any 
+appreciable changes in final dynamical structure of the jet.
+
 %
 
-The jet enters into the medium through a nozzle of radius $R_{\rm jet}$
-from the lower boundary (z = 0). The jet density is fixed to
-be $10^{5} \rm cm^{-3}$ and it has a radius of $2.5\times10^{15} \rm cm \sim
-167\,AU$. The jet is injected into the domain with a typical 
-velocity of $v_{\rm jet,0}$ = 100 km/s as is the case for most low mass stellar jets
-especially the low velocity component. The constant jet velocity is
-superimposed with periodic pulsation of the form,
-\begin{equation}
-v_{\rm jet} = v_{\rm jet,0}(1.0 + A\,sin(2.0\pi t/T_{\rm p})),
-\end{equation}
-where the amplitude A is 0.25 and time period $T_{\rm p} = 70$
-years. The pressure at the surface of the jet is $10^{-10} \rm
-dyne\,\,cm^{-2}$ corresponding to a temperature of $T_{\rm jet} \sim
-4\times10^{3}\,K$. Inside the jet beam, a radial variation of thermal
+The jet enters into the medium through a nozzle of radius \rj\,\,
+from the lower boundary (z = 0). Optically visible jets from T-Tauri
+stars are just about spatially resolved for the nearest
+star forming regions i.e, their radii are of order
+100\,AU at a few thousand AU from the source \citep{Ray:2012p15733}.
+These jets have mass outflow rates of 10$^{-7}$ M$_{\odot}$
+yr$^{-1}$ \citep{Dougados:2010p15774}. Younger and 
+embedded jets in their Class 0 phase have
+outflow rates about 10-100 times higher than 
+corresponding jets from optically visible young stars
+\citep{Bally:2007p2340, Dionatos:2009p15670, Ray:2012p15733}. Also,
+these optically obscure jets are relatively slower with velocities
+ranging around 100 km\,s$^{-1}$ \citep{Bally:2007p2340} as compared to
+optically visible flows with velocities up to 500 km s$^{-1}$
+\citep[e.g,][]{Mundt:1987p15799}.
+For the present model, the jet is injected into the domain with a 
+velocity of $v_{\rm jet,0}$ = 100 km/s and set the jet density to
+$10^{5} \rm cm^{-3}$ within a radius of $2.5\times10^{15} \rm
+cm$. With these choices we obtain a mass outflow rate of 10$^{-6}$
+M$_{\odot}$ yr$^{-1}$. Most of the young outflows 
+show variable features possibly due to variable accretion rates
+or internal shocks inside the jet \cite{Bachiller:1996p4692}.
+We replicate such variability by superimposing the constant jet
+velocity with sinusoidal pulsation with an amplitude of 25
+km\,s$^{-1}$ with a periodicity of 70\,yr such that the dense knots
+are separated by a distance of $\sim$\,1000\,AU.
+
+Thermal and magnetic properties of jets from young stars are difficult
+to constraint because of their large variation not only within the jet
+but also in its surroundings. Forbidden line emissions from
+HH objects indicate excitation temperatures of the order
+of $\leq$10$^{4}$\,K \citep{Podio:2006p15921,
+  Bally:2007p2340}. However, in case of 
+young jets the temperature is
+considerably lower (i.e, by an order of magnitude) than found in jets from Class I/II
+sources as derived from various atomic lines in molecular jets from
+L-1448C and HH211 \citep{Dionatos:2009p15670,Dionatos:2010p15968}.  
+The temperature at the jet
+nozzle for our model has been set to 1000\,K. Thus, the jet is
+over-pressured by 60 times as compared with the ambient medium,
+assuming $\eta$ = 3.0. Inside the jet beam, a radial variation of thermal
 and magnetic pressure is adopted to maintain a magneto-static
-equilibrium. We adopt the
-same radial profiles used by \cite{Stone:2000p2650} for all our runs. 
-Based on these profiles, the toroidal magnetic field is assumed to be
-zero at the axis and achieves a maximum at some radius, $r_{\rm m}$
-inside the jet. The maximum value, $B_{\phi,\rm m}$, depends on the
-plasma $\beta$ which is kept fixed for all our runs to be at a value
-of 10.0. This corresponds to the maximum field strength, $B_{\phi,\rm m}$ $\sim
-16\mu\,G$. 
-
+equilibrium for all our runs. 
+Based on these profiles (adopted from \citealt{Stone:2000p2650}), 
+the toroidal magnetic field is assumed to be
+zero at the axis and achieves a maximum at radius, $r_{\rm m} \sim 0.8$\rj\,\,
+inside the jet. Though measuring magnetic fields in
+most jets is not possible via unpolarized nebular lines, in some special
+cases like HH 34S and HH 111V, it has been measured to be 10 and 30
+$\mu\,G$ respectively \citep{Morse:1993p15960}. Considering the
+dependence of such weak magnetic fields on density and radial distance in velocity-variable flows, 
+\cite{Hartigan:2007p15768} has shown that at large distances of the 
+star these fields only play a minor role in the dynamics. Thus for all
+our runs the value of magnetic field strength, $B_{\phi}(r_{\rm m})$ 
+is set to be $\sim 37\mu\,G$.
 %
- 
+
 In order to consistently model the SiO emission arising from shocks as
 this jet interacts with the medium, we evolve the dynamics along with
 chemistry and cooling prescriptions. They are described in details in
 the next section.
 
-
-
-
 \section{Chemistry and Cooling}
 \label{sec:chem}
-\subsection{Molecular Cooling}
+\subsection{Molecular Chemistry}
 \label{ssec:molcool}
 Typically, early collimated outflows have cooling times shorter than
 the dynamical times, implying that the radiative cooling plays a vital
@@ -581,43 +606,37 @@ number density n$_{\rm H}$ comprises of contribution from atomic and
 molecular hydrogen i.e., n$_{\rm H}$ = n$_{HI}$ + n$_{H2}$. Whereas
 the contribution to electrons comes from the ionized hydrogen, n$_{\rm HII}$ and
 from negligible but fixed fraction of metals ($Z \sim 10^{-4}$).
-The chemical evolution of molecular, atomic and ionized hydrogen is governed by
-equations listed in Table~\ref{tab:chemeq}. 
 %
-
 Numerically, the
 non-homogenous parts of the equations~\ref{encons1} and \ref{chemevol} 
 are are solved separately from the advection step
 using operator splitting. Further, the rate equations are evolved at each advection time
 step using sub-stepping and adaptive Runge-Kutta methods.
-In doing so, the code tracks the formation and destruction of
-fractions of three species viz., X(HI), X($H_{2}$)
-and X(HII) based on the temperature dependent reaction rates specified
-in the table along with their references and shown in the left panel
-of figure~\ref{ssec:molcool}. The figure clearly shows that below
-1000\,K the formation of molecular hydrogen dominates over other
-chemical processes, whereas for hotter gas there exists a competition
-of different chemical processes elucidating the complex chemical interplay.
-The fractions of various hydrogen species are then used to update the cooling
-function $\Lambda(\rho,T,{\bf{X}})$ to consistently derive the
-temperature for next advection step. For low temperatures, we also
-take into account contribution to cooling rates from molecules like
-CO, whose abundance with respect to $n_{\rm H2}$ is fixed to
-10$^{-5}$. For each of the other molecules contributing to the cooling function (like OH, H$_{2}$O and atomic OI)
-the abundance is fixed to $5\times10^{-6}$. The contribution from
-these molecules is only important when temperature is $<$ 100\,K as seen
-in the right panel of figure~\ref{ssec:molcool}. 
+The formation and destruction of
+fractions (denoted by \textbf{X}$_{i}$ in eq.~\ref{chemevol}) of three species, viz., fHI, f$H_{2}$
+and fHII are tracked by the code based on the temperature dependent reaction rates
+whose coefficients are specified 
+in the Table~\ref{tab:chemeq} along with their literature references. 
 
+%and shown in the left panel
+%of figure~\ref{fig:tempvar}. The figure clearly shows that below
+%1000\,K, the rate coefficient of radiative recombination is the
+%most dominant. However at these temperatures, very few
+%electrons and ionized hydrogen are present in the initial ambient
+%medium, thus the corresponding rate for this reaction is not that
+%significant initially. At low temperatures corresponding to the molecular
+%cores, the rate of formation of molecular hydrogen dominates over other
+%chemical processes, whereas for gas temperatures $>$ 1000\,K there exists a competition
+%of different chemical processes elucidating the complex chemical interplay.
 
-
-\begin{figure*}
- \includegraphics[width=1\columnwidth]{\figpath/H2ReactionRates_paper.png}
+\begin{figure}
+% \includegraphics[width=1\columnwidth]{\figpath/H2ReactionRates_paper.png}
  \includegraphics[width=1\columnwidth]{\figpath/H2CoolingFuncs_full.png}
- \caption{Variation of $H_2$ chemistry reaction rates, $k_{i}$ and cooling
+ \caption{Variation of the cooling
    function $\Lambda(n,T,{\bf{X}})$ with temperature for the initial
-   state (see Sect.~\ref{ssec:molcool})}
+   state}
 \label{fig:tempvar}
-\end{figure*}
+\end{figure}
 
 \begin{table*}
 \begin{minipage}{\textwidth}
@@ -650,50 +669,44 @@ T_{\rm eV}^{2.012}(\rm{exp}(4.463/T_{\rm eV})^{-1}((1. + 0.2472 T_{\rm eV})^{3.5
 \end{minipage}
 \end{table*}
 
-\subsection{Additional Cooling Prescriptions}
-For comparison, we also ran simulations of axisymmetric MHD jets
+\subsection{Cooling Prescriptions}
+%
+Figure~\ref{fig:tempvar} shows the variation
+of the cooling function, $\Lambda(\rho,T,{\bf{X}})$, with gas
+temperature assuming conditions of initial ambient density. 
+Various processes that contribute to the cooling function in our model
+are listed in the figure. The formulations of these contributions
+are adopted from \citep[][and references therein]{Smith:2003p9985, OSullivan:2009p10078}.
+For low temperatures, we also 
+take into account contribution to cooling function from molecules like
+CO, whose abundance with respect to $n_{\rm H2}$ is fixed to
+10$^{-5}$. For each of the other molecules contributing to the cooling function (like OH, H$_{2}$O and atomic OI)
+the abundance is fixed to $5\times10^{-6}$. The contribution from
+these molecules is only important when temperature is $<$ 100\,K as seen
+in figure~\ref{fig:tempvar}. A substantial contribution to the cooling
+function, between T = 100\,K and 3000\,K, 
+comes from the vibrational and rotational transitions of
+molecular hydrogen. Whereas, for temperatures above 3000\,K the
+cooling is mainly via H$_{2}$ disassociation. The total curve for the
+whole temperature range obtained in our runs is shown in black.
+The fact that the initial ambient medium is largely molecular, cooling is also dominated by
+molecular processes. In our reference model (see ~\ref{ssec:refrun}), 
+we update this curve at each time step based on the fraction of
+various hydrogen species. Thus during the evolution, even
+contributions from collisional ionizations and excitations also become
+important in regions dominated by atomic and ionized hydrogen.
+%
+
+We also ran simulations of axisymmetric MHD jets
 with optically thin cooling prescriptions already existing in the public
 release of the PLUTO-4 code. They are power-law cooling, 
 simplified non-equilibrium (or atomic) cooling and tabulated
-cooling. Further we compare these radiative runs with an adiabatic jet 
-to cover a wide spectrum of jet thermodynamics. 
-%
-
-In case of power law cooling, the radiative losses denoted by
-$\Lambda(\rho,T,{\bf X})$ are proportional to
-$\rho^{2}T^{\alpha}$, with $\alpha$ = 0.5 representing bremsstrahlung
-cooling. The loss term is independent of the fraction of various
-species ${\bf X}$, therefore the fluid density $\rho$ is assumed to be
-all hydrogen for further processing of emission maps. Similarly, 
-for tabulated cooling prescription, the radiative losses are estimated
-based on a fixed fraction of various species. However, the contribution
-for each species is a complex function of density and temperature. The
-variation of cooling function $\Lambda$ with temperature is shown in
-the right panel of figure~\ref{fig:tempvar}. 
-The formulations which depend on the fractions of each species and gas
-temperature of these variations are mainly adopted from the appendix of \cite{Smith:2003p9985}. 
-The fractions of all hydrogen species are kept fixed to their initial values, while that
-of CO, OH, H$_{2}$O and OI are same as that used for molecular cooling
-described above. The total cooling curve shown as the black solid line
-in the figure~\ref{fig:tempvar} is used for the case of tabulated
-cooling. For the atomic cooling, we distinguish between neutral
-and ionized gas by defining $f_{\rm n} = n_{\rm HI}/n_{\rm H}$ and
-evolve it using,
-\begin{equation}
-\frac{\partial f_{\rm n}}{\partial t} + {\bf{v}}\cdot\nabla f_{\rm n} =
-n_{\rm e} [-(c_{\rm r} + c_{\rm i})f_{\rm n} + c_{\rm r}]
-\end{equation}
-where, $n_{\rm e}$ is the number of electrons that come from ionized
-hydrogen and a very small fixed fraction of metals, c$_{\rm r}$ and c$_{\rm i}$ are the recombination and ionization rate coefficients that depend on the temperature T. In
-addition to losses by collisional ionization and radiative
-recombination, additional contribution to radiative losses come from various atomic line emissions from C,N,O,Mg,Si,Fe etc.
-
-%
-
-While these additional cooling prescriptions may not be a complete description of
+cooling. While these additional cooling prescriptions may not be a complete description of
 the chemical and radiative processes in early outflows, they are ideal
 to compare the results obtained from the more consistent newly added molecular
-cooling. Such a comparison is presented in section~\ref{ssec:coolres}.
+cooling. In addition, we compare these radiative runs with an adiabatic jet 
+to cover a wide spectrum of jet thermodynamics. 
+Such a comparison is presented in section~\ref{ssec:coolres}.
 
 
 \section{Radiative Transfer}
@@ -788,9 +801,9 @@ between the jet and medium is estimated by balancing the respective ram
 pressures \citep{Masson:1993p9661},
 \begin{equation}
 \label{eq:shockjetvel}
-v_{\rm s} = \frac{v_{\rm j}}{1 + \eta^{-0.5}} = v_{\rm j}\delta
+v_{\rm s} = \frac{v_{\rm jet}}{1 + \eta^{-0.5}} = v_{\rm jet}\delta
 \end{equation}
-where v$_{\rm s}$ is the velocity of dense plug and v$_{\rm j}$ is the
+where v$_{\rm s}$ is the velocity of dense plug and v$_{\rm jet}$ is the
 jet velocity. A comparative view of using such velocity corrections and
 functional forms of SiO abundances are discussed in
 Sec~\ref{ssec:sioabunem}.
@@ -844,9 +857,7 @@ over-dense by 10 times compared to the ambient medium. Additionally, for
 the atomic, tabulated and molecular cooling runs (see section~\ref{sec:chem}
 for description of different cooling prescriptions) we have also used a
 value of $\eta$ of the order of unity indicating similar densities in
-the jet and the medium. 
-The magnetic field strength is kept to be fixed using $\beta = 10.0$,
-for all our runs. Table~\ref{tab:result1} lists all the runs with
+the jet and the medium. Table~\ref{tab:result1} lists all the runs with
 varying $\eta$ and cooling prescriptions, along with the peak
 intensity and line widths at the bow shock.
 %
@@ -880,14 +891,14 @@ Run & Cooling Mode & $\eta$ & \multicolumn{2}{|c|}{Top Hat Profile
 \hline\hline
 &&& $\int T_{\rm MB}dV$ [K-km\,s$^{-1}$] & $\Delta$v [km s$^{-1}$] & $\int T_{\rm MB}dV$ [K-km\,s$^{-1}$] & $\Delta$v [km s$^{-1}$] \\
 \hline
-adi1010 & Nil (Adiabatic) & 10 & 2.91 & $>$40 & 0.25 & 40.0 \\
-pow1010 & Power law & 10 & 0.64 & 8.0 & 0.02 & 10.0\\
-atm1010 & Atomic & 10 & 2.04 & 36.0 & 0.58 & 38.0 \\
-atm210 & Atomic & 2 & 3.21 & 18.0 & 0.64 & 20.0 \\
-tab1010 & Tabulated & 10 & 0.75 & 11.0 & 0.09 & 10.0 \\
-tab210 & Tabulated & 2 & 2.89 & 8.0 & 1.0 & 9.0 \\
-mol1010 & Molecular & 10 & 1.10 & 10.0 & 0.1 & 11.0 \\
-mol310 & Molecular & 3 & 3.3 & 14.0 & 0.66 & 12.0\\
+adi10 & Nil (Adiabatic) & 10 & 2.91 & $>$40 & 0.25 & 40.0 \\
+pow10 & Power law & 10 & 0.64 & 8.0 & 0.02 & 10.0\\
+atm10 & Atomic & 10 & 2.04 & 36.0 & 0.58 & 38.0 \\
+atm2 & Atomic & 2 & 3.21 & 18.0 & 0.64 & 20.0 \\
+tab10 & Tabulated & 10 & 0.75 & 11.0 & 0.09 & 10.0 \\
+tab2 & Tabulated & 2 & 2.89 & 8.0 & 1.0 & 9.0 \\
+mol10 & Molecular & 10 & 1.10 & 10.0 & 0.1 & 11.0 \\
+mol3 & Molecular & 3 & 3.3 & 14.0 & 0.66 & 12.0\\
 \hline
 \end{tabular}
 \label{tab:result1}
@@ -928,26 +939,37 @@ Gaussian & 1/$(1.0 + \eta(z)^{-0.5})$ & 1.1
 We define a reference run in order to quantify and compare results obtained from such a
 survey of above mentioned parameters. The results shown in this work will be
 pertaining to the reference run (unless otherwise mentioned) and appropriate comparison will be
-discussed with other runs.
-%
+discussed with other runs. 
 
 The reference run in our calculation has density contrast $\eta$ = 3
-with a plasma beta $\beta$ = 10. The jet for this run is 89\% atomic,
-10\% molecular and 1\% ionized to begin with. This jet enters the
+with the initial jet density of 10$^{5}$ cm$^{-3}$. This jet enters the
 ambient medium with a velocity of v$_{\rm jet,0}$ = 100 km
-s$^{-1}$. The cooling in the jet is
-via molecular cooling prescription, whereby the hydrogen fractions are
-evolved with cooling contributions for abundant molecules like CO, OH
+s$^{-1}$ which is further superimposed by sinusoidal perturbations to
+replicate dense knots. The maximum value of toroidal magnetic field is
+set to be 37$\mu\,G$ at the base of the jet.
+\cite{Dionatos:2009p15670} have detected atomic lines
+towards a molecular jet from L1448-C indicating a presence of embedded
+atomic jet at low excitation. Additionally, they also detect pure
+rotational transitions from H$_{2}$ indicating presence of molecules
+along with the atomic jet. Line ratios from this source indicate that the
+atomic gas is characterized by an an ionization fraction of 1\%,
+which is considerably less as compared to ionization fraction of
+10-20\% measured in optical jets \cite{Bacciotti:1995p15970}.
+Initial jet composition is prescribed
+be 89\% atomic, 10\% molecular and 1\% ionized, in qualitative
+agreement of above observational results. 
+%
+
+The cooling in the reference jet is via molecular cooling prescription, whereby
+the initial hydrogen fractions are evolved using appropriate rate equations and with cooling 
+contributions for abundant molecules like CO, OH
 etc. The final state (at time $\sim$ 1000 yr), i.e, density, temperature and velocity obtained from this 
-run are given in input to the radiative transfer code to obtain the observational features
+run are given as inputs to the radiative transfer code to obtain the observational features
 corresponding to SiO molecule. 
 For the radiative transfer calculation, the source in the reference
 run is stationary and the jet is in the plane of the sky ($\phi =
-90^{\circ}$). A gaussian profile is used for the fractional abundance
-of SiO.
-%TheSiO fractional abundance used is that obtained
-%from equation~\ref{eq:fracSio}. 
-Further, the shock velocity which determines
+90^{\circ}$). A gaussian profile without any upper cutoff is used for the fractional abundance
+of SiO. Further, the shock velocity which determines
 the fractional abundance, v$_{\rm s}$, is less than the jet velocity in the
 flow, such that their ratio $\delta$ is given by
 equation~\ref{eq:shockjetvel}, where $\eta$ is the density contrast as a
@@ -1021,28 +1043,17 @@ molecular cooling flows are described in details in the next section.
 \begin{figure*}
  \includegraphics[width=2.\columnwidth]{\figpath/diffcool_sim.pdf}%{\figpath/jetplt1_1010.png}
  \caption{Jet Volume Density for different cooling modes with
-   $\eta$ = 10 and $\beta$ = 10.}
+   $\eta$ = 10.}
 \label{fig:coolcmpdyn}
 \end{figure*}
 
 \begin{figure*}
  \includegraphics[width=2.\columnwidth]{\figpath/diffcool_img.pdf}
  \caption{A plot of the integrated SiO J=2-$>$1 emission from 5 models, 
-each using a different method to calculate cooling and all with $\eta$=10 $\beta$=10.}
+each using a different method to calculate cooling and all with $\eta$=10.}
 \label{fig:coolcmpsio} 
 \end{figure*}
 
-
-% \subsection{Effects of changing $\eta$ and $\beta$}
-% figure nos. 2 -- Simulated images describing lengths, collimation and
-% emission for lower eta more stronger. 
-% \begin{figure*}
-%  \includegraphics[width=2.\columnwidth]{\figpath/jetplt2_diffetabeta.png}
-%  \caption{Jet Volume Density for atomic cooling with $\eta$ = 10 but $\beta$ = 1 and
-%    10 and that with tabulated cooling with $\beta$ = 10 but $\eta$ = 2
-%    and 10.}
-% \label{grid}
-% \end{figure*}
 
 \subsection{Molecular cooling and H$_2$ Chemistry}
 The molecular cooling in our
@@ -1226,7 +1237,7 @@ are listed in table~\ref{tab:result2}.
 \begin{figure*}
  \includegraphics[width=2.\columnwidth]{\figpath/diffabun_img.pdf}%{\figpath/EM_gaussandth.png}
  \caption{Variation of 2-$>$1 SiO emission for runs with molecular
-   cooling having $\eta$ = 3 and $\beta$ = 10 and different abundance profiles.}
+   cooling having different abundance profiles.}
 \label{fig:diffabunem}
 \end{figure*}
 
@@ -1267,8 +1278,7 @@ distribution.
 \begin{figure*}
  \includegraphics[width=2.\columnwidth]{\figpath/diffabun_PV.pdf}%{\figpath/PV_gaussandth.png}
  \caption{Position-velocity maps of SiO(2-1) for the internal
-   knots produced in the model with molecular
-   cooling, $\eta$ = 3, $\beta$ = 10 and different abundance
+   knots produced in the model with reference parameters and different abundance
    profiles. The contours mark different levels of emission in Kelvins, viz.,
    0.2,0.6,1.0,1.4,1.8,2.0,3.0,4.0.}
 \label{fig:pvdiffabun}
@@ -1464,17 +1474,17 @@ obtained using a top hat profile is brighter than the one obtained
 with a Gaussian SiO profile. However, curves obtained from
 both these profiles show a very similar shape of a distinct rise followed by a fall in
 integrated emission for higher transitions with a peak in
-emission for J$_{\rm up}$ = 3. These curves help tp predict the
+emission for J$_{\rm up}$ = 3. These curves helps to to predict the
 hydrogen number density and temperature in outflows. Physical
 conditions in outflows can also be studied by estimation of line ratios.
 Values $\approx$ 1 for line ratios SiO(8-7)/(5-4) and SiO(5-4)/(2-1) have been
 found in HH212 \citep{Cabrit:2007p13804,
   Lee:2008p13697} and also for molecular outflows from massive
 young stellar object IRAS 17233-3606 (\citealt{Leurini:2013p13165}).
-The LVG modelling with optically thin approximation were unable to produce
+The local velocity gradient (LVG) slab modeling with optically thin approximation were unable to produce
 these line ratios. 
-In the non-LTE radiative transfer modeling, no assumption of optical
-depths or photon escape probablity are prescribed and line ratios are
+In the non-LTE (non local thermodynamic equilibrium) radiative transfer modeling, no assumption of optical
+depths or photon escape probability are prescribed and line ratios are
 self consistently calculated and are shown in the bottom left panel of
 fig.~\ref{fig:lineratio}. Their values lie very close to unity as
 indicated from observations. 
