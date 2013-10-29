@@ -279,7 +279,7 @@ The most complex is that of molecular cooling along with
 H$_2$ chemistry. This prescription allows us to track the formation
 and destruction of HI, HII and H$_2$ along with the flow dynamics. 
 The final state of the jet obtained for each cooling model is then
-post-processed using a radiative line transfer code to
+given as an input to a radiative line transfer code to
 obtain SiO emission maps, spectra and position-velocity (PV) digrams.}
   % results heading (mandatory)
    {Our model can successfully explain the signatures of extremely high
@@ -538,7 +538,7 @@ corresponding jets from optically visible young stars
 \citep{Bally:2007p2340, Dionatos:2009p15670, Ray:2012p15733}. Also,
 these optically obscure jets are relatively slower with velocities
 ranging around 100 km\,s$^{-1}$ \citep{Bally:2007p2340} as compared to
-optically visible flows with velocities up to 500 km s$^{-1}$
+optically visible flows with velocities up to 500\,km\,s$^{-1}$
 \citep[e.g,][]{Mundt:1987p15799}.
 For the present model, the jet is injected into the domain with a 
 velocity of $v_{\rm jet,0}$ = 100 km/s and set the jet density to
@@ -926,7 +926,7 @@ mol3 & Molecular & 3 & 3.3 & 14.0 & 0.66 & 12.0\\
 \centering
 \caption{Summary of radiative transfer runs with different SiO fractional abundance
   profiles for dynamical simulation with molecular cooling and
-  $\eta=3$. The integrated intensity of the brightest lobe assuming a single disk
+  $\eta=3$. The integrated intensity assuming a single disk
   observation with a beam width of $15\,\arcsec$ is listed along with the
   corresponding spectral width.}
 \begin{tabular}{l | l | l | l | l}
@@ -1146,16 +1146,6 @@ this temperature before rising sharply in the ambient molecular
 medium. 
 %
 
-% In summary, the axi-symmetric jet flow with periodic knots 
-% produce shocks of varied strengths giving rise to density, velocity and
-% temperature distribution. Molecular cooling and chemistry also 
-% allows us to evolve fractions of different hydrogen species along with the jet
-% flow. These jet quantities are then post-processed with a radiative
-% transfer code described in section~\ref{sec:radtrans} to obtain emission maps,
-% spectra and PV diagrams.
-
-
-
 \subsection{Emission Maps, Spectra and PV diagrams}
 \label{ssec:emspecpv}
 The output obtained from the radiative transfer calculation is a data
@@ -1232,7 +1222,7 @@ pattern at each of the knots and region close to the bow shock.
 The fractional abundance of SiO has been assumed to vary with shock velocity in
 a simplistic manner(see sec~\ref{ssec:sioabun}). In
 figure~\ref{fig:diffabunem}, we compare the maps for J = 2-$>$1
-emission for two different abundance profiles and two different ratios of shock to
+emission at an inclination angle of 90$^{\circ}$ for three different abundance profiles and two different ratios of shock to
 jet velocities, $\delta$. There is a striking difference with regards to
 emission from the internal knots in these images. Using the top hat profile
 and accounting for shock speeds (i.e. $\delta < 1$) results in
@@ -1242,7 +1232,10 @@ assuming the shock velocity to be same as the jet velocity (i.e.,
 $\delta$ = 1). Similar qualitative characteristics are seen in case of a gaussian
 abundance profile. In particular, the case with $\delta$ = 1 only
 produces emission from the knot closest to the bow shock, while the internal
-knots do not show any appreciable emission. Further, the emission from
+knots do not show any appreciable emission. The step function and
+gaussian step (not shown) with $delta = 1$ produces very similar
+features as that of the top hat profile with $\delta < 1$.
+Further, the emission from
 the knot closer to the bow shock varies considerably with different
 profiles and value of $\delta$. It is the brightest for the case with
 a top-hat profile and $\delta < 1$. The peak emission and line widths at this knot
@@ -1282,7 +1275,7 @@ different profiles (see
 version of the bottom four internal knots in form of a PV diagram for these
 different abundance profiles. As expected, the signatures of knots 
 is missing for the case with gaussian profile with $\delta$ =
-1. Further, the wedges formed in panels 1 and 2 of the figure in
+1. Further, the wedges formed in panels 1, 2 and 5 of the figure in
 general are slightly more extended as compared to those
 formed in panel 4. This is indeed because of the
 discontinuous nature of the top-hat abundance profile as the SiO is
@@ -1630,7 +1623,7 @@ obtained from our study are as follows :
   along with young internal knots that are formed close to the base of
   the jet.
 \item Emission maps obtained from our reference run with molecular
-  cooling show a distinctive outflow lobe like structure. The
+  cooling show a distinctive collimated outflow structure. The
   physical regions responsible of SiO emission in such early outflows
   typically have molecular hydrogen densities n$\sim$ 10$^{6}$
   cm$^{-3}$ and temperatures $>$ 500\,K which is consistent with
@@ -1672,11 +1665,11 @@ obtained from our study are as follows :
 In summary, this work for the first time provides a model
 that explains the origin of EHV emission seen in SiO from 
 the inner regions of young molecular outflows. The unique combination
-of axisymmetric jet propogation model with molecular cooling and
-non-LTE radiative transfer calculations can sucessfully predict most
+of axisymmetric jet propagation model with molecular cooling and
+non-LTE radiative transfer calculations can successfully predict most
 of the observed properties of SiO emission from young molecular
 outflows from Class 0 stages. This model provides an excellent
-template to compare current ALMA obervations and can also predict
+template to compare current ALMA observations and can also predict
 signatures of thermal instabilities which can be tested with upcoming
 ALMA observations. In future, we would like to extent our
 model to full three dimensions and evolve the jet for longer time
