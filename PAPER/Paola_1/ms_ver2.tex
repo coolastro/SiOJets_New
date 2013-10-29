@@ -54,7 +54,7 @@
 \definecolor{orange}{rgb}{1,0.5,0}
 \usepackage[colorlinks=True,citecolor=orange,urlcolor=blue,linkcolor=red]{hyperref}
 
-\newcommand{\figurepath}{./PFIGS}
+\newcommand{\figurepath}{.}
 
 
 %  Definition of fonts
@@ -233,8 +233,7 @@
 \let\apjsupp=\apjs
 \let\applopt=\ao
 
-%\newcommand{\figpath}{/Users/bhargavvaidya/MyProject/work/Leeds_Uni/SiOJets_New/PAPER/PFIGS/}
-\newcommand{\figpath}{./PFIGS/}
+\newcommand{\figpath}{/Users/bhargavvaidya/MyProject/work/Leeds_Uni/SiOJets_New/PAPER/PFIGS/}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \begin{document}
@@ -335,7 +334,7 @@ velocities giving rise to molecular outflows.
 Bipolar molecular outflows from low and high mass stars
 have been studied in detail over the past 
 decade \citep[see reviews by][]{Bachiller:1996p4692, Beuther:2002p1149, Arce:2007p798,
-Tafalla:2011p14051}. Advances in millimeter interferometery 
+Tafalla:2011p14051}. Advances in millimeter interferometer 
 allow observations of these outflows with spatial resolution of
 few arc seconds. A large number of studies observing young
 outflows are done using standard outflow and shock tracers,
@@ -539,7 +538,7 @@ corresponding jets from optically visible young stars
 \citep{Bally:2007p2340, Dionatos:2009p15670, Ray:2012p15733}. Also,
 these optically obscure jets are relatively slower with velocities
 ranging around 100 km\,s$^{-1}$ \citep{Bally:2007p2340} as compared to
-optically visible flows with velocities up to 500 km$\,$s$^{-1}$
+optically visible flows with velocities up to 500 km s$^{-1}$
 \citep[e.g,][]{Mundt:1987p15799}.
 For the present model, the jet is injected into the domain with a 
 velocity of $v_{\rm jet,0}$ = 100 km/s and set the jet density to
@@ -773,15 +772,25 @@ abundance on shock speeds. Considering the complex grain
 chemistry that is involved in order to estimate the functional
 dependence of SiO abundance on shock speeds, we prescribe these
 profiles based on limited empirical evidences. The most simple among
-these are the step profile, where the abundance of SiO is 10$^{-12}$ below 20 km$\,$s$^{-1}$ and 10$^{-6}$ at greater velocities, and the top hat profile, in which the SiO abundance is the same as the step profile but returns to 10$^{-12}$ at velocities greater than 100 km$\,$s$^{-1}$.
-In order to get rid of discontinuous changes in abundance, we also
+them is the top hat profile in which the SiO abundance is a low value of
+10$^{-12}$ below 20 km s$^{-1}$ and above 100 km s$^{-1}$ and a
+maximum value of 10$^{-6}$ between these two velocities.
+Shock velocities $>$ 100 km s$^{-1}$ can lead to the 
+ionisation of hydrogen and thereby effectively reduce the number
+of collision centers for SiO resulting in a weaker emission. 
+However, we also consider a step function dependence of SiO abundance
+on shock velocity to incorporate cases where we allow for reformation
+of atomic and molecular species.
+In order to get rid of a discontinuous change of abundance, we also
 prescribe a gaussian such that the peak SiO abundance of 10$^{-6}$ is at
 60\,km\,s$^{-1}$, while the value of n(SiO)/n(H$_{2}$) falls below
-10$^{-9}$ at 20 and 100 km$\,$s$^{-1}$
-\citep[e.g.,][also see
-section~\ref{sec:discussion}]{Lefloch:1998p13983}. 
+10$^{-9}$ at 20 and 100 km s$^{-1}$. Such a huge variation in SiO
+abundance may indeed be the case in regions where SiO is seen
+in widespread \citep[e.g.,][also see section~\ref{sec:discussion}]
+{Lefloch:1998p13983}. Also along with a Gaussian profile, we consider
+the case where we extent the abundance of 10$^{-6}$ beyond 60 km\,s$^{-1}$. 
 These functional dependences of SiO
-abundance on shock velocity are show in figure~\ref{abun}.  
+abundance on shock velocity are shown in figure~\ref{abun}.  
 In addition to this, if the temperature at the point is greater than
 92,000\,K (the temperature of the Si-O bond disassociation energy) 
 the abundance is reduced to 0. 
@@ -895,7 +904,7 @@ Run & Cooling Mode & $\eta$ & \multicolumn{2}{|c|}{Top Hat Profile
   $\delta = 1$} & \multicolumn{2}{|c|}{Gaussian Profile $\delta =
   1$}\\
 \hline\hline
-&&& $\int T_{\rm MB}dV$ [K-km\,s$^{-1}$] & $\Delta$v [km$\,$s$^{-1}$] & $\int T_{\rm MB}dV$ [K-km\,s$^{-1}$] & $\Delta$v [km$\,$s$^{-1}$] \\
+&&& $\int T_{\rm MB}dV$ [K-km\,s$^{-1}$] & $\Delta$v [km s$^{-1}$] & $\int T_{\rm MB}dV$ [K-km\,s$^{-1}$] & $\Delta$v [km s$^{-1}$] \\
 \hline
 adi10 & Nil (Adiabatic) & 10 & 2.91 & $>$40 & 0.25 & 40.0 \\
 pow10 & Power law & 10 & 0.64 & 8.0 & 0.02 & 10.0\\
@@ -923,7 +932,7 @@ mol3 & Molecular & 3 & 3.3 & 14.0 & 0.66 & 12.0\\
 \begin{tabular}{l | l | l | l | l}
 \hline
 Profile & $\delta$ = v$_{\rm s}$/v$_{\rm jet}$ & $\int T_{\rm MB}dV$
-[K-km\,s$^{-1}$] & $\Delta$v [km$\,$s$^{-1}$]\\ 
+[K-km\,s$^{-1}$] & $\Delta$v [km s$^{-1}$]\\ 
 \hline\hline
 Top Hat & 1.0 & 3.3 & 14.0 \\
 Top Hat & 1/$(1.0 + \eta(z)^{-0.5})$ & 4.9 & 14.0 \\
@@ -1160,7 +1169,7 @@ base of the jet and the emission near the bow shock due to density
 enhancement by cooling instability. The PV diagram shown in the top
 right panel is obtained along the jet as indicated by the vertical magenta
 line in the left panel. The channel numbers in the X-axis indicate
-velocities. The whole velocity range of -20 km$\,$s$^{-1}$ to 20 km
+velocities. The whole velocity range of -20 km s$^{-1}$ to 20 km
 s$^{-1}$ is uniformly divided into 80 channels. High velocity features
 are clearly seen in regions corresponding to the knots in the emission
 maps. These features fade along the jet as the knots also disappear in
@@ -1184,13 +1193,13 @@ bottom panel of figure~\ref{empvspec90} (they are marked with blue
 crosses in top left panel). The knot closer to the base is the brightest
 showing a peak intensity of 25\,K. The
 intensity decreases and reaches to about 10\,K close to the bow shock.
-The line widths seen are typically around 5-10 km$\,$s$^{-1}$.
+The line widths seen are typically around 5-10 km s$^{-1}$.
 These line widths increase substantially as the angle of inclination
 decreases. Figure \ref{empvspec45} show the
 emission map, PV diagram and spectra for the same reference run but
 with angle of inclination of 45$^{\circ}$
 respectively. The line 
-widths now are typically of the order of 20 km$\,$s$^{-1}$ and the peak
+widths now are typically of the order of 20 km s$^{-1}$ and the peak
 intensity of the brightest knot is approximately 10\,K. 
 The PV diagrams in these runs are not longer symmetric. Instead, they show a distinct {\it zig-zag}
 pattern at each of the knots and region close to the bow shock.
@@ -1308,8 +1317,7 @@ time, in the configurations c32-6, c32-4 and c32-3 for the three
 lines, giving beam sizes of 0.72'', 0.47'' and 0.58'' and
 sensitivities of 0.05, 0.07 and 0.09$\,$mJy/beam for the three lines
 (as calculated by the ALMA online sensitivity calculator) with
-velocity resolutions of $\sim$1$\,$km/s.
- Figure~\ref{fig:almafig}
+velocity resolutions of $\sim$1$\,$km/s. Figure~\ref{fig:almafig}
 presents the ALMA prediction obtained from our reference run. The
 left panel shows the integrated emission of SiO J = 2-1 line while the right
 shows the PV diagram for the same line and over laid are
@@ -1488,10 +1496,18 @@ Values $\approx$ 1 for line ratios SiO(8-7)/(5-4) and SiO(5-4)/(2-1) have been
 found in HH212 \citep{Cabrit:2007p13804,
   Lee:2008p13697} and also for molecular outflows from massive
 young stellar object IRAS 17233-3606 (\citealt{Leurini:2013p13165}).
-Radiative transfer modelling using a homogenous slab of material and large velocity gradient (LVG) photon escape probability have been unable to reproduce these line ratios. 
-In the 3D non-LTE (non local thermodynamic equilibrium) radiative transfer modeling presented in this work, no assumption of optical depths or photon escape probability are prescribed and line ratios are
-self consistently calculated. The line ratios are shown in the bottom left panel of
-fig.~\ref{fig:lineratio}. Their values lie very close to unity, in agreement with observations. 
+The local velocity gradient (LVG) slab modeling with optically thin approximation were unable to produce
+these line ratios. 
+In the non-LTE (non local thermodynamic equilibrium) radiative transfer modeling, no assumption of optical
+depths or photon escape probability are prescribed and line ratios are
+self consistently calculated and are shown in the bottom left panel of
+fig.~\ref{fig:lineratio}. Their values lie very close to unity as
+indicated from observations. 
+%Further, we have estimated the optical
+%depth in regions emitting SiO and find them to be optically thick with
+%an optical depth $\tau \sim 10$. Thus, assuming optically thin SiO emission
+%from molecular outflows especially from shocked dense knots would
+%only provide upper limits. 
 In summary, the shape, ratio and peak intensity of the spectra
 obtained from our model fit very well to observed values implying
 that SiO emission from our model is tracing the regions with right physical
@@ -1525,7 +1541,7 @@ Though 1D models that study the formation of SiO in gas phase from grain-grain a
 collisions exists, their focus is mainly on weaker shocks
 \citep{Schilke:1997p14140, Caselli:1997p14853, Gusdorf:2008p13800}. 
 The pulsating jet propagation model presented here have shock speeds
-reaching up to 100 km\,s$^{-1}$. We have used four
+reaching up to 100 km\,s$^{-1}$. We have used two
 simplified SiO abundance profiles as a function of shock
 velocity. Though the shape of the profile is uncertain, the upper and
 lower limits used are backed by observational evidences. Ideally, for a consistent
@@ -1533,7 +1549,7 @@ dependence of SiO abundance on shock velocity, one would have to also
 solve for silicon and SiO chemistry in a manner similar to that of
 H$_{2}$. However, such a numerically expensive model 
 with complex chemistry is beyond the scope of this paper 
-as this could require including dust grains and sputtering 
+as this could imply to include dust grains and sputtering 
 as well as grain-grain collisions (i.e. an MHD multi-fluid approach).  
 %
 
@@ -1573,7 +1589,7 @@ shocks with the ambient medium. Generally it is assumed that the silicon materia
 grain cores and that it is necessary to sputter or vaporise such cores
 to obtain some SiO in gas phase. However, some silicon material may be
 mixed with the ices on the dust grain surfaces (see discussion in \citealt{Schilke:1997p14140}) . In such a scenario, 
-shocks with speeds below 20 km$\,$s$^{-1}$ might inject a significant
+shocks with speeds below 20 km s$^{-1}$ might inject a significant
 amount of silicon into the gas phase from the mantles, without 
 completely destroying the grains. \cite{JimenezSerra:2010p15530} also found parsec-scale emission of SiO
 toward an infrared dark cloud suggesting that large scale shocks (may
@@ -1593,7 +1609,7 @@ and H$_{2}$O as seen from recent results of the Herschel-WISH survey
 \label{sec:conclusion}
 We have performed MHD simulations
 of episodic radiative jet propagating 
-with a typical speed of 100 km$\,$s$^{-1}$ into a cold, non-magnetized ambient
+with a typical speed of 100 km s$^{-1}$ into a cold, non-magnetized ambient
 molecular medium with a density gradient. The jet dynamical quantities are evolved in conjunction
 with different optically thin, non-equilibrium cooling prescriptions of varying complexities. 
 The most complex is that of molecular cooling along with
@@ -1642,10 +1658,11 @@ obtained from our study are as follows :
   knot like features that are generally observed in outflows like IRAS
   04166+2706.
 \item Emission from internal knots do depend on the chosen profile of
-  the abundance. On one extreme where all the internal knots 
-  is the top-hat profile with $\delta <$ 1, whereas, no emission in
+  the abundance. On one extreme where all the internal knots emit SiO  
+  with a step profile with $\delta =$ 1 and a top-hat profile with
+  $\delta < 1$, whereas, no emission in
   seen in knots when a gaussian profile with $\delta$ = 1 is used. For
-  the remaining two possibilities, we observe that emission mainly
+  the remaining cases, we observe that emission mainly
   comes from knots close to the base of the flow and the condensation
   formed at the primary shock due to thermal instability.
 \item Predicted ALMA maps also show characteristic features that are
@@ -1654,7 +1671,20 @@ obtained from our study are as follows :
 
 In summary, this work for the first time provides a model
 that explains the origin of EHV emission seen in SiO from 
-the inner regions of young molecular outflows.
+the inner regions of young molecular outflows. The unique combination
+of axisymmetric jet propogation model with molecular cooling and
+non-LTE radiative transfer calculations can sucessfully predict most
+of the observed properties of SiO emission from young molecular
+outflows from Class 0 stages. This model provides an excellent
+template to compare current ALMA obervations and can also predict
+signatures of thermal instabilities which can be tested with upcoming
+ALMA observations. In future, we would like to extent our
+model to full three dimensions and evolve the jet for longer time
+scales to explore slow velocity component, precession and 
+slew of other instabilities. Additionally, we would also like to have
+a better handle on SiO abundance not only from observations but also
+by including dust micro-physics in our model. 
+
 
 
 %\section*{Acknowledgments}
