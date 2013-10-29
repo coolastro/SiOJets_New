@@ -289,7 +289,7 @@ obtain SiO emission maps, spectra and position-velocity (PV) digrams.}
      EHV emission. In addition, the Atacama Large Millimeter Array
      (ALMA) predictions for such
      early molecular outflows shows bright emission coming from young
-     internal knots and primary bow shock due to thermal
+     internal knots and bow shock due to thermal
      instability. Our multi-line modeling of SiO supports
      the observational feature seen in Herbig-Haro (HH 211)
      that higher line transitions trace
@@ -541,12 +541,12 @@ ranging around 100 km\,s$^{-1}$ \citep{Bally:2007p2340} as compared to
 optically visible flows with velocities up to 500\,km\,s$^{-1}$
 \citep[e.g,][]{Mundt:1987p15799}.
 For the present model, the jet is injected into the domain with a 
-velocity of $v_{\rm jet,0}$ = 100 km/s and set the jet density to
-$10^{5} \rm cm^{-3}$ within a radius of $2.5\times10^{15} \rm
+velocity of $v_{\rm jet,0}$ = 100 km/s and the jet density is set to
+$10^{5} \rm cm^{-3}$ within a jet radius of $2.5\times10^{15} \rm
 cm$. With these choices we obtain a mass outflow rate of 10$^{-6}$
 M$_{\odot}$ yr$^{-1}$. Most of the young outflows 
 show variable features possibly due to variable accretion rates
-or internal shocks inside the jet \cite{Bachiller:1996p4692}.
+or internal shocks inside the jet \citep[e.g.][]{Bachiller:1996p4692}.
 We replicate such variability by superimposing the constant jet
 velocity with sinusoidal pulsation with an amplitude of 25
 km\,s$^{-1}$ with a periodicity of 70\,yr such that the dense knots
@@ -567,8 +567,8 @@ nozzle for our model has been set to 1000\,K. Thus, the jet is
 over-pressured by 60 times as compared with the ambient medium,
 assuming $\eta$ = 3.0. Inside the jet beam, a radial variation of thermal
 and magnetic pressure is adopted to maintain a magneto-static
-equilibrium for all our runs. 
-Based on these profiles (adopted from \citealt{Stone:2000p2650}), 
+equilibrium for all our runs \citealt{Stone:2000p2650}. 
+Based on these profiles, 
 the toroidal magnetic field is assumed to be
 zero at the axis and achieves a maximum at radius, $r_{\rm m} \sim 0.8$\rj\,\,
 inside the jet. Though measuring magnetic fields in
@@ -576,7 +576,7 @@ most jets is not possible via unpolarized nebular lines, in some special
 cases like HH 34S and HH 111V, it has been measured to be 10 and 30
 $\mu\,G$ respectively \citep{Morse:1993p15960}. Considering the
 dependence of such weak magnetic fields on density and radial distance in velocity-variable flows, 
-\cite{Hartigan:2007p15768} has shown that at large distances of the 
+\cite{Hartigan:2007p15768} has shown that at large distances from the 
 star these fields only play a minor role in the dynamics. Thus for all
 our runs the value of magnetic field strength, $B_{\phi}(r_{\rm m})$ 
 is set to be $\sim 37\mu\,G$.
@@ -634,7 +634,7 @@ in the Table~\ref{tab:chemeq} along with their literature references.
  \includegraphics[width=1\columnwidth]{\figpath/H2CoolingFuncs_full.png}
  \caption{Variation of the cooling
    function $\Lambda(n,T,{\bf{X}})$ with temperature for the initial
-   state}
+   state.}
 \label{fig:tempvar}
 \end{figure}
 
@@ -680,7 +680,7 @@ are adopted from \citep[][and references therein]{Smith:2003p9985, OSullivan:200
 For low temperatures, we also 
 take into account contribution to cooling function from molecules like
 CO, whose abundance with respect to $n_{\rm H}$ is fixed to a
-value of 10$^{-5}$ as measured in dense cores like L1554 \refer. 
+value of 10$^{-5}$ as measured in dense cores like L1544 \citep{Keto:2010p15549}. 
 For each of the other molecules contributing to the cooling function (like OH, H$_{2}$O and atomic OI)
 the abundance is fixed to values of $5\times10^{-6}$. Note, the
 uncertain abundance values are rather arbitrary for these molecules. 
@@ -796,12 +796,12 @@ In addition to this, if the temperature at the point is greater than
 the abundance is reduced to 0. 
 %
 
-\begin{figure}
- \includegraphics[width=1.\columnwidth]{\figpath/diffabun_profnew.pdf}%{\figpath/diffabunprof1.png}
- \caption{The different fractional SiO abundances as a function of
-   shock velocity, v$_{\rm s}$.}
- \label{abun}
-\end{figure}
+ \begin{figure}
+  \includegraphics[width=1.\columnwidth]{\figpath/diffabun_profnew.pdf}%{\figpath/diffabunprof1.png}
+  \caption{The different fractional SiO abundances as a function of
+    shock velocity, v$_{\rm s}$.}
+  \label{abun}
+ \end{figure}
 
 Further, the velocities obtained from the dynamical simulations are in fact the
 jet flow velocities. They can well be different from the shock
@@ -809,7 +809,7 @@ velocities depending upon the density contrast between the jet and
 ambient medium. For the present study, we will consider two
 cases. Firstly, the most simple one in which the jet flow velocity is
 same as the shock velocity. Considering that there is a density
-contrast in the simulation setup, this assumption is will
+contrast in the simulation setup, this assumption will
 overestimate the shock velocity. We also
 consider a case in which the shock speed of a dense plug accumulated
 between the jet and medium is estimated by balancing the respective ram
@@ -843,7 +843,7 @@ Sec~\ref{ssec:sioabunem}.
 \label{sec:parasurvey}
 The results and analysis for the present work are divided in two parts,
 viz., the dynamical numerical simulations and the
-radiative transfer code. For each part we have used certain parameters
+radiative transfer analysis. For each part we have used certain parameters
 and the effect of changing them is studied. Ideally all these parameters should come from observational
 results. However, not all quantities needed for our study are well
 constrained by observations, thus they are considered as
@@ -890,7 +890,7 @@ results with observations. The runs with different fractional
 abundance profiles are described in table~\ref{tab:result2}. A
 parameter introduced here is $\delta$ which is essentially the ratio
 of shock velocity v$_{\rm s}$ and physical jet velocity v$_{\rm
-  j}$ such that its value depends on density contrast $\eta$
+  jet}$ such that its value depends on density contrast $\eta$
 (see Eq.~\ref{eq:shockjetvel}).
 
 \begin{table*}
@@ -969,7 +969,7 @@ rotational transitions from H$_{2}$ indicating presence of molecules
 along with the atomic jet. Line ratios from this source indicate that the
 atomic gas is characterized by an an ionization fraction of 1\%,
 which is considerably less as compared to ionization fraction of
-10-20\% measured in optical jets \cite{Bacciotti:1995p15970}.
+10-20\% measured in optical jets \citep{Bacciotti:1995p15970}.
 Initial jet composition is prescribed
 be 89\% atomic, 10\% molecular and 1\% ionized, in qualitative
 agreement of above observational results. 
@@ -1014,8 +1014,8 @@ processed ambient gas. Further, the jet with tabulated cooling is narrower than 
 shows the feedback of chemistry on the cooling function. The cooling
 terms for both these jets are the same to begin with, however,
 for the molecular jet the cooling terms evolve with jet dynamics as the fraction of
-various hydrogen species change over time. Whilst the terms remain fixed to initial values, shown in the right panel of fig~\ref{fig:tempvar}, for the jet with tabulated
-cooling. Additionally, the material at the primary bow shock for the jet
+various hydrogen species change over time. Whilst the terms remain fixed to initial values, shown in the fig~\ref{fig:tempvar}, for the jet with tabulated
+cooling. Additionally, the material at the bow shock for the jet
 with tabulated and molecular cooling condenses forming dense knots. 
 Such a condensation is caused due to thermal instability and is 
 a typical feature of axi-symmetric radiative jets 
@@ -1023,7 +1023,7 @@ a typical feature of axi-symmetric radiative jets
 %
 
 The dynamical states for each of this cooling prescriptions are then 
-given as inputs the radiative transfer code to obtain integrated J = 2-$>$1 SiO emission
+given as inputs to the radiative transfer code to obtain integrated J = 2-$>$1 SiO emission
 maps shown in figure~\ref{fig:coolcmpsio}. The differences in dynamical
 features are also reflected in the corresponding SiO emission
 maps. These maps are obtained assuming an angle of inclination of
@@ -1034,19 +1034,19 @@ to create the maps shown.
 The emission from the jet with atomic
 cooling is coming from the conical jet head and younger knots closer
 to base of the flow. Additionally, features in the shell at Z $\sim$
-60, 80 also show evidence of faint emission. In case of the jet with
+60, 75 also show evidence of faint emission. In case of the jet with
 power-law cooling the emission mostly arises from the
 internal knots. 
 The emission coming from jets with
 tabulated and molecular cooling resembles that observed in young molecular outflows.
 Also in these outflows, strong emission arises from the
-condensation formed at the primary bow shock due to thermal
+condensation formed at the bow shock due to thermal
 instability. 
 %
 
 In summary, different cooling prescriptions strongly influence the
 dynamics of MHD jet propagation in particular the thickness and
-structure of the primary bow shock. These dynamical differences are
+structure of the bow shock. These dynamical differences are
 also reflected in SiO emission maps. The molecular cooling in our
 model consistently takes into account the feedback of temperature and
 density variation to evolve the chemical species unlike the tabulated cooling
@@ -1158,9 +1158,7 @@ directed downwards. The notable features are the knots close to the
 base of the jet and the emission near the bow shock due to density
 enhancement by cooling instability. The PV diagram shown in the top
 right panel is obtained along the jet as indicated by the vertical magenta
-line in the left panel. The channel numbers in the X-axis indicate
-velocities. The whole velocity range of -20 km s$^{-1}$ to 20 km
-s$^{-1}$ is uniformly divided into 80 channels. High velocity features
+line in the left panel. The velocities are show along the X-axis. High velocity features
 are clearly seen in regions corresponding to the knots in the emission
 maps. These features fade along the jet as the knots also disappear in
 the emission map. The region close to the bow shock also shows high
@@ -1173,13 +1171,13 @@ velocity features.
    and spectra ({\it bottom}) for the
    2-$>$1 SiO transition for the reference run. 
    The jet is assumed to be in the plane of sky implying an angle of
-   inclination of $90^{\circ}$. The vertical {\it magenta dashed} line represents the cut for the PV digram and where this line is intersected by the horizontal
- {\it white dashed} lines marks the positions from which the spectra are taken.} 
+   inclination of $90^{\circ}$. The vertical {\it magenta dashed} line
+   represents the cut for the PV digram and green crosses marks the positions from which the spectra are taken.} 
 \label{empvspec90}
 \end{figure}
 
 The spectra at three different positions in the flow are shown in the
-bottom panel of figure~\ref{empvspec90} (they are marked with blue
+bottom panel of figure~\ref{empvspec90} (they are marked with green
 crosses in top left panel). The knot closer to the base is the brightest
 showing a peak intensity of 25\,K. The
 intensity decreases and reaches to about 10\,K close to the bow shock.
@@ -1189,8 +1187,7 @@ decreases. Figure \ref{empvspec45} show the
 emission map, PV diagram and spectra for the same reference run but
 with angle of inclination of 45$^{\circ}$
 respectively. The line 
-widths now are typically of the order of 20 km s$^{-1}$ and the peak
-intensity of the brightest knot is approximately 10\,K. 
+widths now are typically of the order of 20 km s$^{-1}$. 
 The PV diagrams in these runs are not longer symmetric. Instead, they show a distinct {\it zig-zag}
 pattern at each of the knots and region close to the bow shock.
 
@@ -1220,7 +1217,7 @@ pattern at each of the knots and region close to the bow shock.
 \subsection{SiO Abundance profile}
 \label{ssec:sioabunem}
 The fractional abundance of SiO has been assumed to vary with shock velocity in
-a simplistic manner(see sec~\ref{ssec:sioabun}). In
+a simplistic manner (see sec~\ref{ssec:sioabun}). In
 figure~\ref{fig:diffabunem}, we compare the maps for J = 2-$>$1
 emission at an inclination angle of 90$^{\circ}$ for three different abundance profiles and two different ratios of shock to
 jet velocities, $\delta$. There is a striking difference with regards to
@@ -1233,7 +1230,7 @@ $\delta$ = 1). Similar qualitative characteristics are seen in case of a gaussia
 abundance profile. In particular, the case with $\delta$ = 1 only
 produces emission from the knot closest to the bow shock, while the internal
 knots do not show any appreciable emission. The step function and
-gaussian step (not shown) with $delta = 1$ produces very similar
+gaussian step (not shown) with $\delta = 1$ produces very similar
 features as that of the top hat profile with $\delta < 1$.
 Further, the emission from
 the knot closer to the bow shock varies considerably with different
@@ -1264,7 +1261,7 @@ z^{-2}$. Thus, the younger knots suffer the most deceleration closer
 to the base of flow. This fact is taken into account when the shock
 velocity is consistently calculated using the density contrast and
 using a value of $\delta <$ 1. This process is further validated by
-the lack of emission from internal knots in panel 4 of the
+the lack of emission from internal knots in panel 3 of the
 fig~\ref{fig:diffabunem}. 
 %
 
@@ -1321,7 +1318,14 @@ on the color bar of each panel.
 \begin{figure*}
  \includegraphics[width=2.\columnwidth]{\figpath/almamaps_new.pdf}%{\figpath/ALMAmaps3.png}
  \caption{{\bf Left:} The integrated intensity map of SiO(2-1), (5-4)
-   and (8-7). The emission map shows the 5-4 line intensity (in units of Jy$\,$kms$^{-1}$/beam), the blue contours show the J=8-7 line intensity and the green contours show the J=2-1 line intensity. {\bf Right:} The PV diagram taken along the axis of the jet (in units of Jy/beam), showing the higher J transitions highlighting the knots of the jet and broad emission at the bow shock. In both panels the ticks on the color bar represent the contour levels.}
+   and (8-7). The emission map shows the 5-4 line intensity (in units
+   of Jy$\,$kms$^{-1}$/beam), the blue contours show the J=8-7 line
+   intensity and the green contours show the J=2-1 line intensity. The
+   jet is inclined at an angle of 60$^{\circ}${\bf Right:} The PV
+   diagram taken along the axis of the jet for the 5-4 line (in units
+   of Jy/beam), showing the higher J transitions highlighting the
+   knots of the jet and broad emission at the bow shock. 
+   In both panels the ticks on the color bar represent the different contour levels.}
 \label{fig:almafig}
 \end{figure*} 
 
@@ -1431,10 +1435,10 @@ have been observed in young outflows (for e.g., {\it{L1448}}
 bullets \citep{Nisini:2007p13128}, {\it{HH211}}
 \citep{Chandler:2001p14376, Nisini:2002p14418,
   Hirano:2006p14411}. Further, the evolved post-shock gas near the
-primary bow shock also show bright emission for these high J transitions. 
+bow shock also show bright emission for these high J transitions. 
 This gas is linked to the thermal instability associated with
 radiative jets (see section~\ref{ssec:coolres}). The sub-structure seen close to the
-primary bow shock with high resolution does give a sense of clumpiness
+bow shock with high resolution does give a sense of clumpiness
 in the flow backing the suggestions to explain clumpy SiO emission has
 also been observed by \cite{Chandler:2001p14376}.
 %
@@ -1443,7 +1447,7 @@ also been observed by \cite{Chandler:2001p14376}.
  \includegraphics[width=2.\columnwidth]{\figpath/imshkvhcontomaps.png}
  \caption{Symmetrical contour maps of multi-line integrated SiO
    emission convolved with a 2\arcsec beam obtained using parameters of the reference run. The contour colors represent different intenties in Kelvins, i.e,
-   30.0({\it red}), 10.0({\it green}), 5.0({\it blue}), 1.0({\it
+   20.0({\it red}), 10.0({\it green}), 5.0({\it blue}), 1.0({\it
      magenta}), 0.5({\it cyan}), 0.1({\it black}).} 
 \label{fig:ltconts}
 \end{figure*}
@@ -1491,7 +1495,7 @@ found in HH212 \citep{Cabrit:2007p13804,
 young stellar object IRAS 17233-3606 (\citealt{Leurini:2013p13165}).
 The local velocity gradient (LVG) slab modeling with optically thin approximation were unable to produce
 these line ratios. 
-In the non-LTE (non local thermodynamic equilibrium) radiative transfer modeling, no assumption of optical
+In the present non-LTE radiative transfer modeling, no assumption of optical
 depths or photon escape probability are prescribed and line ratios are
 self consistently calculated and are shown in the bottom left panel of
 fig.~\ref{fig:lineratio}. Their values lie very close to unity as
@@ -1522,7 +1526,7 @@ Variation of integrated intensity with upper line transition J$_{\rm
 
 \subsection{Slow Component and Grain Chemistry}
 %
-We have presented a model able to explain the spectral characteristics
+We have presented a model that is able to explain the spectral characteristics
 of the SiO EHV component seen
 in several young outflows. The reference model
 consistently solves for the H$_{2}$ chemistry in presence of
@@ -1534,7 +1538,7 @@ Though 1D models that study the formation of SiO in gas phase from grain-grain a
 collisions exists, their focus is mainly on weaker shocks
 \citep{Schilke:1997p14140, Caselli:1997p14853, Gusdorf:2008p13800}. 
 The pulsating jet propagation model presented here have shock speeds
-reaching up to 100 km\,s$^{-1}$. We have used two
+reaching up to 100 km\,s$^{-1}$. We have used few
 simplified SiO abundance profiles as a function of shock
 velocity. Though the shape of the profile is uncertain, the upper and
 lower limits used are backed by observational evidences. Ideally, for a consistent
@@ -1566,8 +1570,8 @@ hints of slowing down of more evolved gas in terms of the velocity
 shift of about 7-10 km\,s$^{-1}$ in peak emission between that
 coming from the freshly formed internal knots close to the base of the
 flow and that from the more evolved gas near the
-primary bow shock. To ascertain this fact in more details, one would
-need to track the primary bow shock for 10$^{4}$ years
+bow shock. To ascertain this fact in more details, one would
+need to track the bow shock for 10$^{4}$ years
 using a larger simulation box and possibly with adaptive gridding 
 which will be considered for future simulations. Such a long term
 evolution will also help to provide a numerical model for the formation of HH objects
@@ -1616,7 +1620,7 @@ obtained from our study are as follows :
 \item Different cooling prescriptions used for our model
   significantly influence thickness of the jet. An
   efficient mode of cooling does reduce the size of the cocoon and results
-  in a more narrow jet. In addition, the primary bow shock structure
+  in a more narrow jet. In addition, the bow shock structure
   differs with various cooling modes. Also, with realistic cooling
   functions one sees development of
   thermal instability at the jet head which also shows a significant emission in SiO
@@ -1657,7 +1661,7 @@ obtained from our study are as follows :
   seen in knots when a gaussian profile with $\delta$ = 1 is used. For
   the remaining cases, we observe that emission mainly
   comes from knots close to the base of the flow and the condensation
-  formed at the primary shock due to thermal instability.
+  formed at the bow shock due to thermal instability.
 \item Predicted ALMA maps also show characteristic features that are
   consistent with young molecular outflows with EHV emission. 
 \end{itemize}
@@ -1666,22 +1670,24 @@ In summary, this work for the first time provides a model
 that explains the origin of EHV emission seen in SiO from 
 the inner regions of young molecular outflows. The unique combination
 of axisymmetric jet propagation model with molecular cooling and
-non-LTE radiative transfer calculations can successfully predict most
+non-LTE radiative transfer calculations can successfully reproduce most
 of the observed properties of SiO emission from young molecular
-outflows from Class 0 stages. This model provides an excellent
+outflows. This model provides an excellent
 template to compare current ALMA observations and can also predict
 signatures of thermal instabilities which can be tested with upcoming
-ALMA observations. In future, we would like to extent our
-model to full three dimensions and evolve the jet for longer time
-scales to explore slow velocity component, precession and 
-slew of other instabilities. Additionally, we would also like to have
+ALMA observations. In future, we would like to extend our
+model to full three dimensions with adaptive mesh refinement
+and evolve the jet for longer time scales to explore slow velocity 
+component, precession and slew of other instabilities. Additionally, we would also like to have
 a better handle on SiO abundance not only from observations but also
 by including dust micro-physics in our model. 
 
 
 
 %\section*{Acknowledgments}
+%BV would like to thank everyone. 
 
+%\newpage
 \bibliographystyle{mn2e}
 \bibliography{/Users/bhargavvaidya/MyProject/work/Leeds_Uni/SiOJets_New/PAPER/bibfile}
 \label{lastpage}
