@@ -1685,7 +1685,106 @@ by including dust micro-physics in our model.
 
 
 %\section*{Acknowledgments}
-%BV would like to thank everyone. 
+%BV would like to thank everyone.
+
+\appendix
+\section{Working surfaces and shocks}
+In this section we describe the mathematical derivation of estimating
+the speed of the working surface of the internal knot and shock speeds
+associated with it. We will follow the derivation as given in
+\citep{Raga:1990p16416,Raga:1992p16392}. Fig.~\ref{fig:interknot} shows a cartoon
+representation of a single internal knot formed in the jet. 
+The density and velocity upstream of the internal shock are
+$\rho_{1}$ and $u_{1}$, while, the downstream values are $\rho_{2}$
+and $u_{2}$ respectively. Note the velocities u$_1$ and u$_2$ are measured
+in a stationary frame of reference of the star. The velocity of the working surface is
+denoted by $v$, can be derived from the ram pressure balance between the upstream and
+downstream flow,
+\begin{equation}
+\rho_1 (u_1 - v)^{2} = \rho_2 (v - u_2)^{2}.
+\label{eq:ramPbal}
+\end{equation}
+This gives us the expression for $v$ as, 
+\begin{equation}
+v = \frac{u_1 + \zeta u_2}{1 + \zeta},
+\label{eq:velws}
+\end{equation} 
+where, $$\zeta = \sqrt{\frac{\rho_{2}}{\rho_1}}$$.
+
+\begin{figure}
+\includegraphics[width=1\columnwidth]{\figpath/Internalknot.pdf}
+\caption{Schematic diagram showing the structure of the internal
+  working surface. The faster upstream material with velocity u$_1$
+  catches the slower downstream material with velocity u$_2$ forming a
+two shock structure (u$_2 >$ v $>$ u$_1$). The in-between gas is squeezed out sideways
+forming the cocoon.}
+\label{fig:interknot}
+\end{figure}
+
+The parameter $\zeta$ is obtained in principle from the two
+dimensional snapshot of the jet density. In case of bow shock, the
+downstream medium is the stationary ambient medium (u$_2$ = 0), thus,
+eq.~\ref{eq:velws} will reduce to eq~\ref{eq:shockjetvel}.
+However for the internal knots, the variation of density and
+velocity for the reference run is shown in fig.~\ref{fig:1dvelrho}.
+As can be clearly seen, the value of $\zeta \approx$ 1 for most of the
+internal knots seen in our simulations. Thus, the velocity of the
+working surface simplifies to, 
+\begin{equation}
+v = \frac{u_1 + u_2}{2}.
+\label{eq:velwssimple}
+\end{equation}
+
+Additionally, the shock velocity (i.e, the velocity of the pre-shock
+flow with respect to the velocity of the working surface) of the
+upstream and downstream facing shocks have the same velocity given by \cite{Raga:1990p16416},
+\begin{equation}
+w = \frac{u_2 - u_1}{2} = 0.5\Delta u.
+\label{eq:shkvelws}
+\end{equation}
+
+\begin{figure}
+\includegraphics[width=1\columnwidth]{\figpath/jet_rhovel.pdf}
+\caption{Variation of jet velocity (blue) and density (red) as a
+  function of height close to the axis of the flow. The inset on the
+  bottom left of the figure shows a zoomed variation of velocity and
+  clearly marks the peak to peak difference between the upstream and
+  downstream components.}
+\label{fig:1dvelrho}
+\end{figure}
+
+
+The difference in the pre- and post-discontinuity velocities, $\Delta
+u$ is marked clearly in the fig.~\ref{fig:1dvelrho}. Typically, the
+difference in velocity values for our reference runs lie around 15-40 km s$^{-1}$. Thus, the
+shock velocity $w$ lies around 10-20 km s$^{-1}$. Similar values are
+also obtained for jets like HH 34 by \cite{Raga:1992p16392}.
+
+The variation of SiO abundance used for the present model is rather
+obtained from empirical values. In case of L1448, \cite{MartinPintado:1992p14309}
+have shown that for extreme velocities (obtained from shift in the
+spectra) of -40 to -50 km\,s$^{-1}$, the SiO abundance could be as
+large as $6\times10^{-7}$, while, it slightly reduces to
+$2\times10^{-7}$ for the velocity range of -60 to -50
+km\,s$^{-1}$. For the same source, typical {\em{shock}} (or working
+surface) velocities of the {\em{molecular bullets}} are estimated to
+lie around 80-175 km\,s$^{-1}$ \cite{Dutrey:1997p11185}.
+\\
+{\color{red}
+WE HAVE TWO OPTIONS:\\ 
+1. Since the there is a empirical evidence with bulk gas motion. We
+can use just the jet velocity obtained from simulations.\\
+OR\\
+2. We can try to connect the working surface velocities from
+\cite{Dutrey:1997p11185} to abundance obtained by
+\cite{MartinPintado:1992p14309} and there by use the velocity of the
+working surface as an independent variable on the X axis of the
+abundance plot.
+}
+
+
+   
+ 
 
 %\newpage
 \bibliographystyle{mn2e}
