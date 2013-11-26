@@ -1764,8 +1764,8 @@ The variation of SiO abundance used for the present model is rather
 obtained from empirical values. In case of L1448, \cite{MartinPintado:1992p14309}
 have shown that for extreme velocities (obtained from shift in the
 spectra) of -40 to -50 km\,s$^{-1}$, the SiO abundance could be as
-large as $6\times10^{-7}$, while, it slightly reduces to
-$2\times10^{-7}$ for the velocity range of -60 to -50
+large as $6\times10^{-7}$, while, it slightly increases to
+$2\times10^{-6}$ for the velocity range of -60 to -50
 km\,s$^{-1}$. For the same source, typical {\em{shock}} (or working
 surface) velocities of the {\em{molecular bullets}} are estimated to
 lie around 80-175 km\,s$^{-1}$ \cite{Dutrey:1997p11185}.
@@ -1781,6 +1781,68 @@ OR\\
 working surface as an independent variable on the X axis of the
 abundance plot.
 }
+
+\section{Treatment of Adiabatic Index $\gamma$}
+In dealing with a gas chemistry network which can have both monatomic and diatomic
+species, one is immediately presented with the issue of how to treat the adiabatic
+index, $\gamma$, of the gas, which directly influences the equation of
+state, eq.~\ref{EOS}, and thus the behaviour of the gas.
+In standard hydrodynamical codes the gas is generally
+assumed to be a monatomic ideal gas, with $\gamma$ = 5/3. 
+A diatomic gas, such as H$_{2}$, on the other hand, has a value of $\gamma$
+= 1.4 at low temperatures, decreasing to below 1.3
+at higher temperatures as the vibrational modes of the hydrogen molecule become
+excited. Thus, the value of $\gamma$ for a gas containing a mixture of atomic and
+molecular hydrogen requires a temperature-dependent calculation of the $\gamma$
+value for H$_2$ and a weighting of the values for the atomic and molecular components
+according to their abundance. \cite{Yoshida:2006p13376} have suggested
+a prescription of an effective $\gamma$ which takes into account the
+corresponding weights of each chemical species and is given by,
+\begin{equation}
+\frac{1}{\gamma_{\rm eff} - 1} = \frac{1}{\mu}\left[\sum_{i}\frac{X_{i}}{A_{i}}\frac{1}{(\gamma_{i} - 1)}\right]^{-1},
+\label{eq:gammaeff}
+\end{equation}
+where, i is the index for each specie and $\mu$ is the mean molecular
+weight. The mass fraction is added in the above equation following the
+correction suggested in \cite{OSullivan:2009p10078}.
+Additionally, the temperature dependence for example in case of
+H$_{2}$ molecule can be obtained using \cite{landau:1980},
+\begin{equation}
+\frac{1}{\gamma_{H_{2}} - 1} = \frac{1}{2}\left[ 5 +
+  2x^{2}\frac{e^{x}}{(e^{x} - 1)^{2}}\right],
+\label{eq:gammaH2}
+\end{equation}
+where the last term with  x = 6100 $K$/T accounts for the vibrational
+degree of freedom, with T being the gas temperature.
+%
+
+However, for such an implementation in large scale simulations one must first
+consider its cost, effectiveness, and even correctness. Although such
+a method would indeed yield a more correct $\gamma$ value for the gas
+mixture in conditions where the rotational and vibrational modes have
+had enough time to reach the level of excitation corresponding to
+the temperature of the gas, in cases where the gas has just been
+shocked, the method would produce an incorrect $\gamma$ value. 
+This is because the gas that passes through shock gets rapidly heated, 
+but this energy goes predominantly into the translational degrees of
+freedom of the gas. It is only with time that energy goes into the rotational and
+vibrational degrees of freedom of the gas through collisions. 
+\cite{Flower:2003p11236} maintains that therefore the adiabatic index of
+the post-shock gas has close to the ideal monatomic value of 5/3, 
+and that in order to calculate correctly its evolution as the gas 
+adjusts one would have to model the rotational and vibrational 
+levels of the hydrogen molecules in a time-dependent manner.
+%
+
+For large-scale simulations present here it is more practical to use
+the the standard value of 5/3 which is correct for the post-shock 
+and predominantly atomic parts of the flow but incorrect for the
+equilibrated parts of the flow with a significant fraction of molecular matter.
+Since in this case, as the shock regions and their effect on the molecular hydrogen content of 
+the ambient gas are of primary importance here, we opt for the more
+relevant, and also simpler, policy of keeping the normal $\gamma$
+value of 5/3 for our simulations. 
+
 
 
    
