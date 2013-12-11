@@ -4,3 +4,7 @@
 *.key
 *.bst
 *.cls
+*.out
+*.blg
+*.bbl
+*.pdf
