@@ -54,7 +54,7 @@
 \definecolor{orange}{rgb}{1,0.5,0}
 %\usepackage[colorlinks=True,citecolor=orange,urlcolor=blue,linkcolor=red]{hyperref}
 
-\newcommand{\figurepath}{.}
+\newcommand{\figurepath}{../PFIGS/}
 
 
 %  Definition of fonts
@@ -233,7 +233,9 @@
 \let\apjsupp=\apjs
 \let\applopt=\ao
 
-\newcommand{\figpath}{/Users/bhargavvaidya/MyProject/work/Leeds_Uni/SiOJets_New/PAPER/PFIGS/}
+%\newcommand{\figpath}{/Users/bhargavvaidya/MyProject/work/Leeds_Uni/SiOJets_New/PAPER/PFIGS/}
+
+\newcommand{\figpath}{/home/phybva/SiOJets_New/PAPER/NEWFIGS}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \begin{document}
@@ -323,7 +325,9 @@ during the later evolutionary stages (\citealt{Vaidya:2011p8992}).
 Typically, these jets are a few parsec in size long and can be divided into
 three length-scale domains, viz. source and disk scales (1-10$^{2}\,$AU),
 envelope scales ($10^{2} - 10^{5}$\,AU) and parent cloud scales
-($10^{5} - 10^{6}$\,AU) (\refer : Frank et. al, 2013, PPVI). Of these, it is at the envelope scale where rich chemical evolution occurs as the jet interacts
+($10^{5} - 10^{6}$\,AU) (\refer : Frank et. al, 2013, PPVI).
+Of these, it is at the envelope scale where rich
+chemical evolution occurs as the jet interacts
 with the molecular medium. In this region, the jet propagates into a
 relatively static medium inducing shocks that are interesting from both a
 physical and chemical point of view. In addition to jets, molecular
@@ -634,8 +638,8 @@ in the Table~\ref{tab:chemeq} along with their literature references.
 %of different chemical processes elucidating the complex chemical interplay.
 
 \begin{figure}
-% \includegraphics[width=1\columnwidth]{\figpath/H2ReactionRates_paper.png}
- \includegraphics[width=1\columnwidth]{\figpath/H2CoolingFuncs_full.png}
+%\includegraphics[width=1\columnwidth]{\figpath/H2CoolingFuncs_full.png}
+\includegraphics[width=1\columnwidth]{\figpath/pfig1.pdf}
  \caption{Variation of the cooling
    function $\Lambda(n,T,{\bf{X}})$ with temperature for the initial
    state.}
@@ -735,7 +739,7 @@ n(HI), assuming that ionized Hydrogen does not collide with SiO), gas temperatur
 
 
 \begin{figure}
- \includegraphics[width=84mm]{\figpath/grid.png}
+ \includegraphics[width=84mm]{\figpath/pfig2.pdf}%grid.png
  \caption{A plot of the points selected by the gridding process and the paths down which photons can propagate for points in the r,z plane. The points are color coded by the density distribution (in m$^{-3}$, as used in LIME) and are more concentrated in the high density knots.}
 \label{grid} % This plots has to be changed. 
 \end{figure}
@@ -801,7 +805,7 @@ the abundance is reduced to 0.
 %
 
  \begin{figure}
-  \includegraphics[width=1.\columnwidth]{\figpath/diffabun_profnew.pdf}%{\figpath/diffabunprof1.png}
+  \includegraphics[width=1.\columnwidth]{\figpath/pfig3.pdf}%{\figpath/diffabun_profnew.png}
   \caption{{\bf{CHANGEFIG}} The different fractional SiO abundances as a function of
     jet velocity, v$_{\rm jet}$.}
   \label{abun}
@@ -1060,14 +1064,14 @@ results with observations. The properties of
 molecular cooling flows are described in details in the next section.
 
 \begin{figure*}
- \includegraphics[width=2.\columnwidth]{\figpath/diffcool_sim.pdf}%{\figpath/jetplt1_1010.png}
+ \includegraphics[width=2.\columnwidth]{\figpath/pfig4.pdf}%{\figpath/diffcool_sim.pdf}
  \caption{Jet Volume Density for different cooling modes with
    $\eta$ = 10.}
 \label{fig:coolcmpdyn}
 \end{figure*}
 
 \begin{figure*}
- \includegraphics[width=2.\columnwidth]{\figpath/diffcool_img.pdf}
+ \includegraphics[width=2.\columnwidth]{\figpath/pfig5.pdf}%diffcool_img.pdf}
  \caption{A plot of the integrated SiO J=2-$>$1 emission from 5 models, 
 each using a different method to calculate cooling and all with $\eta$=10.}
 \label{fig:coolcmpsio} 
@@ -1093,7 +1097,7 @@ weaker shocks formed nearby knots do not heat up the material beyond
 %
 
 \begin{figure}
- \includegraphics[width=1.\columnwidth]{\figpath/hfracs_ref.pdf}
+ \includegraphics[width=1.\columnwidth]{\figpath/pfig6.pdf}%hfracs_ref.pdf}
  \caption{{\it{Left}} Color composite image of various hydrogen
    fractions, fHI (red), fH$_{2}$ (green) and fHII (blue), for the
    reference run. For better visualisation, the ionized hydrogen
@@ -1117,7 +1121,7 @@ disassociate the molecules and can also lead to ionization if
 the temperature becomes larger than 10$^{4}$\,K.
 %
 \begin{figure*}
- \includegraphics[width=2.\columnwidth]{\figpath/molcjet_310_molform.pdf}
+ \includegraphics[width=2.\columnwidth]{\figpath/pfig7.pdf}%molcjet_310_molform.pdf}
  \caption{Dependence of hydrogen fractions on the temperature at two
    points in the flow, viz. the interface of the knot with molecular
    medium and at the bow shock.}
@@ -1170,7 +1174,7 @@ velocity features.
 %
 
 \begin{figure}
- \includegraphics[width=1.\columnwidth]{\figpath/emspecpv_90.pdf}%{\figpath/refrun_21_90_emspecpv.png}
+ \includegraphics[width=1.\columnwidth]{\figpath/pfig8.pdf}%emspecpv_90.pdf}%{\figpath/refrun_21_90_emspecpv.png}
  \caption{Integrated emission map ({\it top left}), PV diagram ({\it top right}
    and spectra ({\it bottom}) for the
    2-$>$1 SiO transition for the reference run. 
@@ -1204,7 +1208,7 @@ pattern at each of the knots and region close to the bow shock.
 % \end{figure}
 
 \begin{figure}
- \includegraphics[width=1.\columnwidth]{\figpath/emspecpv_45.pdf}%{\figpath/refrun_21_45_emspecpv.png}
+ \includegraphics[width=1.\columnwidth]{\figpath/pfig9.pdf}%emspecpv_45.pdf}%{\figpath/refrun_21_45_emspecpv.png}
  \caption{Same as figure~\ref{empvspec90} but with angle of
    inclination of $45^{\circ}$.} 
 \label{empvspec45}
@@ -1244,7 +1248,7 @@ are listed in table~\ref{tab:result2}.
 %
 
 \begin{figure*}
- \includegraphics[width=2.\columnwidth]{\figpath/diffabun_img.pdf}%{\figpath/EM_gaussandth.png}
+ \includegraphics[width=2.\columnwidth]{\figpath/pfig10.pdf}%diffabun_img.pdf}%{\figpath/EM_gaussandth.png}
  \caption{Variation of 2-$>$1 SiO emission for runs with molecular
    cooling having different abundance profiles.}
 \label{fig:diffabunem}
@@ -1285,7 +1289,7 @@ km\,s$^{-1}$, which is not the case in a more continuous gaussian
 distribution.
 
 \begin{figure*}
- \includegraphics[width=2.\columnwidth]{\figpath/diffabun_PV.pdf}%{\figpath/PV_gaussandth.png}
+ \includegraphics[width=2.\columnwidth]{\figpath/pfig11.pdf}%diffabun_PV.pdf}%{\figpath/PV_gaussandth.png}
  \caption{Position-velocity maps of SiO(2-1) for the internal
    knots produced in the model with reference parameters and different abundance
    profiles. The contours mark different levels of emission in Kelvins, viz.,
@@ -1311,7 +1315,8 @@ time, in the configurations c32-6, c32-4 and c32-3 for the three
 lines, giving beam sizes of 0.72'', 0.47'' and 0.58'' and
 sensitivities of 0.05, 0.07 and 0.09$\,$mJy/beam for the three lines
 (as calculated by the ALMA online sensitivity calculator) with
-velocity resolutions of $\sim$1$\,$km/s. Figure~\ref{fig:almafig}
+velocity resolutions of $\sim$1$\,$km/s.
+ Figure~\ref{fig:almafig}
 presents the ALMA prediction obtained from our reference run. The
 left panel shows the integrated emission of SiO J = 2-1 line while the right
 shows the PV diagram for the same line and over laid are
@@ -1320,7 +1325,7 @@ on the color bar of each panel.
 
 
 \begin{figure*}
- \includegraphics[width=2.\columnwidth]{\figpath/almamaps_new.pdf}%{\figpath/ALMAmaps3.png}
+ \includegraphics[width=2.\columnwidth]{\figpath/pfig12_temp.pdf}%almamaps_new.pdf}%{\figpath/ALMAmaps3.png}
  \caption{{\bf Left:} The integrated intensity map of SiO(2-1), (5-4)
    and (8-7). The emission map shows the 5-4 line intensity (in units
    of Jy$\,$kms$^{-1}$/beam), the blue contours show the J=8-7 line
@@ -1448,7 +1453,7 @@ also been observed by \cite{Chandler:2001p14376}.
 %
 
 \begin{figure*}
- \includegraphics[width=2.\columnwidth]{\figpath/imshkvhcontomaps.png}
+ \includegraphics[width=2.\columnwidth]{\figpath/pfig13.pdf}%imshkvhcontomaps.png}
  \caption{Symmetrical contour maps of multi-line integrated SiO
    emission convolved with a 2\arcsec beam obtained using parameters of the reference run. The contour colors represent different intenties in Kelvins, i.e,
    20.0({\it red}), 10.0({\it green}), 5.0({\it blue}), 1.0({\it
@@ -1515,7 +1520,7 @@ that SiO emission from our model is tracing the regions with right physical
 conditions that are required to emit SiO in the gas phase via shocks. 
 
 \begin{figure*}
- \includegraphics[width=2.\columnwidth]{\figpath/singledish_new.pdf}%{\figpath/LineRatio_THDeq1.png}
+ \includegraphics[width=2.\columnwidth]{\figpath/pfig14.pdf}%singledish_new.pdf}%{\figpath/LineRatio_THDeq1.png}
  \caption{{\em{Top}} Line profiles in SiO (2-1), (5-4) and (8-7) at one
    the inner knots for the reference molecular cooling run with a top
    hat abundance profile and $\delta = 1$. The profiles are
@@ -1780,7 +1785,7 @@ v = \frac{u_1 + \zeta u_2}{1 + \zeta},
 where, $$\zeta = \sqrt{\frac{\rho_{2}}{\rho_1}}$$.
 
 \begin{figure}
-\includegraphics[width=1\columnwidth]{\figpath/Internalknot.pdf}
+\includegraphics[width=1\columnwidth]{\figpath/pfigb1.pdf}%Internalknot.pdf}
 \caption{Schematic diagram showing the structure of the internal
   working surface. The faster upstream material with velocity u$_1$
   catches the slower downstream material with velocity u$_2$ forming a
@@ -1812,7 +1817,7 @@ w = \frac{u_2 - u_1}{2} = 0.5\Delta u.
 \end{equation}
 
 \begin{figure}
-\includegraphics[width=1\columnwidth]{\figpath/jet_rhovel.pdf}
+\includegraphics[width=1\columnwidth]{\figpath/pfigb2.pdf}%jet_rhovel.pdf}
 \caption{Variation of jet velocity (blue) and density (red) as a
   function of height close to the axis of the flow. The inset on the
   bottom left of the figure shows a zoomed variation of velocity and
@@ -1859,6 +1864,6 @@ abundance plot.
 
 \newpage
 \bibliographystyle{mn2e}
-\bibliography{/Users/bhargavvaidya/MyProject/work/Leeds_Uni/SiOJets_New/PAPER/bibfile}
+\bibliography{../bibfile}
 \label{lastpage}
 \end{document}
