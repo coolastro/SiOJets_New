@@ -905,22 +905,15 @@ the outflow is in the plane of the sky.
 Additionally, we have used two other angles of inclination apart from the
 plane of the sky, i.e, $\phi = 45^{\circ}, 60^{\circ}$ to compare
 results with observations. The runs with different fractional
-abundance profiles are described in table~\ref{tab:result2}. A
-parameter introduced here is $\delta$ which is essentially the ratio
-of shock velocity v$_{\rm s}$ and physical jet velocity v$_{\rm
-  jet}$ such that its value depends on density contrast $\eta$
-(see Eq.~\ref{eq:shockjetvel}).
+abundance profiles are described in section~\ref{ssec:sioabunem}
+
 
 \begin{table*}
-\centering
-\caption{Summary from parameter runs. The parameter $\delta$, is the ratio of
-  shock to jet velocity and it depends on the density contrast $\eta$
-  as shown in eq.~\ref{eq:shockjetvel}}
+\centering 
+\caption{Summary of parameter runs for different cooling prescriptions and density contrasts using two abundance profiles.}
 \begin{tabular}{c | c | c | c | c | c | c }
 \hline
-Run & Cooling Mode & $\eta$ & \multicolumn{2}{|c|}{Top Hat Profile
-  $\delta = 1$} & \multicolumn{2}{|c|}{Gaussian Profile $\delta =
-  1$}\\
+Run & Cooling Mode & $\eta$ & \multicolumn{2}{|c|}{Top Hat Profile} & \multicolumn{2}{|c|}{Gaussian Profile}\\
 \hline\hline
 &&& $\int T_{\rm MB}dV$ [K-km\,s$^{-1}$] & $\Delta$v [km s$^{-1}$] & $\int T_{\rm MB}dV$ [K-km\,s$^{-1}$] & $\Delta$v [km s$^{-1}$] \\
 \hline
@@ -940,32 +933,32 @@ mol3 & Molecular & 3 & 3.3 & 14.0 & 0.66 & 12.0\\
 
  
 
-\begin{table*}
-\centering
-\caption{Summary of radiative transfer runs with different SiO fractional abundance
-  profiles for dynamical simulation with molecular cooling and
-  $\eta=3$. The integrated intensity assuming a single disk
-  observation with a beam width of $15\,\arcsec$ is listed along with the
-  corresponding spectral width.}
-\begin{tabular}{l | l | l | l | l}
-\hline
-Profile & $\delta$ = v$_{\rm s}$/v$_{\rm jet}$ & $\int T_{\rm MB}dV$
-[K-km\,s$^{-1}$] & $\Delta$v [km s$^{-1}$]\\ 
-\hline\hline
-Top Hat & 1.0 & 3.3 & 14.0 \\
-Top Hat & 1/$(1.0 + \eta(z)^{-0.5})$ & 4.9 & 14.0 \\
-Gaussian & 1.0 & 0.66
-& 12.0 \\
-Gaussian & 1/$(1.0 + \eta(z)^{-0.5})$ & 1.1
-& 12.0 \\
-%Functional & 100.0 & $(1.0 + \eta(z)^{-0.5})$ &
-%& \\
-%Functional & 100.0 & $(1.0 + \eta(z)^{-0.5})$ &
-%& \\
-\hline
-\end{tabular}
-\label{tab:result2}
-\end{table*}
+%\begin{table*}
+%\centering
+%\caption{Summary of radiative transfer runs with different SiO fractional abundance
+%  profiles for dynamical simulation with molecular cooling and
+%  $\eta=3$. The integrated intensity assuming a single disk
+%  observation with a beam width of $15\,\arcsec$ is listed along with the
+%  corresponding spectral width.}
+%\begin{tabular}{l | l | l | l | l}
+%\hline
+%Profile & $\delta$ = v$_{\rm s}$/v$_{\rm jet}$ & $\int T_{\rm MB}dV$
+%[K-km\,s$^{-1}$] & $\Delta$v [km s$^{-1}$]\\ 
+%\hline\hline
+%Top Hat & 1.0 & 3.3 & 14.0 \\
+%Top Hat & 1/$(1.0 + \eta(z)^{-0.5})$ & 4.9 & 14.0 \\
+%Gaussian & 1.0 & 0.66
+%& 12.0 \\
+%Gaussian & 1/$(1.0 + \eta(z)^{-0.5})$ & 1.1
+%& 12.0 \\
+%%Functional & 100.0 & $(1.0 + \eta(z)^{-0.5})$ &
+%%& \\
+%%Functional & 100.0 & $(1.0 + \eta(z)^{-0.5})$ &
+%%& \\
+%\hline
+%\end{tabular}
+%\label{tab:result2}
+%\end{table*}
 
 \subsection{Reference Run}
 \label{ssec:refrun}
@@ -1001,12 +994,8 @@ run are given as inputs to the radiative transfer code to obtain the observation
 corresponding to SiO molecule. 
 For the radiative transfer calculation, the source in the reference
 run is stationary and the jet is in the plane of the sky ($\phi =
-90^{\circ}$). A gaussian profile without any upper cutoff is used for the fractional abundance
-of SiO. Further, the shock velocity which determines
-the fractional abundance, v$_{\rm s}$, is less than the jet velocity in the
-flow, such that their ratio $\delta$ is given by
-equation~\ref{eq:shockjetvel}, where $\eta$ is the density contrast as a
-function of height from the base of the jet.
+90^{\circ}$). A Gaussian profile with a step is used for the fractional abundance
+of SiO. 
 
 \section{Results}
 \label{sec:results}
@@ -1046,8 +1035,8 @@ maps shown in figure~\ref{fig:coolcmpsio}. The differences in dynamical
 features are also reflected in the corresponding SiO emission
 maps. These maps are obtained assuming an angle of inclination of
 90$^\circ$ using the top hat abundance
-profile with $\delta = 1$. They are then placed at a distance of
-100$\,$pc and convolved with a beam with FWHM of 2.0\arcsec in order
+profile. They are then placed at a distance of
+16.7$\,$pc and convolved with a beam with FWHM of 2.0\arcsec in order
 to create the maps shown. 
 The emission from the jet with atomic
 cooling is coming from the conical jet head and younger knots closer
@@ -1150,7 +1139,7 @@ panels of figure~\ref{fig:Hmolform} along two representative regions in
 the jet marked with the arrows. The left bottom panel shows the
 vertical distribution of temperature, molecular and atomic fraction at the
 interface of the knot and the ambient medium. The interaction of the
-knot with the medium raises that temperature to 1200\,K and
+knot with the medium raises that temperature to 1000\,K and
 accumulates the matter so that the density increases up to
 10$^{6}$ cm$^{-3}$. Behind the shock as the material cools, atoms
 combine together to form molecules as seen in the increase of fH2 from
@@ -1200,9 +1189,9 @@ velocity features.
 
 The spectra at three different positions in the flow are shown in the
 bottom panel of figure~\ref{empvspec90} (they are marked with green
-crosses in top left panel). The knot closer to the base is the brightest
-showing a peak intensity of 25\,K. The
-intensity decreases and reaches to about 10\,K close to the bow shock.
+crosses in top left panel). The knot closer to the base and the region near the bow shock 
+shows a peak integrated intensity of 15-20\,K. Whereas, the integrated 
+intensity decreases and reaches to about 5\,K in the middle of the jet.
 The line widths seen are typically around 5-10 km s$^{-1}$.
 These line widths increase substantially as the angle of inclination
 decreases. Figure \ref{empvspec45} show the
@@ -1238,27 +1227,21 @@ pattern at each of the knots and region close to the bow shock.
 
 \subsection{SiO Abundance profile}
 \label{ssec:sioabunem}
-The fractional abundance of SiO has been assumed to vary with shock velocity in
+The fractional abundance of SiO has been assumed to vary with jet flow velocity in
 a simplistic manner (see sec~\ref{ssec:sioabun}). In
 figure~\ref{fig:diffabunem}, we compare the maps for J = 2-$>$1
-emission at an inclination angle of 90$^{\circ}$ for three different abundance profiles and two different ratios of shock to
-jet velocities, $\delta$. There is a striking difference with regards to
-emission from the internal knots in these images. Using the top hat profile
-and accounting for shock speeds (i.e. $\delta < 1$) results in
+emission at an inclination angle of 90$^{\circ}$ for four different abundance profiles. 
+There is a striking difference with regards to
+emission from the internal knots in these images. Using the step profile results in
 emission from  all the internal knots in the J=2-$>$1 line. However, some of
-these knots are not observed when using the same top-hat profile but
-assuming the shock velocity to be same as the jet velocity (i.e.,
-$\delta$ = 1). Similar qualitative characteristics are seen in case of a gaussian
-abundance profile. In particular, the case with $\delta$ = 1 only
-produces emission from the knot closest to the bow shock, while the internal
-knots do not show any appreciable emission. The step function and
-gaussian step (not shown) with $\delta = 1$ produces very similar
-features as that of the top hat profile with $\delta < 1$.
-Further, the emission from
-the knot closer to the bow shock varies considerably with different
-profiles and value of $\delta$. It is the brightest for the case with
-a top-hat profile and $\delta < 1$. The peak emission and line widths at this knot
-are listed in table~\ref{tab:result2}.
+these knots are not observed when using the same top-hat profile. 
+Similar qualitative characteristics are seen in case of a Gaussian
+abundance profile. In particular, the case without a step beyond 60\,km\,s$^{-1}$
+produces emission from the region closest to the bow shock and the lower most knot, 
+while the internal knots do not show any appreciable emission. While, the 
+Gaussian profile with a step produces very similar
+features as that of the step profile effectively making the initial rising part 
+of the curve redundant. 
 %
 
 \begin{figure*}
@@ -1272,7 +1255,7 @@ are listed in table~\ref{tab:result2}.
 The dependence of emission on SiO abundance profile is expected due to
 the distribution of jet velocity obtained from dynamical
 simulations. We see that the velocity of internal knots lie around
-70-90\,km\,s$^{-1}$, while the pulsed jet was injected with a mean of
+80-90\,km\,s$^{-1}$, as the pulsed jet was injected with a mean of
 100\,km\,s$^{-1}$. The knots slow down during the evolutionary
 phase as they interact with the ambient medium. Interestingly, younger
 knots closer to the base of the jet are brighter compared to older
@@ -1280,11 +1263,9 @@ ones further away from the jet (see panels 1 and 3 of
 fig~\ref{fig:diffabunem}). This is attributed to the fact that the
 ambient medium has a density gradient that goes as $\sim
 z^{-2}$. Thus, the younger knots suffer the most deceleration closer
-to the base of flow. This fact is taken into account when the shock
-velocity is consistently calculated using the density contrast and
-using a value of $\delta <$ 1. This process is further validated by
-the lack of emission from internal knots in panel 3 of the
-fig~\ref{fig:diffabunem}. 
+to the base of flow. This process is further validated by
+the decreasing abundance profile giving rise to 
+lack of emission from internal knots in panel 3 of the fig~\ref{fig:diffabunem}. 
 %
 
 Additionally, the internal knots show their distinct signatures in
@@ -1293,13 +1274,13 @@ different profiles (see
 ~\ref{ssec:emspecpv}). Figure~\ref{fig:pvdiffabun} shows a zoomed in
 version of the bottom four internal knots in form of a PV diagram for these
 different abundance profiles. As expected, the signatures of knots 
-is missing for the case with gaussian profile with $\delta$ =
-1. Further, the wedges formed in panels 1, 2 and 5 of the figure in
+is missing for the case with Gaussian profile without a step.
+Further, the wedges formed in panels 1, 2 and 4 of the figure in
 general are slightly more extended as compared to those
-formed in panel 4. This is indeed because of the
+formed in panel 3. This is indeed because of the
 discontinuous nature of the top-hat abundance profile as the SiO is
 enhanced to a maximum abundance for all velocities between 20 and 100
-km\,s$^{-1}$, which is not the case in a more continuous gaussian
+km\,s$^{-1}$, which is not the case in a more continuous Gaussian
 distribution.
 
 \begin{figure*}
@@ -1321,10 +1302,10 @@ resolution interferometric observations are needed.
 We have performed synthetic Atacama Large Millimeter
 Array (ALMA) observations using the Common Astronomy Software
 Applications package (CASA). The output from the radiative transfer
-were scaled to a distance of 300pc and used as the sky models for observations of
+were scaled to a distance of 300\,pc and used as the sky models for observations of
 the J=2-1, J=5-4 and J=8-7 lines at frequencies of 86.85, 217.10 and
 347.33$\,$GHz, which fall in ALMA bands 3, 6 and 7, respectively. The observations
-were simulated using cycle 1 ALMA for 30 minutes total integration
+were simulated using cycle 2 ALMA for 25 minutes total integration
 time, in the configurations c32-6, c32-4 and c32-3 for the three
 lines, giving beam sizes of 0.72'', 0.47'' and 0.58'' and
 sensitivities of 0.05, 0.07 and 0.09$\,$mJy/beam for the three lines
@@ -1332,9 +1313,9 @@ sensitivities of 0.05, 0.07 and 0.09$\,$mJy/beam for the three lines
 velocity resolutions of $\sim$1$\,$km/s.
  Figure~\ref{fig:almafig}
 presents the ALMA prediction obtained from our reference run. The
-left panel shows the integrated emission of SiO J = 2-1 line while the right
+left panel shows the integrated emission of SiO J = 5-4 line while the right
 shows the PV diagram for the same line and over laid are
-the contours of SiO J = 5-4 and J = 8-7. The contour levels are marked
+the contours of SiO J = 2-1 and J = 8-7. The contour levels are marked
 on the color bar of each panel. 
 
 
@@ -1418,7 +1399,7 @@ as observed in case of L1157 molecular outflow
 \cite{Gueth:1998p14058}. A contour map of SiO
 emission obtained from the reference run is shown in
 figure~\ref{fig:ltconts}. Further, we find SiO emission coming from velocities 
-of the order of 40-60 km\,s$^{-1}$ (see fig
+of the order of 40-70 km\,s$^{-1}$ (see fig
 ~\ref{empvspec45}). Additionally, we see a distinct saw-tooth pattern
 in the PV diagrams from our models (see figs. \ref{empvspec45} and
 \ref{fig:almafig}). These predictions from our model very well
@@ -1496,20 +1477,18 @@ transitions for the reference run but with an angle of inclination
 $\phi$ = 60$^{\circ}$ and convolved with a single dish beam of
 15\arcsec to simulate observed integrated
 intensities of L1448 bullets observed with large beams from JCMT and
-IRAM. Intensities predicted from our model (see table~\ref{tab:result2}) lie within a factor of two
-from the observed values (Table 2 of \citealt{Nisini:2007p13128}).
+IRAM. Intensities predicted from our reference model, $\int T_{\rm MB} dV$ = 5.76 for SiO(2-1), 
+lie within a factor of two from the observed values (Table 2 of \citealt{Nisini:2007p13128}).
 %
 
 
-The variation of integrated single dish emission with upper transition
-levels J$_{\rm up}$ for different abundance profiles is shown in the
-right panel of fig.~\ref{fig:lineratio}. It is clear that the emission
-obtained using a top hat profile is brighter than the one obtained
-with a Gaussian SiO profile. However, curves obtained from
-both these profiles show a very similar shape of a distinct rise followed by a fall in
+The variation of normalized integrated single dish emission with upper transition
+levels J$_{\rm up}$ for the reference run is shown in the
+right panel of fig.~\ref{fig:lineratio}. The curve obtained 
+show a very similar shape of a distinct rise followed by a fall in
 integrated emission for higher transitions with a peak in
-emission for J$_{\rm up}$ = 3. These curves helps to to predict the
-hydrogen number density and temperature in outflows. Physical
+emission for J$_{\rm up}$ = 3. Such a curve is used for kinematic studies and 
+helps to predict the hydrogen number density and temperature in outflows. Physical
 conditions in outflows can also be studied by estimation of line ratios.
 Values $\approx$ 1 for line ratios SiO(8-7)/(5-4) and SiO(5-4)/(2-1) have been
 found in HH212 \citep{Cabrit:2007p13804,
@@ -1558,9 +1537,9 @@ is the SiO fractional abundance and its dependence on shock velocity.
 Though 1D models that study the formation of SiO in gas phase from grain-grain and grain-mantle
 collisions exists, their focus is mainly on weaker shocks
 \citep{Schilke:1997p14140, Caselli:1997p14853, Gusdorf:2008p13800, VanLoo:2013p16573}. 
-The pulsating jet propagation model presented here have shock speeds
-reaching up to 100 km\,s$^{-1}$. We have used few
-simplified SiO abundance profiles as a function of shock
+The pulsating jet propagation model presented here have flow speeds
+reaching up to 120 km\,s$^{-1}$. We have used few
+simplified SiO abundance profiles as a function of jet
 velocity. Though the shape of the profile is uncertain, the upper and
 lower limits used are backed by observational evidences. Ideally, for a consistent
 dependence of SiO abundance on shock velocity, one would have to also
@@ -1662,7 +1641,7 @@ obtained from our study are as follows :
   supports the multi-line observational surveys done for young
   molecular outflows, particularly, HH 211.
 \item Single-dish synthetic spectra obtained from our model typically
-  have intensity of 0.3\,K and peak around 50\,km\,s$^{-1}$ and have a
+  have intensity of 0.3-0.5\,K and peak around 50\,km\,s$^{-1}$ and have a
   typical line width of 20\,km\,s$^{-1}$. Such modeled spectra are in
   excellent agreement with characteristic features of EHV emission of
   SiO seen in young molecular outflows . In addition, the line ratios 
@@ -1677,9 +1656,8 @@ obtained from our study are as follows :
   04166+2706.
 \item Emission from internal knots do depend on the chosen profile of
   the abundance. On one extreme where all the internal knots emit SiO  
-  with a step profile with $\delta =$ 1 and a top-hat profile with
-  $\delta < 1$, whereas, no emission in
-  seen in knots when a gaussian profile with $\delta$ = 1 is used. For
+  with a step profile whereas, no emission in
+  seen in knots when a Gaussian profile without a step is used. For
   the remaining cases, we observe that emission mainly
   comes from knots close to the base of the flow and the condensation
   formed at the bow shock due to thermal instability.
