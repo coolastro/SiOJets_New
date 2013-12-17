@@ -530,7 +530,10 @@ molecular cores through which young outflows propagate
 have lower temperatures ranging from 10-20\,K
 (\citealt{Rathborne:2007p15753}). As the jet is hypersonic in both
 cases, runs with lower ambient temperature of 10\,K do not show any 
-appreciable changes in final dynamical structure of the jet.
+appreciable changes in final dynamical structure of the jet. Therefore, by choosing a 
+slightly higher ambient temperature we get the same results for jet dynamics and 
+in turn the computations are less expensive especially considering the stiff 
+rate equations used to model cooling in flows. 
 
 %
 
@@ -552,7 +555,8 @@ optically visible flows with velocities up to 500\,km\,s$^{-1}$
 For the present model, the jet is injected into the domain with a 
 velocity of $v_{\rm jet,0}$ = 100 km/s and the jet density is set to
 $10^{5} \rm cm^{-3}$ within a jet radius of $2.5\times10^{15} \rm
-cm$. With these choices we obtain a mass outflow rate of 10$^{-6}$
+cm$. Outside this radius, the physical quantities are fixed to their ambient values.
+With these choices, we obtain a mass outflow rate of 10$^{-6}$
 M$_{\odot}$ yr$^{-1}$, consistent with young jets. Most of the young outflows 
 show variable features possibly due to variable accretion rates
 or internal shocks inside the jet \citep[e.g.][]{Bachiller:1996p4692}.
@@ -572,8 +576,8 @@ considerably lower (i.e, by an order of magnitude) than found in jets from Class
 sources as derived from various atomic lines in molecular jets from
 L-1448C and HH211 \citep{Dionatos:2009p15670,Dionatos:2010p15968}.  
 The temperature at the jet
-nozzle for our model has been set to 1000\,K. Thus, the jet is
-over-pressured by 60 times as compared with the ambient medium,
+nozzle for our model has been set to 1000\,K to be consistent with values obtained for young jets. 
+Thus, the jet is over-pressured by 60 times as compared with the ambient medium,
 assuming $\eta$ = 3.0. Inside the jet beam, a radial variation of thermal
 and magnetic pressure is adopted to maintain a magneto-static
 equilibrium for all our runs (\citealt{Stone:2000p2650}). 
@@ -701,22 +705,22 @@ play a significant role even if the arbitrary abundance is increased
 by a factor of 10 \citep{Smith:2003p9985}. Instead, a substantial contribution to the cooling
 function, between T = 100\,K and 3000\,K, 
 comes from the vibrational and rotational transitions of
-molecular hydrogen plays and a very crucial role during the jet
+molecular hydrogen during the initial stages of jet
 evolution. Whereas, for temperatures above 3000\,K the
 cooling is mainly via H$_{2}$ disassociation. The total curve for the
 whole temperature range obtained in our runs is shown in black.
 The fact that the initial ambient medium is largely molecular, cooling is also dominated by
 molecular processes. In our reference model (see ~\ref{ssec:refrun}), 
 we update this curve at each time step based on the fraction of
-various hydrogen species. Thus during the evolution, even
-contributions from collisional ionizations and excitations also become
+various hydrogen species. Thus during the evolution, 
+contributions from collisional ionizations and excitations become
 important in regions dominated by atomic and ionized hydrogen.
-%
+%tabulated
 
-We also ran simulations of axisymmetric MHD jets
+We also ran simulations of axi-symmetric MHD jets
 with optically thin cooling prescriptions already existing in the public
 release of the PLUTO-4 code. They are power-law cooling, 
-simplified non-equilibrium (or atomic) cooling and tabulated
+simplified non-equilibrium (or atomic) cooling \citep{Tesileanu:2008p429} and tabulated
 cooling. While these additional cooling prescriptions may not be a complete description of
 the chemical and radiative processes in early outflows, they are ideal
 to compare the results obtained from the more consistent newly added molecular
@@ -756,9 +760,8 @@ required by the radiative transfer code described above.
 Typically, extremely low abundance of SiO is
 found (n(SiO)/n(H2) $< 3\times10^{-12}$) in dark, dense clouds such
 as TMC1 \citep{Ziurys:1989p14699,MartinPintado:1992p14309}. Whereas, in
-outflows like L1448, SiO abundance can increase up to 10$^{-6}$ especially in
-molecular bullets moving with a projected velocity of 60
-km\,s$^{-1}$ \citep{MartinPintado:1992p14309, Dutrey:1997p11185}. Thus, there is
+outflows like L1448, SiO abundance can increase up to 10$^{-6}$ 
+\citep{MartinPintado:1992p14309, Dutrey:1997p11185}. Thus, there is
 an increase of 6 orders of magnitude from quiescent clouds
 to outflows. Production of
 gaseous SiO due to slow C-type shocks has been suggested to occur via release of
@@ -766,9 +769,14 @@ silicon from grain cores and from grain mantles. Various stationary
 shock models indicate a sudden abundance increase in SiO 
 near a shock speed of 20-30\,km\, s$^{-1}$. However, several young
 outflows have velocities of the order of 100 km\,s$^{-1}$ as in the present
-case. In case of L1448, the typical velocities of working surfaces (internal knots) 
-lie within a range of 80-150 km\,s$^{-1}$ and the SiO abundance 
-lie around 10$^{-7}$ to 10$^{-6}$ for such high velocity bullets \citep{Dutrey:1997p11185}. 
+case. In case of L1448, \cite{MartinPintado:1992p14309}
+have shown that for extreme velocities (obtained from shift in the
+spectra) of -40 to -50 km\,s$^{-1}$, the SiO abundance could be as
+large as $6\times10^{-7}$, while, it slightly increases to
+$2\times10^{-6}$ for the velocity range of -60 to -50
+km\,s$^{-1}$. For the same source, typical working
+surface velocities of the {\em{molecular bullets}} are estimated to
+lie around 60-175 km\,s$^{-1}$ \cite{Dutrey:1997p11185}.
 Shocks due to such outflows could dissociate H$_{2}$ and molecules observed in such
 energetic outflows could have been reformed in the flow as suggested by
 detailed models of J-shocks by \cite{Neufeld:1989p14322}. SiO formation in J shocks
@@ -821,7 +829,10 @@ them is the step profile in which the SiO abundance is a low value of
 Such a choice effectively reduces to assuming a constant value of high abundance for the 
 flow velocities seen in our model. In order to compare such a choice, 
 we also apply a top-hat profile where above 100 km\,s$^{-1}$, abundance value 
-is set again to a low value of 10$^{-12}$.
+is set again to a low value of 10$^{-12}$. 
+With such extreme choices we are over-estimating the abundance values in 
+regions with processed velocities (i.e, jet interface), however, 
+in regions close to internal knots the abundance values will be within a factor of 2. 
 In order to get rid of an arbitrary discontinuous change of abundance, we also
 prescribe a Gaussian such that the peak SiO abundance of 10$^{-6}$ is at
 60\,km\,s$^{-1}$, while the value of n(SiO)/n(H$_{2}$) falls below
@@ -1086,7 +1097,7 @@ of various hydrogen fractions, (fHI (red), fH2 (green) and fHII
 (blue)), from the dynamical simulation with
 reference parameters. The jet beam is largely dominated by atomic
 hydrogen, while molecular hydrogen is seen to be formed in internal
-knots and region that is thermally instable. 
+knots and region that is thermally in-stable. 
 Ionized hydrogen is mainly formed at the tip of the bow. 
 The highest temperature of $\sim$ 50000\,K is attained in our flow at the
 tip of the bow shock. While the temperature on the edges (i.e.,interface between
@@ -1097,7 +1108,7 @@ weaker shocks formed nearby knots do not heat up the material beyond
 
 \begin{figure}
  \includegraphics[width=1.\columnwidth]{\figpath/pfig6.pdf}%hfracs_ref.pdf}
- \caption{{\it{Left}}: Color composite image of various hydrogen
+ \caption{{\it{Left}}: Colour composite image of various hydrogen
    fractions, fHI (red), fH$_{2}$ (green) and fHII (blue), for the
    reference run. For better visualisation, the ionized hydrogen
    fraction is enhanced by a factor of 100. The temperature of the jet
@@ -1349,7 +1360,7 @@ molecule observed. Another source which is studied in details with ALMA band 7 i
 one of the most energetic, luminous molecular outflows
 G331.512-0.103 (\citealt{Merello:2013p15066}). Observations of this outflow
 associated with a high mass star reveal a compact, extremely young
-bipolar outflow and a symmetric outflowing shell. Further, their PV
+bipolar outflow and a symmetric out-flowing shell. Further, their PV
 diagrams with SiO and H$^{13}$CO$^{+}$ show a characteristic peak at
 -45\,km\,s$^{-1}$ along the primary axis that could associated with a 
 molecular {\em bullet} of high-velocity dense material as also found in our
@@ -1363,7 +1374,7 @@ mass and high mass outflows.
 
 \subsection{EHV component and Molecular bullets}
 \label{ssec:EHV}
-Multiline mm-wavelength surveys of SiO emission towards a sample of molecular
+Multi-line mm-wavelength surveys of SiO emission towards a sample of molecular
 outflows have shown that these outflows exhibit both low and high
 velocity SiO emission possibly arising from two distinct regimes. The slow
 component in the case of a typical outflow, L1448, is believed to arise from
@@ -1823,15 +1834,7 @@ difference in velocity values for our reference runs lie around 15-40 km s$^{-1}
 shock velocity $w$ lies around 10-20 km s$^{-1}$. Similar values are
 also obtained for jets like HH 34 by \cite{Raga:1992p16392}.
 
-The variation of SiO abundance used for the present model is rather
-obtained from empirical values. In case of L1448, \cite{MartinPintado:1992p14309}
-have shown that for extreme velocities (obtained from shift in the
-spectra) of -40 to -50 km\,s$^{-1}$, the SiO abundance could be as
-large as $6\times10^{-7}$, while, it slightly increases to
-$2\times10^{-6}$ for the velocity range of -60 to -50
-km\,s$^{-1}$. For the same source, typical {\em{shock}} (or working
-surface) velocities of the {\em{molecular bullets}} are estimated to
-lie around 80-175 km\,s$^{-1}$ \cite{Dutrey:1997p11185}.
+
 
 %\\
 %{\color{red}
