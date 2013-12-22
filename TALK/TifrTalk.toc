@@ -1,0 +1,7 @@
+\beamer@endinputifotherversion {3.10pt}
+\beamer@sectionintoc {1}{Introduction}{3}{0}{1}
+\beamer@sectionintoc {2}{Motivation}{6}{0}{2}
+\beamer@sectionintoc {3}{Methods : Numerical Simulations}{9}{0}{3}
+\beamer@sectionintoc {4}{Outflow Dynamics : Launching}{13}{0}{4}
+\beamer@sectionintoc {5}{Outflow dynamics : Propagation}{18}{0}{5}
+\beamer@sectionintoc {6}{Summary}{24}{0}{6}
