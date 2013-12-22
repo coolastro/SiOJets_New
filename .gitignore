@@ -8,4 +8,6 @@
 *.out
 *.blg
 *.bbl
-*.pdf
+TALK/*.pdf
+PAPER/Paola_1/*.pdf
+PAPER/Paola_2/*.pdf
