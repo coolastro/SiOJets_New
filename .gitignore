@@ -2,6 +2,9 @@
 *.aux
 *.log
 *.synctex.gz
+*.nav
+*.snm
+*.toc
 *.key
 *.bst
 *.cls
