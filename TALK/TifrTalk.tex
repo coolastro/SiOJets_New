@@ -15,19 +15,26 @@
 \usepackage{amssymb,amsmath}  % use mathematical symbols
 \usepackage{bookman}                  % use palatino as the default font
 \setbeamercovered{transparent}
-\newcommand{\figpath}{/home/phybva/SiOJets_New/PAPER/NEWFIGS/}
+\newcommand{\figpath}{/home/phybva/SiOJets_New/TALK/NEWFIGS}
+\newcommand{\spic}[2]{\includegraphics[scale=#1]{#2}}
+\newcommand{\myref}[1]{{\small{\color{red}{(#1)}}}}
 
 \title[YSO Outflows]{Outflows from Young Stellar Objects}
 \subtitle{MHD, Radiation \& Chemistry}
 \author[Bhargav Vaidya]{\textcolor{blue}{Bhargav Vaidya}\inst{1}}
 \institute[Uni. Leeds]{\inst{1}School of Physics and Astronomy, University of Leeds, Leeds.}
-\date[2014]{Visitor Seminar TIFR 2014}
+\date[2014]{{\large{Astro Seminar, TIFR}}\\ {\small{January 13, 2014}}}
 %\titlegraphic{\vskip30pt \hskip215pt\includegraphics[width=0.3\textwidth]{\figpath/Leeds-logo.jpg}
 
 \begin{document}
 
 \begin{frame}
-\titlepage
+\vspace*{0.5cm}\titlepage  
+  \vspace*{0.1cm}\textcolor{red}{{\textit{Collaborators:}}}\\
+  \tiny{Paola Caselli (Uni. Leeds), Thomas Douglas (Uni. Leeds), Oliver Porth (Uni. Leeds), \\
+  Christian Fendt (MPIA), Henrik Beuther (MPIA), Somayeah Sheiknezami (MPIA),\\
+  Ciraco Goddi (JIVE),  Andrea Mignone (Uni. Torino).\\}
+%\titlepage
 \end{frame}
 
 \begin{frame}
@@ -61,6 +68,7 @@ Talk about winds and outflows
 
 \section{Methods : Numerical Simulations}
 \begin{frame}{Numerical code}
+
 \end{frame}
 
 \begin{frame}{Launching and Propagation}
@@ -89,24 +97,104 @@ Talk about winds and outflows
 \end{frame}
 
 \section{Outflow dynamics : Propagation}
+\begin{frame}{Cooling in Jets}
+\end{frame}
 \begin{frame}{Molecular Interplay}
+\begin{columns}
+\begin{column}{0.4\textwidth}
+\spic{0.2}{\figpath/pfig6.pdf}
+\end{column}
+\hfill
+\begin{column}{0.6\textwidth}
+\spic{0.2}{\figpath/pfig7.pdf}
+\end{column}
+\end{columns}
 \end{frame}
 
-\begin{frame}{Spectra and PV digrams}
+\begin{frame}{SiO Abundance and Jet Velocity}
 \end{frame}
 
-\begin{frame}{Multi-Line survey : Emission}
+\begin{frame}{Spectra and PV diagrams : SiO (2-1)}
+\begin{columns}
+\begin{column}{0.48\textwidth}
+\spic{0.17}{\figpath/pfig8.pdf}\\
+\hspace{0.2cm} $\phi = \pi/2$ (Plane of Sky)
+\end{column}
+\hfill
+\begin{column}{0.48\textwidth}
+\spic{0.17}{\figpath/pfig9.pdf}\\
+\hspace{0.2cm}$\phi = \pi/4$ 
+\end{column}
+\end{columns}
+\end{frame}
+
+\begin{frame}{Multi-Line survey : Emission I}
+Movies Here.
+\end{frame}
+
+\begin{frame}{Multi-Line survey : Emission II}
+\end{frame}
+
+\begin{frame}{Case of L1448 \myref{Nisini 2007}}
+\begin{columns}[t]
+\begin{column}{0.25\textwidth}
+\spic{0.1}{\figpath/Nisini2007_f1.pdf}\\
+Contours SiO 2-1
+\end{column}
+%\hfill
+
+\begin{column}{0.40\textwidth}
+ \spic{0.25}{\figpath/Nisini2007_f4.pdf}\\
+ Spectral Features
+\end{column}
+%\hfill
+
+\begin{column}{0.25\textwidth}
+\spic{0.25}{\figpath/Nisini2007_f6.pdf} \\
+Kinematic Study (LVG) 
+\end{column}
+%\hfill
+
+\end{columns}
 \end{frame}
 
 \begin{frame}{Multi-line survey : Line Ratios}
+
+\begin{columns}[T]
+\begin{column}{0.35\textwidth}
+\begin{itemize}
+\item EHV emission of 0.5 K.
+\item Line ratios close to Unity. 
+\item Multi-line emission show a distinct fall at high J$_{\rm up}$.
+\end{itemize}
+\end{column}
+\hfill
+
+
+\begin{column}{0.75\textwidth}
+\spic{0.28}{\figpath/pfig14.pdf} 
+\end{column}
+\hfill
+
+
+\end{columns}
+
 \end{frame}
 
+\begin{frame}{Predictions for ALMA}
+\end{frame}
 
 \begin{frame}{Focussing on a single knot}
+\begin{tabular}{c c}
+\spic{0.2}{\figpath/codella_hh212_f3.pdf} & \spic{0.2}{\figpath/knot_ang85.pdf} \\
+HH 212 \myref{Codella 2007} &\\
+\end{tabular}
 \end{frame}
 
 \begin{frame}{Rotation or Wiggles?}
 \end{frame}
+
+
 
 \section{Summary}
 \begin{frame}{Conclusions}
