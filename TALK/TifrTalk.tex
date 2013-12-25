@@ -15,9 +15,12 @@
 \usepackage{amssymb,amsmath}  % use mathematical symbols
 \usepackage{bookman}                  % use palatino as the default font
 \setbeamercovered{transparent}
-\newcommand{\figpath}{/home/phybva/SiOJets_New/TALK/NEWFIGS}
+%\newcommand{\figpath}{/home/phybva/SiOJets_New/TALK/NEWFIGS}
+\newcommand{\figpath}{./NEWFIGS/}
 \newcommand{\spic}[2]{\includegraphics[scale=#1]{#2}}
 \newcommand{\myref}[1]{{\small{\color{red}{(#1)}}}}
+\newcommand{\movauto}[5]{\animategraphics[width=#1,height=#2,autoplay]{#3}{#4}{0000}{#5}}
+\newcommand{\movloop}[5]{\animategraphics[width=#1,height=#2,loop]{#3}{#4}{0000}{#5}}
 
 \title[YSO Outflows]{Outflows from Young Stellar Objects}
 \subtitle{MHD, Radiation \& Chemistry}
@@ -191,7 +194,10 @@ HH 212 \myref{Codella 2007} &\\
 \end{tabular}
 \end{frame}
 
-\begin{frame}{Rotation or Wiggles?}
+\begin{frame}[t]{Rotation or Wiggles?}
+  \begin{center}
+  \movloop{8cm}{5cm}{61}{Img_3djet/contourjet1.}{0060}
+  \end{center}
 \end{frame}
 
 
