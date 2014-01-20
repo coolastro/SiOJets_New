@@ -17,6 +17,7 @@
 \setbeamercovered{transparent}
 %\newcommand{\figpath}{/home/phybva/SiOJets_New/TALK/NEWFIGS}
 \newcommand{\figpath}{./NEWFIGS/}
+\newcommand{\jlfigpath}{/Users/bhargavvaidya/THESIS/chapter3/figures/}
 \newcommand{\spic}[2]{\includegraphics[scale=#1]{#2}}
 \newcommand{\myref}[1]{{\small{\color{red}{(#1)}}}}
 \newcommand{\movauto}[5]{\animategraphics[width=#1,height=#2,autoplay]{#3}{#4}{0000}{#5}}
@@ -46,60 +47,330 @@
 \end{frame}
 
 \section{Introduction}
-\begin{frame}{Star formation : What do we know}
-
+\begin{frame}[plain]
+\frametitle{Typical HII region}
+\begin{center}
+\spic{0.67}{\figpath/HII-region.jpg}
+\end{center}
 \end{frame}
 
-\begin{frame}{Star formation : Feedback}
-Talk about winds and outflows
+\begin{frame}[plain]
+\frametitle{Star formation : Dark clouds}
+Filamentary, dense Infra-red dark clouds are birth place of stars
+\myref{e.g.,Rathborne 2008}
+\spic{0.15}{\figpath/g11_k.png}
+\spic{0.3}{\figpath/g11_a_th.png}\\
+\begin{center}
+\spic{0.35}{\figpath/g11_850_th.png}
+\end{center}
+\end{frame}
+
+\begin{frame}
+\frametitle{Star formation : Feedback}
+\begin{columns}
+\begin{column}{0.45\textwidth}
+\begin{block}{Outflows}
+\begin{itemize}
+\item An ubiquitous feature in star forming regions. First signpost of formation.
+\item Driven magnetically from the underlying accretion disk. 
+\item Entrain molecules along the flow : Molecular Outflow.
+\item Stellar winds : Trigger star formation, Pollute ISM with new
+  metals. 
+\item 3 stages : Launching < 100 AU, Propogation few 100s AU to 0.1
+  pc, Interaction > 0.1 pc.   
+\end{itemize}
+\end{block}
+\end{column}
+\begin{column}{0.55\textwidth}
+M20 (Trifid Nebula) \spic{0.35}{\figpath/trigg_sf.jpg}\\
+Jets from YSOs \spic{0.14}{\figpath/jets_yso.JPG}
+\end{column}
+\end{columns}
 \end{frame}
 
 
-\begin{frame}{Present challenges}
-\end{frame}
+%\begin{frame}{Present challenges}
+%\end{frame}
 
 
 \section{Motivation}
-\begin{frame}{Outflow Evolutionary Picture}
+\begin{frame}{Outflow Evolutionary Picture \myref{Beuther \& Sheperd
+      2005, Vaidya 2011}}
+\begin{center}
+\spic{0.1}{/Users/bhargavvaidya/THESIS/Intro_Figs/evol_outflow_n.pdf}
+\end{center}
+\end{frame}
+
+\begin{frame}{Global Outflow Picture}
+\begin{columns}
+\begin{column}{1.0\textwidth}{\myref{Vaidya 2009}}
+\spic{0.33}{/Users/bhargavvaidya/THESIS/chapter2/figures/f5_col.pdf}
+\end{column}
+\end{columns}
 \end{frame}
 
 \begin{frame}{Chemistry in outflows}
+\begin{block}{Young Class 0 Outflows}
+\begin{itemize}
+\item Largely studied in form of molecular outflows using sub-mm
+  telescopes.
+\item Bulk gas motion is traced by CO while SiO and H$_{2}$ (Infrared) traces the shocked regions. 
+\end{itemize}
+\end{block}
+
+\begin{block}{Class I jets}
+\begin{itemize}
+\item They are traced mainly using optical telescopes.
+\item Signatures of forbidden emission lines from various atomic
+  species.
+\item Lack or neglible molecular emission. 
+\end{itemize}
+\end{block}
 \end{frame}
 
 \begin{frame}{Molecular bullets and EHV emission}
+\begin{columns}
+
+\begin{column}{0.4\textwidth}
+\begin{center}
+EHV Emission
+\myref{Tafalla 2011}\\
+\spic{0.33}{\figpath/EHVJets.png}
+\end{center}
+\end{column}
+\hspace{0.05\textwidth}
+\begin{column}{0.5\textwidth}
+\begin{center}
+PV Diagram \myref{Santiago-Garcia 2009}\\
+\spic{0.25}{\figpath/EHVJets_PV.png}\\
+1D Models fail \myref{Tafalla 2013} \\
+\spic{0.35}{\figpath/EHVJets_Spec.png}
+\end{center}
+\end{column}
+\end{columns}
 \end{frame}
+
+\begin{frame}{Goals}
+\begin{block}{Outflow Evolution}
+\begin{itemize}
+\item <1-> What is the physical motivation of widening of outflow with age and central mass.?
+\item <2-> Does the central massive star and hot inner disk play a role?  
+\item <3->How do magnetic fields fit into the picture of outflows dynamics?
+\end{itemize}
+\end{block}
+
+\begin{block}{EHV Emission}
+\begin{itemize}
+\item <4->What causes the EHV emission in young outflows?
+\item <5->Is 2D the answer to the failure of 1D models to predict spectra?
+\item <6->What happens if we extend the model to 3D? 
+\end{itemize}
+\end{block}
+\end{frame}
+
 
 \section{Methods : Numerical Simulations}
 \begin{frame}{Numerical code}
-
+\begin{columns}
+\begin{column}{0.5\textwidth}
+\begin{block}{PLUTO}
+\begin{itemize}
+\item A modular code for computational astrophysics.
+\item Solve systems of conservation laws using the finite volume or
+  finite difference approach based on Godunov-type schemes.
+\item The static grid version of PLUTO is entirely written in the C programming language
+\item AMR module uses the Chombo library. 
+\end{itemize}
+\end{block}
+\end{column}
+\begin{column}{0.5\textwidth}
+\spic{0.26}{\figpath/Pluto_code_cover.png}
+\end{column}
+\end{columns}
 \end{frame}
 
-\begin{frame}{Launching and Propagation}
+
+
+
+\begin{frame}{Launching Model}
+\begin{columns}
+\begin{column}{0.45\textwidth}{\textit{\color{red}{Cartoon Model}}}
+\spic{0.2}{\jlfigpath/f1.pdf}
+\end{column}
+\hspace{0.05\textwidth}
+\begin{column}{0.45\textwidth}{\textit{\color{red}{Simulation Box}}}
+\spic{0.3}{\jlfigpath/f2.pdf}
+\end{column}
+
+\end{columns}
 \end{frame}
 
-\begin{frame}{Radiation force}
-\end{frame}
-
-\begin{frame}{Chemistry and Cooling}
-\end{frame}
 
 \section{Outflow Dynamics : Launching}
-\begin{frame}{MHD Acceleration}
+\begin{frame}{Radiation force}
+\begin{block}{Castor Abbott \& Klein Model}
+\begin{itemize}
+\item \textit{Line Driving force:} Main driving mechanism from evolved
+  massive stars.
+\item \textit{Physics:} Momentum transfer from photon to the gas. 
+  Optical depth depends on local flow variables - Sobolev Approximation.
+\item \textit{Formulae:} $f_{\rm line} = f_{\rm cont} \mathcal{M}(t)$
+where $t$ is a function of $Q_0$ and $\alpha$.
+\end{itemize}
+\end{block}
+\begin{center}
+\begin{tabular}{l l}
+\hline
+Quantity & Value\\
+\hline\hline
+Stellar Mass & 30 M$_{\odot}$\\
+Plasma $\beta$ & 5.0\\
+R$_{\rm in}$ & 1.0 AU \\
+Eddington $\gamma$ & 0.236 \\
+Q$_0$ & 1400.0 \\
+$\alpha$ & 0.55 \\
+$\rho_0$ [g cm$^{-3}$] & $5.0\times10^{-14}$\\
+\hline
+\end{tabular}
+\end{center}
+
 \end{frame}
 
-\begin{frame}{Collimation and Radiation}
+
+\begin{frame}{MHD Acceleration}
+\begin{columns}
+\begin{column}{0.4\textwidth}
+\begin{block}{Impact of Stellar radiation force.}
+\begin{itemize}
+\item Initial MHD flow achieves a steady state.
+\item Jet perturbed after MHD steady state : Addition of radiation force from star or disk. 
+\item The flow ultimately achieves a steady state \textbf{BUT} with increase in
+  jet velocity.
+\item Intensity of the force scales with the jet launching radius. 
+\end{itemize}
+\end{block}
+\end{column}
+\begin{column}{0.6\textwidth}
+\spic{0.23}{\jlfigpath/f6_col.pdf}
+\end{column}
+\end{columns}
+\end{frame}
+
+\begin{frame}{Collimation and Radiation \myref{Vaidya et. al. 2011}}
+\begin{columns}
+\begin{column}{0.4\textwidth}
+\begin{block}{Impact of Stellar radiation force.}
+\begin{itemize}
+\item Star's mass and luminosity - \myref{Hosokawa 2008}
+\item Collimation : Opening angles at critical points in the steady
+  flow.
+\item Without radiation -- Alfven point : Dotted line,
+  Magnetosonic-fast : Solid line.
+\item With radiation -- Alfven point : Stars, Magnetosonic-fast : dots.
+\item Radiation force from Central Star -- \textbf{WIDENS THE FLOW}
+\end{itemize}
+\end{block}
+\end{column}
+\begin{column}{0.6\textwidth}
+\spic{0.23}{\jlfigpath/f11.pdf}
+\end{column}
+\end{columns}
 \end{frame}
 
 \begin{frame}{Force Parameters and its impact}
+\begin{tabular}{l l}
+Magnetic field & Density and $\alpha$ \\
+\spic{0.18}{\jlfigpath/f9.pdf} & \spic{0.18}{\jlfigpath/f10.pdf}
+\end{tabular}
+\end{frame}
+
+\begin{frame}{Fixing mass flux?}
+\begin{tabular}{l l}
+Floating mass flux & Direct Influence \\
+\spic{0.18}{\jlfigpath/f12.pdf} & \spic{0.18}{\jlfigpath/f13_col.pdf}
+\end{tabular}
 \end{frame}
 
 \begin{frame}{Resistive effects}
+Diffusive Disk Jet Launching \myref{Sheikhnezami et. al 2012} 
+\begin{center}
+\spic{0.5}{\figpath/Res_diskjet.png}
+\end{center}
 \end{frame}
 
 \begin{frame}{A case of Orion Source I}
+\begin{columns}
+\begin{column}{0.35\textwidth}{Orion Source I - Masers}
+\spic{0.06}{/Users/bhargavvaidya/MyProject/work/Orion_BN_KL/MNRAS/Revised/f1.pdf}
+\end{column}
+\hspace{0.05\textwidth}
+\begin{column}{0.55\textwidth}{Simulation Model}
+\spic{0.07}{/Users/bhargavvaidya/MyProject/work/Orion_BN_KL/MNRAS/Revised/f2.pdf}
+\end{column}
+\end{columns}
+\end{frame}
+
+\begin{frame}{A case of Orion Source I}
+\begin{block}{Simulation Results \myref{Vaidya 2013}}
+\begin{itemize}
+\item SiO Masers :  n (H$_{2}$) $\sim 10^{9} \rm cm ^{-3}$ and T $\sim$ 2000 K \myref{Goddi et. al. 2009} 
+\item \textit{Dark band} - R $<$ 14 AU. T and $\rho$ optimum to
+  produce SiO masers within 15-60 AU : Consistent with Observations 
+\item 3D Velocities lie within observed range and show signatures of
+  rotation \myref{Matthews 2010}
+\end{itemize}
+\end{block}
+\begin{columns}
+%\hspace{0.1\textwidth}
+\begin{column}{1.0\textwidth}
+\spic{0.27}{/Users/bhargavvaidya/MyProject/work/Orion_BN_KL/MNRAS/Revised/f3.pdf}
+\end{column}
+\end{columns}
 \end{frame}
 
 \section{Outflow dynamics : Propagation}
+
+\begin{frame}{Chemistry in Jets}
+\begin{block}{Initial Setup}
+\begin{itemize}
+\item Young jets -- largely atomic \myref{Dionatos 2009}, Ionization
+  fraction around 1\% \myref{Bacciotti 1995}, Molecules survive in jet
+  \myref{Glassgold 1991}
+\item Axisymmetric dense jet ($\eta$ > 1) enters into a fully molecular ambient
+  medium with density varying in height - $\rho_{\rm amp} \sim z^{-2}$
+\item Simplified Hydrogen chemistry : Tracks fraction of H$_2$, HI and
+  HII. 
+\end{itemize}
+\end{block}
+\begin{columns}
+\hspace{-0.1\textwidth}
+\begin{column}{0.95\textwidth}
+\tiny{
+\begin{tabular}{l l l l}
+\hline
+No. & Reaction & Rate Coefficient ($\rm {cm}^{3} s^{-1}$) &
+Reference~\footnote{REFERENCES -- (1) \myref{Cen 1992 [Eq. 26a]};
+  (2) \myref{Woodall 2007 [UMIST Database]} (3)
+  \myref{Galli 1998 [Eq. H17]}; (4) \myref{Abel 1997
+  [Tab. 3 Eq. 13]}; (5) \myref{Hollenbach 1979 [Eq. 3.8]}}\\
+\hline
+1. & H + e$^{-}$ $\rightarrow$ H$^{+}$ + 2e$^{-}$ & $k_1$ = $5.85
+\times 10^{-11}$ $T^{0.5}$ \rm{exp}(-157,809.1/T)/(1.0 + $T_{5}^{0.5}$) & 1\\
+2. & H$^{+}$ + e$^{-}$ $\rightarrow$ H + h$\nu$ & $k_2$ =
+$3.5\times10^{-12} (T/300.0)^{-0.8}$ & 2\\
+3. & H$_{2}$ + e$^{-}$ $\rightarrow$ 2H + e$^{-}$ & $k_3$ =
+$4.4\times10^{-10} T^{0.35} \rm{exp}(-102,000.0/T)$ & 3\\
+4. & H$_{2}$ + H $\rightarrow$ 3H & $k_4$ = $1.067\times10^{-10}
+T_{\rm eV}^{2.012}(\rm{exp}(4.463/T_{\rm eV})^{-1}((1. + 0.2472 T_{\rm eV})^{3.512})^{-1} $& 4\\
+5. &H$_{2}$ + H$_{2}$ $\rightarrow$ H$_{2}$ + 2H & $k_5$ = $1.0\times 10^{-8} \rm{exp}(-84,100/T)$ & 2\\
+6. & H + H $\overset{\rm dust}\longrightarrow$ H$_{2}$ & $k_6 =
+3.0\times10^{-17}\sqrt{T_{2}}(1.0 + 0.4\sqrt{T_{2} + 0.15} + 0.2T_{2} + 0.8T_{2}^{2})$ & 5 \\
+\hline
+\end{tabular}
+}
+\end{column}
+\end{columns}
+\end{frame}
 
 \begin{frame}{Cooling in Jets}
 \begin{columns}
@@ -148,6 +419,26 @@ Talk about winds and outflows
 
 
 \begin{frame}{SiO Abundance and Jet Velocity}
+\begin{columns}
+\begin{column}{0.5\textwidth}
+\begin{block}{SiO in outflows}
+\begin{itemize}
+\item SiO production by grain-grain collision \myref{Caselli 1997},
+  mantle evaporation \myref{Schilke 1997},
+  gas-grain interaction (sputtering) \myref{Gusdorf 2008} 
+\item Empirical dependence of n(SiO)/n(H$_2$) on flow velocity.
+\item SiO Abundance - 10$^{-12}$ in quiescent dark clouds
+  \myref{Ziurys 1989}
+\item SiO Abundance - 10$^{-7}$ to 10$^{-6}$ in outflows with flow
+  speeds > 60 km s$^{-1}$ e.g. L1448 \myref{Martin-Pintado 1992,
+    Dutrey 1997}
+\end{itemize}
+\end{block}
+\end{column}
+\begin{column}{0.5\textwidth}
+\spic{0.2}{\figpath/pfig3.pdf}
+\end{column}
+\end{columns}
 \end{frame}
 
 \begin{frame}{Spectra and PV diagrams : SiO (2-1)}
@@ -185,6 +476,19 @@ Talk about winds and outflows
 \end{frame}
 
 \begin{frame}{Multi-Line survey : Emission II}
+\begin{block}{Multi-line transitions : HH 211}
+\begin{itemize}
+\item Lower energy transitions - SiO J=1-0,2-1 show more turbulent
+  features.\myref{Chandler 2001}
+\item Higher energy transitions - SiO J=5-4,8-7 are more compact and
+  trace the inner most jet \myref{Hirano 2006, Palau 2006, Nisini 2007}
+\end{itemize}
+\end{block}
+\begin{columns}
+\begin{column}{0.95\textwidth}
+\spic{0.24}{/Users/bhargavvaidya/MyProject/work/Leeds_Uni/SiOJets_New/PAPER/PFIGS/imshkvcontomaps.png}
+\end{column}
+\end{columns}
 \end{frame}
 
 \begin{frame}{Case of L1448 \myref{Nisini 2007}}
@@ -250,15 +554,52 @@ HH 212 \myref{Codella 2007} &\\
 \end{frame}
 
 \begin{frame}[t]{Rotation or Wiggles?}
-  \begin{center}
+\begin{columns}
+\begin{column}{0.3\textwidth}
+\begin{block}{Work in Progress}
+\begin{itemize}
+\item Extention to 3D opens up slew of instabilities.
+\item Self generated internal shocks create stationary knots.
+\item Wiggles are evident at later stages of evolution. 
+\end{itemize}
+\end{block}
+\end{column}
+\begin{column}{0.7\textwidth}
   \movloop{8cm}{5cm}{61}{Img_3djet/contourjet1.}{0060}
-  \end{center}
+\end{column}
+\end{columns}
 \end{frame}
 
 
 
 \section{Summary}
-\begin{frame}{Conclusions}
+\begin{frame}[plain]
+\frametitle{Conclusions}
+\begin{block}{Outflow Evolution}
+\begin{itemize}
+\item Radiative Line force from star plays a crucial role in widening
+  the flow for stars with mass $>$ 30 M$_{\odot}$.
+\item The Collimation degree increases with increase in mass
+  (luminosity) and decrease in magnetic fields, density and line force
+  parameters.
+\item \textit{Radiation MHD Interplay} :  Magnetic fields initially drive the outflow and then radiative
+  force takes over to compliment the dynamics.
+\end{itemize}
+\end{block}
+\begin{block}{EHV Emission}
+\begin{itemize}
+\item Axisymmetric jet driven molecular outflows can very well
+  reproduce features of EHV emission.
+\item PV diagrams show a distinct zig-zag pattern specific of EHV
+  emission from young outflows.
+\item Higher energy transition lines traces compact knots in the flow
+  while jet interaction regions are traced by low excitation lines.
+\item \textit{Chemistry and Dyanmics} : Synthetic observations by
+  combining chemistry with dynamical models provides a link between
+  future observations and theory. 
+\item 3D Modelling with enhanced chemical network is the way forward.
+\end{itemize}
+\end{block}
 \end{frame}
 
 \end{document}
